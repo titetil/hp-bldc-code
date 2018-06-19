@@ -1,0 +1,3984 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"206 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Sb2_Fixed_Power `Cus 1 e ]
+"211 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui16_Current_Thresh `us 1 e ]
+"212 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui16_PWM_Freq_mat `us 1 e ]
+"213 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui16_Speed_demand_mat `us 1 e ]
+"214 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui16_Speed_demand_mat_Max `us 1 e ]
+"215 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui16_Speed_demand_mat_min `us 1 e ]
+"216 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui16_Speed_mat `us 1 e ]
+"217 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui16_dryRun_Thresh `us 1 e ]
+"218 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui16_mat_Current `us 1 e ]
+"219 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui16_mat_inpTemp `us 1 e ]
+"220 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui8_BattVolt_mat `us 1 e ]
+"221 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui8_Ki_mat `us 1 e ]
+"222 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui8_fixed_start_speed_mat `us 1 e ]
+"223 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bl_Pumpoff_Alarm `uc 1 e ]
+"224 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_CPU_TempAlarm `uc 1 e ]
+"225 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_CPU_TempRedAlarm `uc 1 e ]
+"226 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_ControlLoopMode `uc 1 e ]
+"227 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_DryRunningAlarm `uc 1 e ]
+"228 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_HighCurrentAlarm `uc 1 e ]
+"229 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_MotorStalled `uc 1 e ]
+"230 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_PIC_Alarm `uc 1 e ]
+"231 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_PWMin_Freq_err_Alarm `uc 1 e ]
+"232 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_PWMin_err_Alarm `uc 1 e ]
+"233 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_StalledMotorStop `uc 1 e ]
+"234 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_UbatAlarm `uc 1 e ]
+"235 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_mat_currAlarm_bldc `uc 1 e ]
+"236 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_mat_pic_etat `uc 1 e ]
+"237 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _bool_start_demand_mat `uc 1 e ]
+"238 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui8_Kp_mat `uc 1 e ]
+"239 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui8_PWM_dc_mat `uc 1 e ]
+"240 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui8_ResetMatlab `uc 1 e ]
+"241 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui8_debug_out0 `uc 1 e ]
+"242 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _ui8_duty_cycle_mat `uc 1 e ]
+"247 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb1_StateCnt `us 1 s ]
+"248 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb44_StateCnt `us 1 s ]
+"249 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb1_RestartCounter `uc 1 s ]
+[s S3 :4 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S3 tag_SIBFS_Current_Analysis_High Cb1_Current_Analysis_High_ns Cb1_glflag Cb1_Current_Analysis_High ]
+"251 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _SIBFS_Current_Analysis_High_b `S3 1 s ]
+[s S8 :4 `uc 1 :1 `uc 1 ]
+[n S8 tag_SIBFS_PWM_Detection_b_tp Cb35_PWMinput_handling_ns Cb35_PWMinput_handling ]
+"257 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _SIBFS_PWM_Detection_b `S8 1 s ]
+[s S9 :3 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S9 tag_SIBFS_Pic_etat_monitor_b_tp Cb44_Pic_etat_monitor_ns Cb44_glflag Cb44_Pic_etat_monitor ]
+"262 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _SIBFS_Pic_etat_monitor_b `S9 1 s ]
+[s S11 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S11 tag_SIBFS_UbatHandling_b_tp Aux_sflag3 Cb57_Ubat_Handling Cb58_SaturationHigh Cb59_SaturationLow Cb60_NormalUbat ]
+"268 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _SIBFS_UbatHandling_b `S11 1 s ]
+"279 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb1_oCurrentAlarm `uc 1 s ]
+"280 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb1_oShutoff `uc 1 s ]
+"281 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb34_idPWM `uc 1 s ]
+"282 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb34_oPWM_Alarm `uc 1 s ]
+"283 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb34_oPWM_SC_Alarm `uc 1 s ]
+"284 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb34_odFixedLowValueSel `uc 1 s ]
+"285 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb34_odFixedValueSel `uc 1 s ]
+"286 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb34_odPumpOff `uc 1 s ]
+"287 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb44_oAlarm `uc 1 s ]
+"288 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb44_oShutoff `uc 1 s ]
+"289 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb56_oUbat_Alarm_High `uc 1 s ]
+"290 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb56_odFixedValueSel `uc 1 s ]
+"291 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb56_odPumpOff `uc 1 s ]
+[s S4 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S4 tag_SIBFS_Current_Analysis_low_ Cb10_greenState Cb11_Wait Cb12_CntOverCurrent Cb13_redState Cb9_Current_Analysis_low ]
+[s S5 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S5 tag_SIBFS_Dry_RunningAlarm_b_tp Cb19_Dry_RunningAlarm Cb20_greenState Cb21_DryRunningAlarm Cb22_DryRun66 Cb23_DryRun55 ]
+[s S6 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S6 tag_SIBFS_Dry_Running_b_tp Cb14_Dry_Running Cb15_greenState Cb16_DryRunning Cb17_redState Cb18_CntOverCurrent ]
+[s S7 :3 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S7 tag_SIBFS_Motor_Stalled_b_tp Cb25_Motor_sta__Statemachine_ns Cb24_glflag Cb24_Motor_Stalled Cb25_Motor_stalled_Statemachine Cb32_default Cb33_Stop ]
+[s S10 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S10 tag_SIBFS_Temperature_Alarm_b_t Cb51_Temperature_Alarm Cb52_CntOverTemp Cb53_reset Cb54_greenTemp Cb55_redTemp ]
+"304 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb44_Pic_etat_monitor_node_fcn1 `(v 0 sf ]
+"303 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb34_PWM_Detection_node_fcn1 `(v 0 sf ]
+"305 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb56_UbatHandling_node_fcn2 `(v 0 sf ]
+"302 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[v _Cb1_Current_An___High_node_fcn1 `(v 0 sf ]
+[; ;tl_basetypes.h: 17: typedef unsigned char Bool;
+[; ;tl_basetypes.h: 18: typedef float Float32;
+[; ;tl_basetypes.h: 19: typedef double Float64;
+[; ;tl_basetypes.h: 20: typedef signed short int Int16;
+[; ;tl_basetypes.h: 21: typedef signed long int Int32;
+[; ;tl_basetypes.h: 22: typedef signed char Int8;
+[; ;tl_basetypes.h: 23: typedef unsigned short int UInt16;
+[; ;tl_basetypes.h: 24: typedef unsigned long int UInt32;
+[; ;tl_basetypes.h: 25: typedef unsigned char UInt8;
+[; ;tl_basetypes.h: 26: typedef void Void;
+[; ;adv64.h: 66: typedef struct
+[; ;adv64.h: 67: {
+[; ;adv64.h: 68: UInt32 lo;
+[; ;adv64.h: 69: UInt32 hi;
+[; ;adv64.h: 70: } UInt64s;
+[; ;adv64.h: 72: typedef union
+[; ;adv64.h: 73: {
+[; ;adv64.h: 74: UInt32 lng;
+[; ;adv64.h: 75: UInt16 pr[2];
+[; ;adv64.h: 76: } UInt32s;
+[; ;adv64.h: 101: void negate(UInt64s *x);
+[; ;adv64.h: 105: UInt64s F__U64sMULU32U32(const UInt32 x, const UInt32 y);
+[; ;adv64.h: 108: UInt64s F__I64sMULI32U32(const Int32 x, const UInt32 y);
+[; ;adv64.h: 115: UInt64s F__I64sMULI32I32(const Int32 x, const Int32 y);
+[; ;adv64.h: 118: UInt16 div3by2(UInt16 u[3], UInt32s v);
+[; ;adv64.h: 121: UInt64s F__U64sDIVU64sU16(const UInt64s *u, UInt16 a);
+[; ;adv64.h: 124: UInt32 F__U32DIVU64sU16(const UInt64s *u, UInt16 a);
+[; ;adv64.h: 127: UInt64s F__U64sDIVU64sU32(const UInt64s *U, UInt32 v);
+[; ;adv64.h: 130: UInt64s F__I64sDIVI64sU32(const UInt64s *u, UInt32 a);
+[; ;adv64.h: 133: UInt64s F__I64sDIVU64sI32(const UInt64s *u, Int32 a);
+[; ;adv64.h: 136: UInt64s F__I64sDIVI64sI32(const UInt64s *u, Int32 a);
+[; ;adv64.h: 139: UInt32 F__U32DIVU64sU32(const UInt64s *U, UInt32 v);
+[; ;adv64.h: 142: Int32 F__I32DIVI64sU32(const UInt64s *u, UInt32 a);
+[; ;adv64.h: 145: Int32 F__I32DIVU64sI32(const UInt64s *u, Int32 a);
+[; ;adv64.h: 148: Int32 F__I32DIVI64sI32(const UInt64s *u, Int32 a);
+[; ;div.h: 157: void F__I64DIVI64I32(Int32 n_h, UInt32 n_l, Int32 d, Int32 *r_h, UInt32 *r_l);
+[; ;div.h: 212: void F__I64DIVI64U32(Int32 n_h, UInt32 n_l, UInt32 d, Int32 *r_h, UInt32 *r_l);
+[; ;div.h: 266: void F__I64DIVU64I32(UInt32 n_h, UInt32 n_l, Int32 d, Int32 *r_h, UInt32 *r_l);
+[; ;div.h: 322: void F__U64DIVU64U32(UInt32 n_h, UInt32 n_l, UInt32 d, UInt32 *r_h, UInt32 *r_l);
+[; ;div.h: 434: Int32 F__I32DIVI64I32(Int32 n_h, UInt32 n_l, Int32 d);
+[; ;div.h: 474: Int32 F__I32DIVI64U32(Int32 n_h, UInt32 n_l, UInt32 d);
+[; ;div.h: 512: Int32 F__I32DIVU64I32(UInt32 n_h, UInt32 n_l, Int32 d);
+[; ;div.h: 552: UInt32 F__U32DIVU64U32(UInt32 n_h, UInt32 n_l, UInt32 d);
+[; ;trig.h: 47: extern const UInt16 cosLUT[129];
+[; ;trig.h: 64: Int16 F__I16SINI16(Int16 v);
+[; ;trig.h: 72: Int32 F__I32SINI32_LE7(Int32 v);
+[; ;trig.h: 73: Int32 F__I32SINI32_LE8(Int32 v);
+[; ;trig.h: 74: Int32 F__I32SINI32_LE9(Int32 v);
+[; ;trig.h: 75: Int32 F__I32SINI32_LE10(Int32 v);
+[; ;trig.h: 76: Int32 F__I32SINI32_LE11(Int32 v);
+[; ;trig.h: 163: Int32 F__I32SINI32_6TERMS(Int32 v);
+[; ;trig.h: 164: Int32 F__I32SINI32_5TERMS(Int32 v);
+[; ;trig.h: 165: Int32 F__I32SINI32_4TERMS(Int32 v);
+[; ;trig.h: 167: Int32 F__I32COSI32_6TERMS(Int32 v);
+[; ;trig.h: 168: Int32 F__I32COSI32_5TERMS(Int32 v);
+[; ;trig.h: 169: Int32 F__I32COSI32_4TERMS(Int32 v);
+[; ;trig.h: 204: Int16 F__I16TANI16(Int16 v, Int8 ysh);
+[; ;trig.h: 205: Int16 F__I16TANI16_ARB(Int16 v, Int16 yN, Int16 yD);
+[; ;trig.h: 206: Int32 F__I32TANI32_LE7(Int32 v, Int8 ysh);
+[; ;trig.h: 207: Int32 F__I32TANI32_LE7_ARB(Int32 v, Int32 yN, Int32 yD);
+[; ;trig.h: 208: Int32 F__I32TANI32_LE8(Int32 v, Int8 ysh);
+[; ;trig.h: 209: Int32 F__I32TANI32_LE8_ARB(Int32 v, Int32 yN, Int32 yD);
+[; ;trig.h: 210: Int32 F__I32TANI32_LE9(Int32 v, Int8 ysh);
+[; ;trig.h: 211: Int32 F__I32TANI32_LE9_ARB(Int32 v, Int32 yN, Int32 yD);
+[; ;trig.h: 212: Int32 F__I32TANI32_LE10(Int32 v, Int8 ysh);
+[; ;trig.h: 213: Int32 F__I32TANI32_LE10_ARB(Int32 v, Int32 yN, Int32 yD);
+[; ;trig.h: 214: Int32 F__I32TANI32_LE11(Int32 v, Int8 ysh);
+[; ;trig.h: 215: Int32 F__I32TANI32_LE11_ARB(Int32 v, Int32 yN, Int32 yD);
+[; ;trig.h: 268: Int16 F__I16ASINI16(Int16 v);
+[; ;trig.h: 291: Int16 F__I16ATANI16(Int16 v, Int32 c);
+[; ;trig.h: 293: Int16 F__I16ATAN2I16(Int16 v, Int32 c, Int16 y);
+[; ;math.h: 3: extern double fabs(double);
+[; ;math.h: 4: extern double floor(double);
+[; ;math.h: 5: extern double ceil(double);
+[; ;math.h: 6: extern double modf(double, double *);
+[; ;math.h: 7: extern double sqrt(double);
+[; ;math.h: 8: extern double atof(const char *);
+[; ;math.h: 9: extern double sin(double);
+[; ;math.h: 10: extern double cos(double);
+[; ;math.h: 11: extern double tan(double);
+[; ;math.h: 12: extern double asin(double);
+[; ;math.h: 13: extern double acos(double);
+[; ;math.h: 14: extern double atan(double);
+[; ;math.h: 15: extern double atan2(double, double);
+[; ;math.h: 16: extern double log(double);
+[; ;math.h: 17: extern double log10(double);
+[; ;math.h: 18: extern double pow(double, double);
+[; ;math.h: 19: extern double exp(double);
+[; ;math.h: 20: extern double sinh(double);
+[; ;math.h: 21: extern double cosh(double);
+[; ;math.h: 22: extern double tanh(double);
+[; ;math.h: 23: extern double eval_poly(double, const double *, int);
+[; ;math.h: 24: extern double frexp(double, int *);
+[; ;math.h: 25: extern double ldexp(double, int);
+[; ;math.h: 26: extern double fmod(double, double);
+[; ;math.h: 27: extern double trunc(double);
+[; ;math.h: 28: extern double round(double);
+[; ;BVH2_Appl_Layer.h: 61: struct tag_SIBFS_Current_Analysis_High {
+[; ;BVH2_Appl_Layer.h: 62: unsigned int Cb1_Current_Analysis_High_ns : 4;
+[; ;BVH2_Appl_Layer.h: 63: unsigned int Cb1_glflag : 2;
+[; ;BVH2_Appl_Layer.h: 64: unsigned int Cb1_Current_Analysis_High : 1;
+[; ;BVH2_Appl_Layer.h: 65: };
+[; ;BVH2_Appl_Layer.h: 67: struct tag_SIBFS_Current_Analysis_low_ {
+[; ;BVH2_Appl_Layer.h: 68: unsigned int Cb10_greenState : 1;
+[; ;BVH2_Appl_Layer.h: 69: unsigned int Cb11_Wait : 1;
+[; ;BVH2_Appl_Layer.h: 70: unsigned int Cb12_CntOverCurrent : 1;
+[; ;BVH2_Appl_Layer.h: 71: unsigned int Cb13_redState : 1;
+[; ;BVH2_Appl_Layer.h: 72: unsigned int Cb9_Current_Analysis_low : 1;
+[; ;BVH2_Appl_Layer.h: 73: };
+[; ;BVH2_Appl_Layer.h: 75: struct tag_SIBFS_Dry_RunningAlarm_b_tp {
+[; ;BVH2_Appl_Layer.h: 76: unsigned int Cb19_Dry_RunningAlarm : 1;
+[; ;BVH2_Appl_Layer.h: 77: unsigned int Cb20_greenState : 1;
+[; ;BVH2_Appl_Layer.h: 78: unsigned int Cb21_DryRunningAlarm : 1;
+[; ;BVH2_Appl_Layer.h: 79: unsigned int Cb22_DryRun66 : 1;
+[; ;BVH2_Appl_Layer.h: 80: unsigned int Cb23_DryRun55 : 1;
+[; ;BVH2_Appl_Layer.h: 81: };
+[; ;BVH2_Appl_Layer.h: 83: struct tag_SIBFS_Dry_Running_b_tp {
+[; ;BVH2_Appl_Layer.h: 84: unsigned int Cb14_Dry_Running : 1;
+[; ;BVH2_Appl_Layer.h: 85: unsigned int Cb15_greenState : 1;
+[; ;BVH2_Appl_Layer.h: 86: unsigned int Cb16_DryRunning : 1;
+[; ;BVH2_Appl_Layer.h: 87: unsigned int Cb17_redState : 1;
+[; ;BVH2_Appl_Layer.h: 88: unsigned int Cb18_CntOverCurrent : 1;
+[; ;BVH2_Appl_Layer.h: 89: };
+[; ;BVH2_Appl_Layer.h: 91: struct tag_SIBFS_Motor_Stalled_b_tp {
+[; ;BVH2_Appl_Layer.h: 92: unsigned int Cb25_Motor_sta__Statemachine_ns : 3;
+[; ;BVH2_Appl_Layer.h: 93: unsigned int Cb24_glflag : 2;
+[; ;BVH2_Appl_Layer.h: 94: unsigned int Cb24_Motor_Stalled : 1;
+[; ;BVH2_Appl_Layer.h: 95: unsigned int Cb25_Motor_stalled_Statemachine : 1;
+[; ;BVH2_Appl_Layer.h: 96: unsigned int Cb32_default : 1;
+[; ;BVH2_Appl_Layer.h: 97: unsigned int Cb33_Stop : 1;
+[; ;BVH2_Appl_Layer.h: 98: };
+[; ;BVH2_Appl_Layer.h: 100: struct tag_SIBFS_PWM_Detection_b_tp {
+[; ;BVH2_Appl_Layer.h: 101: unsigned int Cb35_PWMinput_handling_ns : 4;
+[; ;BVH2_Appl_Layer.h: 102: unsigned int Cb35_PWMinput_handling : 1;
+[; ;BVH2_Appl_Layer.h: 103: };
+[; ;BVH2_Appl_Layer.h: 105: struct tag_SIBFS_Pic_etat_monitor_b_tp {
+[; ;BVH2_Appl_Layer.h: 106: unsigned int Cb44_Pic_etat_monitor_ns : 3;
+[; ;BVH2_Appl_Layer.h: 107: unsigned int Cb44_glflag : 2;
+[; ;BVH2_Appl_Layer.h: 108: unsigned int Cb44_Pic_etat_monitor : 1;
+[; ;BVH2_Appl_Layer.h: 109: };
+[; ;BVH2_Appl_Layer.h: 111: struct tag_SIBFS_Temperature_Alarm_b_t {
+[; ;BVH2_Appl_Layer.h: 112: unsigned int Cb51_Temperature_Alarm : 1;
+[; ;BVH2_Appl_Layer.h: 113: unsigned int Cb52_CntOverTemp : 1;
+[; ;BVH2_Appl_Layer.h: 114: unsigned int Cb53_reset : 1;
+[; ;BVH2_Appl_Layer.h: 115: unsigned int Cb54_greenTemp : 1;
+[; ;BVH2_Appl_Layer.h: 116: unsigned int Cb55_redTemp : 1;
+[; ;BVH2_Appl_Layer.h: 117: };
+[; ;BVH2_Appl_Layer.h: 119: struct tag_SIBFS_UbatHandling_b_tp {
+[; ;BVH2_Appl_Layer.h: 120: unsigned int Aux_sflag3 : 3;
+[; ;BVH2_Appl_Layer.h: 121: unsigned int Cb57_Ubat_Handling : 1;
+[; ;BVH2_Appl_Layer.h: 122: unsigned int Cb58_SaturationHigh : 1;
+[; ;BVH2_Appl_Layer.h: 123: unsigned int Cb59_SaturationLow : 1;
+[; ;BVH2_Appl_Layer.h: 124: unsigned int Cb60_NormalUbat : 1;
+[; ;BVH2_Appl_Layer.h: 125: };
+[; ;BVH2_Appl_Layer.h: 136: extern const UInt16 Sb2_Fixed_Power;
+[; ;BVH2_Appl_Layer.h: 141: extern  UInt16 ui16_Current_Thresh;
+[; ;BVH2_Appl_Layer.h: 142: extern  UInt16 ui16_PWM_Freq_mat;
+[; ;BVH2_Appl_Layer.h: 143: extern  UInt16 ui16_Speed_demand_mat;
+[; ;BVH2_Appl_Layer.h: 144: extern  UInt16 ui16_Speed_demand_mat_Max;
+[; ;BVH2_Appl_Layer.h: 145: extern  UInt16 ui16_Speed_demand_mat_min;
+[; ;BVH2_Appl_Layer.h: 146: extern  UInt16 ui16_Speed_mat;
+[; ;BVH2_Appl_Layer.h: 147: extern  UInt16 ui16_dryRun_Thresh;
+[; ;BVH2_Appl_Layer.h: 148: extern  UInt16 ui16_mat_Current;
+[; ;BVH2_Appl_Layer.h: 149: extern  UInt16 ui16_mat_inpTemp;
+[; ;BVH2_Appl_Layer.h: 150: extern  UInt16 ui8_BattVolt_mat;
+[; ;BVH2_Appl_Layer.h: 151: extern  UInt16 ui8_Ki_mat;
+[; ;BVH2_Appl_Layer.h: 152: extern  UInt16 ui8_fixed_start_speed_mat;
+[; ;BVH2_Appl_Layer.h: 153: extern  Bool bl_Pumpoff_Alarm;
+[; ;BVH2_Appl_Layer.h: 154: extern  Bool bool_CPU_TempAlarm;
+[; ;BVH2_Appl_Layer.h: 155: extern  Bool bool_CPU_TempRedAlarm;
+[; ;BVH2_Appl_Layer.h: 156: extern  Bool bool_ControlLoopMode;
+[; ;BVH2_Appl_Layer.h: 157: extern  Bool bool_DryRunningAlarm;
+[; ;BVH2_Appl_Layer.h: 158: extern  Bool bool_HighCurrentAlarm;
+[; ;BVH2_Appl_Layer.h: 159: extern  Bool bool_MotorStalled;
+[; ;BVH2_Appl_Layer.h: 160: extern  Bool bool_PIC_Alarm;
+[; ;BVH2_Appl_Layer.h: 161: extern  Bool bool_PWMin_Freq_err_Alarm;
+[; ;BVH2_Appl_Layer.h: 162: extern  Bool bool_PWMin_err_Alarm;
+[; ;BVH2_Appl_Layer.h: 163: extern  Bool bool_StalledMotorStop;
+[; ;BVH2_Appl_Layer.h: 164: extern  Bool bool_UbatAlarm;
+[; ;BVH2_Appl_Layer.h: 165: extern  Bool bool_mat_currAlarm_bldc;
+[; ;BVH2_Appl_Layer.h: 166: extern  Bool bool_mat_pic_etat;
+[; ;BVH2_Appl_Layer.h: 167: extern  Bool bool_start_demand_mat;
+[; ;BVH2_Appl_Layer.h: 168: extern  UInt8 ui8_Kp_mat;
+[; ;BVH2_Appl_Layer.h: 169: extern  UInt8 ui8_PWM_dc_mat;
+[; ;BVH2_Appl_Layer.h: 170: extern  UInt8 ui8_ResetMatlab;
+[; ;BVH2_Appl_Layer.h: 171: extern  UInt8 ui8_debug_out0;
+[; ;BVH2_Appl_Layer.h: 172: extern  UInt8 ui8_duty_cycle_mat;
+[; ;BVH2_Appl_Layer.h: 183: extern Void BVH2_Appl_Layer(Void);
+"206 D:\Projekte\BVH2\BLDC\V0.9.3\src\T_Link\BVH2_Appl_Layer.c
+[i _Sb2_Fixed_Power
+-> -> 202 `i `us
+]
+[; ;BVH2_Appl_Layer.c: 206: const UInt16 Sb2_Fixed_Power = 202;
+[; ;BVH2_Appl_Layer.c: 211: UInt16 ui16_Current_Thresh;
+[; ;BVH2_Appl_Layer.c: 212: UInt16 ui16_PWM_Freq_mat;
+[; ;BVH2_Appl_Layer.c: 213: UInt16 ui16_Speed_demand_mat;
+[; ;BVH2_Appl_Layer.c: 214: UInt16 ui16_Speed_demand_mat_Max;
+[; ;BVH2_Appl_Layer.c: 215: UInt16 ui16_Speed_demand_mat_min;
+[; ;BVH2_Appl_Layer.c: 216: UInt16 ui16_Speed_mat;
+[; ;BVH2_Appl_Layer.c: 217: UInt16 ui16_dryRun_Thresh;
+[; ;BVH2_Appl_Layer.c: 218: UInt16 ui16_mat_Current;
+[; ;BVH2_Appl_Layer.c: 219: UInt16 ui16_mat_inpTemp;
+[; ;BVH2_Appl_Layer.c: 220: UInt16 ui8_BattVolt_mat;
+[; ;BVH2_Appl_Layer.c: 221: UInt16 ui8_Ki_mat;
+[; ;BVH2_Appl_Layer.c: 222: UInt16 ui8_fixed_start_speed_mat;
+[; ;BVH2_Appl_Layer.c: 223: Bool bl_Pumpoff_Alarm;
+[; ;BVH2_Appl_Layer.c: 224: Bool bool_CPU_TempAlarm;
+[; ;BVH2_Appl_Layer.c: 225: Bool bool_CPU_TempRedAlarm;
+[; ;BVH2_Appl_Layer.c: 226: Bool bool_ControlLoopMode;
+[; ;BVH2_Appl_Layer.c: 227: Bool bool_DryRunningAlarm;
+[; ;BVH2_Appl_Layer.c: 228: Bool bool_HighCurrentAlarm;
+[; ;BVH2_Appl_Layer.c: 229: Bool bool_MotorStalled;
+[; ;BVH2_Appl_Layer.c: 230: Bool bool_PIC_Alarm;
+[; ;BVH2_Appl_Layer.c: 231: Bool bool_PWMin_Freq_err_Alarm;
+[; ;BVH2_Appl_Layer.c: 232: Bool bool_PWMin_err_Alarm;
+[; ;BVH2_Appl_Layer.c: 233: Bool bool_StalledMotorStop;
+[; ;BVH2_Appl_Layer.c: 234: Bool bool_UbatAlarm;
+[; ;BVH2_Appl_Layer.c: 235: Bool bool_mat_currAlarm_bldc;
+[; ;BVH2_Appl_Layer.c: 236: Bool bool_mat_pic_etat;
+[; ;BVH2_Appl_Layer.c: 237: Bool bool_start_demand_mat;
+[; ;BVH2_Appl_Layer.c: 238: UInt8 ui8_Kp_mat;
+[; ;BVH2_Appl_Layer.c: 239: UInt8 ui8_PWM_dc_mat;
+[; ;BVH2_Appl_Layer.c: 240: UInt8 ui8_ResetMatlab;
+[; ;BVH2_Appl_Layer.c: 241: UInt8 ui8_debug_out0;
+[; ;BVH2_Appl_Layer.c: 242: UInt8 ui8_duty_cycle_mat;
+"247
+[i _Cb1_StateCnt
+-> -> 0 `i `us
+]
+[; ;BVH2_Appl_Layer.c: 247: static UInt16 Cb1_StateCnt = 0;
+"248
+[i _Cb44_StateCnt
+-> -> 0 `i `us
+]
+[; ;BVH2_Appl_Layer.c: 248: static UInt16 Cb44_StateCnt = 0;
+"249
+[i _Cb1_RestartCounter
+-> -> 0 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 249: static UInt8 Cb1_RestartCounter = 0;
+"251
+[i _SIBFS_Current_Analysis_High_b
+:U ..
+:U ..
+"252
+-> -> 0 `i `uc
+"253
+-> -> 0 `i `uc
+"255
+-> -> 0 `i `uc
+..
+..
+]
+[; ;BVH2_Appl_Layer.c: 251: static struct tag_SIBFS_Current_Analysis_High SIBFS_Current_Analysis_High_b = {
+[; ;BVH2_Appl_Layer.c: 252: 0 ,
+[; ;BVH2_Appl_Layer.c: 253: 0 ,
+[; ;BVH2_Appl_Layer.c: 254: 0
+[; ;BVH2_Appl_Layer.c: 255: } ;
+"257
+[i _SIBFS_PWM_Detection_b
+:U ..
+:U ..
+"258
+-> -> 0 `i `uc
+"260
+-> -> 0 `i `uc
+..
+..
+]
+[; ;BVH2_Appl_Layer.c: 257: static struct tag_SIBFS_PWM_Detection_b_tp SIBFS_PWM_Detection_b = {
+[; ;BVH2_Appl_Layer.c: 258: 0 ,
+[; ;BVH2_Appl_Layer.c: 259: 0
+[; ;BVH2_Appl_Layer.c: 260: } ;
+"262
+[i _SIBFS_Pic_etat_monitor_b
+:U ..
+:U ..
+"263
+-> -> 0 `i `uc
+"264
+-> -> 0 `i `uc
+"266
+-> -> 0 `i `uc
+..
+..
+]
+[; ;BVH2_Appl_Layer.c: 262: static struct tag_SIBFS_Pic_etat_monitor_b_tp SIBFS_Pic_etat_monitor_b = {
+[; ;BVH2_Appl_Layer.c: 263: 0 ,
+[; ;BVH2_Appl_Layer.c: 264: 0 ,
+[; ;BVH2_Appl_Layer.c: 265: 0
+[; ;BVH2_Appl_Layer.c: 266: } ;
+"268
+[i _SIBFS_UbatHandling_b
+:U ..
+:U ..
+"269
+-> -> 0 `i `uc
+"270
+-> -> 0 `i `uc
+"271
+-> -> 0 `i `uc
+"272
+-> -> 0 `i `uc
+"274
+-> -> 0 `i `uc
+..
+..
+]
+[; ;BVH2_Appl_Layer.c: 268: static struct tag_SIBFS_UbatHandling_b_tp SIBFS_UbatHandling_b = {
+[; ;BVH2_Appl_Layer.c: 269: 0 ,
+[; ;BVH2_Appl_Layer.c: 270: 0 ,
+[; ;BVH2_Appl_Layer.c: 271: 0 ,
+[; ;BVH2_Appl_Layer.c: 272: 0 ,
+[; ;BVH2_Appl_Layer.c: 273: 0
+[; ;BVH2_Appl_Layer.c: 274: } ;
+"279
+[i _Cb1_oCurrentAlarm
+-> -> 0 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 279: static Bool Cb1_oCurrentAlarm = 0;
+"280
+[i _Cb1_oShutoff
+-> -> 0 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 280: static Bool Cb1_oShutoff = 0;
+[; ;BVH2_Appl_Layer.c: 281: static UInt8 Cb34_idPWM;
+"282
+[i _Cb34_oPWM_Alarm
+-> -> 0 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 282: static Bool Cb34_oPWM_Alarm = 0;
+"283
+[i _Cb34_oPWM_SC_Alarm
+-> -> 0 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 283: static Bool Cb34_oPWM_SC_Alarm = 0;
+"284
+[i _Cb34_odFixedLowValueSel
+-> -> 0 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 284: static Bool Cb34_odFixedLowValueSel = 0;
+"285
+[i _Cb34_odFixedValueSel
+-> -> 0 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 285: static Bool Cb34_odFixedValueSel = 0;
+"286
+[i _Cb34_odPumpOff
+-> -> 0 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 286: static Bool Cb34_odPumpOff = 0;
+"287
+[i _Cb44_oAlarm
+-> -> 0 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 287: static Bool Cb44_oAlarm = 0;
+"288
+[i _Cb44_oShutoff
+-> -> 0 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 288: static Bool Cb44_oShutoff = 0;
+"289
+[i _Cb56_oUbat_Alarm_High
+-> -> 0 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 289: static Bool Cb56_oUbat_Alarm_High = 0;
+"290
+[i _Cb56_odFixedValueSel
+-> -> 0 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 290: static Bool Cb56_odFixedValueSel = 0;
+"291
+[i _Cb56_odPumpOff
+-> -> 0 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 291: static Bool Cb56_odPumpOff = 0;
+[; ;BVH2_Appl_Layer.c: 302: static Void Cb1_Current_An___High_node_fcn1(Void);
+[; ;BVH2_Appl_Layer.c: 303: static Void Cb34_PWM_Detection_node_fcn1(Void);
+[; ;BVH2_Appl_Layer.c: 304: static Void Cb44_Pic_etat_monitor_node_fcn1(Void);
+[; ;BVH2_Appl_Layer.c: 305: static Void Cb56_UbatHandling_node_fcn2(Void);
+"332
+[v _BVH2_Appl_Layer `(v 1 ef ]
+{
+[; ;BVH2_Appl_Layer.c: 331: Void BVH2_Appl_Layer(Void)
+[; ;BVH2_Appl_Layer.c: 332: {
+[e :U _BVH2_Appl_Layer ]
+[f ]
+"334
+[v F351 `us 1 s Cb14_StateCnt ]
+[i F351
+-> -> 0 `i `us
+]
+"335
+[v F352 `us 1 s Cb19_Counter ]
+[i F352
+-> -> 0 `i `us
+]
+"336
+[v F353 `us 1 s Cb24_BadCnt ]
+[i F353
+-> -> 0 `i `us
+]
+"337
+[v F354 `us 1 s Cb24_StateCnt ]
+[i F354
+-> -> 0 `i `us
+]
+"338
+[v F355 `uc 1 s Cb24_RestartCounter ]
+[i F355
+-> -> 0 `i `uc
+]
+"339
+[v F356 `uc 1 s Cb51_Counter ]
+[i F356
+-> -> 0 `i `uc
+]
+"340
+[v F357 `uc 1 s Cb9_StateCnt ]
+[i F357
+-> -> 0 `i `uc
+]
+"342
+[v F358 `S4 1 s SIBFS_Current_Analysis_low_b ]
+[i F358
+:U ..
+:U ..
+"343
+-> -> 0 `i `uc
+"344
+-> -> 0 `i `uc
+"345
+-> -> 0 `i `uc
+"346
+-> -> 0 `i `uc
+"348
+-> -> 0 `i `uc
+..
+..
+]
+"350
+[v F359 `S5 1 s SIBFS_Dry_RunningAlarm_b ]
+[i F359
+:U ..
+:U ..
+"351
+-> -> 0 `i `uc
+"352
+-> -> 0 `i `uc
+"353
+-> -> 0 `i `uc
+"354
+-> -> 0 `i `uc
+"356
+-> -> 0 `i `uc
+..
+..
+]
+"358
+[v F360 `S6 1 s SIBFS_Dry_Running_b ]
+[i F360
+:U ..
+:U ..
+"359
+-> -> 0 `i `uc
+"360
+-> -> 0 `i `uc
+"361
+-> -> 0 `i `uc
+"362
+-> -> 0 `i `uc
+"364
+-> -> 0 `i `uc
+..
+..
+]
+"366
+[v F361 `S7 1 s SIBFS_Motor_Stalled_b ]
+[i F361
+:U ..
+:U ..
+"367
+-> -> 0 `i `uc
+"368
+-> -> 0 `i `uc
+"369
+-> -> 0 `i `uc
+"370
+-> -> 0 `i `uc
+"371
+-> -> 0 `i `uc
+"373
+-> -> 0 `i `uc
+..
+..
+]
+"375
+[v F362 `S10 1 s SIBFS_Temperature_Alarm_b ]
+[i F362
+:U ..
+:U ..
+"376
+-> -> 0 `i `uc
+"377
+-> -> 0 `i `uc
+"378
+-> -> 0 `i `uc
+"379
+-> -> 0 `i `uc
+"381
+-> -> 0 `i `uc
+..
+..
+]
+"384
+[v _Sb2_Error `s 1 a ]
+"385
+[v _Sb2_Switch2 `us 1 a ]
+"386
+[v _Sb2_Switch5 `us 1 a ]
+"387
+[v _Cb24_Reset `uc 1 a ]
+"388
+[v _Sb1_Logical_Operator1 `uc 1 a ]
+"389
+[v _Sb1_Logical_Operator2 `uc 1 a ]
+"390
+[v _Sb1_Logical_Operator3 `uc 1 a ]
+"391
+[v _Sb1_Logical_Operator5 `uc 1 a ]
+"392
+[v _Sb2_Logical_Operator2 `uc 1 a ]
+"395
+[v F372 `uc 1 s Cb14_oDryRunAlarm ]
+[i F372
+-> -> 0 `i `uc
+]
+"396
+[v F373 `uc 1 s Cb19_oDryRun55 ]
+[i F373
+-> -> 0 `i `uc
+]
+"397
+[v F374 `uc 1 s Cb19_oDryRun66 ]
+[i F374
+-> -> 0 `i `uc
+]
+"398
+[v F375 `uc 1 s Cb24_oMotorStalled ]
+[i F375
+-> -> 0 `i `uc
+]
+"399
+[v F376 `uc 1 s Cb24_oStalledAlarm ]
+[i F376
+-> -> 0 `i `uc
+]
+"400
+[v F377 `uc 1 s Cb51_oTempAlarm ]
+[i F377
+-> -> 0 `i `uc
+]
+"401
+[v F378 `uc 1 s Cb51_oTempRedAlarm ]
+[i F378
+-> -> 0 `i `uc
+]
+"402
+[v F379 `uc 1 s Cb51_odPumpOff ]
+[i F379
+-> -> 0 `i `uc
+]
+"403
+[v F380 `uc 1 s Cb9_oCurrentAlarm ]
+[i F380
+-> -> 0 `i `uc
+]
+"406
+[v F381 `l 1 s X_Sb4_Intergrator ]
+[i F381
+-> 80000 `l
+]
+"408
+[v F382 `uc 1 s Sb1_BVH2_Appl_Layer_FirstRun ]
+[i F382
+-> -> 1 `i `uc
+]
+"409
+[v F383 `uc 1 s X_Sb4_Intergrator_TriggerIn ]
+[i F383
+-> -> 1 `i `uc
+]
+[; ;BVH2_Appl_Layer.c: 334: static UInt16 Cb14_StateCnt = 0;
+[; ;BVH2_Appl_Layer.c: 335: static UInt16 Cb19_Counter = 0;
+[; ;BVH2_Appl_Layer.c: 336: static UInt16 Cb24_BadCnt = 0;
+[; ;BVH2_Appl_Layer.c: 337: static UInt16 Cb24_StateCnt = 0;
+[; ;BVH2_Appl_Layer.c: 338: static UInt8 Cb24_RestartCounter = 0;
+[; ;BVH2_Appl_Layer.c: 339: static UInt8 Cb51_Counter = 0;
+[; ;BVH2_Appl_Layer.c: 340: static UInt8 Cb9_StateCnt = 0;
+[; ;BVH2_Appl_Layer.c: 342: static struct tag_SIBFS_Current_Analysis_low_ SIBFS_Current_Analysis_low_b = {
+[; ;BVH2_Appl_Layer.c: 343: 0 ,
+[; ;BVH2_Appl_Layer.c: 344: 0 ,
+[; ;BVH2_Appl_Layer.c: 345: 0 ,
+[; ;BVH2_Appl_Layer.c: 346: 0 ,
+[; ;BVH2_Appl_Layer.c: 347: 0
+[; ;BVH2_Appl_Layer.c: 348: } ;
+[; ;BVH2_Appl_Layer.c: 350: static struct tag_SIBFS_Dry_RunningAlarm_b_tp SIBFS_Dry_RunningAlarm_b = {
+[; ;BVH2_Appl_Layer.c: 351: 0 ,
+[; ;BVH2_Appl_Layer.c: 352: 0 ,
+[; ;BVH2_Appl_Layer.c: 353: 0 ,
+[; ;BVH2_Appl_Layer.c: 354: 0 ,
+[; ;BVH2_Appl_Layer.c: 355: 0
+[; ;BVH2_Appl_Layer.c: 356: } ;
+[; ;BVH2_Appl_Layer.c: 358: static struct tag_SIBFS_Dry_Running_b_tp SIBFS_Dry_Running_b = {
+[; ;BVH2_Appl_Layer.c: 359: 0 ,
+[; ;BVH2_Appl_Layer.c: 360: 0 ,
+[; ;BVH2_Appl_Layer.c: 361: 0 ,
+[; ;BVH2_Appl_Layer.c: 362: 0 ,
+[; ;BVH2_Appl_Layer.c: 363: 0
+[; ;BVH2_Appl_Layer.c: 364: } ;
+[; ;BVH2_Appl_Layer.c: 366: static struct tag_SIBFS_Motor_Stalled_b_tp SIBFS_Motor_Stalled_b = {
+[; ;BVH2_Appl_Layer.c: 367: 0 ,
+[; ;BVH2_Appl_Layer.c: 368: 0 ,
+[; ;BVH2_Appl_Layer.c: 369: 0 ,
+[; ;BVH2_Appl_Layer.c: 370: 0 ,
+[; ;BVH2_Appl_Layer.c: 371: 0 ,
+[; ;BVH2_Appl_Layer.c: 372: 0
+[; ;BVH2_Appl_Layer.c: 373: } ;
+[; ;BVH2_Appl_Layer.c: 375: static struct tag_SIBFS_Temperature_Alarm_b_t SIBFS_Temperature_Alarm_b = {
+[; ;BVH2_Appl_Layer.c: 376: 0 ,
+[; ;BVH2_Appl_Layer.c: 377: 0 ,
+[; ;BVH2_Appl_Layer.c: 378: 0 ,
+[; ;BVH2_Appl_Layer.c: 379: 0 ,
+[; ;BVH2_Appl_Layer.c: 380: 0
+[; ;BVH2_Appl_Layer.c: 381: } ;
+[; ;BVH2_Appl_Layer.c: 384: Int16 Sb2_Error;
+[; ;BVH2_Appl_Layer.c: 385: UInt16 Sb2_Switch2;
+[; ;BVH2_Appl_Layer.c: 386: UInt16 Sb2_Switch5;
+[; ;BVH2_Appl_Layer.c: 387: Bool Cb24_Reset;
+[; ;BVH2_Appl_Layer.c: 388: Bool Sb1_Logical_Operator1;
+[; ;BVH2_Appl_Layer.c: 389: Bool Sb1_Logical_Operator2;
+[; ;BVH2_Appl_Layer.c: 390: Bool Sb1_Logical_Operator3;
+[; ;BVH2_Appl_Layer.c: 391: Bool Sb1_Logical_Operator5;
+[; ;BVH2_Appl_Layer.c: 392: Bool Sb2_Logical_Operator2;
+[; ;BVH2_Appl_Layer.c: 395: static Bool Cb14_oDryRunAlarm = 0;
+[; ;BVH2_Appl_Layer.c: 396: static Bool Cb19_oDryRun55 = 0;
+[; ;BVH2_Appl_Layer.c: 397: static Bool Cb19_oDryRun66 = 0;
+[; ;BVH2_Appl_Layer.c: 398: static Bool Cb24_oMotorStalled = 0;
+[; ;BVH2_Appl_Layer.c: 399: static Bool Cb24_oStalledAlarm = 0;
+[; ;BVH2_Appl_Layer.c: 400: static Bool Cb51_oTempAlarm = 0;
+[; ;BVH2_Appl_Layer.c: 401: static Bool Cb51_oTempRedAlarm = 0;
+[; ;BVH2_Appl_Layer.c: 402: static Bool Cb51_odPumpOff = 0;
+[; ;BVH2_Appl_Layer.c: 403: static Bool Cb9_oCurrentAlarm = 0;
+[; ;BVH2_Appl_Layer.c: 406: static Int32 X_Sb4_Intergrator = 80000 ;
+[; ;BVH2_Appl_Layer.c: 408: static Bool Sb1_BVH2_Appl_Layer_FirstRun = 1;
+[; ;BVH2_Appl_Layer.c: 409: static Bool X_Sb4_Intergrator_TriggerIn = 1;
+[; ;BVH2_Appl_Layer.c: 412: switch (SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns) {
+"412
+[e $U 14  ]
+{
+[; ;BVH2_Appl_Layer.c: 413: case (UInt8)4: {
+"413
+[e :U 15 ]
+{
+[; ;BVH2_Appl_Layer.c: 415: if (Cb44_StateCnt > 50) {
+"415
+[e $ ! > -> _Cb44_StateCnt `ui -> -> 50 `i `ui 16  ]
+{
+[; ;BVH2_Appl_Layer.c: 418: SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) (UInt8)5;
+"418
+[e = . _SIBFS_Pic_etat_monitor_b 0 -> -> -> -> 5 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 419: Cb44_oShutoff = 0;
+"419
+[e = _Cb44_oShutoff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 420: Cb44_oAlarm = 0;
+"420
+[e = _Cb44_oAlarm -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 421: Cb44_StateCnt = 0 ;
+"421
+[e = _Cb44_StateCnt -> -> 0 `i `us ]
+"422
+}
+[; ;BVH2_Appl_Layer.c: 422: }
+[e $U 17  ]
+"423
+[e :U 16 ]
+[; ;BVH2_Appl_Layer.c: 423: else {
+{
+[; ;BVH2_Appl_Layer.c: 424: Cb44_StateCnt = Cb44_StateCnt + 1 ;
+"424
+[e = _Cb44_StateCnt -> + -> _Cb44_StateCnt `ui -> -> 1 `i `ui `us ]
+"425
+}
+[e :U 17 ]
+[; ;BVH2_Appl_Layer.c: 425: }
+[; ;BVH2_Appl_Layer.c: 428: break;
+"428
+[e $U 13  ]
+"429
+}
+[; ;BVH2_Appl_Layer.c: 429: }
+[; ;BVH2_Appl_Layer.c: 430: case (UInt8)5: {
+"430
+[e :U 18 ]
+{
+[; ;BVH2_Appl_Layer.c: 432: Cb44_Pic_etat_monitor_node_fcn1();
+"432
+[e ( _Cb44_Pic_etat_monitor_node_fcn1 ..  ]
+[; ;BVH2_Appl_Layer.c: 433: if (SIBFS_Pic_etat_monitor_b.Cb44_glflag <= 2) {
+"433
+[e $ ! <= -> . _SIBFS_Pic_etat_monitor_b 1 `i -> 2 `i 19  ]
+{
+[; ;BVH2_Appl_Layer.c: 434: Cb44_StateCnt = Cb44_StateCnt + 1 ;
+"434
+[e = _Cb44_StateCnt -> + -> _Cb44_StateCnt `ui -> -> 1 `i `ui `us ]
+"435
+}
+[e :U 19 ]
+[; ;BVH2_Appl_Layer.c: 435: }
+[; ;BVH2_Appl_Layer.c: 438: break;
+"438
+[e $U 13  ]
+"439
+}
+[; ;BVH2_Appl_Layer.c: 439: }
+[; ;BVH2_Appl_Layer.c: 440: case (UInt8)3: {
+"440
+[e :U 20 ]
+{
+[; ;BVH2_Appl_Layer.c: 442: Cb44_Pic_etat_monitor_node_fcn1();
+"442
+[e ( _Cb44_Pic_etat_monitor_node_fcn1 ..  ]
+[; ;BVH2_Appl_Layer.c: 445: break;
+"445
+[e $U 13  ]
+"446
+}
+[; ;BVH2_Appl_Layer.c: 446: }
+[; ;BVH2_Appl_Layer.c: 447: case (UInt8)6: {
+"447
+[e :U 21 ]
+{
+[; ;BVH2_Appl_Layer.c: 449: if (Cb44_StateCnt > 15) {
+"449
+[e $ ! > -> _Cb44_StateCnt `ui -> -> 15 `i `ui 22  ]
+{
+[; ;BVH2_Appl_Layer.c: 451: SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) (UInt8)5;
+"451
+[e = . _SIBFS_Pic_etat_monitor_b 0 -> -> -> -> 5 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 452: Cb44_oShutoff = 0;
+"452
+[e = _Cb44_oShutoff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 453: Cb44_oAlarm = 0;
+"453
+[e = _Cb44_oAlarm -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 454: Cb44_StateCnt = 0 ;
+"454
+[e = _Cb44_StateCnt -> -> 0 `i `us ]
+"455
+}
+[; ;BVH2_Appl_Layer.c: 455: }
+[e $U 23  ]
+"456
+[e :U 22 ]
+[; ;BVH2_Appl_Layer.c: 456: else {
+{
+[; ;BVH2_Appl_Layer.c: 459: if (bool_mat_pic_etat) {
+"459
+[e $ ! != -> _bool_mat_pic_etat `i -> -> -> 0 `i `uc `i 24  ]
+{
+[; ;BVH2_Appl_Layer.c: 461: SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) (UInt8)1;
+"461
+[e = . _SIBFS_Pic_etat_monitor_b 0 -> -> -> -> 1 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 462: Cb44_StateCnt = 0 ;
+"462
+[e = _Cb44_StateCnt -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 463: Cb44_oShutoff = 1;
+"463
+[e = _Cb44_oShutoff -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 464: Cb44_oAlarm = 1;
+"464
+[e = _Cb44_oAlarm -> -> 1 `i `uc ]
+"465
+}
+[; ;BVH2_Appl_Layer.c: 465: }
+[e $U 25  ]
+"466
+[e :U 24 ]
+[; ;BVH2_Appl_Layer.c: 466: else {
+{
+[; ;BVH2_Appl_Layer.c: 467: Cb44_StateCnt = Cb44_StateCnt + 1 ;
+"467
+[e = _Cb44_StateCnt -> + -> _Cb44_StateCnt `ui -> -> 1 `i `ui `us ]
+"468
+}
+[e :U 25 ]
+"469
+}
+[e :U 23 ]
+[; ;BVH2_Appl_Layer.c: 468: }
+[; ;BVH2_Appl_Layer.c: 469: }
+[; ;BVH2_Appl_Layer.c: 472: break;
+"472
+[e $U 13  ]
+"473
+}
+[; ;BVH2_Appl_Layer.c: 473: }
+[; ;BVH2_Appl_Layer.c: 474: case (UInt8)2: {
+"474
+[e :U 26 ]
+{
+[; ;BVH2_Appl_Layer.c: 479: if (!(bool_mat_pic_etat)) {
+"479
+[e $ ! ! != -> _bool_mat_pic_etat `i -> -> -> 0 `i `uc `i 27  ]
+{
+[; ;BVH2_Appl_Layer.c: 481: SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) (UInt8)3;
+"481
+[e = . _SIBFS_Pic_etat_monitor_b 0 -> -> -> -> 3 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 482: Cb44_oShutoff = 0;
+"482
+[e = _Cb44_oShutoff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 483: Cb44_oAlarm = 0;
+"483
+[e = _Cb44_oAlarm -> -> 0 `i `uc ]
+"484
+}
+[; ;BVH2_Appl_Layer.c: 484: }
+[e $U 28  ]
+"485
+[e :U 27 ]
+[; ;BVH2_Appl_Layer.c: 485: else {
+{
+[; ;BVH2_Appl_Layer.c: 486: if (Cb44_StateCnt) {
+"486
+[e $ ! != -> _Cb44_StateCnt `ui -> -> -> 0 `i `us `ui 29  ]
+{
+[; ;BVH2_Appl_Layer.c: 488: SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) (UInt8)1;
+"488
+[e = . _SIBFS_Pic_etat_monitor_b 0 -> -> -> -> 1 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 489: Cb44_StateCnt = 0 ;
+"489
+[e = _Cb44_StateCnt -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 490: Cb44_oShutoff = 1;
+"490
+[e = _Cb44_oShutoff -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 491: Cb44_oAlarm = 1;
+"491
+[e = _Cb44_oAlarm -> -> 1 `i `uc ]
+"492
+}
+[; ;BVH2_Appl_Layer.c: 492: }
+[e $U 30  ]
+"493
+[e :U 29 ]
+[; ;BVH2_Appl_Layer.c: 493: else {
+{
+[; ;BVH2_Appl_Layer.c: 494: Cb44_StateCnt = Cb44_StateCnt + 1 ;
+"494
+[e = _Cb44_StateCnt -> + -> _Cb44_StateCnt `ui -> -> 1 `i `ui `us ]
+"495
+}
+[e :U 30 ]
+"496
+}
+[e :U 28 ]
+[; ;BVH2_Appl_Layer.c: 495: }
+[; ;BVH2_Appl_Layer.c: 496: }
+[; ;BVH2_Appl_Layer.c: 499: break;
+"499
+[e $U 13  ]
+"500
+}
+[; ;BVH2_Appl_Layer.c: 500: }
+[; ;BVH2_Appl_Layer.c: 501: case (UInt8)1: {
+"501
+[e :U 31 ]
+{
+[; ;BVH2_Appl_Layer.c: 506: if (!(bool_mat_pic_etat)) {
+"506
+[e $ ! ! != -> _bool_mat_pic_etat `i -> -> -> 0 `i `uc `i 32  ]
+{
+[; ;BVH2_Appl_Layer.c: 509: SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) (UInt8)6;
+"509
+[e = . _SIBFS_Pic_etat_monitor_b 0 -> -> -> -> 6 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 510: Cb44_StateCnt = 0 ;
+"510
+[e = _Cb44_StateCnt -> -> 0 `i `us ]
+"511
+}
+[e :U 32 ]
+[; ;BVH2_Appl_Layer.c: 511: }
+[; ;BVH2_Appl_Layer.c: 514: break;
+"514
+[e $U 13  ]
+"515
+}
+[; ;BVH2_Appl_Layer.c: 515: }
+[; ;BVH2_Appl_Layer.c: 516: default: {
+"516
+[e :U 33 ]
+{
+[; ;BVH2_Appl_Layer.c: 518: if (!(SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor)) {
+"518
+[e $ ! ! != -> . _SIBFS_Pic_etat_monitor_b 2 `i -> -> -> 0 `i `uc `i 34  ]
+{
+[; ;BVH2_Appl_Layer.c: 519: SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor = 1;
+"519
+[e = . _SIBFS_Pic_etat_monitor_b 2 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 523: if (ui8_ResetMatlab != 0) {
+"523
+[e $ ! != -> _ui8_ResetMatlab `i -> 0 `i 35  ]
+{
+[; ;BVH2_Appl_Layer.c: 525: SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) (UInt8)4;
+"525
+[e = . _SIBFS_Pic_etat_monitor_b 0 -> -> -> -> 4 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 526: Cb44_StateCnt = 0 ;
+"526
+[e = _Cb44_StateCnt -> -> 0 `i `us ]
+"527
+}
+[e :U 35 ]
+"528
+}
+[e :U 34 ]
+"529
+}
+"530
+}
+[; ;BVH2_Appl_Layer.c: 527: }
+[; ;BVH2_Appl_Layer.c: 528: }
+[; ;BVH2_Appl_Layer.c: 529: }
+[; ;BVH2_Appl_Layer.c: 530: }
+[e $U 13  ]
+"412
+[e :U 14 ]
+[e [\ . _SIBFS_Pic_etat_monitor_b 0 , $ -> -> 4 `i `uc 15
+ , $ -> -> 5 `i `uc 18
+ , $ -> -> 3 `i `uc 20
+ , $ -> -> 6 `i `uc 21
+ , $ -> -> 2 `i `uc 26
+ , $ -> -> 1 `i `uc 31
+ 33 ]
+"530
+[e :U 13 ]
+[; ;BVH2_Appl_Layer.c: 535: bool_PIC_Alarm = Cb44_oAlarm;
+"535
+[e = _bool_PIC_Alarm _Cb44_oAlarm ]
+[; ;BVH2_Appl_Layer.c: 538: Cb34_idPWM = ui8_PWM_dc_mat;
+"538
+[e = _Cb34_idPWM _ui8_PWM_dc_mat ]
+[; ;BVH2_Appl_Layer.c: 543: if (SIBFS_PWM_Detection_b.Cb35_PWMinput_handling) {
+"543
+[e $ ! != -> . _SIBFS_PWM_Detection_b 1 `i -> -> -> 0 `i `uc `i 36  ]
+{
+[; ;BVH2_Appl_Layer.c: 545: switch (SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns) {
+"545
+[e $U 38  ]
+{
+[; ;BVH2_Appl_Layer.c: 546: case (UInt8)3: {
+"546
+[e :U 39 ]
+{
+[; ;BVH2_Appl_Layer.c: 549: Cb34_PWM_Detection_node_fcn1();
+"549
+[e ( _Cb34_PWM_Detection_node_fcn1 ..  ]
+[; ;BVH2_Appl_Layer.c: 552: break;
+"552
+[e $U 37  ]
+"553
+}
+[; ;BVH2_Appl_Layer.c: 553: }
+[; ;BVH2_Appl_Layer.c: 554: case (UInt8)8: {
+"554
+[e :U 40 ]
+{
+[; ;BVH2_Appl_Layer.c: 557: Cb34_PWM_Detection_node_fcn1();
+"557
+[e ( _Cb34_PWM_Detection_node_fcn1 ..  ]
+[; ;BVH2_Appl_Layer.c: 561: break;
+"561
+[e $U 37  ]
+"562
+}
+[; ;BVH2_Appl_Layer.c: 562: }
+[; ;BVH2_Appl_Layer.c: 563: case (UInt8)4: {
+"563
+[e :U 41 ]
+{
+[; ;BVH2_Appl_Layer.c: 566: Cb34_PWM_Detection_node_fcn1();
+"566
+[e ( _Cb34_PWM_Detection_node_fcn1 ..  ]
+[; ;BVH2_Appl_Layer.c: 570: break;
+"570
+[e $U 37  ]
+"571
+}
+[; ;BVH2_Appl_Layer.c: 571: }
+[; ;BVH2_Appl_Layer.c: 572: case (UInt8)6: {
+"572
+[e :U 42 ]
+{
+[; ;BVH2_Appl_Layer.c: 574: Cb34_PWM_Detection_node_fcn1();
+"574
+[e ( _Cb34_PWM_Detection_node_fcn1 ..  ]
+[; ;BVH2_Appl_Layer.c: 577: break;
+"577
+[e $U 37  ]
+"578
+}
+[; ;BVH2_Appl_Layer.c: 578: }
+[; ;BVH2_Appl_Layer.c: 579: case (UInt8)7: {
+"579
+[e :U 43 ]
+{
+[; ;BVH2_Appl_Layer.c: 582: Cb34_PWM_Detection_node_fcn1();
+"582
+[e ( _Cb34_PWM_Detection_node_fcn1 ..  ]
+[; ;BVH2_Appl_Layer.c: 586: break;
+"586
+[e $U 37  ]
+"587
+}
+[; ;BVH2_Appl_Layer.c: 587: }
+[; ;BVH2_Appl_Layer.c: 588: case (UInt8)2: {
+"588
+[e :U 44 ]
+{
+[; ;BVH2_Appl_Layer.c: 590: Cb34_PWM_Detection_node_fcn1();
+"590
+[e ( _Cb34_PWM_Detection_node_fcn1 ..  ]
+[; ;BVH2_Appl_Layer.c: 593: break;
+"593
+[e $U 37  ]
+"594
+}
+[; ;BVH2_Appl_Layer.c: 594: }
+[; ;BVH2_Appl_Layer.c: 595: case (UInt8)5: {
+"595
+[e :U 45 ]
+{
+[; ;BVH2_Appl_Layer.c: 598: Cb34_PWM_Detection_node_fcn1();
+"598
+[e ( _Cb34_PWM_Detection_node_fcn1 ..  ]
+[; ;BVH2_Appl_Layer.c: 602: break;
+"602
+[e $U 37  ]
+"603
+}
+[; ;BVH2_Appl_Layer.c: 603: }
+[; ;BVH2_Appl_Layer.c: 604: case (UInt8)1: {
+"604
+[e :U 46 ]
+{
+[; ;BVH2_Appl_Layer.c: 606: Cb34_PWM_Detection_node_fcn1();
+"606
+[e ( _Cb34_PWM_Detection_node_fcn1 ..  ]
+[; ;BVH2_Appl_Layer.c: 609: break;
+"609
+[e $U 37  ]
+"610
+}
+"611
+}
+[; ;BVH2_Appl_Layer.c: 610: }
+[; ;BVH2_Appl_Layer.c: 611: }
+[e $U 37  ]
+"545
+[e :U 38 ]
+[e [\ . _SIBFS_PWM_Detection_b 0 , $ -> -> 3 `i `uc 39
+ , $ -> -> 8 `i `uc 40
+ , $ -> -> 4 `i `uc 41
+ , $ -> -> 6 `i `uc 42
+ , $ -> -> 7 `i `uc 43
+ , $ -> -> 2 `i `uc 44
+ , $ -> -> 5 `i `uc 45
+ , $ -> -> 1 `i `uc 46
+ 37 ]
+"611
+[e :U 37 ]
+"614
+}
+[; ;BVH2_Appl_Layer.c: 614: }
+[e $U 47  ]
+"615
+[e :U 36 ]
+[; ;BVH2_Appl_Layer.c: 615: else {
+{
+[; ;BVH2_Appl_Layer.c: 616: SIBFS_PWM_Detection_b.Cb35_PWMinput_handling = 1;
+"616
+[e = . _SIBFS_PWM_Detection_b 1 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 619: if (ui8_ResetMatlab == 1) {
+"619
+[e $ ! == -> _ui8_ResetMatlab `i -> 1 `i 48  ]
+{
+[; ;BVH2_Appl_Layer.c: 621: SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int) (UInt8)1;
+"621
+[e = . _SIBFS_PWM_Detection_b 0 -> -> -> -> 1 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 622: Cb34_odPumpOff = 1;
+"622
+[e = _Cb34_odPumpOff -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 623: Cb34_odFixedValueSel = 0;
+"623
+[e = _Cb34_odFixedValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 624: Cb34_odFixedLowValueSel = 0;
+"624
+[e = _Cb34_odFixedLowValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 625: Cb34_oPWM_SC_Alarm = 0;
+"625
+[e = _Cb34_oPWM_SC_Alarm -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 626: Cb34_oPWM_Alarm = 0;
+"626
+[e = _Cb34_oPWM_Alarm -> -> 0 `i `uc ]
+"627
+}
+[e :U 48 ]
+"628
+}
+[e :U 47 ]
+[; ;BVH2_Appl_Layer.c: 627: }
+[; ;BVH2_Appl_Layer.c: 628: }
+[; ;BVH2_Appl_Layer.c: 633: bool_PWMin_Freq_err_Alarm = Cb34_oPWM_SC_Alarm;
+"633
+[e = _bool_PWMin_Freq_err_Alarm _Cb34_oPWM_SC_Alarm ]
+[; ;BVH2_Appl_Layer.c: 638: if (SIBFS_UbatHandling_b.Cb57_Ubat_Handling) {
+"638
+[e $ ! != -> . _SIBFS_UbatHandling_b 1 `i -> -> -> 0 `i `uc `i 49  ]
+{
+[; ;BVH2_Appl_Layer.c: 642: if (SIBFS_UbatHandling_b.Cb58_SaturationHigh) {
+"642
+[e $ ! != -> . _SIBFS_UbatHandling_b 2 `i -> -> -> 0 `i `uc `i 50  ]
+{
+[; ;BVH2_Appl_Layer.c: 644: SIBFS_UbatHandling_b.Aux_sflag3 = 2 ;
+"644
+[e = . _SIBFS_UbatHandling_b 0 -> -> 2 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 647: if (((UInt8)ui8_BattVolt_mat) < 222) {
+"647
+[e $ ! < -> -> _ui8_BattVolt_mat `uc `i -> 222 `i 51  ]
+{
+[; ;BVH2_Appl_Layer.c: 648: Cb56_UbatHandling_node_fcn2();
+"648
+[e ( _Cb56_UbatHandling_node_fcn2 ..  ]
+"649
+}
+[e :U 51 ]
+"652
+}
+[; ;BVH2_Appl_Layer.c: 649: }
+[; ;BVH2_Appl_Layer.c: 652: }
+[e $U 52  ]
+"653
+[e :U 50 ]
+[; ;BVH2_Appl_Layer.c: 653: else {
+{
+[; ;BVH2_Appl_Layer.c: 655: if (SIBFS_UbatHandling_b.Cb59_SaturationLow) {
+"655
+[e $ ! != -> . _SIBFS_UbatHandling_b 3 `i -> -> -> 0 `i `uc `i 53  ]
+{
+[; ;BVH2_Appl_Layer.c: 657: SIBFS_UbatHandling_b.Aux_sflag3 = 3 ;
+"657
+[e = . _SIBFS_UbatHandling_b 0 -> -> 3 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 660: if (((UInt8)ui8_BattVolt_mat) > 49) {
+"660
+[e $ ! > -> -> _ui8_BattVolt_mat `uc `i -> 49 `i 54  ]
+{
+[; ;BVH2_Appl_Layer.c: 661: Cb56_UbatHandling_node_fcn2();
+"661
+[e ( _Cb56_UbatHandling_node_fcn2 ..  ]
+"662
+}
+[e :U 54 ]
+"665
+}
+[; ;BVH2_Appl_Layer.c: 662: }
+[; ;BVH2_Appl_Layer.c: 665: }
+[e $U 55  ]
+"666
+[e :U 53 ]
+[; ;BVH2_Appl_Layer.c: 666: else {
+{
+[; ;BVH2_Appl_Layer.c: 668: if (SIBFS_UbatHandling_b.Cb60_NormalUbat) {
+"668
+[e $ ! != -> . _SIBFS_UbatHandling_b 4 `i -> -> -> 0 `i `uc `i 56  ]
+{
+[; ;BVH2_Appl_Layer.c: 670: SIBFS_UbatHandling_b.Aux_sflag3 = 1 ;
+"670
+[e = . _SIBFS_UbatHandling_b 0 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 671: Cb56_UbatHandling_node_fcn2();
+"671
+[e ( _Cb56_UbatHandling_node_fcn2 ..  ]
+"674
+}
+[e :U 56 ]
+"675
+}
+[e :U 55 ]
+"676
+}
+[e :U 52 ]
+"679
+}
+[; ;BVH2_Appl_Layer.c: 674: }
+[; ;BVH2_Appl_Layer.c: 675: }
+[; ;BVH2_Appl_Layer.c: 676: }
+[; ;BVH2_Appl_Layer.c: 679: }
+[e $U 57  ]
+"680
+[e :U 49 ]
+[; ;BVH2_Appl_Layer.c: 680: else {
+{
+[; ;BVH2_Appl_Layer.c: 681: SIBFS_UbatHandling_b.Cb57_Ubat_Handling = 1;
+"681
+[e = . _SIBFS_UbatHandling_b 1 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 684: if (ui8_ResetMatlab == 1) {
+"684
+[e $ ! == -> _ui8_ResetMatlab `i -> 1 `i 58  ]
+{
+[; ;BVH2_Appl_Layer.c: 686: SIBFS_UbatHandling_b.Cb60_NormalUbat = 1;
+"686
+[e = . _SIBFS_UbatHandling_b 4 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 687: Cb56_odPumpOff = 0;
+"687
+[e = _Cb56_odPumpOff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 688: Cb56_odFixedValueSel = 0;
+"688
+[e = _Cb56_odFixedValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 689: Cb56_oUbat_Alarm_High = 0;
+"689
+[e = _Cb56_oUbat_Alarm_High -> -> 0 `i `uc ]
+"690
+}
+[e :U 58 ]
+"691
+}
+[e :U 57 ]
+[; ;BVH2_Appl_Layer.c: 690: }
+[; ;BVH2_Appl_Layer.c: 691: }
+[; ;BVH2_Appl_Layer.c: 694: Sb1_Logical_Operator2 = Cb34_odPumpOff && (!(Cb56_odFixedValueSel));
+"694
+[e = _Sb1_Logical_Operator2 -> -> && != -> _Cb34_odPumpOff `i -> -> -> 0 `i `uc `i ! != -> _Cb56_odFixedValueSel `i -> -> -> 0 `i `uc `i `i `uc ]
+[; ;BVH2_Appl_Layer.c: 699: if (SIBFS_Temperature_Alarm_b.Cb52_CntOverTemp) {
+"699
+[e $ ! != -> . F362 1 `i -> -> -> 0 `i `uc `i 59  ]
+{
+[; ;BVH2_Appl_Layer.c: 701: if (Cb51_Counter > 80) {
+"701
+[e $ ! > -> F356 `i -> 80 `i 60  ]
+{
+[; ;BVH2_Appl_Layer.c: 704: SIBFS_Temperature_Alarm_b.Cb52_CntOverTemp = 0;
+"704
+[e = . F362 1 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 705: SIBFS_Temperature_Alarm_b.Cb54_greenTemp = 1;
+"705
+[e = . F362 3 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 706: Cb51_oTempRedAlarm = 0;
+"706
+[e = F378 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 707: Cb51_oTempAlarm = 0;
+"707
+[e = F377 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 708: Cb51_odPumpOff = 0;
+"708
+[e = F379 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 709: Cb51_Counter = 0 ;
+"709
+[e = F356 -> -> 0 `i `uc ]
+"710
+}
+[; ;BVH2_Appl_Layer.c: 710: }
+[e $U 61  ]
+"711
+[e :U 60 ]
+[; ;BVH2_Appl_Layer.c: 711: else {
+{
+[; ;BVH2_Appl_Layer.c: 712: Cb51_Counter = Cb51_Counter + 1 ;
+"712
+[e = F356 -> + -> F356 `i -> 1 `i `uc ]
+"713
+}
+[e :U 61 ]
+"716
+}
+[; ;BVH2_Appl_Layer.c: 713: }
+[; ;BVH2_Appl_Layer.c: 716: }
+[e $U 62  ]
+"717
+[e :U 59 ]
+[; ;BVH2_Appl_Layer.c: 717: else {
+{
+[; ;BVH2_Appl_Layer.c: 719: if (SIBFS_Temperature_Alarm_b.Cb53_reset) {
+"719
+[e $ ! != -> . F362 2 `i -> -> -> 0 `i `uc `i 63  ]
+{
+[; ;BVH2_Appl_Layer.c: 724: SIBFS_Temperature_Alarm_b.Cb53_reset = 0;
+"724
+[e = . F362 2 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 725: SIBFS_Temperature_Alarm_b.Cb52_CntOverTemp = 1;
+"725
+[e = . F362 1 -> -> 1 `i `uc ]
+"728
+}
+[; ;BVH2_Appl_Layer.c: 728: }
+[e $U 64  ]
+"729
+[e :U 63 ]
+[; ;BVH2_Appl_Layer.c: 729: else {
+{
+[; ;BVH2_Appl_Layer.c: 731: if (SIBFS_Temperature_Alarm_b.Cb54_greenTemp) {
+"731
+[e $ ! != -> . F362 3 `i -> -> -> 0 `i `uc `i 65  ]
+{
+[; ;BVH2_Appl_Layer.c: 735: if (ui16_mat_inpTemp < 72) {
+"735
+[e $ ! < -> _ui16_mat_inpTemp `ui -> -> 72 `i `ui 66  ]
+{
+[; ;BVH2_Appl_Layer.c: 738: SIBFS_Temperature_Alarm_b.Cb54_greenTemp = 0;
+"738
+[e = . F362 3 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 739: SIBFS_Temperature_Alarm_b.Cb55_redTemp = 1;
+"739
+[e = . F362 4 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 740: Cb51_oTempRedAlarm = 1;
+"740
+[e = F378 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 741: Cb51_oTempAlarm = 1;
+"741
+[e = F377 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 744: Cb51_odPumpOff = 0;
+"744
+[e = F379 -> -> 0 `i `uc ]
+"745
+}
+[e :U 66 ]
+"748
+}
+[; ;BVH2_Appl_Layer.c: 745: }
+[; ;BVH2_Appl_Layer.c: 748: }
+[e $U 67  ]
+"749
+[e :U 65 ]
+[; ;BVH2_Appl_Layer.c: 749: else {
+{
+[; ;BVH2_Appl_Layer.c: 751: if (SIBFS_Temperature_Alarm_b.Cb55_redTemp) {
+"751
+[e $ ! != -> . F362 4 `i -> -> -> 0 `i `uc `i 68  ]
+{
+[; ;BVH2_Appl_Layer.c: 755: if (ui16_mat_inpTemp > 185) {
+"755
+[e $ ! > -> _ui16_mat_inpTemp `ui -> -> 185 `i `ui 69  ]
+{
+[; ;BVH2_Appl_Layer.c: 758: SIBFS_Temperature_Alarm_b.Cb55_redTemp = 0;
+"758
+[e = . F362 4 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 759: SIBFS_Temperature_Alarm_b.Cb54_greenTemp = 1;
+"759
+[e = . F362 3 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 760: Cb51_oTempRedAlarm = 0;
+"760
+[e = F378 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 761: Cb51_oTempAlarm = 0;
+"761
+[e = F377 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 762: Cb51_odPumpOff = 0;
+"762
+[e = F379 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 763: Cb51_Counter = 0 ;
+"763
+[e = F356 -> -> 0 `i `uc ]
+"764
+}
+[e :U 69 ]
+"767
+}
+[; ;BVH2_Appl_Layer.c: 764: }
+[; ;BVH2_Appl_Layer.c: 767: }
+[e $U 70  ]
+"768
+[e :U 68 ]
+[; ;BVH2_Appl_Layer.c: 768: else {
+{
+[; ;BVH2_Appl_Layer.c: 770: if (!(SIBFS_Temperature_Alarm_b.Cb51_Temperature_Alarm)) {
+"770
+[e $ ! ! != -> . F362 0 `i -> -> -> 0 `i `uc `i 71  ]
+{
+[; ;BVH2_Appl_Layer.c: 771: SIBFS_Temperature_Alarm_b.Cb51_Temperature_Alarm = 1;
+"771
+[e = . F362 0 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 775: if (ui8_ResetMatlab != 0) {
+"775
+[e $ ! != -> _ui8_ResetMatlab `i -> 0 `i 72  ]
+{
+[; ;BVH2_Appl_Layer.c: 777: SIBFS_Temperature_Alarm_b.Cb53_reset = 1;
+"777
+[e = . F362 2 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 778: Cb51_Counter = 0 ;
+"778
+[e = F356 -> -> 0 `i `uc ]
+"779
+}
+[e :U 72 ]
+"780
+}
+[e :U 71 ]
+"781
+}
+[e :U 70 ]
+"782
+}
+[e :U 67 ]
+"783
+}
+[e :U 64 ]
+"784
+}
+[e :U 62 ]
+[; ;BVH2_Appl_Layer.c: 779: }
+[; ;BVH2_Appl_Layer.c: 780: }
+[; ;BVH2_Appl_Layer.c: 781: }
+[; ;BVH2_Appl_Layer.c: 782: }
+[; ;BVH2_Appl_Layer.c: 783: }
+[; ;BVH2_Appl_Layer.c: 784: }
+[; ;BVH2_Appl_Layer.c: 789: switch (SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns) {
+"789
+[e $U 74  ]
+{
+[; ;BVH2_Appl_Layer.c: 790: case (UInt8)6: {
+"790
+[e :U 75 ]
+{
+[; ;BVH2_Appl_Layer.c: 792: if (Cb1_StateCnt > 50) {
+"792
+[e $ ! > -> _Cb1_StateCnt `ui -> -> 50 `i `ui 76  ]
+{
+[; ;BVH2_Appl_Layer.c: 795: SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 796: (UInt8)5;
+"796
+[e = . _SIBFS_Current_Analysis_High_b 0 -> -> -> -> 5 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 797: Cb1_oShutoff = 0;
+"797
+[e = _Cb1_oShutoff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 798: Cb1_oCurrentAlarm = 0;
+"798
+[e = _Cb1_oCurrentAlarm -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 799: Cb1_RestartCounter = 0 ;
+"799
+[e = _Cb1_RestartCounter -> -> 0 `i `uc ]
+"800
+}
+[; ;BVH2_Appl_Layer.c: 800: }
+[e $U 77  ]
+"801
+[e :U 76 ]
+[; ;BVH2_Appl_Layer.c: 801: else {
+{
+[; ;BVH2_Appl_Layer.c: 802: Cb1_StateCnt = Cb1_StateCnt + 1 ;
+"802
+[e = _Cb1_StateCnt -> + -> _Cb1_StateCnt `ui -> -> 1 `i `ui `us ]
+"803
+}
+[e :U 77 ]
+[; ;BVH2_Appl_Layer.c: 803: }
+[; ;BVH2_Appl_Layer.c: 806: break;
+"806
+[e $U 73  ]
+"807
+}
+[; ;BVH2_Appl_Layer.c: 807: }
+[; ;BVH2_Appl_Layer.c: 808: case (UInt8)3: {
+"808
+[e :U 78 ]
+{
+[; ;BVH2_Appl_Layer.c: 810: Cb1_Current_An___High_node_fcn1();
+"810
+[e ( _Cb1_Current_An___High_node_fcn1 ..  ]
+[; ;BVH2_Appl_Layer.c: 811: if (SIBFS_Current_Analysis_High_b.Cb1_glflag <= 2) {
+"811
+[e $ ! <= -> . _SIBFS_Current_Analysis_High_b 1 `i -> 2 `i 79  ]
+{
+[; ;BVH2_Appl_Layer.c: 812: Cb1_StateCnt = Cb1_StateCnt + 1 ;
+"812
+[e = _Cb1_StateCnt -> + -> _Cb1_StateCnt `ui -> -> 1 `i `ui `us ]
+"813
+}
+[e :U 79 ]
+[; ;BVH2_Appl_Layer.c: 813: }
+[; ;BVH2_Appl_Layer.c: 816: break;
+"816
+[e $U 73  ]
+"817
+}
+[; ;BVH2_Appl_Layer.c: 817: }
+[; ;BVH2_Appl_Layer.c: 818: case (UInt8)7: {
+"818
+[e :U 80 ]
+{
+[; ;BVH2_Appl_Layer.c: 820: if (Cb1_RestartCounter < 10) {
+"820
+[e $ ! < -> _Cb1_RestartCounter `i -> 10 `i 81  ]
+{
+[; ;BVH2_Appl_Layer.c: 823: SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 824: (UInt8)3;
+"824
+[e = . _SIBFS_Current_Analysis_High_b 0 -> -> -> -> 3 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 825: Cb1_oShutoff = 0;
+"825
+[e = _Cb1_oShutoff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 826: Cb1_oCurrentAlarm = 1;
+"826
+[e = _Cb1_oCurrentAlarm -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 827: Cb1_StateCnt = 0 ;
+"827
+[e = _Cb1_StateCnt -> -> 0 `i `us ]
+"828
+}
+[e :U 81 ]
+[; ;BVH2_Appl_Layer.c: 828: }
+[; ;BVH2_Appl_Layer.c: 831: break;
+"831
+[e $U 73  ]
+"832
+}
+[; ;BVH2_Appl_Layer.c: 832: }
+[; ;BVH2_Appl_Layer.c: 833: case (UInt8)5: {
+"833
+[e :U 82 ]
+{
+[; ;BVH2_Appl_Layer.c: 835: Cb1_Current_An___High_node_fcn1();
+"835
+[e ( _Cb1_Current_An___High_node_fcn1 ..  ]
+[; ;BVH2_Appl_Layer.c: 838: break;
+"838
+[e $U 73  ]
+"839
+}
+[; ;BVH2_Appl_Layer.c: 839: }
+[; ;BVH2_Appl_Layer.c: 840: case (UInt8)4: {
+"840
+[e :U 83 ]
+{
+[; ;BVH2_Appl_Layer.c: 842: if (Cb1_StateCnt > 200) {
+"842
+[e $ ! > -> _Cb1_StateCnt `ui -> -> 200 `i `ui 84  ]
+{
+[; ;BVH2_Appl_Layer.c: 844: SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 845: (UInt8)7;
+"845
+[e = . _SIBFS_Current_Analysis_High_b 0 -> -> -> -> 7 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 846: Cb1_RestartCounter = Cb1_RestartCounter + 1 ;
+"846
+[e = _Cb1_RestartCounter -> + -> _Cb1_RestartCounter `i -> 1 `i `uc ]
+"847
+}
+[; ;BVH2_Appl_Layer.c: 847: }
+[e $U 85  ]
+"848
+[e :U 84 ]
+[; ;BVH2_Appl_Layer.c: 848: else {
+{
+[; ;BVH2_Appl_Layer.c: 851: if (bool_mat_currAlarm_bldc) {
+"851
+[e $ ! != -> _bool_mat_currAlarm_bldc `i -> -> -> 0 `i `uc `i 86  ]
+{
+[; ;BVH2_Appl_Layer.c: 853: SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 854: (UInt8)1;
+"854
+[e = . _SIBFS_Current_Analysis_High_b 0 -> -> -> -> 1 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 855: Cb1_StateCnt = 0 ;
+"855
+[e = _Cb1_StateCnt -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 856: Cb1_oShutoff = 1;
+"856
+[e = _Cb1_oShutoff -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 857: Cb1_oCurrentAlarm = 1;
+"857
+[e = _Cb1_oCurrentAlarm -> -> 1 `i `uc ]
+"858
+}
+[; ;BVH2_Appl_Layer.c: 858: }
+[e $U 87  ]
+"859
+[e :U 86 ]
+[; ;BVH2_Appl_Layer.c: 859: else {
+{
+[; ;BVH2_Appl_Layer.c: 860: Cb1_StateCnt = Cb1_StateCnt + 1 ;
+"860
+[e = _Cb1_StateCnt -> + -> _Cb1_StateCnt `ui -> -> 1 `i `ui `us ]
+"861
+}
+[e :U 87 ]
+"862
+}
+[e :U 85 ]
+[; ;BVH2_Appl_Layer.c: 861: }
+[; ;BVH2_Appl_Layer.c: 862: }
+[; ;BVH2_Appl_Layer.c: 865: break;
+"865
+[e $U 73  ]
+"866
+}
+[; ;BVH2_Appl_Layer.c: 866: }
+[; ;BVH2_Appl_Layer.c: 867: case (UInt8)2: {
+"867
+[e :U 88 ]
+{
+[; ;BVH2_Appl_Layer.c: 872: if (!(bool_mat_currAlarm_bldc)) {
+"872
+[e $ ! ! != -> _bool_mat_currAlarm_bldc `i -> -> -> 0 `i `uc `i 89  ]
+{
+[; ;BVH2_Appl_Layer.c: 874: SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 875: (UInt8)3;
+"875
+[e = . _SIBFS_Current_Analysis_High_b 0 -> -> -> -> 3 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 876: Cb1_oShutoff = 0;
+"876
+[e = _Cb1_oShutoff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 877: Cb1_oCurrentAlarm = 1;
+"877
+[e = _Cb1_oCurrentAlarm -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 878: Cb1_StateCnt = 0 ;
+"878
+[e = _Cb1_StateCnt -> -> 0 `i `us ]
+"879
+}
+[; ;BVH2_Appl_Layer.c: 879: }
+[e $U 90  ]
+"880
+[e :U 89 ]
+[; ;BVH2_Appl_Layer.c: 880: else {
+{
+[; ;BVH2_Appl_Layer.c: 881: if (Cb1_StateCnt > 1) {
+"881
+[e $ ! > -> _Cb1_StateCnt `ui -> -> 1 `i `ui 91  ]
+{
+[; ;BVH2_Appl_Layer.c: 883: SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 884: (UInt8)1;
+"884
+[e = . _SIBFS_Current_Analysis_High_b 0 -> -> -> -> 1 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 885: Cb1_StateCnt = 0 ;
+"885
+[e = _Cb1_StateCnt -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 886: Cb1_oShutoff = 1;
+"886
+[e = _Cb1_oShutoff -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 887: Cb1_oCurrentAlarm = 1;
+"887
+[e = _Cb1_oCurrentAlarm -> -> 1 `i `uc ]
+"888
+}
+[; ;BVH2_Appl_Layer.c: 888: }
+[e $U 92  ]
+"889
+[e :U 91 ]
+[; ;BVH2_Appl_Layer.c: 889: else {
+{
+[; ;BVH2_Appl_Layer.c: 890: Cb1_StateCnt = Cb1_StateCnt + 1 ;
+"890
+[e = _Cb1_StateCnt -> + -> _Cb1_StateCnt `ui -> -> 1 `i `ui `us ]
+"891
+}
+[e :U 92 ]
+"892
+}
+[e :U 90 ]
+[; ;BVH2_Appl_Layer.c: 891: }
+[; ;BVH2_Appl_Layer.c: 892: }
+[; ;BVH2_Appl_Layer.c: 895: break;
+"895
+[e $U 73  ]
+"896
+}
+[; ;BVH2_Appl_Layer.c: 896: }
+[; ;BVH2_Appl_Layer.c: 897: case (UInt8)1: {
+"897
+[e :U 93 ]
+{
+[; ;BVH2_Appl_Layer.c: 902: if (!(bool_mat_currAlarm_bldc)) {
+"902
+[e $ ! ! != -> _bool_mat_currAlarm_bldc `i -> -> -> 0 `i `uc `i 94  ]
+{
+[; ;BVH2_Appl_Layer.c: 905: SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int) (UInt8)4;
+"905
+[e = . _SIBFS_Current_Analysis_High_b 0 -> -> -> -> 4 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 906: Cb1_StateCnt = 0 ;
+"906
+[e = _Cb1_StateCnt -> -> 0 `i `us ]
+"907
+}
+[; ;BVH2_Appl_Layer.c: 907: }
+[e $U 95  ]
+"908
+[e :U 94 ]
+[; ;BVH2_Appl_Layer.c: 908: else {
+{
+[; ;BVH2_Appl_Layer.c: 909: Cb1_StateCnt = Cb1_StateCnt + 1 ;
+"909
+[e = _Cb1_StateCnt -> + -> _Cb1_StateCnt `ui -> -> 1 `i `ui `us ]
+"910
+}
+[e :U 95 ]
+[; ;BVH2_Appl_Layer.c: 910: }
+[; ;BVH2_Appl_Layer.c: 913: break;
+"913
+[e $U 73  ]
+"914
+}
+[; ;BVH2_Appl_Layer.c: 914: }
+[; ;BVH2_Appl_Layer.c: 915: default: {
+"915
+[e :U 96 ]
+{
+[; ;BVH2_Appl_Layer.c: 917: if (!(SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High)) {
+"917
+[e $ ! ! != -> . _SIBFS_Current_Analysis_High_b 2 `i -> -> -> 0 `i `uc `i 97  ]
+{
+[; ;BVH2_Appl_Layer.c: 918: SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High = 1;
+"918
+[e = . _SIBFS_Current_Analysis_High_b 2 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 922: if (ui8_ResetMatlab != 0) {
+"922
+[e $ ! != -> _ui8_ResetMatlab `i -> 0 `i 98  ]
+{
+[; ;BVH2_Appl_Layer.c: 924: SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 925: (UInt8)6;
+"925
+[e = . _SIBFS_Current_Analysis_High_b 0 -> -> -> -> 6 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 926: Cb1_StateCnt = 0 ;
+"926
+[e = _Cb1_StateCnt -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 927: Cb1_RestartCounter = 0 ;
+"927
+[e = _Cb1_RestartCounter -> -> 0 `i `uc ]
+"928
+}
+[e :U 98 ]
+"929
+}
+[e :U 97 ]
+"930
+}
+"931
+}
+[; ;BVH2_Appl_Layer.c: 928: }
+[; ;BVH2_Appl_Layer.c: 929: }
+[; ;BVH2_Appl_Layer.c: 930: }
+[; ;BVH2_Appl_Layer.c: 931: }
+[e $U 73  ]
+"789
+[e :U 74 ]
+[e [\ . _SIBFS_Current_Analysis_High_b 0 , $ -> -> 6 `i `uc 75
+ , $ -> -> 3 `i `uc 78
+ , $ -> -> 7 `i `uc 80
+ , $ -> -> 5 `i `uc 82
+ , $ -> -> 4 `i `uc 83
+ , $ -> -> 2 `i `uc 88
+ , $ -> -> 1 `i `uc 93
+ 96 ]
+"931
+[e :U 73 ]
+[; ;BVH2_Appl_Layer.c: 934: Sb1_Logical_Operator1 = Sb1_Logical_Operator2 || Cb56_odPumpOff || Cb51_odPumpOff ||
+[; ;BVH2_Appl_Layer.c: 935: Cb1_oShutoff || Cb44_oShutoff;
+"935
+[e = _Sb1_Logical_Operator1 -> -> || || || || != -> _Sb1_Logical_Operator2 `i -> -> -> 0 `i `uc `i != -> _Cb56_odPumpOff `i -> -> -> 0 `i `uc `i != -> F379 `i -> -> -> 0 `i `uc `i != -> _Cb1_oShutoff `i -> -> -> 0 `i `uc `i != -> _Cb44_oShutoff `i -> -> -> 0 `i `uc `i `i `uc ]
+[; ;BVH2_Appl_Layer.c: 938: Cb24_Reset = ui8_ResetMatlab != 0 ;
+"938
+[e = _Cb24_Reset -> -> != -> _ui8_ResetMatlab `i -> 0 `i `i `uc ]
+[; ;BVH2_Appl_Layer.c: 943: if (SIBFS_Motor_Stalled_b.Cb25_Motor_stalled_Statemachine) {
+"943
+[e $ ! != -> . F361 3 `i -> -> -> 0 `i `uc `i 99  ]
+{
+[; ;BVH2_Appl_Layer.c: 949: if (Sb1_Logical_Operator1 || Cb24_Reset) {
+"949
+[e $ ! || != -> _Sb1_Logical_Operator1 `i -> -> -> 0 `i `uc `i != -> _Cb24_Reset `i -> -> -> 0 `i `uc `i 100  ]
+{
+[; ;BVH2_Appl_Layer.c: 952: switch (SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns) {
+"952
+[e $U 102  ]
+{
+[; ;BVH2_Appl_Layer.c: 953: case (UInt8)3: {
+"953
+[e :U 103 ]
+{
+[; ;BVH2_Appl_Layer.c: 954: Cb24_StateCnt = 0 ;
+"954
+[e = F354 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 955: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = 0 ;
+"955
+[e = . F361 0 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 956: break;
+"956
+[e $U 101  ]
+"957
+}
+[; ;BVH2_Appl_Layer.c: 957: }
+[; ;BVH2_Appl_Layer.c: 958: case (UInt8)2: {
+"958
+[e :U 104 ]
+{
+[; ;BVH2_Appl_Layer.c: 959: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = 0 ;
+"959
+[e = . F361 0 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 960: break;
+"960
+[e $U 101  ]
+"961
+}
+[; ;BVH2_Appl_Layer.c: 961: }
+[; ;BVH2_Appl_Layer.c: 962: case (UInt8)1: {
+"962
+[e :U 105 ]
+{
+[; ;BVH2_Appl_Layer.c: 963: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = 0 ;
+"963
+[e = . F361 0 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 964: break;
+"964
+[e $U 101  ]
+"965
+}
+[; ;BVH2_Appl_Layer.c: 965: }
+[; ;BVH2_Appl_Layer.c: 966: case (UInt8)5: {
+"966
+[e :U 106 ]
+{
+[; ;BVH2_Appl_Layer.c: 967: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = 0 ;
+"967
+[e = . F361 0 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 968: break;
+"968
+[e $U 101  ]
+"969
+}
+[; ;BVH2_Appl_Layer.c: 969: }
+[; ;BVH2_Appl_Layer.c: 970: case (UInt8)6: {
+"970
+[e :U 107 ]
+{
+[; ;BVH2_Appl_Layer.c: 971: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = 0 ;
+"971
+[e = . F361 0 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 972: break;
+"972
+[e $U 101  ]
+"973
+}
+[; ;BVH2_Appl_Layer.c: 973: }
+[; ;BVH2_Appl_Layer.c: 974: case (UInt8)4: {
+"974
+[e :U 108 ]
+{
+[; ;BVH2_Appl_Layer.c: 975: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = 0 ;
+"975
+[e = . F361 0 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 976: break;
+"976
+[e $U 101  ]
+"977
+}
+"978
+}
+[; ;BVH2_Appl_Layer.c: 977: }
+[; ;BVH2_Appl_Layer.c: 978: }
+[e $U 101  ]
+"952
+[e :U 102 ]
+[e [\ . F361 0 , $ -> -> 3 `i `uc 103
+ , $ -> -> 2 `i `uc 104
+ , $ -> -> 1 `i `uc 105
+ , $ -> -> 5 `i `uc 106
+ , $ -> -> 6 `i `uc 107
+ , $ -> -> 4 `i `uc 108
+ 101 ]
+"978
+[e :U 101 ]
+[; ;BVH2_Appl_Layer.c: 979: SIBFS_Motor_Stalled_b.Cb25_Motor_stalled_Statemachine = 0;
+"979
+[e = . F361 3 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 980: SIBFS_Motor_Stalled_b.Cb32_default = 1;
+"980
+[e = . F361 4 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 981: Cb24_oMotorStalled = 0;
+"981
+[e = F375 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 982: Cb24_oStalledAlarm = 0;
+"982
+[e = F376 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 983: Cb24_RestartCounter = 0 ;
+"983
+[e = F355 -> -> 0 `i `uc ]
+"984
+}
+[; ;BVH2_Appl_Layer.c: 984: }
+[e $U 109  ]
+"985
+[e :U 100 ]
+[; ;BVH2_Appl_Layer.c: 985: else {
+{
+[; ;BVH2_Appl_Layer.c: 986: switch (SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns) {
+"986
+[e $U 111  ]
+{
+[; ;BVH2_Appl_Layer.c: 987: case (UInt8)3: {
+"987
+[e :U 112 ]
+{
+[; ;BVH2_Appl_Layer.c: 990: if (Cb24_StateCnt) {
+"990
+[e $ ! != -> F354 `ui -> -> -> 0 `i `us `ui 113  ]
+{
+[; ;BVH2_Appl_Layer.c: 994: Cb24_StateCnt = 0 ;
+"994
+[e = F354 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 995: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 996: (UInt8)2;
+"996
+[e = . F361 0 -> -> -> -> 2 `i `uc `ui `uc ]
+"997
+}
+[; ;BVH2_Appl_Layer.c: 997: }
+[e $U 114  ]
+"998
+[e :U 113 ]
+[; ;BVH2_Appl_Layer.c: 998: else {
+{
+[; ;BVH2_Appl_Layer.c: 999: Cb24_StateCnt = Cb24_StateCnt + 1 ;
+"999
+[e = F354 -> + -> F354 `ui -> -> 1 `i `ui `us ]
+"1000
+}
+[e :U 114 ]
+[; ;BVH2_Appl_Layer.c: 1000: }
+[; ;BVH2_Appl_Layer.c: 1004: break;
+"1004
+[e $U 110  ]
+"1005
+}
+[; ;BVH2_Appl_Layer.c: 1005: }
+[; ;BVH2_Appl_Layer.c: 1006: case (UInt8)2: {
+"1006
+[e :U 115 ]
+{
+[; ;BVH2_Appl_Layer.c: 1009: if (Cb24_StateCnt > 1000) {
+"1009
+[e $ ! > -> F354 `ui -> -> 1000 `i `ui 116  ]
+{
+[; ;BVH2_Appl_Layer.c: 1012: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1013: (UInt8)5;
+"1013
+[e = . F361 0 -> -> -> -> 5 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1014: Cb24_StateCnt = 0 ;
+"1014
+[e = F354 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1015: Cb24_BadCnt = 0 ;
+"1015
+[e = F353 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1016: Cb24_oMotorStalled = 0;
+"1016
+[e = F375 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1019: Cb24_oStalledAlarm = 0;
+"1019
+[e = F376 -> -> 0 `i `uc ]
+"1020
+}
+[; ;BVH2_Appl_Layer.c: 1020: }
+[e $U 117  ]
+"1021
+[e :U 116 ]
+[; ;BVH2_Appl_Layer.c: 1021: else {
+{
+[; ;BVH2_Appl_Layer.c: 1024: if ((ui16_Speed_mat < 5) || (ui16_Speed_mat > 300)) {
+"1024
+[e $ ! || < -> _ui16_Speed_mat `ui -> -> 5 `i `ui > -> _ui16_Speed_mat `ui -> -> 300 `i `ui 118  ]
+{
+[; ;BVH2_Appl_Layer.c: 1027: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1028: (UInt8)1;
+"1028
+[e = . F361 0 -> -> -> -> 1 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1029: Cb24_oStalledAlarm = 0;
+"1029
+[e = F376 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1030: Cb24_StateCnt = 0 ;
+"1030
+[e = F354 -> -> 0 `i `us ]
+"1031
+}
+[; ;BVH2_Appl_Layer.c: 1031: }
+[e $U 119  ]
+"1032
+[e :U 118 ]
+[; ;BVH2_Appl_Layer.c: 1032: else {
+{
+[; ;BVH2_Appl_Layer.c: 1033: Cb24_StateCnt = Cb24_StateCnt + 1 ;
+"1033
+[e = F354 -> + -> F354 `ui -> -> 1 `i `ui `us ]
+"1034
+}
+[e :U 119 ]
+"1035
+}
+[e :U 117 ]
+[; ;BVH2_Appl_Layer.c: 1034: }
+[; ;BVH2_Appl_Layer.c: 1035: }
+[; ;BVH2_Appl_Layer.c: 1039: break;
+"1039
+[e $U 110  ]
+"1040
+}
+[; ;BVH2_Appl_Layer.c: 1040: }
+[; ;BVH2_Appl_Layer.c: 1041: case (UInt8)1: {
+"1041
+[e :U 120 ]
+{
+[; ;BVH2_Appl_Layer.c: 1044: if (Cb24_BadCnt > 100) {
+"1044
+[e $ ! > -> F353 `ui -> -> 100 `i `ui 121  ]
+{
+[; ;BVH2_Appl_Layer.c: 1047: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1048: (UInt8)4;
+"1048
+[e = . F361 0 -> -> -> -> 4 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1049: Cb24_StateCnt = 0 ;
+"1049
+[e = F354 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1050: Cb24_oMotorStalled = 1;
+"1050
+[e = F375 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1051: Cb24_oStalledAlarm = 1;
+"1051
+[e = F376 -> -> 1 `i `uc ]
+"1052
+}
+[; ;BVH2_Appl_Layer.c: 1052: }
+[e $U 122  ]
+"1053
+[e :U 121 ]
+[; ;BVH2_Appl_Layer.c: 1053: else {
+{
+[; ;BVH2_Appl_Layer.c: 1056: if ((ui16_Speed_mat >= 5) && (ui16_Speed_mat <= 300)) {
+"1056
+[e $ ! && >= -> _ui16_Speed_mat `ui -> -> 5 `i `ui <= -> _ui16_Speed_mat `ui -> -> 300 `i `ui 123  ]
+{
+[; ;BVH2_Appl_Layer.c: 1059: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1060: (UInt8)2;
+"1060
+[e = . F361 0 -> -> -> -> 2 `i `uc `ui `uc ]
+"1061
+}
+[; ;BVH2_Appl_Layer.c: 1061: }
+[e $U 124  ]
+"1062
+[e :U 123 ]
+[; ;BVH2_Appl_Layer.c: 1062: else {
+{
+[; ;BVH2_Appl_Layer.c: 1063: Cb24_BadCnt = Cb24_BadCnt + 1 ;
+"1063
+[e = F353 -> + -> F353 `ui -> -> 1 `i `ui `us ]
+[; ;BVH2_Appl_Layer.c: 1064: Cb24_StateCnt = Cb24_StateCnt + 1 ;
+"1064
+[e = F354 -> + -> F354 `ui -> -> 1 `i `ui `us ]
+"1065
+}
+[e :U 124 ]
+"1066
+}
+[e :U 122 ]
+[; ;BVH2_Appl_Layer.c: 1065: }
+[; ;BVH2_Appl_Layer.c: 1066: }
+[; ;BVH2_Appl_Layer.c: 1070: break;
+"1070
+[e $U 110  ]
+"1071
+}
+[; ;BVH2_Appl_Layer.c: 1071: }
+[; ;BVH2_Appl_Layer.c: 1072: case (UInt8)5: {
+"1072
+[e :U 125 ]
+{
+[; ;BVH2_Appl_Layer.c: 1079: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1080: (UInt8)2;
+"1080
+[e = . F361 0 -> -> -> -> 2 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1084: break;
+"1084
+[e $U 110  ]
+"1085
+}
+[; ;BVH2_Appl_Layer.c: 1085: }
+[; ;BVH2_Appl_Layer.c: 1086: case (UInt8)6: {
+"1086
+[e :U 126 ]
+{
+[; ;BVH2_Appl_Layer.c: 1089: if (Cb24_StateCnt > 10) {
+"1089
+[e $ ! > -> F354 `ui -> -> 10 `i `ui 127  ]
+{
+[; ;BVH2_Appl_Layer.c: 1090: if (Cb24_RestartCounter == 10) {
+"1090
+[e $ ! == -> F355 `i -> 10 `i 128  ]
+{
+[; ;BVH2_Appl_Layer.c: 1092: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = 0 ;
+"1092
+[e = . F361 0 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1093: SIBFS_Motor_Stalled_b.Cb25_Motor_stalled_Statemachine = 0;
+"1093
+[e = . F361 3 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1094: SIBFS_Motor_Stalled_b.Cb33_Stop = 1;
+"1094
+[e = . F361 5 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1095: Cb24_oStalledAlarm = 1;
+"1095
+[e = F376 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1096: Cb24_oMotorStalled = 1;
+"1096
+[e = F375 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1097: SIBFS_Motor_Stalled_b.Cb24_glflag = 3 ;
+"1097
+[e = . F361 1 -> -> 3 `i `uc ]
+"1098
+}
+[; ;BVH2_Appl_Layer.c: 1098: }
+[e $U 129  ]
+"1099
+[e :U 128 ]
+[; ;BVH2_Appl_Layer.c: 1099: else {
+{
+[; ;BVH2_Appl_Layer.c: 1102: if ((ui16_Speed_mat < 5) || (ui16_Speed_mat > 300)) {
+"1102
+[e $ ! || < -> _ui16_Speed_mat `ui -> -> 5 `i `ui > -> _ui16_Speed_mat `ui -> -> 300 `i `ui 130  ]
+{
+[; ;BVH2_Appl_Layer.c: 1105: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1106: (UInt8)4;
+"1106
+[e = . F361 0 -> -> -> -> 4 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1107: Cb24_StateCnt = 0 ;
+"1107
+[e = F354 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1108: Cb24_oMotorStalled = 1;
+"1108
+[e = F375 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1109: Cb24_oStalledAlarm = 1;
+"1109
+[e = F376 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1110: SIBFS_Motor_Stalled_b.Cb24_glflag = 3 ;
+"1110
+[e = . F361 1 -> -> 3 `i `uc ]
+"1111
+}
+[; ;BVH2_Appl_Layer.c: 1111: }
+[e $U 131  ]
+"1112
+[e :U 130 ]
+[; ;BVH2_Appl_Layer.c: 1112: else {
+{
+[; ;BVH2_Appl_Layer.c: 1113: if (Cb24_StateCnt > 200) {
+"1113
+[e $ ! > -> F354 `ui -> -> 200 `i `ui 132  ]
+{
+[; ;BVH2_Appl_Layer.c: 1116: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1117: (UInt8)5;
+"1117
+[e = . F361 0 -> -> -> -> 5 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1118: Cb24_StateCnt = 0 ;
+"1118
+[e = F354 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1119: Cb24_BadCnt = 0 ;
+"1119
+[e = F353 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1120: Cb24_oMotorStalled = 0;
+"1120
+[e = F375 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1123: Cb24_oStalledAlarm = 0;
+"1123
+[e = F376 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1124: SIBFS_Motor_Stalled_b.Cb24_glflag = 3 ;
+"1124
+[e = . F361 1 -> -> 3 `i `uc ]
+"1125
+}
+[; ;BVH2_Appl_Layer.c: 1125: }
+[e $U 133  ]
+"1126
+[e :U 132 ]
+[; ;BVH2_Appl_Layer.c: 1126: else {
+{
+[; ;BVH2_Appl_Layer.c: 1127: SIBFS_Motor_Stalled_b.Cb24_glflag = 1 ;
+"1127
+[e = . F361 1 -> -> 1 `i `uc ]
+"1128
+}
+[e :U 133 ]
+"1129
+}
+[e :U 131 ]
+"1130
+}
+[e :U 129 ]
+"1131
+}
+[; ;BVH2_Appl_Layer.c: 1128: }
+[; ;BVH2_Appl_Layer.c: 1129: }
+[; ;BVH2_Appl_Layer.c: 1130: }
+[; ;BVH2_Appl_Layer.c: 1131: }
+[e $U 134  ]
+"1132
+[e :U 127 ]
+[; ;BVH2_Appl_Layer.c: 1132: else {
+{
+[; ;BVH2_Appl_Layer.c: 1133: SIBFS_Motor_Stalled_b.Cb24_glflag = 0 ;
+"1133
+[e = . F361 1 -> -> 0 `i `uc ]
+"1134
+}
+[e :U 134 ]
+[; ;BVH2_Appl_Layer.c: 1134: }
+[; ;BVH2_Appl_Layer.c: 1135: if (SIBFS_Motor_Stalled_b.Cb24_glflag <= 2) {
+"1135
+[e $ ! <= -> . F361 1 `i -> 2 `i 135  ]
+{
+[; ;BVH2_Appl_Layer.c: 1136: Cb24_StateCnt = Cb24_StateCnt + 1 ;
+"1136
+[e = F354 -> + -> F354 `ui -> -> 1 `i `ui `us ]
+"1137
+}
+[e :U 135 ]
+[; ;BVH2_Appl_Layer.c: 1137: }
+[; ;BVH2_Appl_Layer.c: 1141: break;
+"1141
+[e $U 110  ]
+"1142
+}
+[; ;BVH2_Appl_Layer.c: 1142: }
+[; ;BVH2_Appl_Layer.c: 1143: case (UInt8)4: {
+"1143
+[e :U 136 ]
+{
+[; ;BVH2_Appl_Layer.c: 1146: if (Cb24_StateCnt > 200) {
+"1146
+[e $ ! > -> F354 `ui -> -> 200 `i `ui 137  ]
+{
+[; ;BVH2_Appl_Layer.c: 1150: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1151: (UInt8)6;
+"1151
+[e = . F361 0 -> -> -> -> 6 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1152: Cb24_StateCnt = 0 ;
+"1152
+[e = F354 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1153: Cb24_oMotorStalled = 0;
+"1153
+[e = F375 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1154: Cb24_oStalledAlarm = 1;
+"1154
+[e = F376 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1155: Cb24_RestartCounter = Cb24_RestartCounter + 1 ;
+"1155
+[e = F355 -> + -> F355 `i -> 1 `i `uc ]
+"1156
+}
+[; ;BVH2_Appl_Layer.c: 1156: }
+[e $U 138  ]
+"1157
+[e :U 137 ]
+[; ;BVH2_Appl_Layer.c: 1157: else {
+{
+[; ;BVH2_Appl_Layer.c: 1158: Cb24_StateCnt = Cb24_StateCnt + 1 ;
+"1158
+[e = F354 -> + -> F354 `ui -> -> 1 `i `ui `us ]
+"1159
+}
+[e :U 138 ]
+[; ;BVH2_Appl_Layer.c: 1159: }
+[; ;BVH2_Appl_Layer.c: 1163: break;
+"1163
+[e $U 110  ]
+"1164
+}
+"1165
+}
+[; ;BVH2_Appl_Layer.c: 1164: }
+[; ;BVH2_Appl_Layer.c: 1165: }
+[e $U 110  ]
+"986
+[e :U 111 ]
+[e [\ . F361 0 , $ -> -> 3 `i `uc 112
+ , $ -> -> 2 `i `uc 115
+ , $ -> -> 1 `i `uc 120
+ , $ -> -> 5 `i `uc 125
+ , $ -> -> 6 `i `uc 126
+ , $ -> -> 4 `i `uc 136
+ 110 ]
+"1165
+[e :U 110 ]
+"1166
+}
+[e :U 109 ]
+"1169
+}
+[; ;BVH2_Appl_Layer.c: 1166: }
+[; ;BVH2_Appl_Layer.c: 1169: }
+[e $U 139  ]
+"1170
+[e :U 99 ]
+[; ;BVH2_Appl_Layer.c: 1170: else {
+{
+[; ;BVH2_Appl_Layer.c: 1172: if (SIBFS_Motor_Stalled_b.Cb32_default) {
+"1172
+[e $ ! != -> . F361 4 `i -> -> -> 0 `i `uc `i 140  ]
+{
+[; ;BVH2_Appl_Layer.c: 1177: if (!(Sb1_Logical_Operator1)) {
+"1177
+[e $ ! ! != -> _Sb1_Logical_Operator1 `i -> -> -> 0 `i `uc `i 141  ]
+{
+[; ;BVH2_Appl_Layer.c: 1180: SIBFS_Motor_Stalled_b.Cb32_default = 0;
+"1180
+[e = . F361 4 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1181: SIBFS_Motor_Stalled_b.Cb25_Motor_stalled_Statemachine = 1;
+"1181
+[e = . F361 3 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1182: SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int) (UInt8)3;
+"1182
+[e = . F361 0 -> -> -> -> 3 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1183: Cb24_StateCnt = 0 ;
+"1183
+[e = F354 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1184: Cb24_BadCnt = 0 ;
+"1184
+[e = F353 -> -> 0 `i `us ]
+"1185
+}
+[e :U 141 ]
+"1188
+}
+[; ;BVH2_Appl_Layer.c: 1185: }
+[; ;BVH2_Appl_Layer.c: 1188: }
+[e $U 142  ]
+"1189
+[e :U 140 ]
+[; ;BVH2_Appl_Layer.c: 1189: else {
+{
+[; ;BVH2_Appl_Layer.c: 1191: if (!(SIBFS_Motor_Stalled_b.Cb33_Stop)) {
+"1191
+[e $ ! ! != -> . F361 5 `i -> -> -> 0 `i `uc `i 143  ]
+{
+[; ;BVH2_Appl_Layer.c: 1193: if (!(SIBFS_Motor_Stalled_b.Cb24_Motor_Stalled)) {
+"1193
+[e $ ! ! != -> . F361 2 `i -> -> -> 0 `i `uc `i 144  ]
+{
+[; ;BVH2_Appl_Layer.c: 1194: SIBFS_Motor_Stalled_b.Cb24_Motor_Stalled = 1;
+"1194
+[e = . F361 2 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1197: if (Cb24_Reset) {
+"1197
+[e $ ! != -> _Cb24_Reset `i -> -> -> 0 `i `uc `i 145  ]
+{
+[; ;BVH2_Appl_Layer.c: 1199: SIBFS_Motor_Stalled_b.Cb32_default = 1;
+"1199
+[e = . F361 4 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1200: Cb24_oMotorStalled = 0;
+"1200
+[e = F375 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1201: Cb24_oStalledAlarm = 0;
+"1201
+[e = F376 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1202: Cb24_RestartCounter = 0 ;
+"1202
+[e = F355 -> -> 0 `i `uc ]
+"1203
+}
+[e :U 145 ]
+"1204
+}
+[e :U 144 ]
+"1205
+}
+[e :U 143 ]
+"1206
+}
+[e :U 142 ]
+"1207
+}
+[e :U 139 ]
+[; ;BVH2_Appl_Layer.c: 1203: }
+[; ;BVH2_Appl_Layer.c: 1204: }
+[; ;BVH2_Appl_Layer.c: 1205: }
+[; ;BVH2_Appl_Layer.c: 1206: }
+[; ;BVH2_Appl_Layer.c: 1207: }
+[; ;BVH2_Appl_Layer.c: 1212: bool_StalledMotorStop = Cb24_oMotorStalled;
+"1212
+[e = _bool_StalledMotorStop F375 ]
+[; ;BVH2_Appl_Layer.c: 1213: Sb1_Logical_Operator5 = Cb34_odFixedValueSel || Cb56_odFixedValueSel;
+"1213
+[e = _Sb1_Logical_Operator5 -> -> || != -> _Cb34_odFixedValueSel `i -> -> -> 0 `i `uc `i != -> _Cb56_odFixedValueSel `i -> -> -> 0 `i `uc `i `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1217: if (bool_start_demand_mat) {
+"1217
+[e $ ! != -> _bool_start_demand_mat `i -> -> -> 0 `i `uc `i 146  ]
+{
+[; ;BVH2_Appl_Layer.c: 1218: Sb2_Switch5 = ui8_fixed_start_speed_mat;
+"1218
+[e = _Sb2_Switch5 _ui8_fixed_start_speed_mat ]
+"1219
+}
+[; ;BVH2_Appl_Layer.c: 1219: }
+[e $U 147  ]
+"1220
+[e :U 146 ]
+[; ;BVH2_Appl_Layer.c: 1220: else {
+{
+[; ;BVH2_Appl_Layer.c: 1223: if (Cb34_odFixedLowValueSel) {
+"1223
+[e $ ! != -> _Cb34_odFixedLowValueSel `i -> -> -> 0 `i `uc `i 148  ]
+{
+[; ;BVH2_Appl_Layer.c: 1224: Sb2_Switch5 = ui16_Speed_demand_mat_min;
+"1224
+[e = _Sb2_Switch5 _ui16_Speed_demand_mat_min ]
+"1225
+}
+[; ;BVH2_Appl_Layer.c: 1225: }
+[e $U 149  ]
+"1226
+[e :U 148 ]
+[; ;BVH2_Appl_Layer.c: 1226: else {
+{
+[; ;BVH2_Appl_Layer.c: 1229: if (Sb1_Logical_Operator5) {
+"1229
+[e $ ! != -> _Sb1_Logical_Operator5 `i -> -> -> 0 `i `uc `i 150  ]
+{
+[; ;BVH2_Appl_Layer.c: 1230: Sb2_Switch5 = ui16_Speed_demand_mat_Max;
+"1230
+[e = _Sb2_Switch5 _ui16_Speed_demand_mat_Max ]
+"1231
+}
+[; ;BVH2_Appl_Layer.c: 1231: }
+[e $U 151  ]
+"1232
+[e :U 150 ]
+[; ;BVH2_Appl_Layer.c: 1232: else {
+{
+[; ;BVH2_Appl_Layer.c: 1233: Sb2_Switch5 = ui16_Speed_demand_mat;
+"1233
+[e = _Sb2_Switch5 _ui16_Speed_demand_mat ]
+"1234
+}
+[e :U 151 ]
+"1235
+}
+[e :U 149 ]
+"1236
+}
+[e :U 147 ]
+[; ;BVH2_Appl_Layer.c: 1234: }
+[; ;BVH2_Appl_Layer.c: 1235: }
+[; ;BVH2_Appl_Layer.c: 1236: }
+[; ;BVH2_Appl_Layer.c: 1239: Sb2_Error = (Int16) (ui16_Speed_mat - Sb2_Switch5);
+"1239
+[e = _Sb2_Error -> - -> _ui16_Speed_mat `ui -> _Sb2_Switch5 `ui `s ]
+[; ;BVH2_Appl_Layer.c: 1244: if (SIBFS_Dry_Running_b.Cb15_greenState) {
+"1244
+[e $ ! != -> . F360 1 `i -> -> -> 0 `i `uc `i 152  ]
+{
+[; ;BVH2_Appl_Layer.c: 1251: if ((((Int32)ui16_mat_Current) < (ui16_dryRun_Thresh - 5)) && (ui16_Speed_mat < 400) &&
+[; ;BVH2_Appl_Layer.c: 1252: (ui16_Speed_mat > 80)) {
+"1252
+[e $ ! && && < -> _ui16_mat_Current `l -> - -> _ui16_dryRun_Thresh `ui -> -> 5 `i `ui `l < -> _ui16_Speed_mat `ui -> -> 400 `i `ui > -> _ui16_Speed_mat `ui -> -> 80 `i `ui 153  ]
+{
+[; ;BVH2_Appl_Layer.c: 1255: SIBFS_Dry_Running_b.Cb15_greenState = 0;
+"1255
+[e = . F360 1 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1256: SIBFS_Dry_Running_b.Cb16_DryRunning = 1;
+"1256
+[e = . F360 2 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1257: SIBFS_Dry_Running_b.Cb18_CntOverCurrent = 1;
+"1257
+[e = . F360 4 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1258: Cb14_StateCnt = 0 ;
+"1258
+[e = F351 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1259: Cb14_oDryRunAlarm = 0;
+"1259
+[e = F372 -> -> 0 `i `uc ]
+"1260
+}
+[e :U 153 ]
+"1263
+}
+[; ;BVH2_Appl_Layer.c: 1260: }
+[; ;BVH2_Appl_Layer.c: 1263: }
+[e $U 154  ]
+"1264
+[e :U 152 ]
+[; ;BVH2_Appl_Layer.c: 1264: else {
+{
+[; ;BVH2_Appl_Layer.c: 1266: if (SIBFS_Dry_Running_b.Cb16_DryRunning) {
+"1266
+[e $ ! != -> . F360 2 `i -> -> -> 0 `i `uc `i 155  ]
+{
+[; ;BVH2_Appl_Layer.c: 1270: if (!(SIBFS_Dry_Running_b.Cb17_redState)) {
+"1270
+[e $ ! ! != -> . F360 3 `i -> -> -> 0 `i `uc `i 156  ]
+{
+[; ;BVH2_Appl_Layer.c: 1272: if (SIBFS_Dry_Running_b.Cb18_CntOverCurrent) {
+"1272
+[e $ ! != -> . F360 4 `i -> -> -> 0 `i `uc `i 157  ]
+{
+[; ;BVH2_Appl_Layer.c: 1279: if ((((UInt32)ui16_mat_Current) > (ui16_dryRun_Thresh + 5)) || (ui16_Speed_mat >
+[; ;BVH2_Appl_Layer.c: 1280: 400) || (ui16_Speed_mat < 80)) {
+"1280
+[e $ ! || || > -> _ui16_mat_Current `ul -> + -> _ui16_dryRun_Thresh `ui -> -> 5 `i `ui `ul > -> _ui16_Speed_mat `ui -> -> 400 `i `ui < -> _ui16_Speed_mat `ui -> -> 80 `i `ui 158  ]
+{
+[; ;BVH2_Appl_Layer.c: 1282: SIBFS_Dry_Running_b.Cb18_CntOverCurrent = 0;
+"1282
+[e = . F360 4 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1283: SIBFS_Dry_Running_b.Cb16_DryRunning = 0;
+"1283
+[e = . F360 2 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1284: SIBFS_Dry_Running_b.Cb15_greenState = 1;
+"1284
+[e = . F360 1 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1285: Cb14_oDryRunAlarm = 0;
+"1285
+[e = F372 -> -> 0 `i `uc ]
+"1286
+}
+[; ;BVH2_Appl_Layer.c: 1286: }
+[e $U 159  ]
+"1287
+[e :U 158 ]
+[; ;BVH2_Appl_Layer.c: 1287: else {
+{
+[; ;BVH2_Appl_Layer.c: 1288: if ((ui8_PWM_dc_mat < 20) && (ui8_PWM_dc_mat > 4)) {
+"1288
+[e $ ! && < -> _ui8_PWM_dc_mat `i -> 20 `i > -> _ui8_PWM_dc_mat `i -> 4 `i 160  ]
+{
+[; ;BVH2_Appl_Layer.c: 1290: SIBFS_Dry_Running_b.Cb18_CntOverCurrent = 0;
+"1290
+[e = . F360 4 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1291: SIBFS_Dry_Running_b.Cb16_DryRunning = 0;
+"1291
+[e = . F360 2 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1292: SIBFS_Dry_Running_b.Cb15_greenState = 1;
+"1292
+[e = . F360 1 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1293: Cb14_oDryRunAlarm = 0;
+"1293
+[e = F372 -> -> 0 `i `uc ]
+"1294
+}
+[; ;BVH2_Appl_Layer.c: 1294: }
+[e $U 161  ]
+"1295
+[e :U 160 ]
+[; ;BVH2_Appl_Layer.c: 1295: else {
+{
+[; ;BVH2_Appl_Layer.c: 1296: if (Cb14_StateCnt > 2000) {
+"1296
+[e $ ! > -> F351 `ui -> -> 2000 `i `ui 162  ]
+{
+[; ;BVH2_Appl_Layer.c: 1298: SIBFS_Dry_Running_b.Cb18_CntOverCurrent = 0;
+"1298
+[e = . F360 4 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1299: SIBFS_Dry_Running_b.Cb17_redState = 1;
+"1299
+[e = . F360 3 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1300: Cb14_oDryRunAlarm = 1;
+"1300
+[e = F372 -> -> 1 `i `uc ]
+"1301
+}
+[; ;BVH2_Appl_Layer.c: 1301: }
+[e $U 163  ]
+"1302
+[e :U 162 ]
+[; ;BVH2_Appl_Layer.c: 1302: else {
+{
+[; ;BVH2_Appl_Layer.c: 1303: Cb14_StateCnt = Cb14_StateCnt + 1 ;
+"1303
+[e = F351 -> + -> F351 `ui -> -> 1 `i `ui `us ]
+"1304
+}
+[e :U 163 ]
+"1305
+}
+[e :U 161 ]
+"1306
+}
+[e :U 159 ]
+"1309
+}
+[e :U 157 ]
+"1310
+}
+[e :U 156 ]
+"1313
+}
+[; ;BVH2_Appl_Layer.c: 1304: }
+[; ;BVH2_Appl_Layer.c: 1305: }
+[; ;BVH2_Appl_Layer.c: 1306: }
+[; ;BVH2_Appl_Layer.c: 1309: }
+[; ;BVH2_Appl_Layer.c: 1310: }
+[; ;BVH2_Appl_Layer.c: 1313: }
+[e $U 164  ]
+"1314
+[e :U 155 ]
+[; ;BVH2_Appl_Layer.c: 1314: else {
+{
+[; ;BVH2_Appl_Layer.c: 1316: if (!(SIBFS_Dry_Running_b.Cb14_Dry_Running)) {
+"1316
+[e $ ! ! != -> . F360 0 `i -> -> -> 0 `i `uc `i 165  ]
+{
+[; ;BVH2_Appl_Layer.c: 1317: SIBFS_Dry_Running_b.Cb14_Dry_Running = 1;
+"1317
+[e = . F360 0 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1320: if (ui8_ResetMatlab == 1) {
+"1320
+[e $ ! == -> _ui8_ResetMatlab `i -> 1 `i 166  ]
+{
+[; ;BVH2_Appl_Layer.c: 1322: SIBFS_Dry_Running_b.Cb15_greenState = 1;
+"1322
+[e = . F360 1 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1323: Cb14_oDryRunAlarm = 0;
+"1323
+[e = F372 -> -> 0 `i `uc ]
+"1324
+}
+[e :U 166 ]
+"1325
+}
+[e :U 165 ]
+"1326
+}
+[e :U 164 ]
+"1327
+}
+[e :U 154 ]
+[; ;BVH2_Appl_Layer.c: 1324: }
+[; ;BVH2_Appl_Layer.c: 1325: }
+[; ;BVH2_Appl_Layer.c: 1326: }
+[; ;BVH2_Appl_Layer.c: 1327: }
+[; ;BVH2_Appl_Layer.c: 1334: if (SIBFS_Dry_RunningAlarm_b.Cb20_greenState) {
+"1334
+[e $ ! != -> . F359 1 `i -> -> -> 0 `i `uc `i 167  ]
+{
+[; ;BVH2_Appl_Layer.c: 1339: if (Cb14_oDryRunAlarm) {
+"1339
+[e $ ! != -> F372 `i -> -> -> 0 `i `uc `i 168  ]
+{
+[; ;BVH2_Appl_Layer.c: 1342: SIBFS_Dry_RunningAlarm_b.Cb20_greenState = 0;
+"1342
+[e = . F359 1 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1343: SIBFS_Dry_RunningAlarm_b.Cb21_DryRunningAlarm = 1;
+"1343
+[e = . F359 2 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1344: SIBFS_Dry_RunningAlarm_b.Cb22_DryRun66 = 1;
+"1344
+[e = . F359 3 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1345: Cb19_Counter = 0 ;
+"1345
+[e = F352 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1346: Cb19_oDryRun66 = 1;
+"1346
+[e = F374 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1347: Cb19_oDryRun55 = 0;
+"1347
+[e = F373 -> -> 0 `i `uc ]
+"1348
+}
+[e :U 168 ]
+"1351
+}
+[; ;BVH2_Appl_Layer.c: 1348: }
+[; ;BVH2_Appl_Layer.c: 1351: }
+[e $U 169  ]
+"1352
+[e :U 167 ]
+[; ;BVH2_Appl_Layer.c: 1352: else {
+{
+[; ;BVH2_Appl_Layer.c: 1354: if (SIBFS_Dry_RunningAlarm_b.Cb21_DryRunningAlarm) {
+"1354
+[e $ ! != -> . F359 2 `i -> -> -> 0 `i `uc `i 170  ]
+{
+[; ;BVH2_Appl_Layer.c: 1359: if (!(Cb14_oDryRunAlarm)) {
+"1359
+[e $ ! ! != -> F372 `i -> -> -> 0 `i `uc `i 171  ]
+{
+[; ;BVH2_Appl_Layer.c: 1364: if (SIBFS_Dry_RunningAlarm_b.Cb22_DryRun66) {
+"1364
+[e $ ! != -> . F359 3 `i -> -> -> 0 `i `uc `i 172  ]
+{
+[; ;BVH2_Appl_Layer.c: 1365: SIBFS_Dry_RunningAlarm_b.Cb22_DryRun66 = 0;
+"1365
+[e = . F359 3 -> -> 0 `i `uc ]
+"1366
+}
+[; ;BVH2_Appl_Layer.c: 1366: }
+[e $U 173  ]
+"1367
+[e :U 172 ]
+[; ;BVH2_Appl_Layer.c: 1367: else {
+{
+[; ;BVH2_Appl_Layer.c: 1369: if (SIBFS_Dry_RunningAlarm_b.Cb23_DryRun55) {
+"1369
+[e $ ! != -> . F359 4 `i -> -> -> 0 `i `uc `i 174  ]
+{
+[; ;BVH2_Appl_Layer.c: 1370: SIBFS_Dry_RunningAlarm_b.Cb23_DryRun55 = 0;
+"1370
+[e = . F359 4 -> -> 0 `i `uc ]
+"1371
+}
+[e :U 174 ]
+"1372
+}
+[e :U 173 ]
+[; ;BVH2_Appl_Layer.c: 1371: }
+[; ;BVH2_Appl_Layer.c: 1372: }
+[; ;BVH2_Appl_Layer.c: 1373: SIBFS_Dry_RunningAlarm_b.Cb21_DryRunningAlarm = 0;
+"1373
+[e = . F359 2 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1374: SIBFS_Dry_RunningAlarm_b.Cb20_greenState = 1;
+"1374
+[e = . F359 1 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1375: Cb19_oDryRun55 = 0;
+"1375
+[e = F373 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1376: Cb19_oDryRun66 = 0;
+"1376
+[e = F374 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1377: Cb19_Counter = 0 ;
+"1377
+[e = F352 -> -> 0 `i `us ]
+"1378
+}
+[; ;BVH2_Appl_Layer.c: 1378: }
+[e $U 175  ]
+"1379
+[e :U 171 ]
+[; ;BVH2_Appl_Layer.c: 1379: else {
+{
+[; ;BVH2_Appl_Layer.c: 1381: if (SIBFS_Dry_RunningAlarm_b.Cb22_DryRun66) {
+"1381
+[e $ ! != -> . F359 3 `i -> -> -> 0 `i `uc `i 176  ]
+{
+[; ;BVH2_Appl_Layer.c: 1384: if (Cb19_Counter > 400) {
+"1384
+[e $ ! > -> F352 `ui -> -> 400 `i `ui 177  ]
+{
+[; ;BVH2_Appl_Layer.c: 1387: SIBFS_Dry_RunningAlarm_b.Cb22_DryRun66 = 0;
+"1387
+[e = . F359 3 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1388: SIBFS_Dry_RunningAlarm_b.Cb23_DryRun55 = 1;
+"1388
+[e = . F359 4 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1389: Cb19_Counter = 0 ;
+"1389
+[e = F352 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1390: Cb19_oDryRun66 = 0;
+"1390
+[e = F374 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1391: Cb19_oDryRun55 = 1;
+"1391
+[e = F373 -> -> 1 `i `uc ]
+"1392
+}
+[; ;BVH2_Appl_Layer.c: 1392: }
+[e $U 178  ]
+"1393
+[e :U 177 ]
+[; ;BVH2_Appl_Layer.c: 1393: else {
+{
+[; ;BVH2_Appl_Layer.c: 1394: Cb19_Counter = Cb19_Counter + 1 ;
+"1394
+[e = F352 -> + -> F352 `ui -> -> 1 `i `ui `us ]
+"1395
+}
+[e :U 178 ]
+"1399
+}
+[; ;BVH2_Appl_Layer.c: 1395: }
+[; ;BVH2_Appl_Layer.c: 1399: }
+[e $U 179  ]
+"1400
+[e :U 176 ]
+[; ;BVH2_Appl_Layer.c: 1400: else {
+{
+[; ;BVH2_Appl_Layer.c: 1402: if (SIBFS_Dry_RunningAlarm_b.Cb23_DryRun55) {
+"1402
+[e $ ! != -> . F359 4 `i -> -> -> 0 `i `uc `i 180  ]
+{
+[; ;BVH2_Appl_Layer.c: 1405: if (Cb19_Counter > 400) {
+"1405
+[e $ ! > -> F352 `ui -> -> 400 `i `ui 181  ]
+{
+[; ;BVH2_Appl_Layer.c: 1408: SIBFS_Dry_RunningAlarm_b.Cb23_DryRun55 = 0;
+"1408
+[e = . F359 4 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1409: SIBFS_Dry_RunningAlarm_b.Cb22_DryRun66 = 1;
+"1409
+[e = . F359 3 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1410: Cb19_Counter = 0 ;
+"1410
+[e = F352 -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1411: Cb19_oDryRun66 = 1;
+"1411
+[e = F374 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1412: Cb19_oDryRun55 = 0;
+"1412
+[e = F373 -> -> 0 `i `uc ]
+"1413
+}
+[; ;BVH2_Appl_Layer.c: 1413: }
+[e $U 182  ]
+"1414
+[e :U 181 ]
+[; ;BVH2_Appl_Layer.c: 1414: else {
+{
+[; ;BVH2_Appl_Layer.c: 1415: Cb19_Counter = Cb19_Counter + 1 ;
+"1415
+[e = F352 -> + -> F352 `ui -> -> 1 `i `ui `us ]
+"1416
+}
+[e :U 182 ]
+"1420
+}
+[e :U 180 ]
+"1421
+}
+[e :U 179 ]
+"1422
+}
+[e :U 175 ]
+"1425
+}
+[; ;BVH2_Appl_Layer.c: 1416: }
+[; ;BVH2_Appl_Layer.c: 1420: }
+[; ;BVH2_Appl_Layer.c: 1421: }
+[; ;BVH2_Appl_Layer.c: 1422: }
+[; ;BVH2_Appl_Layer.c: 1425: }
+[e $U 183  ]
+"1426
+[e :U 170 ]
+[; ;BVH2_Appl_Layer.c: 1426: else {
+{
+[; ;BVH2_Appl_Layer.c: 1428: if (!(SIBFS_Dry_RunningAlarm_b.Cb19_Dry_RunningAlarm)) {
+"1428
+[e $ ! ! != -> . F359 0 `i -> -> -> 0 `i `uc `i 184  ]
+{
+[; ;BVH2_Appl_Layer.c: 1429: SIBFS_Dry_RunningAlarm_b.Cb19_Dry_RunningAlarm = 1;
+"1429
+[e = . F359 0 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1433: if (!(Cb14_oDryRunAlarm)) {
+"1433
+[e $ ! ! != -> F372 `i -> -> -> 0 `i `uc `i 185  ]
+{
+[; ;BVH2_Appl_Layer.c: 1435: SIBFS_Dry_RunningAlarm_b.Cb20_greenState = 1;
+"1435
+[e = . F359 1 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1436: Cb19_oDryRun55 = 0;
+"1436
+[e = F373 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1437: Cb19_oDryRun66 = 0;
+"1437
+[e = F374 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1438: Cb19_Counter = 0 ;
+"1438
+[e = F352 -> -> 0 `i `us ]
+"1439
+}
+[e :U 185 ]
+"1440
+}
+[e :U 184 ]
+"1441
+}
+[e :U 183 ]
+"1442
+}
+[e :U 169 ]
+[; ;BVH2_Appl_Layer.c: 1439: }
+[; ;BVH2_Appl_Layer.c: 1440: }
+[; ;BVH2_Appl_Layer.c: 1441: }
+[; ;BVH2_Appl_Layer.c: 1442: }
+[; ;BVH2_Appl_Layer.c: 1447: bool_DryRunningAlarm = Cb19_oDryRun66;
+"1447
+[e = _bool_DryRunningAlarm F374 ]
+[; ;BVH2_Appl_Layer.c: 1450: bool_CPU_TempAlarm = Cb51_oTempAlarm;
+"1450
+[e = _bool_CPU_TempAlarm F377 ]
+[; ;BVH2_Appl_Layer.c: 1455: if (SIBFS_Current_Analysis_low_b.Cb10_greenState) {
+"1455
+[e $ ! != -> . F358 0 `i -> -> -> 0 `i `uc `i 186  ]
+{
+[; ;BVH2_Appl_Layer.c: 1460: if (((Int32)ui16_mat_Current) > (ui16_Current_Thresh - 2)) {
+"1460
+[e $ ! > -> _ui16_mat_Current `l -> - -> _ui16_Current_Thresh `ui -> -> 2 `i `ui `l 187  ]
+{
+[; ;BVH2_Appl_Layer.c: 1463: SIBFS_Current_Analysis_low_b.Cb10_greenState = 0;
+"1463
+[e = . F358 0 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1464: SIBFS_Current_Analysis_low_b.Cb12_CntOverCurrent = 1;
+"1464
+[e = . F358 2 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1465: Cb9_StateCnt = 0 ;
+"1465
+[e = F357 -> -> 0 `i `uc ]
+"1466
+}
+[e :U 187 ]
+"1469
+}
+[; ;BVH2_Appl_Layer.c: 1466: }
+[; ;BVH2_Appl_Layer.c: 1469: }
+[e $U 188  ]
+"1470
+[e :U 186 ]
+[; ;BVH2_Appl_Layer.c: 1470: else {
+{
+[; ;BVH2_Appl_Layer.c: 1472: if (SIBFS_Current_Analysis_low_b.Cb11_Wait) {
+"1472
+[e $ ! != -> . F358 1 `i -> -> -> 0 `i `uc `i 189  ]
+{
+[; ;BVH2_Appl_Layer.c: 1477: if (((Int32)ui16_mat_Current) > (ui16_Current_Thresh - 2)) {
+"1477
+[e $ ! > -> _ui16_mat_Current `l -> - -> _ui16_Current_Thresh `ui -> -> 2 `i `ui `l 190  ]
+{
+[; ;BVH2_Appl_Layer.c: 1479: SIBFS_Current_Analysis_low_b.Cb11_Wait = 0;
+"1479
+[e = . F358 1 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1480: SIBFS_Current_Analysis_low_b.Cb13_redState = 1;
+"1480
+[e = . F358 3 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1481: Cb9_oCurrentAlarm = 1;
+"1481
+[e = F380 -> -> 1 `i `uc ]
+"1482
+}
+[; ;BVH2_Appl_Layer.c: 1482: }
+[e $U 191  ]
+"1483
+[e :U 190 ]
+[; ;BVH2_Appl_Layer.c: 1483: else {
+{
+[; ;BVH2_Appl_Layer.c: 1484: if (Cb9_StateCnt > 100) {
+"1484
+[e $ ! > -> F357 `i -> 100 `i 192  ]
+{
+[; ;BVH2_Appl_Layer.c: 1486: SIBFS_Current_Analysis_low_b.Cb11_Wait = 0;
+"1486
+[e = . F358 1 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1487: SIBFS_Current_Analysis_low_b.Cb10_greenState = 1;
+"1487
+[e = . F358 0 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1488: Cb9_oCurrentAlarm = 0;
+"1488
+[e = F380 -> -> 0 `i `uc ]
+"1489
+}
+[; ;BVH2_Appl_Layer.c: 1489: }
+[e $U 193  ]
+"1490
+[e :U 192 ]
+[; ;BVH2_Appl_Layer.c: 1490: else {
+{
+[; ;BVH2_Appl_Layer.c: 1491: Cb9_StateCnt = Cb9_StateCnt + 1 ;
+"1491
+[e = F357 -> + -> F357 `i -> 1 `i `uc ]
+"1492
+}
+[e :U 193 ]
+"1493
+}
+[e :U 191 ]
+"1496
+}
+[; ;BVH2_Appl_Layer.c: 1492: }
+[; ;BVH2_Appl_Layer.c: 1493: }
+[; ;BVH2_Appl_Layer.c: 1496: }
+[e $U 194  ]
+"1497
+[e :U 189 ]
+[; ;BVH2_Appl_Layer.c: 1497: else {
+{
+[; ;BVH2_Appl_Layer.c: 1499: if (SIBFS_Current_Analysis_low_b.Cb12_CntOverCurrent) {
+"1499
+[e $ ! != -> . F358 2 `i -> -> -> 0 `i `uc `i 195  ]
+{
+[; ;BVH2_Appl_Layer.c: 1504: if (((UInt32)ui16_mat_Current) < (ui16_Current_Thresh + 2)) {
+"1504
+[e $ ! < -> _ui16_mat_Current `ul -> + -> _ui16_Current_Thresh `ui -> -> 2 `i `ui `ul 196  ]
+{
+[; ;BVH2_Appl_Layer.c: 1506: SIBFS_Current_Analysis_low_b.Cb12_CntOverCurrent = 0;
+"1506
+[e = . F358 2 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1507: SIBFS_Current_Analysis_low_b.Cb10_greenState = 1;
+"1507
+[e = . F358 0 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1508: Cb9_oCurrentAlarm = 0;
+"1508
+[e = F380 -> -> 0 `i `uc ]
+"1509
+}
+[; ;BVH2_Appl_Layer.c: 1509: }
+[e $U 197  ]
+"1510
+[e :U 196 ]
+[; ;BVH2_Appl_Layer.c: 1510: else {
+{
+[; ;BVH2_Appl_Layer.c: 1511: if (Cb9_StateCnt > 50) {
+"1511
+[e $ ! > -> F357 `i -> 50 `i 198  ]
+{
+[; ;BVH2_Appl_Layer.c: 1513: SIBFS_Current_Analysis_low_b.Cb12_CntOverCurrent = 0;
+"1513
+[e = . F358 2 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1514: SIBFS_Current_Analysis_low_b.Cb13_redState = 1;
+"1514
+[e = . F358 3 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1515: Cb9_oCurrentAlarm = 1;
+"1515
+[e = F380 -> -> 1 `i `uc ]
+"1516
+}
+[; ;BVH2_Appl_Layer.c: 1516: }
+[e $U 199  ]
+"1517
+[e :U 198 ]
+[; ;BVH2_Appl_Layer.c: 1517: else {
+{
+[; ;BVH2_Appl_Layer.c: 1518: Cb9_StateCnt = Cb9_StateCnt + 1 ;
+"1518
+[e = F357 -> + -> F357 `i -> 1 `i `uc ]
+"1519
+}
+[e :U 199 ]
+"1520
+}
+[e :U 197 ]
+"1523
+}
+[; ;BVH2_Appl_Layer.c: 1519: }
+[; ;BVH2_Appl_Layer.c: 1520: }
+[; ;BVH2_Appl_Layer.c: 1523: }
+[e $U 200  ]
+"1524
+[e :U 195 ]
+[; ;BVH2_Appl_Layer.c: 1524: else {
+{
+[; ;BVH2_Appl_Layer.c: 1526: if (SIBFS_Current_Analysis_low_b.Cb13_redState) {
+"1526
+[e $ ! != -> . F358 3 `i -> -> -> 0 `i `uc `i 201  ]
+{
+[; ;BVH2_Appl_Layer.c: 1531: if (((UInt32)ui16_mat_Current) < (ui16_Current_Thresh + 2)) {
+"1531
+[e $ ! < -> _ui16_mat_Current `ul -> + -> _ui16_Current_Thresh `ui -> -> 2 `i `ui `ul 202  ]
+{
+[; ;BVH2_Appl_Layer.c: 1534: SIBFS_Current_Analysis_low_b.Cb13_redState = 0;
+"1534
+[e = . F358 3 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1535: SIBFS_Current_Analysis_low_b.Cb11_Wait = 1;
+"1535
+[e = . F358 1 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1536: Cb9_StateCnt = 0 ;
+"1536
+[e = F357 -> -> 0 `i `uc ]
+"1537
+}
+[e :U 202 ]
+"1540
+}
+[; ;BVH2_Appl_Layer.c: 1537: }
+[; ;BVH2_Appl_Layer.c: 1540: }
+[e $U 203  ]
+"1541
+[e :U 201 ]
+[; ;BVH2_Appl_Layer.c: 1541: else {
+{
+[; ;BVH2_Appl_Layer.c: 1543: if (!(SIBFS_Current_Analysis_low_b.Cb9_Current_Analysis_low)) {
+"1543
+[e $ ! ! != -> . F358 4 `i -> -> -> 0 `i `uc `i 204  ]
+{
+[; ;BVH2_Appl_Layer.c: 1544: SIBFS_Current_Analysis_low_b.Cb9_Current_Analysis_low = 1;
+"1544
+[e = . F358 4 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1547: if (ui8_ResetMatlab == 1) {
+"1547
+[e $ ! == -> _ui8_ResetMatlab `i -> 1 `i 205  ]
+{
+[; ;BVH2_Appl_Layer.c: 1549: SIBFS_Current_Analysis_low_b.Cb10_greenState = 1;
+"1549
+[e = . F358 0 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1550: Cb9_oCurrentAlarm = 0;
+"1550
+[e = F380 -> -> 0 `i `uc ]
+"1551
+}
+[e :U 205 ]
+"1552
+}
+[e :U 204 ]
+"1553
+}
+[e :U 203 ]
+"1554
+}
+[e :U 200 ]
+"1555
+}
+[e :U 194 ]
+"1556
+}
+[e :U 188 ]
+[; ;BVH2_Appl_Layer.c: 1551: }
+[; ;BVH2_Appl_Layer.c: 1552: }
+[; ;BVH2_Appl_Layer.c: 1553: }
+[; ;BVH2_Appl_Layer.c: 1554: }
+[; ;BVH2_Appl_Layer.c: 1555: }
+[; ;BVH2_Appl_Layer.c: 1556: }
+[; ;BVH2_Appl_Layer.c: 1561: bool_HighCurrentAlarm = Cb9_oCurrentAlarm;
+"1561
+[e = _bool_HighCurrentAlarm F380 ]
+[; ;BVH2_Appl_Layer.c: 1564: bool_PWMin_err_Alarm = Cb34_oPWM_Alarm;
+"1564
+[e = _bool_PWMin_err_Alarm _Cb34_oPWM_Alarm ]
+[; ;BVH2_Appl_Layer.c: 1567: bool_UbatAlarm = Cb56_oUbat_Alarm_High;
+"1567
+[e = _bool_UbatAlarm _Cb56_oUbat_Alarm_High ]
+[; ;BVH2_Appl_Layer.c: 1568: bool_MotorStalled = Cb24_oStalledAlarm || Cb1_oCurrentAlarm || Cb19_oDryRun55;
+"1568
+[e = _bool_MotorStalled -> -> || || != -> F376 `i -> -> -> 0 `i `uc `i != -> _Cb1_oCurrentAlarm `i -> -> -> 0 `i `uc `i != -> F373 `i -> -> -> 0 `i `uc `i `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1571: bool_CPU_TempRedAlarm = Cb51_oTempRedAlarm;
+"1571
+[e = _bool_CPU_TempRedAlarm F378 ]
+[; ;BVH2_Appl_Layer.c: 1574: ui8_debug_out0 = (UInt8) Sb2_Switch5;
+"1574
+[e = _ui8_debug_out0 -> _Sb2_Switch5 `uc ]
+[; ;BVH2_Appl_Layer.c: 1575: Sb1_Logical_Operator3 = Sb1_Logical_Operator1 || Cb24_oMotorStalled || Cb14_oDryRunAlarm;
+"1575
+[e = _Sb1_Logical_Operator3 -> -> || || != -> _Sb1_Logical_Operator1 `i -> -> -> 0 `i `uc `i != -> F375 `i -> -> -> 0 `i `uc `i != -> F372 `i -> -> -> 0 `i `uc `i `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1576: Sb2_Logical_Operator2 = Sb1_Logical_Operator3 || bool_ControlLoopMode;
+"1576
+[e = _Sb2_Logical_Operator2 -> -> || != -> _Sb1_Logical_Operator3 `i -> -> -> 0 `i `uc `i != -> _bool_ControlLoopMode `i -> -> -> 0 `i `uc `i `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1577: if ((Sb2_Logical_Operator2 ^ X_Sb4_Intergrator_TriggerIn) && (!(Sb1_BVH2_Appl_Layer_FirstRun)))
+"1577
+[e $ ! && != ^ -> _Sb2_Logical_Operator2 `i -> F383 `i -> 0 `i ! != -> F382 `i -> -> -> 0 `i `uc `i 206  ]
+[; ;BVH2_Appl_Layer.c: 1578: {
+"1578
+{
+[; ;BVH2_Appl_Layer.c: 1579: X_Sb4_Intergrator = 80000 ;
+"1579
+[e = F381 -> 80000 `l ]
+"1580
+}
+[e :U 206 ]
+[; ;BVH2_Appl_Layer.c: 1580: }
+[; ;BVH2_Appl_Layer.c: 1584: if (Sb1_Logical_Operator3) {
+"1584
+[e $ ! != -> _Sb1_Logical_Operator3 `i -> -> -> 0 `i `uc `i 207  ]
+{
+[; ;BVH2_Appl_Layer.c: 1585: Sb2_Switch2 = 0 ;
+"1585
+[e = _Sb2_Switch2 -> -> 0 `i `us ]
+"1586
+}
+[; ;BVH2_Appl_Layer.c: 1586: }
+[e $U 208  ]
+"1587
+[e :U 207 ]
+[; ;BVH2_Appl_Layer.c: 1587: else {
+{
+[; ;BVH2_Appl_Layer.c: 1590: if (bool_ControlLoopMode) {
+"1590
+[e $ ! != -> _bool_ControlLoopMode `i -> -> -> 0 `i `uc `i 209  ]
+{
+[; ;BVH2_Appl_Layer.c: 1593: if (Sb1_Logical_Operator5) {
+"1593
+[e $ ! != -> _Sb1_Logical_Operator5 `i -> -> -> 0 `i `uc `i 210  ]
+{
+[; ;BVH2_Appl_Layer.c: 1594: Sb2_Switch2 = Sb2_Fixed_Power;
+"1594
+[e = _Sb2_Switch2 _Sb2_Fixed_Power ]
+"1595
+}
+[; ;BVH2_Appl_Layer.c: 1595: }
+[e $U 211  ]
+"1596
+[e :U 210 ]
+[; ;BVH2_Appl_Layer.c: 1596: else {
+{
+"1598
+[v _Sb3_Product1 `us 1 a ]
+"1599
+[v _Sb3_Sum1 `s 1 a ]
+[; ;BVH2_Appl_Layer.c: 1598: UInt16 Sb3_Product1 ;
+[; ;BVH2_Appl_Layer.c: 1599: Int16 Sb3_Sum1;
+[; ;BVH2_Appl_Layer.c: 1607: Sb3_Product1 = (UInt16) (((UInt16) (140 << 8)) / 160 );
+"1607
+[e = _Sb3_Product1 -> / -> -> << -> 140 `i -> 8 `i `us `ui -> -> 160 `i `ui `us ]
+[; ;BVH2_Appl_Layer.c: 1613: Sb3_Sum1 = (Int16) (((UInt16) ((((UInt32) ui8_PWM_dc_mat) * ((UInt32) Sb3_Product1)) >>
+[; ;BVH2_Appl_Layer.c: 1614: 8)) + ((Int16) (((Int16) (-((Int16) (UInt16) ((((UInt32) Sb3_Product1) * 95) >> 7)))) + 200)));
+"1614
+[e = _Sb3_Sum1 -> + -> -> >> * -> _ui8_PWM_dc_mat `ul -> _Sb3_Product1 `ul -> 8 `i `us `ui -> -> + -> -> -U -> -> -> >> * -> _Sb3_Product1 `ul -> -> -> 95 `i `l `ul -> 7 `i `us `s `i `s `i -> 200 `i `s `ui `s ]
+[; ;BVH2_Appl_Layer.c: 1617: Sb2_Switch2 = (UInt16) ( (Sb3_Sum1 > (Int16)200) ? 200 : ( (Sb3_Sum1 < (Int16)60) ? 60 : (UInt8)Sb3_Sum1 ) );
+"1617
+[e = _Sb2_Switch2 -> ? > -> _Sb3_Sum1 `i -> -> -> 200 `i `s `i : -> 200 `i ? < -> _Sb3_Sum1 `i -> -> -> 60 `i `s `i : -> 60 `i -> -> _Sb3_Sum1 `uc `i `us ]
+"1618
+}
+[e :U 211 ]
+"1619
+}
+[; ;BVH2_Appl_Layer.c: 1618: }
+[; ;BVH2_Appl_Layer.c: 1619: }
+[e $U 212  ]
+"1620
+[e :U 209 ]
+[; ;BVH2_Appl_Layer.c: 1620: else {
+{
+"1622
+[v _Sb4_PI_sum `s 1 a ]
+[; ;BVH2_Appl_Layer.c: 1622: Int16 Sb4_PI_sum;
+[; ;BVH2_Appl_Layer.c: 1627: Sb4_PI_sum = (Int16) (((UInt16) (Int16) (X_Sb4_Intergrator / ((Int32) 800))) + ((UInt16)
+[; ;BVH2_Appl_Layer.c: 1628: (Sb2_Error * ((Int16) ui8_Kp_mat))));
+"1628
+[e = _Sb4_PI_sum -> + -> -> -> / F381 -> -> 800 `i `l `s `us `ui -> -> * -> _Sb2_Error `i -> -> _ui8_Kp_mat `s `i `us `ui `s ]
+[; ;BVH2_Appl_Layer.c: 1631: Sb2_Switch2 = ( ( (Sb4_PI_sum > 0) && ((UInt16)Sb4_PI_sum > 202) ) ? 202 : ( ( (Sb4_PI_sum < 0) || ((UInt16)Sb4_PI_sum < 40) ) ? 40 : (UInt16)Sb4_PI_sum ) );
+"1631
+[e = _Sb2_Switch2 -> ? && > -> _Sb4_PI_sum `i -> 0 `i > -> -> _Sb4_PI_sum `us `ui -> -> 202 `i `ui : -> -> 202 `i `ui ? || < -> _Sb4_PI_sum `i -> 0 `i < -> -> _Sb4_PI_sum `us `ui -> -> 40 `i `ui : -> -> 40 `i `ui -> -> _Sb4_PI_sum `us `ui `us ]
+"1632
+}
+[e :U 212 ]
+"1633
+}
+[e :U 208 ]
+[; ;BVH2_Appl_Layer.c: 1632: }
+[; ;BVH2_Appl_Layer.c: 1633: }
+[; ;BVH2_Appl_Layer.c: 1637: ui8_duty_cycle_mat = (UInt8) (Int16) (Sb2_Switch2 >> 1);
+"1637
+[e = _ui8_duty_cycle_mat -> -> >> -> _Sb2_Switch2 `ui -> 1 `i `s `uc ]
+[; ;BVH2_Appl_Layer.c: 1640: bl_Pumpoff_Alarm = Sb1_Logical_Operator2;
+"1640
+[e = _bl_Pumpoff_Alarm _Sb1_Logical_Operator2 ]
+[; ;BVH2_Appl_Layer.c: 1641: X_Sb4_Intergrator_TriggerIn = Sb2_Logical_Operator2;
+"1641
+[e = F383 _Sb2_Logical_Operator2 ]
+[; ;BVH2_Appl_Layer.c: 1645: X_Sb4_Intergrator = X_Sb4_Intergrator + ((Int32) (Int16) ((((Int16) ui8_Ki_mat) * Sb2_Error) <<
+[; ;BVH2_Appl_Layer.c: 1646: 3));
+"1646
+[e = F381 + F381 -> -> << * -> -> _ui8_Ki_mat `s `i -> _Sb2_Error `i -> 3 `i `s `l ]
+[; ;BVH2_Appl_Layer.c: 1649: X_Sb4_Intergrator = ( (X_Sb4_Intergrator > 161600) ? 161600 : ( (X_Sb4_Intergrator < 32000) ? 32000 : X_Sb4_Intergrator ) );
+"1649
+[e = F381 ? > F381 -> 161600 `l : -> 161600 `l ? < F381 -> -> 32000 `i `l : -> -> 32000 `i `l F381 ]
+[; ;BVH2_Appl_Layer.c: 1652: Sb1_BVH2_Appl_Layer_FirstRun = 0;
+"1652
+[e = F382 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1653: }
+"1653
+[e :UE 12 ]
+}
+"1677
+[v _Cb1_Current_An___High_node_fcn1 `(v 1 sf ]
+{
+[; ;BVH2_Appl_Layer.c: 1676: static Void Cb1_Current_An___High_node_fcn1(Void)
+[; ;BVH2_Appl_Layer.c: 1677: {
+[e :U _Cb1_Current_An___High_node_fcn1 ]
+[f ]
+[; ;BVH2_Appl_Layer.c: 1680: if (bool_mat_currAlarm_bldc) {
+"1680
+[e $ ! != -> _bool_mat_currAlarm_bldc `i -> -> -> 0 `i `uc `i 214  ]
+{
+[; ;BVH2_Appl_Layer.c: 1682: SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1683: (UInt8)2;
+"1683
+[e = . _SIBFS_Current_Analysis_High_b 0 -> -> -> -> 2 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1684: Cb1_StateCnt = 0 ;
+"1684
+[e = _Cb1_StateCnt -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1685: SIBFS_Current_Analysis_High_b.Cb1_glflag = 3 ;
+"1685
+[e = . _SIBFS_Current_Analysis_High_b 1 -> -> 3 `i `uc ]
+"1686
+}
+[; ;BVH2_Appl_Layer.c: 1686: }
+[e $U 215  ]
+"1687
+[e :U 214 ]
+[; ;BVH2_Appl_Layer.c: 1687: else {
+{
+[; ;BVH2_Appl_Layer.c: 1688: if (Cb1_StateCnt > 100) {
+"1688
+[e $ ! > -> _Cb1_StateCnt `ui -> -> 100 `i `ui 216  ]
+{
+[; ;BVH2_Appl_Layer.c: 1690: SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1691: (UInt8)5;
+"1691
+[e = . _SIBFS_Current_Analysis_High_b 0 -> -> -> -> 5 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1692: Cb1_oShutoff = 0;
+"1692
+[e = _Cb1_oShutoff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1693: Cb1_oCurrentAlarm = 0;
+"1693
+[e = _Cb1_oCurrentAlarm -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1694: Cb1_RestartCounter = 0 ;
+"1694
+[e = _Cb1_RestartCounter -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1695: SIBFS_Current_Analysis_High_b.Cb1_glflag = 3 ;
+"1695
+[e = . _SIBFS_Current_Analysis_High_b 1 -> -> 3 `i `uc ]
+"1696
+}
+[; ;BVH2_Appl_Layer.c: 1696: }
+[e $U 217  ]
+"1697
+[e :U 216 ]
+[; ;BVH2_Appl_Layer.c: 1697: else {
+{
+[; ;BVH2_Appl_Layer.c: 1698: SIBFS_Current_Analysis_High_b.Cb1_glflag = 1 ;
+"1698
+[e = . _SIBFS_Current_Analysis_High_b 1 -> -> 1 `i `uc ]
+"1699
+}
+[e :U 217 ]
+"1700
+}
+[e :U 215 ]
+[; ;BVH2_Appl_Layer.c: 1699: }
+[; ;BVH2_Appl_Layer.c: 1700: }
+[; ;BVH2_Appl_Layer.c: 1701: }
+"1701
+[e :UE 213 ]
+}
+"1721
+[v _Cb34_PWM_Detection_node_fcn1 `(v 1 sf ]
+{
+[; ;BVH2_Appl_Layer.c: 1720: static Void Cb34_PWM_Detection_node_fcn1(Void)
+[; ;BVH2_Appl_Layer.c: 1721: {
+[e :U _Cb34_PWM_Detection_node_fcn1 ]
+[f ]
+[; ;BVH2_Appl_Layer.c: 1722: if ((Cb34_idPWM < 1) || (Cb34_idPWM > 199)) {
+"1722
+[e $ ! || < -> _Cb34_idPWM `i -> 1 `i > -> _Cb34_idPWM `i -> 199 `i 219  ]
+{
+[; ;BVH2_Appl_Layer.c: 1724: SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int) (UInt8)7;
+"1724
+[e = . _SIBFS_PWM_Detection_b 0 -> -> -> -> 7 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1725: Cb34_odPumpOff = 0;
+"1725
+[e = _Cb34_odPumpOff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1726: Cb34_odFixedValueSel = 1;
+"1726
+[e = _Cb34_odFixedValueSel -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1727: Cb34_odFixedLowValueSel = 0;
+"1727
+[e = _Cb34_odFixedLowValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1728: Cb34_oPWM_SC_Alarm = 0;
+"1728
+[e = _Cb34_oPWM_SC_Alarm -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1729: Cb34_oPWM_Alarm = 1;
+"1729
+[e = _Cb34_oPWM_Alarm -> -> 1 `i `uc ]
+"1730
+}
+[; ;BVH2_Appl_Layer.c: 1730: }
+[e $U 220  ]
+"1731
+[e :U 219 ]
+[; ;BVH2_Appl_Layer.c: 1731: else {
+{
+[; ;BVH2_Appl_Layer.c: 1734: if ((ui16_PWM_Freq_mat < 36000) || (ui16_PWM_Freq_mat > 44000)) {
+"1734
+[e $ ! || < -> _ui16_PWM_Freq_mat `l -> 36000 `l > -> _ui16_PWM_Freq_mat `l -> 44000 `l 221  ]
+{
+[; ;BVH2_Appl_Layer.c: 1736: SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int) (UInt8)6;
+"1736
+[e = . _SIBFS_PWM_Detection_b 0 -> -> -> -> 6 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1737: Cb34_odPumpOff = 0;
+"1737
+[e = _Cb34_odPumpOff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1738: Cb34_odFixedValueSel = 1;
+"1738
+[e = _Cb34_odFixedValueSel -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1739: Cb34_odFixedLowValueSel = 0;
+"1739
+[e = _Cb34_odFixedLowValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1740: Cb34_oPWM_SC_Alarm = 1;
+"1740
+[e = _Cb34_oPWM_SC_Alarm -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1741: Cb34_oPWM_Alarm = 0;
+"1741
+[e = _Cb34_oPWM_Alarm -> -> 0 `i `uc ]
+"1742
+}
+[; ;BVH2_Appl_Layer.c: 1742: }
+[e $U 222  ]
+"1743
+[e :U 221 ]
+[; ;BVH2_Appl_Layer.c: 1743: else {
+{
+[; ;BVH2_Appl_Layer.c: 1744: if (Cb34_idPWM <= 5) {
+"1744
+[e $ ! <= -> _Cb34_idPWM `i -> 5 `i 223  ]
+{
+[; ;BVH2_Appl_Layer.c: 1746: SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int) (UInt8)3;
+"1746
+[e = . _SIBFS_PWM_Detection_b 0 -> -> -> -> 3 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1747: Cb34_odPumpOff = 0;
+"1747
+[e = _Cb34_odPumpOff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1748: Cb34_odFixedValueSel = 1;
+"1748
+[e = _Cb34_odFixedValueSel -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1749: Cb34_odFixedLowValueSel = 0;
+"1749
+[e = _Cb34_odFixedLowValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1750: Cb34_oPWM_SC_Alarm = 1;
+"1750
+[e = _Cb34_oPWM_SC_Alarm -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1751: Cb34_oPWM_Alarm = 0;
+"1751
+[e = _Cb34_oPWM_Alarm -> -> 0 `i `uc ]
+"1752
+}
+[; ;BVH2_Appl_Layer.c: 1752: }
+[e $U 224  ]
+"1753
+[e :U 223 ]
+[; ;BVH2_Appl_Layer.c: 1753: else {
+{
+[; ;BVH2_Appl_Layer.c: 1754: if (Cb34_idPWM < 9) {
+"1754
+[e $ ! < -> _Cb34_idPWM `i -> 9 `i 225  ]
+{
+[; ;BVH2_Appl_Layer.c: 1757: SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1758: (UInt8)8;
+"1758
+[e = . _SIBFS_PWM_Detection_b 0 -> -> -> -> 8 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1759: Cb34_odPumpOff = 1;
+"1759
+[e = _Cb34_odPumpOff -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1760: Cb34_odFixedValueSel = 0;
+"1760
+[e = _Cb34_odFixedValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1761: Cb34_odFixedLowValueSel = 0;
+"1761
+[e = _Cb34_odFixedLowValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1762: Cb34_oPWM_SC_Alarm = 1;
+"1762
+[e = _Cb34_oPWM_SC_Alarm -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1763: Cb34_oPWM_Alarm = 0;
+"1763
+[e = _Cb34_oPWM_Alarm -> -> 0 `i `uc ]
+"1764
+}
+[; ;BVH2_Appl_Layer.c: 1764: }
+[e $U 226  ]
+"1765
+[e :U 225 ]
+[; ;BVH2_Appl_Layer.c: 1765: else {
+{
+[; ;BVH2_Appl_Layer.c: 1766: if (Cb34_idPWM > 191) {
+"1766
+[e $ ! > -> _Cb34_idPWM `i -> 191 `i 227  ]
+{
+[; ;BVH2_Appl_Layer.c: 1769: SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1770: (UInt8)4;
+"1770
+[e = . _SIBFS_PWM_Detection_b 0 -> -> -> -> 4 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1771: Cb34_odPumpOff = 0;
+"1771
+[e = _Cb34_odPumpOff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1772: Cb34_odFixedValueSel = 1;
+"1772
+[e = _Cb34_odFixedValueSel -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1773: Cb34_odFixedLowValueSel = 0;
+"1773
+[e = _Cb34_odFixedLowValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1774: Cb34_oPWM_SC_Alarm = 1;
+"1774
+[e = _Cb34_oPWM_SC_Alarm -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1775: Cb34_oPWM_Alarm = 0;
+"1775
+[e = _Cb34_oPWM_Alarm -> -> 0 `i `uc ]
+"1776
+}
+[; ;BVH2_Appl_Layer.c: 1776: }
+[e $U 228  ]
+"1777
+[e :U 227 ]
+[; ;BVH2_Appl_Layer.c: 1777: else {
+{
+[; ;BVH2_Appl_Layer.c: 1778: if (Cb34_idPWM >= 23) {
+"1778
+[e $ ! >= -> _Cb34_idPWM `i -> 23 `i 229  ]
+{
+[; ;BVH2_Appl_Layer.c: 1781: SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1782: (UInt8)2;
+"1782
+[e = . _SIBFS_PWM_Detection_b 0 -> -> -> -> 2 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1783: Cb34_odPumpOff = 0;
+"1783
+[e = _Cb34_odPumpOff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1784: Cb34_odFixedLowValueSel = 0;
+"1784
+[e = _Cb34_odFixedLowValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1785: Cb34_odFixedValueSel = 0;
+"1785
+[e = _Cb34_odFixedValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1786: Cb34_oPWM_SC_Alarm = 0;
+"1786
+[e = _Cb34_oPWM_SC_Alarm -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1787: Cb34_oPWM_Alarm = 0;
+"1787
+[e = _Cb34_oPWM_Alarm -> -> 0 `i `uc ]
+"1788
+}
+[; ;BVH2_Appl_Layer.c: 1788: }
+[e $U 230  ]
+"1789
+[e :U 229 ]
+[; ;BVH2_Appl_Layer.c: 1789: else {
+{
+[; ;BVH2_Appl_Layer.c: 1790: if (Cb34_idPWM > 19) {
+"1790
+[e $ ! > -> _Cb34_idPWM `i -> 19 `i 231  ]
+{
+[; ;BVH2_Appl_Layer.c: 1793: SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1794: (UInt8)5;
+"1794
+[e = . _SIBFS_PWM_Detection_b 0 -> -> -> -> 5 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1795: Cb34_odPumpOff = 0;
+"1795
+[e = _Cb34_odPumpOff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1796: Cb34_odFixedValueSel = 0;
+"1796
+[e = _Cb34_odFixedValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1797: Cb34_odFixedLowValueSel = 1;
+"1797
+[e = _Cb34_odFixedLowValueSel -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1798: Cb34_oPWM_SC_Alarm = 0;
+"1798
+[e = _Cb34_oPWM_SC_Alarm -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1799: Cb34_oPWM_Alarm = 0;
+"1799
+[e = _Cb34_oPWM_Alarm -> -> 0 `i `uc ]
+"1800
+}
+[; ;BVH2_Appl_Layer.c: 1800: }
+[e $U 232  ]
+"1801
+[e :U 231 ]
+[; ;BVH2_Appl_Layer.c: 1801: else {
+{
+[; ;BVH2_Appl_Layer.c: 1802: if (Cb34_idPWM <= 19) {
+"1802
+[e $ ! <= -> _Cb34_idPWM `i -> 19 `i 233  ]
+{
+[; ;BVH2_Appl_Layer.c: 1805: SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
+[; ;BVH2_Appl_Layer.c: 1806: (UInt8)1;
+"1806
+[e = . _SIBFS_PWM_Detection_b 0 -> -> -> -> 1 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1807: Cb34_odPumpOff = 1;
+"1807
+[e = _Cb34_odPumpOff -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1808: Cb34_odFixedValueSel = 0;
+"1808
+[e = _Cb34_odFixedValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1809: Cb34_odFixedLowValueSel = 0;
+"1809
+[e = _Cb34_odFixedLowValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1810: Cb34_oPWM_SC_Alarm = 0;
+"1810
+[e = _Cb34_oPWM_SC_Alarm -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1811: Cb34_oPWM_Alarm = 0;
+"1811
+[e = _Cb34_oPWM_Alarm -> -> 0 `i `uc ]
+"1812
+}
+[e :U 233 ]
+"1813
+}
+[e :U 232 ]
+"1814
+}
+[e :U 230 ]
+"1815
+}
+[e :U 228 ]
+"1816
+}
+[e :U 226 ]
+"1817
+}
+[e :U 224 ]
+"1818
+}
+[e :U 222 ]
+"1819
+}
+[e :U 220 ]
+[; ;BVH2_Appl_Layer.c: 1812: }
+[; ;BVH2_Appl_Layer.c: 1813: }
+[; ;BVH2_Appl_Layer.c: 1814: }
+[; ;BVH2_Appl_Layer.c: 1815: }
+[; ;BVH2_Appl_Layer.c: 1816: }
+[; ;BVH2_Appl_Layer.c: 1817: }
+[; ;BVH2_Appl_Layer.c: 1818: }
+[; ;BVH2_Appl_Layer.c: 1819: }
+[; ;BVH2_Appl_Layer.c: 1820: }
+"1820
+[e :UE 218 ]
+}
+"1840
+[v _Cb44_Pic_etat_monitor_node_fcn1 `(v 1 sf ]
+{
+[; ;BVH2_Appl_Layer.c: 1839: static Void Cb44_Pic_etat_monitor_node_fcn1(Void)
+[; ;BVH2_Appl_Layer.c: 1840: {
+[e :U _Cb44_Pic_etat_monitor_node_fcn1 ]
+[f ]
+[; ;BVH2_Appl_Layer.c: 1843: if (bool_mat_pic_etat) {
+"1843
+[e $ ! != -> _bool_mat_pic_etat `i -> -> -> 0 `i `uc `i 235  ]
+{
+[; ;BVH2_Appl_Layer.c: 1845: SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) (UInt8)2;
+"1845
+[e = . _SIBFS_Pic_etat_monitor_b 0 -> -> -> -> 2 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1846: Cb44_StateCnt = 0 ;
+"1846
+[e = _Cb44_StateCnt -> -> 0 `i `us ]
+[; ;BVH2_Appl_Layer.c: 1847: SIBFS_Pic_etat_monitor_b.Cb44_glflag = 3 ;
+"1847
+[e = . _SIBFS_Pic_etat_monitor_b 1 -> -> 3 `i `uc ]
+"1848
+}
+[; ;BVH2_Appl_Layer.c: 1848: }
+[e $U 236  ]
+"1849
+[e :U 235 ]
+[; ;BVH2_Appl_Layer.c: 1849: else {
+{
+[; ;BVH2_Appl_Layer.c: 1850: if (Cb44_StateCnt > 5) {
+"1850
+[e $ ! > -> _Cb44_StateCnt `ui -> -> 5 `i `ui 237  ]
+{
+[; ;BVH2_Appl_Layer.c: 1852: SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) (UInt8)3;
+"1852
+[e = . _SIBFS_Pic_etat_monitor_b 0 -> -> -> -> 3 `i `uc `ui `uc ]
+[; ;BVH2_Appl_Layer.c: 1853: Cb44_oShutoff = 0;
+"1853
+[e = _Cb44_oShutoff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1854: Cb44_oAlarm = 0;
+"1854
+[e = _Cb44_oAlarm -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1855: SIBFS_Pic_etat_monitor_b.Cb44_glflag = 3 ;
+"1855
+[e = . _SIBFS_Pic_etat_monitor_b 1 -> -> 3 `i `uc ]
+"1856
+}
+[; ;BVH2_Appl_Layer.c: 1856: }
+[e $U 238  ]
+"1857
+[e :U 237 ]
+[; ;BVH2_Appl_Layer.c: 1857: else {
+{
+[; ;BVH2_Appl_Layer.c: 1858: SIBFS_Pic_etat_monitor_b.Cb44_glflag = 1 ;
+"1858
+[e = . _SIBFS_Pic_etat_monitor_b 1 -> -> 1 `i `uc ]
+"1859
+}
+[e :U 238 ]
+"1860
+}
+[e :U 236 ]
+[; ;BVH2_Appl_Layer.c: 1859: }
+[; ;BVH2_Appl_Layer.c: 1860: }
+[; ;BVH2_Appl_Layer.c: 1861: }
+"1861
+[e :UE 234 ]
+}
+"1881
+[v _Cb56_UbatHandling_node_fcn2 `(v 1 sf ]
+{
+[; ;BVH2_Appl_Layer.c: 1880: static Void Cb56_UbatHandling_node_fcn2(Void)
+[; ;BVH2_Appl_Layer.c: 1881: {
+[e :U _Cb56_UbatHandling_node_fcn2 ]
+[f ]
+[; ;BVH2_Appl_Layer.c: 1883: if (((UInt8)ui8_BattVolt_mat) > 230) {
+"1883
+[e $ ! > -> -> _ui8_BattVolt_mat `uc `i -> 230 `i 240  ]
+{
+[; ;BVH2_Appl_Layer.c: 1885: switch (SIBFS_UbatHandling_b.Aux_sflag3) {
+"1885
+[e $U 242  ]
+{
+[; ;BVH2_Appl_Layer.c: 1886: case 2: {
+"1886
+[e :U 243 ]
+{
+[; ;BVH2_Appl_Layer.c: 1887: SIBFS_UbatHandling_b.Cb58_SaturationHigh = 0;
+"1887
+[e = . _SIBFS_UbatHandling_b 2 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1888: break;
+"1888
+[e $U 241  ]
+"1889
+}
+[; ;BVH2_Appl_Layer.c: 1889: }
+[; ;BVH2_Appl_Layer.c: 1890: case 3: {
+"1890
+[e :U 244 ]
+{
+[; ;BVH2_Appl_Layer.c: 1891: SIBFS_UbatHandling_b.Cb59_SaturationLow = 0;
+"1891
+[e = . _SIBFS_UbatHandling_b 3 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1892: break;
+"1892
+[e $U 241  ]
+"1893
+}
+[; ;BVH2_Appl_Layer.c: 1893: }
+[; ;BVH2_Appl_Layer.c: 1894: default: {
+"1894
+[e :U 245 ]
+{
+[; ;BVH2_Appl_Layer.c: 1895: SIBFS_UbatHandling_b.Cb60_NormalUbat = 0;
+"1895
+[e = . _SIBFS_UbatHandling_b 4 -> -> 0 `i `uc ]
+"1896
+}
+"1897
+}
+[; ;BVH2_Appl_Layer.c: 1896: }
+[; ;BVH2_Appl_Layer.c: 1897: }
+[e $U 241  ]
+"1885
+[e :U 242 ]
+[e [\ . _SIBFS_UbatHandling_b 0 , $ -> -> 2 `i `uc 243
+ , $ -> -> 3 `i `uc 244
+ 245 ]
+"1897
+[e :U 241 ]
+[; ;BVH2_Appl_Layer.c: 1898: SIBFS_UbatHandling_b.Cb58_SaturationHigh = 1;
+"1898
+[e = . _SIBFS_UbatHandling_b 2 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1899: Cb56_odPumpOff = 1;
+"1899
+[e = _Cb56_odPumpOff -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1900: Cb56_odFixedValueSel = 0;
+"1900
+[e = _Cb56_odFixedValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1901: Cb56_oUbat_Alarm_High = 1;
+"1901
+[e = _Cb56_oUbat_Alarm_High -> -> 1 `i `uc ]
+"1902
+}
+[; ;BVH2_Appl_Layer.c: 1902: }
+[e $U 246  ]
+"1903
+[e :U 240 ]
+[; ;BVH2_Appl_Layer.c: 1903: else {
+{
+[; ;BVH2_Appl_Layer.c: 1904: switch (SIBFS_UbatHandling_b.Aux_sflag3) {
+"1904
+[e $U 248  ]
+{
+[; ;BVH2_Appl_Layer.c: 1905: case 2: {
+"1905
+[e :U 249 ]
+{
+[; ;BVH2_Appl_Layer.c: 1906: SIBFS_UbatHandling_b.Cb58_SaturationHigh = 0;
+"1906
+[e = . _SIBFS_UbatHandling_b 2 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1907: break;
+"1907
+[e $U 247  ]
+"1908
+}
+[; ;BVH2_Appl_Layer.c: 1908: }
+[; ;BVH2_Appl_Layer.c: 1909: case 3: {
+"1909
+[e :U 250 ]
+{
+[; ;BVH2_Appl_Layer.c: 1910: SIBFS_UbatHandling_b.Cb59_SaturationLow = 0;
+"1910
+[e = . _SIBFS_UbatHandling_b 3 -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1911: break;
+"1911
+[e $U 247  ]
+"1912
+}
+[; ;BVH2_Appl_Layer.c: 1912: }
+[; ;BVH2_Appl_Layer.c: 1913: default: {
+"1913
+[e :U 251 ]
+{
+[; ;BVH2_Appl_Layer.c: 1914: SIBFS_UbatHandling_b.Cb60_NormalUbat = 0;
+"1914
+[e = . _SIBFS_UbatHandling_b 4 -> -> 0 `i `uc ]
+"1915
+}
+"1916
+}
+[; ;BVH2_Appl_Layer.c: 1915: }
+[; ;BVH2_Appl_Layer.c: 1916: }
+[e $U 247  ]
+"1904
+[e :U 248 ]
+[e [\ . _SIBFS_UbatHandling_b 0 , $ -> -> 2 `i `uc 249
+ , $ -> -> 3 `i `uc 250
+ 251 ]
+"1916
+[e :U 247 ]
+[; ;BVH2_Appl_Layer.c: 1919: if (((UInt8)ui8_BattVolt_mat) < 45) {
+"1919
+[e $ ! < -> -> _ui8_BattVolt_mat `uc `i -> 45 `i 252  ]
+{
+[; ;BVH2_Appl_Layer.c: 1921: SIBFS_UbatHandling_b.Cb59_SaturationLow = 1;
+"1921
+[e = . _SIBFS_UbatHandling_b 3 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1922: Cb56_odPumpOff = 1;
+"1922
+[e = _Cb56_odPumpOff -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1923: Cb56_odFixedValueSel = 0;
+"1923
+[e = _Cb56_odFixedValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1924: Cb56_oUbat_Alarm_High = 1;
+"1924
+[e = _Cb56_oUbat_Alarm_High -> -> 1 `i `uc ]
+"1925
+}
+[; ;BVH2_Appl_Layer.c: 1925: }
+[e $U 253  ]
+"1926
+[e :U 252 ]
+[; ;BVH2_Appl_Layer.c: 1926: else {
+{
+[; ;BVH2_Appl_Layer.c: 1928: SIBFS_UbatHandling_b.Cb60_NormalUbat = 1;
+"1928
+[e = . _SIBFS_UbatHandling_b 4 -> -> 1 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1929: Cb56_odPumpOff = 0;
+"1929
+[e = _Cb56_odPumpOff -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1930: Cb56_odFixedValueSel = 0;
+"1930
+[e = _Cb56_odFixedValueSel -> -> 0 `i `uc ]
+[; ;BVH2_Appl_Layer.c: 1931: Cb56_oUbat_Alarm_High = 0;
+"1931
+[e = _Cb56_oUbat_Alarm_High -> -> 0 `i `uc ]
+"1932
+}
+[e :U 253 ]
+"1933
+}
+[e :U 246 ]
+[; ;BVH2_Appl_Layer.c: 1932: }
+[; ;BVH2_Appl_Layer.c: 1933: }
+[; ;BVH2_Appl_Layer.c: 1934: }
+"1934
+[e :UE 239 ]
+}

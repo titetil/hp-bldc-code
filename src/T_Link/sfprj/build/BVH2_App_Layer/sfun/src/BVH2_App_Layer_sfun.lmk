@@ -1,0 +1,56 @@
+CC     = "c:\programme\matlab6p5\sys\lcc\bin\lcc.exe"
+LD     = "c:\programme\matlab6p5\sys\lcc\bin\lcclnk.exe"
+LIBCMD = "c:\programme\matlab6p5\sys\lcc\bin\lcclib.exe"
+CFLAGS = -c -Zp8 -DMATLAB_MEX_FILE -noregistrylookup
+LDFLAGS = -s -dll -L"c:\programme\matlab6p5\sys\lcc\lib"
+LIBFLAGS = 
+
+OBJECTS = \
+	"BVH2_App_Layer_sfun.obj"\
+	"BVH2_App_Layer_sfun_registry.obj"\
+	"BVH2_App_Layer_sfun_c1.obj"\
+	"BVH2_App_Layer_sfun_c2.obj"\
+	"BVH2_App_Layer_sfun_c3.obj"\
+	"BVH2_App_Layer_sfun_c4.obj"\
+	"BVH2_App_Layer_sfun_c5.obj"\
+	"BVH2_App_Layer_sfun_c6.obj"\
+	"BVH2_App_Layer_sfun_c7.obj"\
+	"BVH2_App_Layer_sfun_c8.obj"\
+	"BVH2_App_Layer_sfun_c9.obj"\
+	"lccstub.obj"\
+	"c:\programme\matlab6p5\sys\lcc\mex\lccdef.def"\
+	"c:\programme\matlab6p5\stateflow\c\debugger\lib\win32\sfc_debuglcc.lib"\
+	"c:\programme\matlab6p5\stateflow\c\mex\lib\win32\sfc_mexlcc.lib"\
+	"c:\programme\matlab6p5\extern\lib\win32\lcc\libmex.lib"\
+	"c:\programme\matlab6p5\extern\lib\win32\lcc\libmx.lib"\
+	"c:\programme\matlab6p5\extern\lib\win32\lcc\libfixedpoint.lib"\
+
+INCLUDE_PATH= -I"c:\programme\matlab6p5\sys\lcc\include"  -I"c:\programme\matlab6p5\extern\include"  -I"c:\programme\matlab6p5\simulink\include"  -I"c:\programme\matlab6p5\stateflow\c\mex\include"  -I"c:\programme\matlab6p5\stateflow\c\debugger\include"  -I"d:\projekte\bvh2\bldc1\v0.9.3\src\t_link\sfprj\build\bvh2_app_layer\sfun\src"  -I"d:\projekte\bvh2\bldc1\v0.9.3\src\t_link" 
+ 
+
+BVH2_App_Layer_sfun.dll : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o BVH2_App_Layer_sfun.dll @BVH2_App_Layer_sfun.lmko
+BVH2_App_Layer_sfun.obj :	"BVH2_App_Layer_sfun.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "BVH2_App_Layer_sfun.c"
+BVH2_App_Layer_sfun_registry.obj :	"BVH2_App_Layer_sfun_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "BVH2_App_Layer_sfun_registry.c"
+BVH2_App_Layer_sfun_c1.obj :	"BVH2_App_Layer_sfun_c1.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "BVH2_App_Layer_sfun_c1.c"
+BVH2_App_Layer_sfun_c2.obj :	"BVH2_App_Layer_sfun_c2.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "BVH2_App_Layer_sfun_c2.c"
+BVH2_App_Layer_sfun_c3.obj :	"BVH2_App_Layer_sfun_c3.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "BVH2_App_Layer_sfun_c3.c"
+BVH2_App_Layer_sfun_c4.obj :	"BVH2_App_Layer_sfun_c4.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "BVH2_App_Layer_sfun_c4.c"
+BVH2_App_Layer_sfun_c5.obj :	"BVH2_App_Layer_sfun_c5.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "BVH2_App_Layer_sfun_c5.c"
+BVH2_App_Layer_sfun_c6.obj :	"BVH2_App_Layer_sfun_c6.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "BVH2_App_Layer_sfun_c6.c"
+BVH2_App_Layer_sfun_c7.obj :	"BVH2_App_Layer_sfun_c7.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "BVH2_App_Layer_sfun_c7.c"
+BVH2_App_Layer_sfun_c8.obj :	"BVH2_App_Layer_sfun_c8.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "BVH2_App_Layer_sfun_c8.c"
+BVH2_App_Layer_sfun_c9.obj :	"BVH2_App_Layer_sfun_c9.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "BVH2_App_Layer_sfun_c9.c"
+lccstub.obj :	"c:\programme\matlab6p5\sys\lcc\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c:\programme\matlab6p5\sys\lcc\mex\lccstub.c"
