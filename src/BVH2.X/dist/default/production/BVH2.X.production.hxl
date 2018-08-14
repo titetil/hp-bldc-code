@@ -24,7 +24,7 @@
   1000Eh - 10011h
   
 ### Checksum Reports ###
- Checksum 0 : (0h to 3FFBh) = 3CAC
+ Checksum 0 : (0h to 3FFBh) = 3C06
 
 ### Hex Memory Map ###
  Legend:

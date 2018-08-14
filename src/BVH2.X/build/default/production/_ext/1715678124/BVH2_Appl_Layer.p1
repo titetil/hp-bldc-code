@@ -1255,9 +1255,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;BVH2_Appl_Layer.c: 644: SIBFS_UbatHandling_b.Aux_sflag3 = 2 ;
 "644
 [e = . _SIBFS_UbatHandling_b 0 -> -> 2 `i `uc ]
-[; ;BVH2_Appl_Layer.c: 647: if (((UInt8)ui8_BattVolt_mat) < 222) {
+[; ;BVH2_Appl_Layer.c: 647: if (((UInt8)ui8_BattVolt_mat) < 139) {
 "647
-[e $ ! < -> -> _ui8_BattVolt_mat `uc `i -> 222 `i 51  ]
+[e $ ! < -> -> _ui8_BattVolt_mat `uc `i -> 139 `i 51  ]
 {
 [; ;BVH2_Appl_Layer.c: 648: Cb56_UbatHandling_node_fcn2();
 "648
@@ -3802,9 +3802,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;BVH2_Appl_Layer.c: 1881: {
 [e :U _Cb56_UbatHandling_node_fcn2 ]
 [f ]
-[; ;BVH2_Appl_Layer.c: 1883: if (((UInt8)ui8_BattVolt_mat) > 230) {
+[; ;BVH2_Appl_Layer.c: 1883: if (((UInt8)ui8_BattVolt_mat) > 147) {
 "1883
-[e $ ! > -> -> _ui8_BattVolt_mat `uc `i -> 230 `i 240  ]
+[e $ ! > -> -> _ui8_BattVolt_mat `uc `i -> 147 `i 240  ]
 {
 [; ;BVH2_Appl_Layer.c: 1885: switch (SIBFS_UbatHandling_b.Aux_sflag3) {
 "1885

@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC PRO Macro Assembler V1.44 build -154322312 
-                                                                                               Mon Jun 04 14:38:05 2018
+                                                                                               Thu Jul 12 09:16:01 2018
 
 Microchip Technology Omniscient Code Generator v1.44 (PRO mode) build 201709140600
      1                           	processor	16F1936
@@ -14169,8 +14169,8 @@ Microchip Technology Omniscient Code Generator v1.44 (PRO mode) build 2017091406
  14055  08E3  3802               	iorlw	2
  14056  08E4  00C6               	movwf	_SIBFS_UbatHandling_b^(0+128)
  14057                           
- 14058                           ;BVH2_Appl_Layer.c: 647: if (((UInt8)ui8_BattVolt_mat) < 222) {
- 14059  08E5  30DE               	movlw	222
+ 14058                           ;BVH2_Appl_Layer.c: 647: if (((UInt8)ui8_BattVolt_mat) < 139) {
+ 14059  08E5  308B               	movlw	139
  14060  08E6  0232               	subwf	_ui8_BattVolt_mat^(0+128),w
  14061  08E7  1803               	skipnc
  14062  08E8  2903               	goto	l1601
@@ -16961,11 +16961,11 @@ Microchip Technology Omniscient Code Generator v1.44 (PRO mode) build 2017091406
  16802                           ;psect for function _Cb56_UbatHandling_node_fcn2
  16803  0EEA                     _Cb56_UbatHandling_node_fcn2:	
  16804                           
- 16805                           ;BVH2_Appl_Layer.c: 1883: if (((UInt8)ui8_BattVolt_mat) > 230) {
+ 16805                           ;BVH2_Appl_Layer.c: 1883: if (((UInt8)ui8_BattVolt_mat) > 147) {
  16806                           
  16807                           ;incstack = 0
  16808                           ; Regs used in _Cb56_UbatHandling_node_fcn2: [wreg-fsr0h+status,2+status,0]
- 16809  0EEA  30E7               	movlw	231
+ 16809  0EEA  3094               	movlw	148
  16810  0EEB  0232               	subwf	_ui8_BattVolt_mat^(0+128),w
  16811  0EEC  1803               	btfsc	3,0
  16812  0EED  2EF5               	goto	l10254
@@ -18256,7 +18256,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.44 build -154322312 
-Symbol Table                                                                                   Mon Jun 04 14:38:05 2018
+Symbol Table                                                                                   Thu Jul 12 09:16:01 2018
 
                                EOL@_dcnt_420 0228                                 EOL@_dcnt_421 0229  
                                EOL@_dcnt_413 0221                                 EOL@_dcnt_422 022A  

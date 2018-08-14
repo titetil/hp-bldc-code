@@ -644,7 +644,7 @@ Void BVH2_Appl_Layer(Void)
          SIBFS_UbatHandling_b.Aux_sflag3 = 2 /* 2. */;
 
          /* # combined # update of inport for BVH2_Appl_Layer/UbatHandling */
-         if (((UInt8)ui8_BattVolt_mat) < 222) {
+         if (((UInt8)ui8_BattVolt_mat) < 139) { /*was 222 */
             Cb56_UbatHandling_node_fcn2();
          }
 
@@ -1880,7 +1880,7 @@ static Void Cb44_Pic_etat_monitor_node_fcn1(Void)
 static Void Cb56_UbatHandling_node_fcn2(Void)
 {
    /* # combined # update of inport for BVH2_Appl_Layer/UbatHandling */
-   if (((UInt8)ui8_BattVolt_mat) > 230) {
+   if (((UInt8)ui8_BattVolt_mat) > 147) { /* was 230 */
       /* State transition to BVH2_Appl_Layer/UbatHandling.Ubat_Handling.SaturationHigh */
       switch (SIBFS_UbatHandling_b.Aux_sflag3) {
          case 2: {

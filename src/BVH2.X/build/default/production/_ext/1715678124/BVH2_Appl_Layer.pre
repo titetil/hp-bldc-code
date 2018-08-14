@@ -672,7 +672,7 @@ if (SIBFS_UbatHandling_b.Cb58_SaturationHigh) {
 SIBFS_UbatHandling_b.Aux_sflag3 = 2 ;
 
 
-if (((UInt8)ui8_BattVolt_mat) < 222) {
+if (((UInt8)ui8_BattVolt_mat) < 139) {
 Cb56_UbatHandling_node_fcn2();
 }
 
@@ -1772,7 +1772,7 @@ SIBFS_Pic_etat_monitor_b.Cb44_glflag = 1 ;
 static Void Cb56_UbatHandling_node_fcn2(Void)
 {
 
-if (((UInt8)ui8_BattVolt_mat) > 230) {
+if (((UInt8)ui8_BattVolt_mat) > 147) {
 
 switch (SIBFS_UbatHandling_b.Aux_sflag3) {
 case 2: {
