@@ -1249,12 +1249,7 @@ if (SIBFS_Dry_Running_b.Cb15_greenState) {
 if ((((Int32)ui16_mat_Current) < (ui16_dryRun_Thresh - 5)) && (ui16_Speed_mat < 400) &&
 (ui16_Speed_mat > 80)) {
 
-# 1255
-SIBFS_Dry_Running_b.Cb15_greenState = 0;
-SIBFS_Dry_Running_b.Cb16_DryRunning = 1;
-SIBFS_Dry_Running_b.Cb18_CntOverCurrent = 1;
-Cb14_StateCnt = 0 ;
-Cb14_oDryRunAlarm = 0;
+# 1260
 }
 
 

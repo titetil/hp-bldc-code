@@ -1050,7 +1050,8 @@ void main( void )
             /*~T*/
             /** Connect the matlab layer with the program */
             //ui8_PWM_dc_mat    = PWMReadDC( );          /* connect input duty cycle to Matlab ui8_duty_cycle 0 .. 200 */
-            ui8_PWM_dc_mat    = 160; // constant 80% duty cycle command
+            //ui8_PWM_dc_mat    = 160; // constant 80% duty cycle command
+            ui8_PWM_dc_mat    = 200; // constant 100% duty cycle command
             ui16_PWM_Freq_mat = ui16_PWM_Freq_In;
             ui16_Speed_mat    = ui16_speed_fil;
             ui16_mat_inpTemp = ui16_NTC_Temp_bldc_mean_cal;
@@ -1089,7 +1090,7 @@ void main( void )
 
                /* Max Speed assignement */
                ui16_Speed_demand_mat_Max = ( PWM_trans_table[ 95 ] ) * 4 / 5;
-
+                
                /* Min Speed assignement */
                ui16_Speed_demand_mat_min = ( PWM_trans_table[ 11 ] ) * 4 / 5;
             /*~-*/

@@ -2,7 +2,7 @@
 Memory Class Usage:
 
 Program space:
-    CODE                 used  1BB3h (  7091) of  1FFFh words   ( 86.6%)
+    CODE                 used  1B87h (  7047) of  1FFFh words   ( 86.0%)
     STRCODE              used    65h (   101) of  1FFFh words   (  1.2%)
     STRING               used     0h (     0) of  1FFFh words   (  0.0%)
     CONST                used    4Ch (    76) of  1FFFh words   (  0.9%)

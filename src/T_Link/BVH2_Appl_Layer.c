@@ -1252,11 +1252,11 @@ Void BVH2_Appl_Layer(Void)
        (ui16_Speed_mat > 80)) {
          /* State transition from BVH2_Appl_Layer/Dry_Running.greenState to BVH2_Appl_Layer/Dry_Runn
             ing.DryRunning.CntOverCurrent */
-         SIBFS_Dry_Running_b.Cb15_greenState = 0;
-         SIBFS_Dry_Running_b.Cb16_DryRunning = 1;
-         SIBFS_Dry_Running_b.Cb18_CntOverCurrent = 1;
-         Cb14_StateCnt = 0 /* 0. */;
-         Cb14_oDryRunAlarm = 0;
+         //SIBFS_Dry_Running_b.Cb15_greenState = 0;
+         //SIBFS_Dry_Running_b.Cb16_DryRunning = 1;
+         //SIBFS_Dry_Running_b.Cb18_CntOverCurrent = 1;
+         //Cb14_StateCnt = 0 /* 0. */;
+         //Cb14_oDryRunAlarm = 0;
       }
 
       /* End execution of state BVH2_Appl_Layer/Dry_Running.greenState */
@@ -1276,7 +1276,7 @@ Void BVH2_Appl_Layer(Void)
                   # combined # update of inport for BVH2_Appl_Layer/Dry_Running
                   # combined # update of inport for BVH2_Appl_Layer/Dry_Running
                   # combined # update of inport for BVH2_Appl_Layer/Dry_Running */
-               if ((((UInt32)ui16_mat_Current) > (ui16_dryRun_Thresh + 5)) || (ui16_Speed_mat >
+                if ((((UInt32)ui16_mat_Current) > (ui16_dryRun_Thresh + 5)) || (ui16_Speed_mat >
                 400) || (ui16_Speed_mat < 80)) {
                   /* State transition to BVH2_Appl_Layer/Dry_Running.greenState */
                   SIBFS_Dry_Running_b.Cb18_CntOverCurrent = 0;

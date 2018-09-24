@@ -4177,264 +4177,264 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 1047: asm("clrwdt");
 "1047
 [; <" clrwdt ;# ">
-[; ;main.c: 1053: ui8_PWM_dc_mat = 160;
-"1053
-[e = _ui8_PWM_dc_mat -> -> 160 `i `uc ]
-[; ;main.c: 1054: ui16_PWM_Freq_mat = ui16_PWM_Freq_In;
+[; ;main.c: 1054: ui8_PWM_dc_mat = 200;
 "1054
-[e = _ui16_PWM_Freq_mat -> _ui16_PWM_Freq_In `us ]
-[; ;main.c: 1055: ui16_Speed_mat = ui16_speed_fil;
+[e = _ui8_PWM_dc_mat -> -> 200 `i `uc ]
+[; ;main.c: 1055: ui16_PWM_Freq_mat = ui16_PWM_Freq_In;
 "1055
-[e = _ui16_Speed_mat _ui16_speed_fil ]
-[; ;main.c: 1056: ui16_mat_inpTemp = ui16_NTC_Temp_bldc_mean_cal;
+[e = _ui16_PWM_Freq_mat -> _ui16_PWM_Freq_In `us ]
+[; ;main.c: 1056: ui16_Speed_mat = ui16_speed_fil;
 "1056
-[e = _ui16_mat_inpTemp -> _ui16_NTC_Temp_bldc_mean_cal `us ]
-[; ;main.c: 1057: ui8_Ki_mat = 5;
+[e = _ui16_Speed_mat _ui16_speed_fil ]
+[; ;main.c: 1057: ui16_mat_inpTemp = ui16_NTC_Temp_bldc_mean_cal;
 "1057
-[e = _ui8_Ki_mat -> -> 5 `i `us ]
-[; ;main.c: 1058: ui8_Kp_mat = 0;
+[e = _ui16_mat_inpTemp -> _ui16_NTC_Temp_bldc_mean_cal `us ]
+[; ;main.c: 1058: ui8_Ki_mat = 5;
 "1058
+[e = _ui8_Ki_mat -> -> 5 `i `us ]
+[; ;main.c: 1059: ui8_Kp_mat = 0;
+"1059
 [e = _ui8_Kp_mat -> -> 0 `i `uc ]
-[; ;main.c: 1068: if( ui8_error_Flags.bits.B1 == 1 )
-"1068
+[; ;main.c: 1069: if( ui8_error_Flags.bits.B1 == 1 )
+"1069
 [e $ ! == -> . . _ui8_error_Flags 1 1 `i -> 1 `i 400  ]
-[; ;main.c: 1070: {
-"1070
+[; ;main.c: 1071: {
+"1071
 {
-[; ;main.c: 1073: ui16_Speed_demand_mat = ( PWM_trans_table[ ( ui8_PWM_dc_mat>>1 ) ] )>>1;
-"1073
+[; ;main.c: 1074: ui16_Speed_demand_mat = ( PWM_trans_table[ ( ui8_PWM_dc_mat>>1 ) ] )>>1;
+"1074
 [e = _ui16_Speed_demand_mat -> >> -> *U + &U _PWM_trans_table * -> -> >> -> _ui8_PWM_dc_mat `i -> 1 `i `ui `ux -> -> # *U &U _PWM_trans_table `ui `ux `i -> 1 `i `us ]
-[; ;main.c: 1076: ui16_Speed_demand_mat_Max = ( PWM_trans_table[ 95 ] )>>1;
-"1076
+[; ;main.c: 1077: ui16_Speed_demand_mat_Max = ( PWM_trans_table[ 95 ] )>>1;
+"1077
 [e = _ui16_Speed_demand_mat_Max -> >> -> *U + &U _PWM_trans_table * -> -> -> 95 `i `ui `ux -> -> # *U &U _PWM_trans_table `ui `ux `i -> 1 `i `us ]
-[; ;main.c: 1079: ui16_Speed_demand_mat_min = ( PWM_trans_table[ 11 ] )>>1;
-"1079
+[; ;main.c: 1080: ui16_Speed_demand_mat_min = ( PWM_trans_table[ 11 ] )>>1;
+"1080
 [e = _ui16_Speed_demand_mat_min -> >> -> *U + &U _PWM_trans_table * -> -> -> 11 `i `ui `ux -> -> # *U &U _PWM_trans_table `ui `ux `i -> 1 `i `us ]
-"1081
+"1082
 }
-[; ;main.c: 1081: }
+[; ;main.c: 1082: }
 [e $U 401  ]
-"1084
-[e :U 400 ]
-[; ;main.c: 1084: else
-[; ;main.c: 1085: {
 "1085
+[e :U 400 ]
+[; ;main.c: 1085: else
+[; ;main.c: 1086: {
+"1086
 {
-[; ;main.c: 1088: ui16_Speed_demand_mat = PWM_trans_table[ ( ui8_PWM_dc_mat>>1 ) ] * 4 / 5;
-"1088
+[; ;main.c: 1089: ui16_Speed_demand_mat = PWM_trans_table[ ( ui8_PWM_dc_mat>>1 ) ] * 4 / 5;
+"1089
 [e = _ui16_Speed_demand_mat -> / * -> *U + &U _PWM_trans_table * -> -> >> -> _ui8_PWM_dc_mat `i -> 1 `i `ui `ux -> -> # *U &U _PWM_trans_table `ui `ux `i -> 4 `i -> 5 `i `us ]
-[; ;main.c: 1091: ui16_Speed_demand_mat_Max = ( PWM_trans_table[ 95 ] ) * 4 / 5;
-"1091
+[; ;main.c: 1092: ui16_Speed_demand_mat_Max = ( PWM_trans_table[ 95 ] ) * 4 / 5;
+"1092
 [e = _ui16_Speed_demand_mat_Max -> / * -> *U + &U _PWM_trans_table * -> -> -> 95 `i `ui `ux -> -> # *U &U _PWM_trans_table `ui `ux `i -> 4 `i -> 5 `i `us ]
-[; ;main.c: 1094: ui16_Speed_demand_mat_min = ( PWM_trans_table[ 11 ] ) * 4 / 5;
-"1094
+[; ;main.c: 1095: ui16_Speed_demand_mat_min = ( PWM_trans_table[ 11 ] ) * 4 / 5;
+"1095
 [e = _ui16_Speed_demand_mat_min -> / * -> *U + &U _PWM_trans_table * -> -> -> 11 `i `ui `ux -> -> # *U &U _PWM_trans_table `ui `ux `i -> 4 `i -> 5 `i `us ]
-"1096
+"1097
 }
 [e :U 401 ]
-[; ;main.c: 1096: }
-[; ;main.c: 1131: ui8_BattVolt_mat = ( unsigned char )( ui16_fir_Bat_mittel>>2 );
-"1131
-[e = _ui8_BattVolt_mat -> -> >> _ui16_fir_Bat_mittel -> 2 `i `uc `us ]
-[; ;main.c: 1132: ui16_mat_Current = ui16_fir_IPhase_mean.w;
+[; ;main.c: 1097: }
+[; ;main.c: 1132: ui8_BattVolt_mat = ( unsigned char )( ui16_fir_Bat_mittel>>2 );
 "1132
-[e = _ui16_mat_Current -> . _ui16_fir_IPhase_mean 0 `us ]
-[; ;main.c: 1133: bool_mat_currAlarm_bldc = MotorFlags.bits.B0;
+[e = _ui8_BattVolt_mat -> -> >> _ui16_fir_Bat_mittel -> 2 `i `uc `us ]
+[; ;main.c: 1133: ui16_mat_Current = ui16_fir_IPhase_mean.w;
 "1133
+[e = _ui16_mat_Current -> . _ui16_fir_IPhase_mean 0 `us ]
+[; ;main.c: 1134: bool_mat_currAlarm_bldc = MotorFlags.bits.B0;
+"1134
 [e = _bool_mat_currAlarm_bldc . . _MotorFlags 1 0 ]
-[; ;main.c: 1144: bool_ControlLoopMode = 0;
-"1144
+[; ;main.c: 1145: bool_ControlLoopMode = 0;
+"1145
 [e = _bool_ControlLoopMode -> -> 0 `i `uc ]
-[; ;main.c: 1152: BVH2_Appl_Layer( );
-"1152
+[; ;main.c: 1153: BVH2_Appl_Layer( );
+"1153
 [e ( _BVH2_Appl_Layer ..  ]
-[; ;main.c: 1155: ui8_ResetMatlab = 0;
-"1155
+[; ;main.c: 1156: ui8_ResetMatlab = 0;
+"1156
 [e = _ui8_ResetMatlab -> -> 0 `i `uc ]
-[; ;main.c: 1161: if( ui8_duty_cycle_mat == 0 )
-"1161
+[; ;main.c: 1162: if( ui8_duty_cycle_mat == 0 )
+"1162
 [e $ ! == -> _ui8_duty_cycle_mat `i -> 0 `i 402  ]
-[; ;main.c: 1163: {
-"1163
+[; ;main.c: 1164: {
+"1164
 {
-[; ;main.c: 1165: InitMotorStop( );
-"1165
+[; ;main.c: 1166: InitMotorStop( );
+"1166
 [e ( _InitMotorStop ..  ]
-"1168
+"1169
 }
-[; ;main.c: 1168: }
+[; ;main.c: 1169: }
 [e $U 403  ]
-"1171
-[e :U 402 ]
-[; ;main.c: 1171: else
-[; ;main.c: 1172: {
 "1172
+[e :U 402 ]
+[; ;main.c: 1172: else
+[; ;main.c: 1173: {
+"1173
 {
-[; ;main.c: 1174: InitMotorRun( );
-"1174
+[; ;main.c: 1175: InitMotorRun( );
+"1175
 [e ( _InitMotorRun ..  ]
-"1177
+"1178
 }
 [e :U 403 ]
-[; ;main.c: 1177: }
-[; ;main.c: 1184: ui8_error_Flags.bits.B0 = bool_PWMin_err_Alarm;
-"1184
-[e = . . _ui8_error_Flags 1 0 _bool_PWMin_err_Alarm ]
-[; ;main.c: 1185: ui8_error_Flags.bits.B1 = bool_CPU_TempAlarm;
+[; ;main.c: 1178: }
+[; ;main.c: 1185: ui8_error_Flags.bits.B0 = bool_PWMin_err_Alarm;
 "1185
-[e = . . _ui8_error_Flags 1 1 _bool_CPU_TempAlarm ]
-[; ;main.c: 1186: ui8_error_Flags.bits.B7 = bool_CPU_TempRedAlarm;
+[e = . . _ui8_error_Flags 1 0 _bool_PWMin_err_Alarm ]
+[; ;main.c: 1186: ui8_error_Flags.bits.B1 = bool_CPU_TempAlarm;
 "1186
-[e = . . _ui8_error_Flags 1 7 _bool_CPU_TempRedAlarm ]
-[; ;main.c: 1187: ui8_error_Flags.bits.B2 = bool_HighCurrentAlarm;
+[e = . . _ui8_error_Flags 1 1 _bool_CPU_TempAlarm ]
+[; ;main.c: 1187: ui8_error_Flags.bits.B7 = bool_CPU_TempRedAlarm;
 "1187
-[e = . . _ui8_error_Flags 1 2 _bool_HighCurrentAlarm ]
-[; ;main.c: 1188: ui8_error_Flags.bits.B3 = bool_MotorStalled;
+[e = . . _ui8_error_Flags 1 7 _bool_CPU_TempRedAlarm ]
+[; ;main.c: 1188: ui8_error_Flags.bits.B2 = bool_HighCurrentAlarm;
 "1188
-[e = . . _ui8_error_Flags 1 3 _bool_MotorStalled ]
-[; ;main.c: 1189: ui8_error_Flags.bits.B4 = bool_DryRunningAlarm;
+[e = . . _ui8_error_Flags 1 2 _bool_HighCurrentAlarm ]
+[; ;main.c: 1189: ui8_error_Flags.bits.B3 = bool_MotorStalled;
 "1189
-[e = . . _ui8_error_Flags 1 4 _bool_DryRunningAlarm ]
-[; ;main.c: 1190: ui8_error_Flags.bits.B6 = bool_UbatAlarm;
+[e = . . _ui8_error_Flags 1 3 _bool_MotorStalled ]
+[; ;main.c: 1190: ui8_error_Flags.bits.B4 = bool_DryRunningAlarm;
 "1190
-[e = . . _ui8_error_Flags 1 6 _bool_UbatAlarm ]
-[; ;main.c: 1191: ui8_error_Flags.bits.B5 = bool_PWMin_Freq_err_Alarm;
+[e = . . _ui8_error_Flags 1 4 _bool_DryRunningAlarm ]
+[; ;main.c: 1191: ui8_error_Flags.bits.B6 = bool_UbatAlarm;
 "1191
+[e = . . _ui8_error_Flags 1 6 _bool_UbatAlarm ]
+[; ;main.c: 1192: ui8_error_Flags.bits.B5 = bool_PWMin_Freq_err_Alarm;
+"1192
 [e = . . _ui8_error_Flags 1 5 _bool_PWMin_Freq_err_Alarm ]
-[; ;main.c: 1196: MotorFlags.bits.B0 = 0;
-"1196
+[; ;main.c: 1197: MotorFlags.bits.B0 = 0;
+"1197
 [e = . . _MotorFlags 1 0 -> -> 0 `i `uc ]
-"1252
+"1253
 }
 [e :U 399 ]
-[; ;main.c: 1252: }
-[; ;main.c: 1258: if( ui8_Task_Cont100ms == 25 )
-"1258
+[; ;main.c: 1253: }
+[; ;main.c: 1259: if( ui8_Task_Cont100ms == 25 )
+"1259
 [e $ ! == -> _ui8_Task_Cont100ms `i -> 25 `i 404  ]
-[; ;main.c: 1260: {
-"1260
+[; ;main.c: 1261: {
+"1261
 {
-[; ;main.c: 1271: SetDiagAlarm( );
-"1271
+[; ;main.c: 1272: SetDiagAlarm( );
+"1272
 [e ( _SetDiagAlarm ..  ]
-[; ;main.c: 1310: if ((read_eeprom_data(0x55)==0x55) || (RC5 == 0))
-"1310
+[; ;main.c: 1311: if ((read_eeprom_data(0x55)==0x55) || (RC5 == 0))
+"1311
 [e $ ! || == -> ( _read_eeprom_data (1 -> -> 85 `i `uc `i -> 85 `i == -> _RC5 `i -> 0 `i 405  ]
-[; ;main.c: 1312: {
-"1312
+[; ;main.c: 1313: {
+"1313
 {
-"1316
+"1317
 }
-[; ;main.c: 1316: }
+[; ;main.c: 1317: }
 [e $U 406  ]
-"1319
-[e :U 405 ]
-[; ;main.c: 1319: else
-[; ;main.c: 1320: {
 "1320
+[e :U 405 ]
+[; ;main.c: 1320: else
+[; ;main.c: 1321: {
+"1321
 {
-[; ;main.c: 1323: Receive_Diag(0x11);
-"1323
+[; ;main.c: 1324: Receive_Diag(0x11);
+"1324
 [e ( _Receive_Diag (1 -> -> 17 `i `uc ]
-"1327
+"1328
 }
 [e :U 406 ]
-"1335
+"1336
 }
 [e :U 404 ]
-[; ;main.c: 1327: }
-[; ;main.c: 1335: }
-[; ;main.c: 1341: if( ui8_Task_Cont100ms == 37 )
-"1341
+[; ;main.c: 1328: }
+[; ;main.c: 1336: }
+[; ;main.c: 1342: if( ui8_Task_Cont100ms == 37 )
+"1342
 [e $ ! == -> _ui8_Task_Cont100ms `i -> 37 `i 407  ]
-[; ;main.c: 1343: {
-"1343
+[; ;main.c: 1344: {
+"1344
 {
-[; ;main.c: 1349: if ((read_eeprom_data(0x55)==0x55) || (RC5==0) )
-"1349
+[; ;main.c: 1350: if ((read_eeprom_data(0x55)==0x55) || (RC5==0) )
+"1350
 [e $ ! || == -> ( _read_eeprom_data (1 -> -> 85 `i `uc `i -> 85 `i == -> _RC5 `i -> 0 `i 408  ]
-[; ;main.c: 1351: {
-"1351
+[; ;main.c: 1352: {
+"1352
 {
-"1355
+"1356
 }
-[; ;main.c: 1355: }
+[; ;main.c: 1356: }
 [e $U 409  ]
-"1358
-[e :U 408 ]
-[; ;main.c: 1358: else
-[; ;main.c: 1359: {
 "1359
+[e :U 408 ]
+[; ;main.c: 1359: else
+[; ;main.c: 1360: {
+"1360
 {
-[; ;main.c: 1362: EOL();
-"1362
+[; ;main.c: 1363: EOL();
+"1363
 [e ( _EOL ..  ]
-"1365
+"1366
 }
 [e :U 409 ]
-"1373
+"1374
 }
 [e :U 407 ]
-[; ;main.c: 1365: }
-[; ;main.c: 1373: }
-[; ;main.c: 1379: if( ui8_Task_Cont100ms == 50 )
-"1379
+[; ;main.c: 1366: }
+[; ;main.c: 1374: }
+[; ;main.c: 1380: if( ui8_Task_Cont100ms == 50 )
+"1380
 [e $ ! == -> _ui8_Task_Cont100ms `i -> 50 `i 410  ]
-[; ;main.c: 1381: {
-"1381
+[; ;main.c: 1382: {
+"1382
 {
-"1423
+"1424
 }
 [e :U 410 ]
-[; ;main.c: 1423: }
-[; ;main.c: 1429: if( ui8_Task_Cont100ms == 75 )
-"1429
+[; ;main.c: 1424: }
+[; ;main.c: 1430: if( ui8_Task_Cont100ms == 75 )
+"1430
 [e $ ! == -> _ui8_Task_Cont100ms `i -> 75 `i 411  ]
-[; ;main.c: 1431: {
-"1431
+[; ;main.c: 1432: {
+"1432
 {
-"1473
+"1474
 }
 [e :U 411 ]
-[; ;main.c: 1473: }
-[; ;main.c: 1479: if( ui8_Task_Cont100ms > 100 )
-"1479
+[; ;main.c: 1474: }
+[; ;main.c: 1480: if( ui8_Task_Cont100ms > 100 )
+"1480
 [e $ ! > -> _ui8_Task_Cont100ms `i -> 100 `i 412  ]
-[; ;main.c: 1481: {
-"1481
+[; ;main.c: 1482: {
+"1482
 {
-[; ;main.c: 1485: ui8_Task_Cont100ms = 0;
-"1485
+[; ;main.c: 1486: ui8_Task_Cont100ms = 0;
+"1486
 [e = _ui8_Task_Cont100ms -> -> 0 `i `uc ]
-"1525
+"1526
 }
 [e :U 412 ]
-[; ;main.c: 1525: }
-[; ;main.c: 1553: bool_start_demand_mat = 0;
-"1553
+[; ;main.c: 1526: }
+[; ;main.c: 1554: bool_start_demand_mat = 0;
+"1554
 [e = _bool_start_demand_mat -> -> 0 `i `uc ]
-"1559
+"1560
 }
-[; ;main.c: 1559: }
+[; ;main.c: 1560: }
 [e $U 413  ]
-"1562
-[e :U 395 ]
-[; ;main.c: 1562: else
-[; ;main.c: 1563: {
 "1563
+[e :U 395 ]
+[; ;main.c: 1563: else
+[; ;main.c: 1564: {
+"1564
 {
-"1567
+"1568
 }
 [e :U 413 ]
-"1570
+"1571
 }
 [e :U 392 ]
 "695
 [e $U 393  ]
 [e :U 394 ]
-[; ;main.c: 1567: }
-[; ;main.c: 1570: }
-[; ;main.c: 1573: }
-"1573
+[; ;main.c: 1568: }
+[; ;main.c: 1571: }
+[; ;main.c: 1574: }
+"1574
 [e :UE 391 ]
 }

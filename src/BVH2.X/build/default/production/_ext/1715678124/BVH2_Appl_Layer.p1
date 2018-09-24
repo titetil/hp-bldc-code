@@ -2582,21 +2582,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 "1252
 [e $ ! && && < -> _ui16_mat_Current `l -> - -> _ui16_dryRun_Thresh `ui -> -> 5 `i `ui `l < -> _ui16_Speed_mat `ui -> -> 400 `i `ui > -> _ui16_Speed_mat `ui -> -> 80 `i `ui 153  ]
 {
-[; ;BVH2_Appl_Layer.c: 1255: SIBFS_Dry_Running_b.Cb15_greenState = 0;
-"1255
-[e = . F360 1 -> -> 0 `i `uc ]
-[; ;BVH2_Appl_Layer.c: 1256: SIBFS_Dry_Running_b.Cb16_DryRunning = 1;
-"1256
-[e = . F360 2 -> -> 1 `i `uc ]
-[; ;BVH2_Appl_Layer.c: 1257: SIBFS_Dry_Running_b.Cb18_CntOverCurrent = 1;
-"1257
-[e = . F360 4 -> -> 1 `i `uc ]
-[; ;BVH2_Appl_Layer.c: 1258: Cb14_StateCnt = 0 ;
-"1258
-[e = F351 -> -> 0 `i `us ]
-[; ;BVH2_Appl_Layer.c: 1259: Cb14_oDryRunAlarm = 0;
-"1259
-[e = F372 -> -> 0 `i `uc ]
 "1260
 }
 [e :U 153 ]

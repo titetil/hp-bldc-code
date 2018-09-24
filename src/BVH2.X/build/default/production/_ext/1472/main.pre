@@ -4965,15 +4965,15 @@ ui8_Task_Cont5ms = 0;
 
 asm("clrwdt");
 
-# 1053
-ui8_PWM_dc_mat = 160;
+# 1054
+ui8_PWM_dc_mat = 200;
 ui16_PWM_Freq_mat = ui16_PWM_Freq_In;
 ui16_Speed_mat = ui16_speed_fil;
 ui16_mat_inpTemp = ui16_NTC_Temp_bldc_mean_cal;
 ui8_Ki_mat = 5;
 ui8_Kp_mat = 0;
 
-# 1068
+# 1069
 if( ui8_error_Flags.bits.B1 == 1 )
 
 {
@@ -5004,21 +5004,21 @@ ui16_Speed_demand_mat_min = ( PWM_trans_table[ 11 ] ) * 4 / 5;
 
 }
 
-# 1131
+# 1132
 ui8_BattVolt_mat = ( unsigned char )( ui16_fir_Bat_mittel>>2 );
 ui16_mat_Current = ui16_fir_IPhase_mean.w;
 bool_mat_currAlarm_bldc = MotorFlags.bits.B0;
 
-# 1144
+# 1145
 bool_ControlLoopMode = 0;
 
-# 1152
+# 1153
 BVH2_Appl_Layer( );
 
 
 ui8_ResetMatlab = 0;
 
-# 1161
+# 1162
 if( ui8_duty_cycle_mat == 0 )
 
 {
@@ -5037,7 +5037,7 @@ InitMotorRun( );
 
 }
 
-# 1184
+# 1185
 ui8_error_Flags.bits.B0 = bool_PWMin_err_Alarm;
 ui8_error_Flags.bits.B1 = bool_CPU_TempAlarm;
 ui8_error_Flags.bits.B7 = bool_CPU_TempRedAlarm;
@@ -5052,18 +5052,18 @@ ui8_error_Flags.bits.B5 = bool_PWMin_Freq_err_Alarm;
 
 MotorFlags.bits.B0 = 0;
 
-# 1252
+# 1253
 }
 
-# 1258
+# 1259
 if( ui8_Task_Cont100ms == 25 )
 
 {
 
-# 1271
+# 1272
 SetDiagAlarm( );
 
-# 1310
+# 1311
 if ((read_eeprom_data(0x55)==0x55) || (RC5 == 0))
 
 {
@@ -5083,15 +5083,15 @@ Receive_Diag(0x11);
 
 }
 
-# 1335
+# 1336
 }
 
-# 1341
+# 1342
 if( ui8_Task_Cont100ms == 37 )
 
 {
 
-# 1349
+# 1350
 if ((read_eeprom_data(0x55)==0x55) || (RC5==0) )
 
 {
@@ -5110,26 +5110,26 @@ EOL();
 
 }
 
-# 1373
+# 1374
 }
 
-# 1379
+# 1380
 if( ui8_Task_Cont100ms == 50 )
 
 {
 
-# 1423
+# 1424
 }
 
-# 1429
+# 1430
 if( ui8_Task_Cont100ms == 75 )
 
 {
 
-# 1473
+# 1474
 }
 
-# 1479
+# 1480
 if( ui8_Task_Cont100ms > 100 )
 
 {
@@ -5138,13 +5138,13 @@ if( ui8_Task_Cont100ms > 100 )
 
 ui8_Task_Cont100ms = 0;
 
-# 1525
+# 1526
 }
 
-# 1553
+# 1554
 bool_start_demand_mat = 0;
 
-# 1559
+# 1560
 }
 
 

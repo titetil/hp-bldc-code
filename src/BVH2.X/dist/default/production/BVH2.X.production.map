@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files (x86)\Microchip\xc8\v1.44\dat\en_msgs.txt -cs \
   -h+dist/default/production\BVH2.X.production.sym \
   --cmf=dist/default/production\BVH2.X.production.cmf -z -Q16F1936 \
-  -oC:\Users\gtetil\AppData\Local\Temp\sjak.2 \
+  -oC:\Users\gtetil\AppData\Local\Temp\sikc.2 \
   -Mdist/default/production/BVH2.X.production.map -E1 -ver=XC8 \
   -ASTACK=0217Bh-021efh -pstack=STACK \
   -ACODE=00h-07FFhx3,01800h-01FFDh,01FFFh-01FFFh \
@@ -33,7 +33,7 @@ Linker command line:
   -pfunctab=ENTRY -ACONFIG=08007h-08008h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/0F000h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\gtetil\AppData\Local\Temp\sjak.obj \
+  -DENTRY=2 -k C:\Users\gtetil\AppData\Local\Temp\sikc.obj \
   dist/default/production\BVH2.X.production.obj 
 
 Object code version is 3.11
@@ -43,7 +43,7 @@ Machine type is 16F1936
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\gtetil\AppData\Local\Temp\sjak.obj
+C:\Users\gtetil\AppData\Local\Temp\sikc.obj
                 end_init                             2B       2B        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0
@@ -55,7 +55,7 @@ dist/default/production\BVH2.X.production.obj
                 swtext4                             739      739       14      E22       0
                 swtext3                             725      725       14      E22       0
                 swtext2                             760      760       10      EC0       0
-                text41                              865      865      79B     10CA       0
+                text41                              891      891      76F     1122       0
                 text24                             1095     1095      76B     212A       0
                 swtext1                             711      711       14      E22       0
                 text7                              1A7A     1A7A      584     34F4       0
@@ -87,7 +87,7 @@ TOTAL           Name                               Link     Load   Length     Sp
                 reset_vec                             0        0        2         0
                 text59                              74D      74D       13         0
                 text58                              776      776        3         0
-                text41                              865      865      79B         0
+                text41                              891      891      76F         0
                 text24                             1095     1095      76B         0
                 text7                              1A7A     1A7A      584         0
                 clrtext                             770      770        6         0
@@ -280,7 +280,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 text59                         00074D  000013  000760       E9A       0  CODE        2
                 swtext2                        000760  000010  000770       EC0       0  CONST       2
                 clrtext                        000770  000009  000779       EE0       0  CODE        2
-                text41                         000865  00079B  001000      10CA       0  CODE        2
+                text41                         000891  00076F  001000      1122       0  CODE        2
                 text24                         001095  00076B  001800      212A       0  CODE        2
                 stringtext1                    001800  000065  001865      3000       0  STRCODE     2
                 text7                          001A7A  000584  001FFE      34F4       0  CODE        2
@@ -296,19 +296,19 @@ UNUSED ADDRESS RANGES
         BANK6            00320-0032F              10           1
         BIGRAM           02000-021EF             1F0           1
         CODE             00002-00003               2           2
-                         00779-00864              87
+                         00779-00890              87
                          01000-01094              95
                          01865-01A79             215
                          01FFF-01FFF               1
         COMMON           0007B-0007D               3           1
         CONST            00002-00003               2           2
-                         00779-00864              87
+                         00779-00890              87
                          01000-01094              95
                          01865-01A79             100
                          01FFF-01FFF               1
         EEDATA           0F000-0F0FF             100           2
         ENTRY            00002-00003               2           2
-                         00779-00864              87
+                         00779-00890              87
                          01000-01094              95
                          01865-01A79             100
                          01FFF-01FFF               1
@@ -351,12 +351,12 @@ UNUSED ADDRESS RANGES
         SFR9             00480-004EF              70           1
         STACK            0217B-021EF              75           1
         STRCODE          00002-00003               2           2
-                         00779-00864              EC
+                         00779-00890             118
                          01000-01094              95
                          01865-01A79             215
                          01FFF-01FFF               1
         STRING           00002-00003               2           2
-                         00779-00864              87
+                         00779-00890              87
                          01000-01094              95
                          01865-01A79             100
                          01FFF-01FFF               1
@@ -441,44 +441,44 @@ EnableMCP201@_dcnt_712                       cstackBANK0  00031
 EnableMCP201@_dcnt_713                       cstackBANK0  00032
 NegativeAnswer@LID                           cstackBANK0  00044
 PL10                                         text24       015A8
-PL100                                        text7        01FA4
-PL102                                        cinit        006DA
-PL104                                        cinit        00590
-PL106                                        cinit        00685
-PL108                                        text7        01FAA
-PL110                                        text24       01624
-PL112                                        text41       00FF6
+PL100                                        cinit        006DA
+PL102                                        cinit        00590
+PL104                                        cinit        00685
+PL106                                        text7        01FA4
+PL108                                        text24       01624
+PL110                                        text41       00FF6
+PL112                                        text7        01FAA
 PL114                                        text7        01FB0
 PL116                                        text41       00FFC
 PL118                                        text7        01FB6
 PL12                                         text24       015BC
-PL120                                        cinit        006E0
-PL122                                        text7        01FBB
-PL124                                        text7        01FC0
-PL126                                        text7        01FC5
+PL120                                        text7        01FBB
+PL122                                        text7        01FC0
+PL124                                        text7        01FC5
+PL126                                        cinit        006E0
 PL128                                        text7        01FCA
-PL130                                        text7        01FCF
-PL132                                        text7        01FD4
-PL134                                        cinit        006E4
-PL14                                         text24       015CA
+PL130                                        cinit        006E4
+PL132                                        text7        01FCF
+PL134                                        text7        01FD4
+PL14                                         text24       015CB
 PL16                                         text7        01ED0
 PL18                                         text24       015D9
 PL2                                          text24       01562
 PL20                                         text24       015E4
-PL22                                         text41       00F8B
-PL24                                         cinit        003CB
+PL22                                         cinit        003CB
+PL24                                         text41       00F8B
 PL26                                         text41       00F98
 PL28                                         cinit        003D8
 PL30                                         text41       00FA1
 PL32                                         text7        01EE9
-PL34                                         text7        01EFA
-PL36                                         text7        01F0A
+PL34                                         text7        01EF9
+PL36                                         text7        01F09
 PL38                                         text7        01F1A
 PL4                                          text24       0157E
 PL40                                         text7        01F2A
 PL42                                         text7        01F39
-PL44                                         text7        01F48
-PL46                                         text7        01F58
+PL44                                         text7        01F49
+PL46                                         text7        01F59
 PL48                                         text7        01F68
 PL50                                         text24       015ED
 PL52                                         text24       015F9
@@ -488,23 +488,23 @@ PL58                                         text41       00FB4
 PL6                                          cinit        003C3
 PL60                                         text41       00FBE
 PL62                                         cinit        0067E
-PL64                                         text41       00FC8
-PL66                                         text7        01F72
-PL68                                         text41       00FD1
-PL70                                         text7        01F78
-PL72                                         text24       0160D
-PL74                                         text7        01F7E
-PL76                                         text41       00FDA
-PL78                                         text24       01616
+PL64                                         text7        01F72
+PL66                                         text41       00FC8
+PL68                                         text7        01F78
+PL70                                         text24       0160D
+PL72                                         text7        01F7E
+PL74                                         text41       00FD1
+PL76                                         text24       01616
+PL78                                         text41       00FDA
 PL8                                          text24       015A3
 PL80                                         text7        01F84
 PL82                                         text24       0161E
 PL84                                         text41       00FE2
-PL86                                         text41       00FE8
-PL88                                         text7        01F8A
-PL90                                         text7        01F91
-PL92                                         text41       00FEF
-PL94                                         cinit        00589
+PL86                                         text7        01F8A
+PL88                                         text41       00FE8
+PL90                                         cinit        00589
+PL92                                         text7        01F90
+PL94                                         text41       00FEF
 PL96                                         text7        01F97
 PL98                                         text7        01F9E
 PWM_Capture_init@ui8_CCP_Nb                  cstackBANK0  00030
@@ -532,7 +532,7 @@ _ANSELB                                      (abs)        0018D
 _B                                           bssBANK3     001A0
 _BAUDCON                                     (abs)        0019F
 _BLDCWait                                    text7        01EAF
-_BVH2_Appl_Layer                             text41       00865
+_BVH2_Appl_Layer                             text41       00891
 _BVH2_Appl_Layer$1207                        cstackBANK4  00229
 _BVH2_Appl_Layer$1208                        cstackBANK4  0022A
 _BVH2_Appl_Layer$1209                        cstackBANK4  0022B
@@ -991,43 +991,43 @@ ___wmul@multiplier                           cstackBANK0  00030
 ___wmul@product                              cstackBANK0  00034
 __checksum0                                  checksum     01FFE
 __end_ofPL10                                 text24       015BC
-__end_ofPL100                                text7        01FAA
-__end_ofPL102                                cinit        006E0
-__end_ofPL104                                cinit        00596
-__end_ofPL106                                cinit        0068B
-__end_ofPL108                                text7        01FB0
-__end_ofPL110                                text24       01629
-__end_ofPL112                                text41       00FFC
+__end_ofPL100                                cinit        006E0
+__end_ofPL102                                cinit        00596
+__end_ofPL104                                cinit        0068B
+__end_ofPL106                                text7        01FAA
+__end_ofPL108                                text24       01629
+__end_ofPL110                                text41       00FFC
+__end_ofPL112                                text7        01FB0
 __end_ofPL114                                text7        01FB6
 __end_ofPL116                                text41       01000
 __end_ofPL118                                text7        01FBB
-__end_ofPL12                                 text24       015CA
-__end_ofPL120                                cinit        006E4
-__end_ofPL122                                text7        01FC0
-__end_ofPL124                                text7        01FC5
-__end_ofPL126                                text7        01FCA
+__end_ofPL12                                 text24       015CB
+__end_ofPL120                                text7        01FC0
+__end_ofPL122                                text7        01FC5
+__end_ofPL124                                text7        01FCA
+__end_ofPL126                                cinit        006E4
 __end_ofPL128                                text7        01FCF
-__end_ofPL130                                text7        01FD4
-__end_ofPL132                                text7        01FD9
-__end_ofPL134                                cinit        006E8
+__end_ofPL130                                cinit        006E8
+__end_ofPL132                                text7        01FD4
+__end_ofPL134                                text7        01FD9
 __end_ofPL14                                 text24       015D9
 __end_ofPL16                                 text7        01EE9
 __end_ofPL18                                 text24       015E4
 __end_ofPL2                                  text24       0157E
 __end_ofPL20                                 text24       015ED
-__end_ofPL22                                 text41       00F98
-__end_ofPL24                                 cinit        003D8
+__end_ofPL22                                 cinit        003D8
+__end_ofPL24                                 text41       00F98
 __end_ofPL26                                 text41       00FA1
 __end_ofPL28                                 cinit        003DF
 __end_ofPL30                                 text41       00FB4
-__end_ofPL32                                 text7        01EFA
-__end_ofPL34                                 text7        01F0A
+__end_ofPL32                                 text7        01EF9
+__end_ofPL34                                 text7        01F09
 __end_ofPL36                                 text7        01F1A
 __end_ofPL38                                 text7        01F2A
 __end_ofPL4                                  text24       015A3
 __end_ofPL40                                 text7        01F39
-__end_ofPL42                                 text7        01F48
-__end_ofPL44                                 text7        01F58
+__end_ofPL42                                 text7        01F49
+__end_ofPL44                                 text7        01F59
 __end_ofPL46                                 text7        01F68
 __end_ofPL48                                 text7        01F72
 __end_ofPL50                                 text24       015F9
@@ -1038,23 +1038,23 @@ __end_ofPL58                                 text41       00FBE
 __end_ofPL6                                  cinit        003CB
 __end_ofPL60                                 text41       00FC8
 __end_ofPL62                                 cinit        00685
-__end_ofPL64                                 text41       00FD1
-__end_ofPL66                                 text7        01F78
-__end_ofPL68                                 text41       00FDA
-__end_ofPL70                                 text7        01F7E
-__end_ofPL72                                 text24       01616
-__end_ofPL74                                 text7        01F84
-__end_ofPL76                                 text41       00FE2
-__end_ofPL78                                 text24       0161E
+__end_ofPL64                                 text7        01F78
+__end_ofPL66                                 text41       00FD1
+__end_ofPL68                                 text7        01F7E
+__end_ofPL70                                 text24       01616
+__end_ofPL72                                 text7        01F84
+__end_ofPL74                                 text41       00FDA
+__end_ofPL76                                 text24       0161E
+__end_ofPL78                                 text41       00FE2
 __end_ofPL8                                  text24       015A8
 __end_ofPL80                                 text7        01F8A
 __end_ofPL82                                 text24       01624
 __end_ofPL84                                 text41       00FE8
-__end_ofPL86                                 text41       00FEF
-__end_ofPL88                                 text7        01F91
-__end_ofPL90                                 text7        01F97
-__end_ofPL92                                 text41       00FF6
-__end_ofPL94                                 cinit        00590
+__end_ofPL86                                 text7        01F90
+__end_ofPL88                                 text41       00FEF
+__end_ofPL90                                 cinit        00590
+__end_ofPL92                                 text7        01F97
+__end_ofPL94                                 text41       00FF6
 __end_ofPL96                                 text7        01F9E
 __end_ofPL98                                 text7        01FA4
 __end_of_ADC_Init                            cinit        004A1
@@ -1182,7 +1182,7 @@ __ptext38                                    cinit        00296
 __ptext39                                    cinit        00268
 __ptext4                                     cinit        00550
 __ptext40                                    cinit        00281
-__ptext41                                    text41       00865
+__ptext41                                    text41       00891
 __ptext42                                    text41       00E6A
 __ptext43                                    text41       00E45
 __ptext44                                    text41       00F1F
@@ -3456,12 +3456,12 @@ C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul24.c estimated siz
 
 ../T_Link/BVH2_Appl_Layer.c
 		_Cb44_Pic_etat_monitor_node_fcn1		CODE           	0E30	0000	22
-		_BVH2_Appl_Layer		CODE           	0865	0000	1456
+		_BVH2_Appl_Layer		CODE           	0891	0000	1412
 		_Cb34_PWM_Detection_node_fcn1		CODE           	0E7F	0000	108
 		_Cb56_UbatHandling_node_fcn2		CODE           	0EEA	0000	54
 		_Cb1_Current_An___High_node_fcn1		CODE           	0E14	0000	29
 
-../T_Link/BVH2_Appl_Layer.c estimated size: 1669
+../T_Link/BVH2_Appl_Layer.c estimated size: 1625
 
 ../bldc.c
 		_InitMotorRun  		CODE           	03A3	0000	33
@@ -3509,70 +3509,70 @@ C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ltdiv.c
 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ltdiv.c estimated size: 51
 
 shared
-		PL12           		CODE           	15BC	0000	15
+		PL12           		CODE           	15BC	0000	16
 		PL50           		CODE           	15ED	0000	13
 		PL8            		CODE           	15A3	0000	6
-		PL22           		CODE           	0F8B	0000	14
+		PL22           		CODE           	03CB	0000	14
 		PL60           		CODE           	0FBE	0000	11
-		PL100          		CODE           	1FA4	0000	7
-		PL32           		CODE           	1EE9	0000	18
-		PL70           		CODE           	1F78	0000	7
-		PL42           		CODE           	1F39	0000	16
+		PL100          		CODE           	06DA	0000	7
+		PL32           		CODE           	1EE9	0000	17
+		PL70           		CODE           	160D	0000	10
+		PL42           		CODE           	1F39	0000	17
 		PL80           		CODE           	1F84	0000	7
-		PL110          		CODE           	1624	0000	6
-		PL14           		CODE           	15CA	0000	16
+		PL110          		CODE           	0FF6	0000	7
+		PL14           		CODE           	15CB	0000	15
 		PL52           		CODE           	15F9	0000	7
-		PL90           		CODE           	1F91	0000	7
-		PL24           		CODE           	03CB	0000	14
+		PL90           		CODE           	0589	0000	8
+		PL24           		CODE           	0F8B	0000	14
 		PL62           		CODE           	067E	0000	8
-		PL120          		CODE           	06E0	0000	5
-		PL34           		CODE           	1EFA	0000	17
-		PL72           		CODE           	160D	0000	10
-		PL44           		CODE           	1F48	0000	17
+		PL120          		CODE           	1FBB	0000	6
+		PL34           		CODE           	1EF9	0000	17
+		PL72           		CODE           	1F7E	0000	7
+		PL44           		CODE           	1F49	0000	17
 		PL82           		CODE           	161E	0000	7
-		PL130          		CODE           	1FCF	0000	6
+		PL130          		CODE           	06E4	0000	5
 		PL16           		CODE           	1ED0	0000	26
 		PL54           		CODE           	15FF	0000	8
-		PL92           		CODE           	0FEF	0000	8
+		PL92           		CODE           	1F90	0000	8
 		PL26           		CODE           	0F98	0000	10
-		PL64           		CODE           	0FC8	0000	10
-		PL102          		CODE           	06DA	0000	7
-		PL36           		CODE           	1F0A	0000	17
-		PL74           		CODE           	1F7E	0000	7
-		PL46           		CODE           	1F58	0000	17
+		PL64           		CODE           	1F72	0000	7
+		PL102          		CODE           	0590	0000	7
+		PL36           		CODE           	1F09	0000	18
+		PL74           		CODE           	0FD1	0000	10
+		PL46           		CODE           	1F59	0000	16
 		PL84           		CODE           	0FE2	0000	7
 		i1___lwdiv     		CODE           	1FD9	0000	38
 		i1_commutate   		CODE           	1D77	0000	313
-		PL112          		CODE           	0FF6	0000	7
+		PL112          		CODE           	1FAA	0000	7
 		PL18           		CODE           	15D9	0000	12
 		PL56           		CODE           	1606	0000	8
-		PL94           		CODE           	0589	0000	8
+		PL94           		CODE           	0FEF	0000	8
 		PL28           		CODE           	03D8	0000	8
-		PL66           		CODE           	1F72	0000	7
-		PL122          		CODE           	1FBB	0000	6
+		PL66           		CODE           	0FC8	0000	10
+		PL122          		CODE           	1FC0	0000	6
 		PL38           		CODE           	1F1A	0000	17
-		PL76           		CODE           	0FDA	0000	9
+		PL76           		CODE           	1616	0000	9
 		PL48           		CODE           	1F68	0000	11
-		PL86           		CODE           	0FE8	0000	8
-		PL132          		CODE           	1FD4	0000	6
+		PL86           		CODE           	1F8A	0000	7
+		PL132          		CODE           	1FCF	0000	6
 		PL58           		CODE           	0FB4	0000	11
 		PL96           		CODE           	1F97	0000	8
-		PL68           		CODE           	0FD1	0000	10
-		PL104          		CODE           	0590	0000	7
-		PL78           		CODE           	1616	0000	9
+		PL68           		CODE           	1F78	0000	7
+		PL104          		CODE           	0685	0000	7
+		PL78           		CODE           	0FDA	0000	9
 		i1___wmul      		CODE           	1D62	0000	22
 		i1_ADC_Wait    		CODE           	1D3B	0000	26
-		PL88           		CODE           	1F8A	0000	8
+		PL88           		CODE           	0FE8	0000	8
 		PL114          		CODE           	1FB0	0000	7
 		PL98           		CODE           	1F9E	0000	7
-		PL124          		CODE           	1FC0	0000	6
+		PL124          		CODE           	1FC5	0000	6
 		__initialization		CODE           	002D	0000	68
-		PL134          		CODE           	06E4	0000	5
-		PL106          		CODE           	0685	0000	7
+		PL134          		CODE           	1FD4	0000	6
+		PL106          		CODE           	1FA4	0000	7
 		PL116          		CODE           	0FFC	0000	5
-		PL126          		CODE           	1FC5	0000	6
+		PL126          		CODE           	06E0	0000	5
 		_PWM_trans_table		STRCODE        	1800	0000	102
-		PL108          		CODE           	1FAA	0000	7
+		PL108          		CODE           	1624	0000	6
 		PL118          		CODE           	1FB6	0000	6
 		PL128          		CODE           	1FCA	0000	6
 		PL2            		CODE           	1562	0000	29
