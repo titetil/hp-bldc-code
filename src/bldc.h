@@ -104,7 +104,7 @@
 #define     def_ramp8_start_SPEED       3000
 #define     def_ramp9_start_SPEED       3000
 #define     def_ramp_end_SPEED          3000
-#define     def_STARTUP_PWM             40   /*  PWM based on PWM period  */
+#define     def_STARTUP_PWM             100   /*  PWM based on PWM period  */
 #define     def_Align_PWM               40   /*  PWM based on PWM period  */
 
 //#define     def_STARTUP_PWM             30   /*  PWM based on PWM period  */

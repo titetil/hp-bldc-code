@@ -4672,9 +4672,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.c: 1116: {
 "1116
 {
-[; ;bldc.c: 1119: ui32_tmp = ( 400 * 40 ) / ui16_Ubat_bldc.w ;
+[; ;bldc.c: 1119: ui32_tmp = ( 400 * 100 ) / ui16_Ubat_bldc.w ;
 "1119
-[e = _ui32_tmp -> / -> * -> 400 `i -> 40 `i `ui . _ui16_Ubat_bldc 0 `ul ]
+[e = _ui32_tmp -> / -> * -> 400 `i -> 100 `i `ui . _ui16_Ubat_bldc 0 `ul ]
 "1121
 }
 [e :U 425 ]

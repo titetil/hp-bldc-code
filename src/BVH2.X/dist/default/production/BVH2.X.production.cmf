@@ -11,17 +11,13 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\gtetil\AppData\Local\Temp\sikc.obj
-reset_vec CODE 0 0 0 2 2
-end_init CODE 0 2B 2B 2 2
-config CONFIG 0 8007 8007 2 2
 $dist/default/production\BVH2.X.production.obj
-cinit CODE 0 2D 2D 6E4 2
-text7 CODE 0 1A7A 1A7A 584 2
-text24 CODE 0 1095 1095 76B 2
+cinit CODE 0 2D 2D 6E1 2
+text7 CODE 0 1A6C 1A6C 592 2
+text24 CODE 0 1093 1093 76D 2
 text41 CODE 0 891 891 76F 2
-text58 CODE 0 776 776 3 2
-text59 CODE 0 74D 74D 13 2
+text58 CODE 0 773 773 3 2
+text59 CODE 0 74A 74A 13 2
 nvBANK1 BANK1 1 EF EF 1 1
 nvBANK3 BANK3 1 1EC 1EC 4 1
 cstackCOMMON COMMON 1 70 70 9 1
@@ -35,15 +31,19 @@ bssBANK1 BANK1 1 A0 A0 48 1
 bssBANK2 BANK2 1 120 120 48 1
 bssBANK3 BANK3 1 1A0 1A0 4C 1
 bssBANK4 BANK4 1 240 240 1B 1
-swtext1 CONST 0 711 711 14 2
-swtext2 CONST 0 760 760 10 2
-swtext3 CONST 0 725 725 14 2
-swtext4 CONST 0 739 739 14 2
+swtext1 CONST 0 70E 70E 14 2
+swtext2 CONST 0 75D 75D 10 2
+swtext3 CONST 0 722 722 14 2
+swtext4 CONST 0 736 736 14 2
 dataBANK0 BANK0 1 59 59 1 1
 dataBANK1 BANK1 1 E8 E8 7 1
 dataBANK2 BANK2 1 168 168 8 1
-clrtext CODE 0 770 770 6 2
+clrtext CODE 0 76D 76D 6 2
 bssCOMMON COMMON 1 7A 7A 1 1
+$C:\Users\gtetil\AppData\Local\Temp\s73c.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 2B 2B 2 2
+config CONFIG 0 8007 8007 2 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -59,14 +59,14 @@ BANK4 25B-26F 1
 BANK5 2A0-2EF 1
 BANK6 320-32F 1
 CONST 2-3 2
-CONST 779-890 2
-CONST 1000-1094 2
-CONST 1865-1A79 2
+CONST 776-890 2
+CONST 1000-1092 2
+CONST 1865-1A6B 2
 CONST 1FFF-1FFF 2
 ENTRY 2-3 2
-ENTRY 779-890 2
-ENTRY 1000-1094 2
-ENTRY 1865-1A79 2
+ENTRY 776-890 2
+ENTRY 1000-1092 2
+ENTRY 1865-1A6B 2
 ENTRY 1FFF-1FFF 2
 IDLOC 8000-8003 2
 SFR10 500-56F 1
@@ -93,9 +93,9 @@ SFR30 F00-F6F 1
 SFR31 F80-FEF 1
 STACK 217B-21EF 1
 CODE 2-3 2
-CODE 779-890 2
-CODE 1000-1094 2
-CODE 1865-1A79 2
+CODE 776-890 2
+CODE 1000-1092 2
+CODE 1865-1A6B 2
 CODE 1FFF-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -111,14 +111,14 @@ BIGRAM 2000-21EF 1
 COMMON 7B-7D 1
 EEDATA F000-F0FF 2
 STRCODE 2-3 2
-STRCODE 779-890 2
-STRCODE 1000-1094 2
-STRCODE 1865-1A79 2
+STRCODE 776-890 2
+STRCODE 1000-1092 2
+STRCODE 1865-1A6B 2
 STRCODE 1FFF-1FFF 2
 STRING 2-3 2
-STRING 779-890 2
-STRING 1000-1094 2
-STRING 1865-1A79 2
+STRING 776-890 2
+STRING 1000-1092 2
+STRING 1865-1A6B 2
 STRING 1FFF-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -135,68 +135,68 @@ STRING 1FFF-1FFF 2
 %LINETAB
 $dist/default/production\BVH2.X.production.obj
 2D cinit CODE >132:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/main.c
-2D cinit CODE >3997:C:\Users\gtetil\AppData\Local\Temp\sikc.
-2D cinit CODE >4000:C:\Users\gtetil\AppData\Local\Temp\sikc.
-2E cinit CODE >4547:C:\Users\gtetil\AppData\Local\Temp\sikc.
-2F cinit CODE >4551:C:\Users\gtetil\AppData\Local\Temp\sikc.
+2D cinit CODE >3997:C:\Users\gtetil\AppData\Local\Temp\s73c.
+2D cinit CODE >4000:C:\Users\gtetil\AppData\Local\Temp\s73c.
+2E cinit CODE >4547:C:\Users\gtetil\AppData\Local\Temp\s73c.
+2F cinit CODE >4551:C:\Users\gtetil\AppData\Local\Temp\s73c.
 30 cinit CODE >128:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/main.c
-31 cinit CODE >4553:C:\Users\gtetil\AppData\Local\Temp\sikc.
-32 cinit CODE >4555:C:\Users\gtetil\AppData\Local\Temp\sikc.
-33 cinit CODE >4557:C:\Users\gtetil\AppData\Local\Temp\sikc.
-34 cinit CODE >4559:C:\Users\gtetil\AppData\Local\Temp\sikc.
-35 cinit CODE >4561:C:\Users\gtetil\AppData\Local\Temp\sikc.
-36 cinit CODE >4563:C:\Users\gtetil\AppData\Local\Temp\sikc.
-37 cinit CODE >4565:C:\Users\gtetil\AppData\Local\Temp\sikc.
-38 cinit CODE >4569:C:\Users\gtetil\AppData\Local\Temp\sikc.
+31 cinit CODE >4553:C:\Users\gtetil\AppData\Local\Temp\s73c.
+32 cinit CODE >4555:C:\Users\gtetil\AppData\Local\Temp\s73c.
+33 cinit CODE >4557:C:\Users\gtetil\AppData\Local\Temp\s73c.
+34 cinit CODE >4559:C:\Users\gtetil\AppData\Local\Temp\s73c.
+35 cinit CODE >4561:C:\Users\gtetil\AppData\Local\Temp\s73c.
+36 cinit CODE >4563:C:\Users\gtetil\AppData\Local\Temp\s73c.
+37 cinit CODE >4565:C:\Users\gtetil\AppData\Local\Temp\s73c.
+38 cinit CODE >4569:C:\Users\gtetil\AppData\Local\Temp\s73c.
 39 cinit CODE >406:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
-3A cinit CODE >4571:C:\Users\gtetil\AppData\Local\Temp\sikc.
+3A cinit CODE >4571:C:\Users\gtetil\AppData\Local\Temp\s73c.
 3B cinit CODE >406:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
-3C cinit CODE >4573:C:\Users\gtetil\AppData\Local\Temp\sikc.
+3C cinit CODE >4573:C:\Users\gtetil\AppData\Local\Temp\s73c.
 3D cinit CODE >406:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
-3E cinit CODE >4575:C:\Users\gtetil\AppData\Local\Temp\sikc.
-3F cinit CODE >4577:C:\Users\gtetil\AppData\Local\Temp\sikc.
-40 cinit CODE >4579:C:\Users\gtetil\AppData\Local\Temp\sikc.
-41 cinit CODE >4581:C:\Users\gtetil\AppData\Local\Temp\sikc.
+3E cinit CODE >4575:C:\Users\gtetil\AppData\Local\Temp\s73c.
+3F cinit CODE >4577:C:\Users\gtetil\AppData\Local\Temp\s73c.
+40 cinit CODE >4579:C:\Users\gtetil\AppData\Local\Temp\s73c.
+41 cinit CODE >4581:C:\Users\gtetil\AppData\Local\Temp\s73c.
 42 cinit CODE >103:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-43 cinit CODE >4583:C:\Users\gtetil\AppData\Local\Temp\sikc.
+43 cinit CODE >4583:C:\Users\gtetil\AppData\Local\Temp\s73c.
 44 cinit CODE >100:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-45 cinit CODE >4585:C:\Users\gtetil\AppData\Local\Temp\sikc.
-46 cinit CODE >4610:C:\Users\gtetil\AppData\Local\Temp\sikc.
-47 cinit CODE >4602:C:\Users\gtetil\AppData\Local\Temp\sikc.
-48 cinit CODE >4606:C:\Users\gtetil\AppData\Local\Temp\sikc.
-49 cinit CODE >4611:C:\Users\gtetil\AppData\Local\Temp\sikc.
-4A cinit CODE >4612:C:\Users\gtetil\AppData\Local\Temp\sikc.
-4B cinit CODE >4613:C:\Users\gtetil\AppData\Local\Temp\sikc.
-4C cinit CODE >4614:C:\Users\gtetil\AppData\Local\Temp\sikc.
-4D cinit CODE >4615:C:\Users\gtetil\AppData\Local\Temp\sikc.
-50 cinit CODE >4619:C:\Users\gtetil\AppData\Local\Temp\sikc.
-51 cinit CODE >4620:C:\Users\gtetil\AppData\Local\Temp\sikc.
-52 cinit CODE >4621:C:\Users\gtetil\AppData\Local\Temp\sikc.
-53 cinit CODE >4622:C:\Users\gtetil\AppData\Local\Temp\sikc.
-54 cinit CODE >4623:C:\Users\gtetil\AppData\Local\Temp\sikc.
-55 cinit CODE >4624:C:\Users\gtetil\AppData\Local\Temp\sikc.
-58 cinit CODE >4628:C:\Users\gtetil\AppData\Local\Temp\sikc.
-59 cinit CODE >4629:C:\Users\gtetil\AppData\Local\Temp\sikc.
-5A cinit CODE >4630:C:\Users\gtetil\AppData\Local\Temp\sikc.
-5B cinit CODE >4631:C:\Users\gtetil\AppData\Local\Temp\sikc.
-5C cinit CODE >4632:C:\Users\gtetil\AppData\Local\Temp\sikc.
-5D cinit CODE >4633:C:\Users\gtetil\AppData\Local\Temp\sikc.
-60 cinit CODE >4637:C:\Users\gtetil\AppData\Local\Temp\sikc.
-61 cinit CODE >4638:C:\Users\gtetil\AppData\Local\Temp\sikc.
-62 cinit CODE >4639:C:\Users\gtetil\AppData\Local\Temp\sikc.
-63 cinit CODE >4640:C:\Users\gtetil\AppData\Local\Temp\sikc.
-64 cinit CODE >4641:C:\Users\gtetil\AppData\Local\Temp\sikc.
-65 cinit CODE >4642:C:\Users\gtetil\AppData\Local\Temp\sikc.
-68 cinit CODE >4646:C:\Users\gtetil\AppData\Local\Temp\sikc.
-69 cinit CODE >4647:C:\Users\gtetil\AppData\Local\Temp\sikc.
-6A cinit CODE >4648:C:\Users\gtetil\AppData\Local\Temp\sikc.
-6B cinit CODE >4649:C:\Users\gtetil\AppData\Local\Temp\sikc.
-6C cinit CODE >4650:C:\Users\gtetil\AppData\Local\Temp\sikc.
-6D cinit CODE >4651:C:\Users\gtetil\AppData\Local\Temp\sikc.
-70 cinit CODE >4657:C:\Users\gtetil\AppData\Local\Temp\sikc.
-70 cinit CODE >4659:C:\Users\gtetil\AppData\Local\Temp\sikc.
-71 cinit CODE >4660:C:\Users\gtetil\AppData\Local\Temp\sikc.
-72 cinit CODE >4661:C:\Users\gtetil\AppData\Local\Temp\sikc.
+45 cinit CODE >4585:C:\Users\gtetil\AppData\Local\Temp\s73c.
+46 cinit CODE >4610:C:\Users\gtetil\AppData\Local\Temp\s73c.
+47 cinit CODE >4602:C:\Users\gtetil\AppData\Local\Temp\s73c.
+48 cinit CODE >4606:C:\Users\gtetil\AppData\Local\Temp\s73c.
+49 cinit CODE >4611:C:\Users\gtetil\AppData\Local\Temp\s73c.
+4A cinit CODE >4612:C:\Users\gtetil\AppData\Local\Temp\s73c.
+4B cinit CODE >4613:C:\Users\gtetil\AppData\Local\Temp\s73c.
+4C cinit CODE >4614:C:\Users\gtetil\AppData\Local\Temp\s73c.
+4D cinit CODE >4615:C:\Users\gtetil\AppData\Local\Temp\s73c.
+50 cinit CODE >4619:C:\Users\gtetil\AppData\Local\Temp\s73c.
+51 cinit CODE >4620:C:\Users\gtetil\AppData\Local\Temp\s73c.
+52 cinit CODE >4621:C:\Users\gtetil\AppData\Local\Temp\s73c.
+53 cinit CODE >4622:C:\Users\gtetil\AppData\Local\Temp\s73c.
+54 cinit CODE >4623:C:\Users\gtetil\AppData\Local\Temp\s73c.
+55 cinit CODE >4624:C:\Users\gtetil\AppData\Local\Temp\s73c.
+58 cinit CODE >4628:C:\Users\gtetil\AppData\Local\Temp\s73c.
+59 cinit CODE >4629:C:\Users\gtetil\AppData\Local\Temp\s73c.
+5A cinit CODE >4630:C:\Users\gtetil\AppData\Local\Temp\s73c.
+5B cinit CODE >4631:C:\Users\gtetil\AppData\Local\Temp\s73c.
+5C cinit CODE >4632:C:\Users\gtetil\AppData\Local\Temp\s73c.
+5D cinit CODE >4633:C:\Users\gtetil\AppData\Local\Temp\s73c.
+60 cinit CODE >4637:C:\Users\gtetil\AppData\Local\Temp\s73c.
+61 cinit CODE >4638:C:\Users\gtetil\AppData\Local\Temp\s73c.
+62 cinit CODE >4639:C:\Users\gtetil\AppData\Local\Temp\s73c.
+63 cinit CODE >4640:C:\Users\gtetil\AppData\Local\Temp\s73c.
+64 cinit CODE >4641:C:\Users\gtetil\AppData\Local\Temp\s73c.
+65 cinit CODE >4642:C:\Users\gtetil\AppData\Local\Temp\s73c.
+68 cinit CODE >4646:C:\Users\gtetil\AppData\Local\Temp\s73c.
+69 cinit CODE >4647:C:\Users\gtetil\AppData\Local\Temp\s73c.
+6A cinit CODE >4648:C:\Users\gtetil\AppData\Local\Temp\s73c.
+6B cinit CODE >4649:C:\Users\gtetil\AppData\Local\Temp\s73c.
+6C cinit CODE >4650:C:\Users\gtetil\AppData\Local\Temp\s73c.
+6D cinit CODE >4651:C:\Users\gtetil\AppData\Local\Temp\s73c.
+70 cinit CODE >4657:C:\Users\gtetil\AppData\Local\Temp\s73c.
+70 cinit CODE >4659:C:\Users\gtetil\AppData\Local\Temp\s73c.
+71 cinit CODE >4660:C:\Users\gtetil\AppData\Local\Temp\s73c.
+72 cinit CODE >4661:C:\Users\gtetil\AppData\Local\Temp\s73c.
 73 cinit CODE >630:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/main.c
 73 cinit CODE >642:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/main.c
 75 cinit CODE >643:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/main.c
@@ -697,74 +697,74 @@ F6 cinit CODE >1092:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/main.c
 5F4 cinit CODE >770:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
 5F6 cinit CODE >779:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
 5FA cinit CODE >784:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-603 cinit CODE >785:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-605 cinit CODE >786:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-60A cinit CODE >789:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-60C cinit CODE >794:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-60E cinit CODE >813:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-612 cinit CODE >816:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-615 cinit CODE >821:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-617 cinit CODE >830:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-61A cinit CODE >859:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-61D cinit CODE >866:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-620 cinit CODE >871:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-622 cinit CODE >876:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-627 cinit CODE >881:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-62B cinit CODE >887:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-630 cinit CODE >892:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-634 cinit CODE >895:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-635 cinit CODE >902:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-637 cinit CODE >917:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-63C cinit CODE >922:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-63F cinit CODE >931:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-644 cinit CODE >936:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-648 cinit CODE >942:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-64D cinit CODE >947:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-651 cinit CODE >950:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-652 cinit CODE >957:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-654 cinit CODE >972:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-659 cinit CODE >977:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-65B cinit CODE >990:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-65B cinit CODE >993:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-65E cinit CODE >998:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-665 cinit CODE >1003:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-66B cinit CODE >1006:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-66C cinit CODE >1009:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-66C cinit CODE >1012:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-66E cinit CODE >1024:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-66F cinit CODE >524:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-670 cinit CODE >529:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-674 cinit CODE >530:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-675 cinit CODE >531:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-678 cinit CODE >532:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-67B cinit CODE >533:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-67D cinit CODE >536:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-68B cinit CODE >438:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-68B cinit CODE >450:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-68C cinit CODE >454:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-68C cinit CODE >460:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-68E cinit CODE >461:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-68F cinit CODE >462:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-693 cinit CODE >463:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-694 cinit CODE >476:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-696 cinit CODE >477:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-69A cinit CODE >478:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-69F cinit CODE >486:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-6A1 cinit CODE >493:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-6A2 cinit CODE >494:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-6A6 cinit CODE >495:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-6B5 cinit CODE >496:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-6C5 cinit CODE >497:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-6CB cinit CODE >530:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-6CC cinit CODE >531:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-6CD cinit CODE >450:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-6D9 cinit CODE >539:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-6E8 cinit CODE >400:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
-6E8 cinit CODE >407:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
-6EC cinit CODE >408:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
-6FF cinit CODE >409:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
-706 cinit CODE >426:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
-710 cinit CODE >428:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
+600 cinit CODE >785:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+602 cinit CODE >786:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+607 cinit CODE >789:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+609 cinit CODE >794:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+60B cinit CODE >813:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+60F cinit CODE >816:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+612 cinit CODE >821:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+614 cinit CODE >830:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+617 cinit CODE >859:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+61A cinit CODE >866:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+61D cinit CODE >871:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+61F cinit CODE >876:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+624 cinit CODE >881:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+628 cinit CODE >887:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+62D cinit CODE >892:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+631 cinit CODE >895:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+632 cinit CODE >902:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+634 cinit CODE >917:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+639 cinit CODE >922:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+63C cinit CODE >931:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+641 cinit CODE >936:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+645 cinit CODE >942:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+64A cinit CODE >947:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+64E cinit CODE >950:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+64F cinit CODE >957:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+651 cinit CODE >972:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+656 cinit CODE >977:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+658 cinit CODE >990:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+658 cinit CODE >993:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+65B cinit CODE >998:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+662 cinit CODE >1003:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+668 cinit CODE >1006:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+669 cinit CODE >1009:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+669 cinit CODE >1012:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+66B cinit CODE >1024:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+66C cinit CODE >524:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+66D cinit CODE >529:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+671 cinit CODE >530:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+672 cinit CODE >531:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+675 cinit CODE >532:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+678 cinit CODE >533:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+67A cinit CODE >536:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+688 cinit CODE >438:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+688 cinit CODE >450:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+689 cinit CODE >454:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+689 cinit CODE >460:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+68B cinit CODE >461:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+68C cinit CODE >462:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+690 cinit CODE >463:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+691 cinit CODE >476:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+693 cinit CODE >477:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+697 cinit CODE >478:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+69C cinit CODE >486:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+69E cinit CODE >493:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+69F cinit CODE >494:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+6A3 cinit CODE >495:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+6B2 cinit CODE >496:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+6C2 cinit CODE >497:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+6C8 cinit CODE >530:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+6C9 cinit CODE >531:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+6CA cinit CODE >450:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+6D6 cinit CODE >539:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+6E5 cinit CODE >400:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
+6E5 cinit CODE >407:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
+6E9 cinit CODE >408:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
+6FC cinit CODE >409:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
+703 cinit CODE >426:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
+70D cinit CODE >428:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
 4 intentry CODE >1701:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
 4 intentry CODE >77:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrupt.c
 6 intentry CODE >81:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrupt.c
@@ -785,23 +785,23 @@ F intentry CODE >98:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrup
 26 intentry CODE >145:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrupt.c
 28 intentry CODE >149:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrupt.c
 29 intentry CODE >154:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrupt.c
-74D text59 CODE >198:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-74D text59 CODE >288:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-74E text59 CODE >290:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-74F text59 CODE >288:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-750 text59 CODE >290:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-753 text59 CODE >294:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-754 text59 CODE >295:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-756 text59 CODE >298:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-757 text59 CODE >304:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-75D text59 CODE >308:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-75F text59 CODE >326:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-776 text58 CODE >52:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrupt.c
-776 text58 CODE >56:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrupt.c
-778 text58 CODE >58:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrupt.c
-739 swtext4 CONST >1508:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-725 swtext3 CONST >372:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-760 swtext2 CONST >545:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
+74A text59 CODE >198:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+74A text59 CODE >288:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+74B text59 CODE >290:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+74C text59 CODE >288:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+74D text59 CODE >290:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+750 text59 CODE >294:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+751 text59 CODE >295:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+753 text59 CODE >298:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+754 text59 CODE >304:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+75A text59 CODE >308:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+75C text59 CODE >326:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+773 text58 CODE >52:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrupt.c
+773 text58 CODE >56:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrupt.c
+775 text58 CODE >58:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrupt.c
+736 swtext4 CONST >1508:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+722 swtext3 CONST >372:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+75D swtext2 CONST >545:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
 891 text41 CODE >331:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
 891 text41 CODE >412:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
 892 text41 CODE >415:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
@@ -1277,313 +1277,313 @@ F74 text41 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\al
 F77 text41 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\aldiv.c
 F82 text41 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\aldiv.c
 F8A text41 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\aldiv.c
-1095 text24 CODE >456:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1095 text24 CODE >469:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-109A text24 CODE >477:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-109D text24 CODE >482:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10BD text24 CODE >492:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10C1 text24 CODE >496:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1093 text24 CODE >456:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1093 text24 CODE >469:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1098 text24 CODE >477:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+109B text24 CODE >482:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10BB text24 CODE >492:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10BF text24 CODE >496:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10C1 text24 CODE >497:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10C2 text24 CODE >499:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
 10C3 text24 CODE >497:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10C4 text24 CODE >499:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10C5 text24 CODE >497:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10C7 text24 CODE >499:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10CD text24 CODE >531:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10D2 text24 CODE >559:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10D8 text24 CODE >560:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10DE text24 CODE >561:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10E4 text24 CODE >562:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10EA text24 CODE >566:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10EB text24 CODE >563:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10EC text24 CODE >564:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10ED text24 CODE >566:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10EF text24 CODE >567:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10F0 text24 CODE >576:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10F6 text24 CODE >577:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-10FC text24 CODE >578:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1102 text24 CODE >579:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1108 text24 CODE >580:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10C5 text24 CODE >499:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10CB text24 CODE >531:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10D0 text24 CODE >559:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10D6 text24 CODE >560:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10DC text24 CODE >561:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10E2 text24 CODE >562:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10E8 text24 CODE >566:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10E9 text24 CODE >563:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10EA text24 CODE >564:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10EB text24 CODE >566:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10ED text24 CODE >567:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10EE text24 CODE >576:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10F4 text24 CODE >577:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+10FA text24 CODE >578:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1100 text24 CODE >579:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1106 text24 CODE >580:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+110C text24 CODE >583:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+110D text24 CODE >581:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
 110E text24 CODE >583:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-110F text24 CODE >581:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1110 text24 CODE >583:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1112 text24 CODE >584:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1113 text24 CODE >594:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1116 text24 CODE >595:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1117 text24 CODE >551:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1120 text24 CODE >602:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1133 text24 CODE >606:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1139 text24 CODE >615:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1140 text24 CODE >659:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1144 text24 CODE >672:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-114A text24 CODE >673:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1150 text24 CODE >674:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1156 text24 CODE >675:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-115C text24 CODE >676:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1162 text24 CODE >677:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1163 text24 CODE >679:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-116D text24 CODE >683:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1171 text24 CODE >692:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1177 text24 CODE >705:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-117A text24 CODE >708:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-117B text24 CODE >836:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-117F text24 CODE >850:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1188 text24 CODE >851:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1197 text24 CODE >852:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11A5 text24 CODE >853:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11B6 text24 CODE >856:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11B9 text24 CODE >857:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11BA text24 CODE >858:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11BE text24 CODE >859:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11C2 text24 CODE >860:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11C6 text24 CODE >861:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11CA text24 CODE >865:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11D6 text24 CODE >870:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11DA text24 CODE >879:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11E0 text24 CODE >892:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11E3 text24 CODE >896:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11E4 text24 CODE >925:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11E8 text24 CODE >940:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11EB text24 CODE >942:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11EE text24 CODE >946:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11F0 text24 CODE >951:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-11FF text24 CODE >952:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1200 text24 CODE >953:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1201 text24 CODE >954:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1202 text24 CODE >955:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1203 text24 CODE >956:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1204 text24 CODE >961:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-122B text24 CODE >968:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-122F text24 CODE >977:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1235 text24 CODE >990:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1238 text24 CODE >993:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1239 text24 CODE >1024:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-123E text24 CODE >1039:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1241 text24 CODE >1042:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1242 text24 CODE >1043:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1243 text24 CODE >1044:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1245 text24 CODE >1050:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1247 text24 CODE >1051:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1248 text24 CODE >1054:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1249 text24 CODE >1055:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-124A text24 CODE >1057:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-124D text24 CODE >1061:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1255 text24 CODE >1062:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-125C text24 CODE >1063:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1263 text24 CODE >1064:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-126A text24 CODE >1065:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1271 text24 CODE >1066:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1278 text24 CODE >1069:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-127B text24 CODE >1070:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-127D text24 CODE >1071:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-128B text24 CODE >1077:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-128C text24 CODE >1078:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-128D text24 CODE >1081:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-128E text24 CODE >1082:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-128F text24 CODE >1084:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1292 text24 CODE >1088:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-129A text24 CODE >1089:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12A1 text24 CODE >1090:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12A8 text24 CODE >1091:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12AF text24 CODE >1092:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12B6 text24 CODE >1093:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12BD text24 CODE >1096:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12C0 text24 CODE >1097:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12C2 text24 CODE >1098:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12D0 text24 CODE >1104:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12D1 text24 CODE >1105:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12D2 text24 CODE >1107:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12D3 text24 CODE >1108:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12D4 text24 CODE >1110:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12D7 text24 CODE >1115:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12DF text24 CODE >1116:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12E6 text24 CODE >1117:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12ED text24 CODE >1118:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12F4 text24 CODE >1119:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-12FB text24 CODE >1120:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1302 text24 CODE >1123:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1305 text24 CODE >1124:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1307 text24 CODE >1125:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1314 text24 CODE >1128:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1316 text24 CODE >1131:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1319 text24 CODE >1132:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-131A text24 CODE >1133:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-131B text24 CODE >1136:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-131E text24 CODE >1139:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-131F text24 CODE >1151:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-132E text24 CODE >1152:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1334 text24 CODE >1155:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1343 text24 CODE >1167:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1344 text24 CODE >1169:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1359 text24 CODE >1170:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-135D text24 CODE >1171:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1361 text24 CODE >1180:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1366 text24 CODE >1182:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1368 text24 CODE >1184:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1369 text24 CODE >1195:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1374 text24 CODE >1196:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-137A text24 CODE >1199:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-138A text24 CODE >1213:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-139F text24 CODE >1214:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13A3 text24 CODE >1215:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13A9 text24 CODE >1224:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13AC text24 CODE >1227:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13AE text24 CODE >1229:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13AF text24 CODE >1240:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13BE text24 CODE >1241:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13C4 text24 CODE >1245:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13D4 text24 CODE >1260:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13E9 text24 CODE >1261:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13ED text24 CODE >1262:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13F3 text24 CODE >1270:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13F6 text24 CODE >1271:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13F9 text24 CODE >1274:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13FA text24 CODE >1283:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-13FD text24 CODE >1031:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-140C text24 CODE >1296:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-140E text24 CODE >1313:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1412 text24 CODE >1328:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1415 text24 CODE >1334:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1424 text24 CODE >1344:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1428 text24 CODE >1348:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-142B text24 CODE >1349:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-142E text24 CODE >1350:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1433 text24 CODE >1356:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1439 text24 CODE >1360:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-143F text24 CODE >1369:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1442 text24 CODE >1521:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1446 text24 CODE >1525:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1449 text24 CODE >1526:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-144C text24 CODE >1527:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1451 text24 CODE >1534:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1457 text24 CODE >1542:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-145D text24 CODE >1551:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1460 text24 CODE >1609:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1464 text24 CODE >1613:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1467 text24 CODE >1614:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-146A text24 CODE >1615:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-146F text24 CODE >1622:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1475 text24 CODE >1630:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-147B text24 CODE >1639:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-147E text24 CODE >1695:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1482 text24 CODE >1699:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1485 text24 CODE >1700:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1488 text24 CODE >1701:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-148D text24 CODE >1707:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1493 text24 CODE >1715:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1499 text24 CODE >1724:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-149C text24 CODE >1952:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-149E text24 CODE >1994:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14A2 text24 CODE >2000:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14A5 text24 CODE >2005:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14A6 text24 CODE >2102:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1110 text24 CODE >584:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1111 text24 CODE >594:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1114 text24 CODE >595:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1115 text24 CODE >551:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+111E text24 CODE >602:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1131 text24 CODE >606:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1137 text24 CODE >615:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+113E text24 CODE >659:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1142 text24 CODE >672:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1148 text24 CODE >673:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+114E text24 CODE >674:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1154 text24 CODE >675:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+115A text24 CODE >676:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1160 text24 CODE >677:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1161 text24 CODE >679:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+116B text24 CODE >683:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+116F text24 CODE >692:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1175 text24 CODE >705:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1178 text24 CODE >708:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1179 text24 CODE >836:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+117D text24 CODE >850:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1186 text24 CODE >851:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1195 text24 CODE >852:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11A3 text24 CODE >853:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11B4 text24 CODE >856:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11B7 text24 CODE >857:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11B8 text24 CODE >858:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11BC text24 CODE >859:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11C0 text24 CODE >860:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11C4 text24 CODE >861:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11C8 text24 CODE >865:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11D4 text24 CODE >870:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11D8 text24 CODE >879:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11DE text24 CODE >892:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11E1 text24 CODE >896:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11E2 text24 CODE >925:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11E6 text24 CODE >940:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11E9 text24 CODE >942:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11EC text24 CODE >946:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11EE text24 CODE >951:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11FD text24 CODE >952:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11FE text24 CODE >953:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+11FF text24 CODE >954:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1200 text24 CODE >955:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1201 text24 CODE >956:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1202 text24 CODE >961:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1229 text24 CODE >968:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+122D text24 CODE >977:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1233 text24 CODE >990:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1236 text24 CODE >993:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1237 text24 CODE >1024:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+123C text24 CODE >1039:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+123F text24 CODE >1042:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1240 text24 CODE >1043:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1241 text24 CODE >1044:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1243 text24 CODE >1050:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1245 text24 CODE >1051:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1246 text24 CODE >1054:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1247 text24 CODE >1055:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1248 text24 CODE >1057:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+124B text24 CODE >1061:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1253 text24 CODE >1062:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+125A text24 CODE >1063:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1261 text24 CODE >1064:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1268 text24 CODE >1065:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+126F text24 CODE >1066:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1276 text24 CODE >1069:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1279 text24 CODE >1070:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+127B text24 CODE >1071:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1289 text24 CODE >1077:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+128A text24 CODE >1078:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+128B text24 CODE >1081:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+128C text24 CODE >1082:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+128D text24 CODE >1084:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1290 text24 CODE >1088:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1298 text24 CODE >1089:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+129F text24 CODE >1090:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12A6 text24 CODE >1091:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12AD text24 CODE >1092:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12B4 text24 CODE >1093:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12BB text24 CODE >1096:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12BE text24 CODE >1097:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12C0 text24 CODE >1098:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12CE text24 CODE >1104:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12CF text24 CODE >1105:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12D0 text24 CODE >1107:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12D1 text24 CODE >1108:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12D2 text24 CODE >1110:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12D5 text24 CODE >1115:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12DD text24 CODE >1116:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12E4 text24 CODE >1117:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12EB text24 CODE >1118:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12F2 text24 CODE >1119:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+12F9 text24 CODE >1120:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1300 text24 CODE >1123:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1303 text24 CODE >1124:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1305 text24 CODE >1125:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1312 text24 CODE >1128:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1314 text24 CODE >1131:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1317 text24 CODE >1132:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1318 text24 CODE >1133:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1319 text24 CODE >1136:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+131C text24 CODE >1139:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+131D text24 CODE >1151:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+132C text24 CODE >1152:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1332 text24 CODE >1155:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1341 text24 CODE >1167:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1342 text24 CODE >1169:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1357 text24 CODE >1170:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+135B text24 CODE >1171:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+135F text24 CODE >1180:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1364 text24 CODE >1182:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1366 text24 CODE >1184:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1367 text24 CODE >1195:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1372 text24 CODE >1196:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1378 text24 CODE >1199:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1388 text24 CODE >1213:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+139D text24 CODE >1214:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13A1 text24 CODE >1215:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13A7 text24 CODE >1224:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13AA text24 CODE >1227:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13AC text24 CODE >1229:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13AD text24 CODE >1240:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13BC text24 CODE >1241:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13C2 text24 CODE >1245:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13D2 text24 CODE >1260:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13E7 text24 CODE >1261:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13EB text24 CODE >1262:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13F1 text24 CODE >1270:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13F4 text24 CODE >1271:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13F7 text24 CODE >1274:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13F8 text24 CODE >1283:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+13FB text24 CODE >1031:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+140A text24 CODE >1296:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+140C text24 CODE >1313:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1410 text24 CODE >1328:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1413 text24 CODE >1334:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1422 text24 CODE >1344:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1426 text24 CODE >1348:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1429 text24 CODE >1349:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+142C text24 CODE >1350:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1431 text24 CODE >1356:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1437 text24 CODE >1360:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+143D text24 CODE >1369:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1440 text24 CODE >1521:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1444 text24 CODE >1525:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1447 text24 CODE >1526:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+144A text24 CODE >1527:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+144F text24 CODE >1534:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1455 text24 CODE >1542:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+145B text24 CODE >1551:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+145E text24 CODE >1609:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1462 text24 CODE >1613:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1465 text24 CODE >1614:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1468 text24 CODE >1615:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+146D text24 CODE >1622:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1473 text24 CODE >1630:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1479 text24 CODE >1639:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+147C text24 CODE >1695:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1480 text24 CODE >1699:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1483 text24 CODE >1700:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1486 text24 CODE >1701:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+148B text24 CODE >1707:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1491 text24 CODE >1715:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1497 text24 CODE >1724:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+149A text24 CODE >1952:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+149C text24 CODE >1994:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14A0 text24 CODE >2000:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14A3 text24 CODE >2005:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14A4 text24 CODE >2102:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14A7 text24 CODE >2103:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14A8 text24 CODE >2111:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
 14A9 text24 CODE >2103:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14AA text24 CODE >2111:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14AB text24 CODE >2103:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14AC text24 CODE >2104:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14AD text24 CODE >2105:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14AE text24 CODE >2106:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14AF text24 CODE >2107:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14B0 text24 CODE >2108:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14B1 text24 CODE >2109:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14B2 text24 CODE >2110:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14B3 text24 CODE >2111:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14B5 text24 CODE >2112:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14B7 text24 CODE >2113:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14BA text24 CODE >2114:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14BB text24 CODE >2155:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14AA text24 CODE >2104:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14AB text24 CODE >2105:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14AC text24 CODE >2106:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14AD text24 CODE >2107:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14AE text24 CODE >2108:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14AF text24 CODE >2109:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14B0 text24 CODE >2110:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14B1 text24 CODE >2111:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14B3 text24 CODE >2112:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14B5 text24 CODE >2113:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14B8 text24 CODE >2114:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14B9 text24 CODE >2155:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14BC text24 CODE >2156:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14BD text24 CODE >2165:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
 14BE text24 CODE >2156:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14BF text24 CODE >2165:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14C0 text24 CODE >2156:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14C2 text24 CODE >2163:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14C3 text24 CODE >2165:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14C5 text24 CODE >2166:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14C7 text24 CODE >2167:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14CA text24 CODE >2168:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14CB text24 CODE >2209:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14CE text24 CODE >2210:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14D1 text24 CODE >2217:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14D2 text24 CODE >2218:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14D3 text24 CODE >2005:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14C0 text24 CODE >2163:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14C1 text24 CODE >2165:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14C3 text24 CODE >2166:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14C5 text24 CODE >2167:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14C8 text24 CODE >2168:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14C9 text24 CODE >2209:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14CC text24 CODE >2210:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14CF text24 CODE >2217:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14D0 text24 CODE >2218:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14D1 text24 CODE >2005:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14D9 text24 CODE >2231:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14DA text24 CODE >2240:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
 14DB text24 CODE >2231:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14DC text24 CODE >2240:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14DD text24 CODE >2231:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14DE text24 CODE >2232:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14DF text24 CODE >2233:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14E0 text24 CODE >2234:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14E3 text24 CODE >2240:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14E6 text24 CODE >2273:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14EA text24 CODE >2285:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14EF text24 CODE >2286:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14F6 text24 CODE >2287:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-14FD text24 CODE >2288:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1504 text24 CODE >2289:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-150A text24 CODE >2301:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1510 text24 CODE >2302:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1516 text24 CODE >2303:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-151C text24 CODE >2304:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1522 text24 CODE >2305:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1528 text24 CODE >2306:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1529 text24 CODE >2309:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1538 text24 CODE >2313:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-153C text24 CODE >2322:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1542 text24 CODE >2336:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1545 text24 CODE >2339:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1546 text24 CODE >2367:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-154A text24 CODE >2371:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1551 text24 CODE >2372:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1555 text24 CODE >2373:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1557 text24 CODE >2375:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1558 text24 CODE >2405:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-155A text24 CODE >2424:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-155D text24 CODE >340:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-155F text24 CODE >344:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-1561 text24 CODE >346:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-1629 text24 CODE >2436:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-162B text24 CODE >2440:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-162D text24 CODE >2441:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-162F text24 CODE >2442:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1630 text24 CODE >2443:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1631 text24 CODE >2444:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1632 text24 CODE >2447:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-1639 text24 CODE >167:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-163A text24 CODE >178:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-163A text24 CODE >181:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-163C text24 CODE >182:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-1643 text24 CODE >183:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-1649 text24 CODE >184:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-164E text24 CODE >185:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-1653 text24 CODE >186:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-1658 text24 CODE >187:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-165D text24 CODE >188:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-1662 text24 CODE >189:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-1667 text24 CODE >190:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+14DC text24 CODE >2232:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14DD text24 CODE >2233:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14DE text24 CODE >2234:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14E1 text24 CODE >2240:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14E4 text24 CODE >2273:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14E8 text24 CODE >2285:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14ED text24 CODE >2286:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14F4 text24 CODE >2287:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+14FB text24 CODE >2288:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1502 text24 CODE >2289:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1508 text24 CODE >2301:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+150E text24 CODE >2302:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1514 text24 CODE >2303:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+151A text24 CODE >2304:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1520 text24 CODE >2305:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1526 text24 CODE >2306:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1527 text24 CODE >2309:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1536 text24 CODE >2313:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+153A text24 CODE >2322:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1540 text24 CODE >2336:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1543 text24 CODE >2339:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1544 text24 CODE >2367:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1548 text24 CODE >2371:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+154F text24 CODE >2372:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1553 text24 CODE >2373:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1555 text24 CODE >2375:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1556 text24 CODE >2405:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1558 text24 CODE >2424:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+155B text24 CODE >340:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+155D text24 CODE >344:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+155F text24 CODE >346:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+1627 text24 CODE >2436:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1629 text24 CODE >2440:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+162B text24 CODE >2441:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+162D text24 CODE >2442:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+162E text24 CODE >2443:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+162F text24 CODE >2444:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1630 text24 CODE >2447:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+1637 text24 CODE >167:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1638 text24 CODE >178:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1638 text24 CODE >181:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+163A text24 CODE >182:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1641 text24 CODE >183:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1647 text24 CODE >184:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+164C text24 CODE >185:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1651 text24 CODE >186:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1656 text24 CODE >187:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+165B text24 CODE >188:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1660 text24 CODE >189:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1665 text24 CODE >190:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1669 text24 CODE >192:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+166A text24 CODE >190:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
 166B text24 CODE >192:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-166C text24 CODE >190:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-166D text24 CODE >192:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-1676 text24 CODE >193:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-167B text24 CODE >200:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-167C text24 CODE >1178:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-167D text24 CODE >1191:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-167E text24 CODE >1192:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-1680 text24 CODE >1194:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1674 text24 CODE >193:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1679 text24 CODE >200:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+167A text24 CODE >1178:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+167B text24 CODE >1191:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+167C text24 CODE >1192:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+167E text24 CODE >1194:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1681 text24 CODE >1195:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1682 text24 CODE >1194:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
 1683 text24 CODE >1195:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-1684 text24 CODE >1194:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-1685 text24 CODE >1195:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-1688 text24 CODE >1196:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-1690 text24 CODE >1197:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-1698 text24 CODE >1207:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-169B text24 CODE >1229:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-169E text24 CODE >1230:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-16A4 text24 CODE >1231:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-16A6 text24 CODE >1238:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-16A9 text24 CODE >1243:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-16AC text24 CODE >1246:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-16AD text24 CODE >1252:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1686 text24 CODE >1196:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+168E text24 CODE >1197:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1696 text24 CODE >1207:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+1699 text24 CODE >1229:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+169C text24 CODE >1230:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+16A2 text24 CODE >1231:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+16A4 text24 CODE >1238:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+16A7 text24 CODE >1243:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+16AA text24 CODE >1246:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+16AB text24 CODE >1252:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+16AF text24 CODE >1253:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+16B0 text24 CODE >1256:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
 16B1 text24 CODE >1253:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-16B2 text24 CODE >1256:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-16B3 text24 CODE >1253:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-16B5 text24 CODE >1256:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-16B6 text24 CODE >1257:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-16BC text24 CODE >1263:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+16B3 text24 CODE >1256:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+16B4 text24 CODE >1257:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
+16BA text24 CODE >1263:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
 16C3 text24 CODE >1258:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
 16C4 text24 CODE >1257:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
 16C5 text24 CODE >1270:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
@@ -1712,193 +1712,196 @@ F8A text41 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\al
 17FA text24 CODE >15:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/cksum.c
 17FB text24 CODE >33:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/cksum.c
 17FF text24 CODE >34:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/cksum.c
-711 swtext1 CONST >1508:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1A7A text7 CODE >1426:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1A7A text7 CODE >1431:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1A81 text7 CODE >1435:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1A84 text7 CODE >1440:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1A86 text7 CODE >1442:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1ABF text7 CODE >1461:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1AC1 text7 CODE >1468:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1AE5 text7 CODE >1472:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1AEF text7 CODE >1476:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1AF1 text7 CODE >1478:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1AF2 text7 CODE >1484:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1AF6 text7 CODE >1516:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1AF8 text7 CODE >1526:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1AFA text7 CODE >1527:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1AFB text7 CODE >1536:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1AFD text7 CODE >1546:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1AFF text7 CODE >1556:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B01 text7 CODE >1566:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B05 text7 CODE >1567:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B06 text7 CODE >1508:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B14 text7 CODE >1624:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B1B text7 CODE >1628:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B1E text7 CODE >1634:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B20 text7 CODE >1639:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B23 text7 CODE >1644:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B24 text7 CODE >1647:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B24 text7 CODE >1652:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B26 text7 CODE >1657:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B29 text7 CODE >1659:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B2A text7 CODE >1666:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B38 text7 CODE >1675:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B38 text7 CODE >1686:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B3A text7 CODE >1691:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B3C text7 CODE >1697:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B40 text7 CODE >1709:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B44 text7 CODE >1714:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B46 text7 CODE >1716:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B48 text7 CODE >1720:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B4B text7 CODE >1731:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B4D text7 CODE >1733:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B4F text7 CODE >1737:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B51 text7 CODE >1771:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B53 text7 CODE >1777:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B53 text7 CODE >1780:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B55 text7 CODE >1784:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B57 text7 CODE >1788:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B5A text7 CODE >1806:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B5D text7 CODE >1809:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B5F text7 CODE >1813:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B61 text7 CODE >1819:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B63 text7 CODE >1839:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B64 text7 CODE >1860:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B67 text7 CODE >1863:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B69 text7 CODE >1867:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B6B text7 CODE >1873:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B6D text7 CODE >1893:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B6F text7 CODE >1902:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B70 text7 CODE >1917:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B73 text7 CODE >1920:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B75 text7 CODE >1924:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B77 text7 CODE >1929:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B79 text7 CODE >1951:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B7A text7 CODE >1972:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B7D text7 CODE >1975:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B81 text7 CODE >1984:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B83 text7 CODE >2006:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B84 text7 CODE >2026:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B87 text7 CODE >2029:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B8B text7 CODE >2038:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B8D text7 CODE >2060:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B8D text7 CODE >2061:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B8E text7 CODE >2061:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B8F text7 CODE >2081:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B92 text7 CODE >2084:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B96 text7 CODE >2093:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B98 text7 CODE >2114:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B98 text7 CODE >2115:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B99 text7 CODE >2115:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B9B text7 CODE >2120:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B9C text7 CODE >2131:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B9E text7 CODE >2132:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1B9F text7 CODE >1793:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BB3 text7 CODE >2148:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BB4 text7 CODE >281:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BB4 text7 CODE >288:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BB7 text7 CODE >291:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BC2 text7 CODE >296:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BC4 text7 CODE >302:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BCB text7 CODE >322:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BCC text7 CODE >331:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BD2 text7 CODE >335:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BD3 text7 CODE >340:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BD5 text7 CODE >346:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BD8 text7 CODE >351:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BDA text7 CODE >353:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BDB text7 CODE >356:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BDB text7 CODE >362:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BDF text7 CODE >384:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BE1 text7 CODE >387:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BE3 text7 CODE >391:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BE5 text7 CODE >396:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BEC text7 CODE >400:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BEF text7 CODE >403:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BF1 text7 CODE >407:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BF3 text7 CODE >410:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BF5 text7 CODE >413:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BF6 text7 CODE >427:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BF8 text7 CODE >444:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BFB text7 CODE >445:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1BFF text7 CODE >454:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C00 text7 CODE >455:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C01 text7 CODE >456:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C02 text7 CODE >457:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C03 text7 CODE >458:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C04 text7 CODE >459:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C05 text7 CODE >460:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C06 text7 CODE >461:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C07 text7 CODE >463:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C08 text7 CODE >464:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C09 text7 CODE >465:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C0A text7 CODE >466:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C0B text7 CODE >467:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C0C text7 CODE >468:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C0D text7 CODE >469:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C0E text7 CODE >470:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C10 text7 CODE >505:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C12 text7 CODE >506:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C14 text7 CODE >511:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C15 text7 CODE >519:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C1B text7 CODE >523:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C1D text7 CODE >527:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C2D text7 CODE >534:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C2F text7 CODE >538:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C31 text7 CODE >540:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C33 text7 CODE >544:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C35 text7 CODE >547:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C36 text7 CODE >565:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C3F text7 CODE >665:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C40 text7 CODE >671:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C42 text7 CODE >675:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C44 text7 CODE >679:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C46 text7 CODE >682:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C48 text7 CODE >683:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C4A text7 CODE >686:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C4C text7 CODE >694:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C4E text7 CODE >697:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C51 text7 CODE >757:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C51 text7 CODE >764:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C52 text7 CODE >769:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C54 text7 CODE >773:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C56 text7 CODE >802:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C5D text7 CODE >806:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C60 text7 CODE >818:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C66 text7 CODE >822:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C77 text7 CODE >830:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C7B text7 CODE >844:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C83 text7 CODE >848:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C92 text7 CODE >857:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C96 text7 CODE >871:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1C9E text7 CODE >875:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CAD text7 CODE >883:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CAF text7 CODE >897:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CB0 text7 CODE >810:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CBC text7 CODE >913:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CBF text7 CODE >914:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CC2 text7 CODE >915:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CC4 text7 CODE >956:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CCC text7 CODE >964:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CCD text7 CODE >960:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CCE text7 CODE >964:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CD0 text7 CODE >984:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CD2 text7 CODE >988:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CD4 text7 CODE >991:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CD6 text7 CODE >995:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CD8 text7 CODE >998:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CDA text7 CODE >1001:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CDD text7 CODE >1003:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CDE text7 CODE >372:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CEB text7 CODE >1030:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CEB text7 CODE >1069:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CED text7 CODE >1073:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CEF text7 CODE >1077:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CF0 text7 CODE >1078:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CF1 text7 CODE >1077:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CF3 text7 CODE >1078:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1CF6 text7 CODE >1090:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+70E swtext1 CONST >1508:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1A6C text7 CODE >1426:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1A6C text7 CODE >1431:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1A73 text7 CODE >1435:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1A76 text7 CODE >1440:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1A78 text7 CODE >1442:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AB1 text7 CODE >1461:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AB3 text7 CODE >1468:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AD7 text7 CODE >1472:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AE1 text7 CODE >1476:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AE3 text7 CODE >1478:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AE4 text7 CODE >1484:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AE8 text7 CODE >1516:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AEA text7 CODE >1526:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AEC text7 CODE >1527:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AED text7 CODE >1536:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AEF text7 CODE >1546:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AF1 text7 CODE >1556:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AF3 text7 CODE >1566:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AF7 text7 CODE >1567:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1AF8 text7 CODE >1508:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B06 text7 CODE >1624:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B0D text7 CODE >1628:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B10 text7 CODE >1634:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B12 text7 CODE >1639:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B15 text7 CODE >1644:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B16 text7 CODE >1647:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B16 text7 CODE >1652:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B18 text7 CODE >1657:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B1B text7 CODE >1659:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B1C text7 CODE >1666:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B2A text7 CODE >1675:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B2A text7 CODE >1686:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B2C text7 CODE >1691:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B2E text7 CODE >1697:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B32 text7 CODE >1709:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B36 text7 CODE >1714:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B38 text7 CODE >1716:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B3A text7 CODE >1720:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B3D text7 CODE >1731:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B3F text7 CODE >1733:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B41 text7 CODE >1737:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B43 text7 CODE >1771:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B45 text7 CODE >1777:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B45 text7 CODE >1780:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B47 text7 CODE >1784:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B49 text7 CODE >1788:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B4C text7 CODE >1806:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B4F text7 CODE >1809:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B51 text7 CODE >1813:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B53 text7 CODE >1819:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B55 text7 CODE >1839:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B56 text7 CODE >1860:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B59 text7 CODE >1863:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B5B text7 CODE >1867:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B5D text7 CODE >1873:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B5F text7 CODE >1893:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B61 text7 CODE >1902:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B62 text7 CODE >1917:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B65 text7 CODE >1920:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B67 text7 CODE >1924:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B69 text7 CODE >1929:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B6B text7 CODE >1951:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B6C text7 CODE >1972:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B6F text7 CODE >1975:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B73 text7 CODE >1984:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B75 text7 CODE >2006:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B76 text7 CODE >2026:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B79 text7 CODE >2029:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B7D text7 CODE >2038:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B7F text7 CODE >2060:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B7F text7 CODE >2061:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B80 text7 CODE >2061:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B81 text7 CODE >2081:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B84 text7 CODE >2084:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B88 text7 CODE >2093:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B8A text7 CODE >2114:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B8A text7 CODE >2115:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B8B text7 CODE >2115:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B8D text7 CODE >2120:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B8E text7 CODE >2131:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B90 text7 CODE >2132:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1B91 text7 CODE >1793:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BA5 text7 CODE >2148:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BA6 text7 CODE >281:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BA6 text7 CODE >288:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BA9 text7 CODE >291:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BB4 text7 CODE >296:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BB6 text7 CODE >302:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BBD text7 CODE >322:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BBE text7 CODE >331:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BC4 text7 CODE >335:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BC5 text7 CODE >340:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BC7 text7 CODE >346:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BCA text7 CODE >351:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BCC text7 CODE >353:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BCD text7 CODE >356:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BCD text7 CODE >362:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BD1 text7 CODE >384:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BD3 text7 CODE >387:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BD5 text7 CODE >391:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BD7 text7 CODE >396:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BDE text7 CODE >400:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BE1 text7 CODE >403:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BE3 text7 CODE >407:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BE5 text7 CODE >410:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BE7 text7 CODE >413:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BE8 text7 CODE >427:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BEA text7 CODE >444:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BED text7 CODE >445:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BF1 text7 CODE >454:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BF2 text7 CODE >455:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BF3 text7 CODE >456:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BF4 text7 CODE >457:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BF5 text7 CODE >458:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BF6 text7 CODE >459:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BF7 text7 CODE >460:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BF8 text7 CODE >461:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BF9 text7 CODE >463:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BFA text7 CODE >464:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BFB text7 CODE >465:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BFC text7 CODE >466:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BFD text7 CODE >467:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BFE text7 CODE >468:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1BFF text7 CODE >469:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C00 text7 CODE >470:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C02 text7 CODE >505:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C04 text7 CODE >506:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C06 text7 CODE >511:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C07 text7 CODE >519:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C0D text7 CODE >523:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C0F text7 CODE >527:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C1F text7 CODE >534:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C21 text7 CODE >538:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C23 text7 CODE >540:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C25 text7 CODE >544:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C27 text7 CODE >547:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C28 text7 CODE >565:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C31 text7 CODE >665:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C32 text7 CODE >671:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C34 text7 CODE >675:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C36 text7 CODE >679:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C38 text7 CODE >682:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C3A text7 CODE >683:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C3C text7 CODE >686:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C3E text7 CODE >694:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C40 text7 CODE >697:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C43 text7 CODE >757:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C43 text7 CODE >764:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C44 text7 CODE >769:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C46 text7 CODE >773:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C48 text7 CODE >802:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C4F text7 CODE >806:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C52 text7 CODE >818:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C58 text7 CODE >822:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C69 text7 CODE >830:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C6D text7 CODE >844:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C75 text7 CODE >848:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C84 text7 CODE >857:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C88 text7 CODE >871:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C90 text7 CODE >875:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1C9F text7 CODE >883:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CA1 text7 CODE >897:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CA2 text7 CODE >810:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CAE text7 CODE >913:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CB1 text7 CODE >914:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CB4 text7 CODE >915:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CB6 text7 CODE >956:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CBE text7 CODE >964:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CBF text7 CODE >960:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CC0 text7 CODE >964:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CC2 text7 CODE >984:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CC4 text7 CODE >988:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CC6 text7 CODE >991:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CC8 text7 CODE >995:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CCA text7 CODE >998:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CCC text7 CODE >1001:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CCF text7 CODE >1003:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CD0 text7 CODE >372:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CDD text7 CODE >1030:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CDD text7 CODE >1069:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CDF text7 CODE >1073:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CE1 text7 CODE >1077:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CE2 text7 CODE >1078:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CE3 text7 CODE >1077:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CE5 text7 CODE >1078:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CE8 text7 CODE >1090:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CED text7 CODE >1094:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CEF text7 CODE >1098:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1CF3 text7 CODE >1103:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
 1CFB text7 CODE >1114:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
 1CFF text7 CODE >1119:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
 1D0F text7 CODE >1127:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
@@ -2041,40 +2044,40 @@ F8A text41 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\al
 1E99 text7 CODE >2132:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
 1E9A text7 CODE >1793:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
 1EAE text7 CODE >2148:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EAF text7 CODE >156:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EAF text7 CODE >161:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EB0 text7 CODE >162:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EB1 text7 CODE >163:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EB2 text7 CODE >164:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EB3 text7 CODE >165:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EB4 text7 CODE >166:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EB5 text7 CODE >167:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EB6 text7 CODE >168:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EB7 text7 CODE >170:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EB8 text7 CODE >171:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EB9 text7 CODE >172:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EBA text7 CODE >173:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EBB text7 CODE >174:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EBC text7 CODE >175:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EBD text7 CODE >176:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EBE text7 CODE >177:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EBF text7 CODE >179:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EC0 text7 CODE >180:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EC1 text7 CODE >181:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EC2 text7 CODE >182:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EC3 text7 CODE >183:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EC4 text7 CODE >184:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EC5 text7 CODE >185:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EC6 text7 CODE >186:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EC7 text7 CODE >188:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EC8 text7 CODE >189:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1EC9 text7 CODE >190:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1ECA text7 CODE >191:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1ECB text7 CODE >192:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1ECC text7 CODE >193:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1ECD text7 CODE >194:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1ECE text7 CODE >195:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-1ECF text7 CODE >199:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FB8 text7 CODE >156:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FB8 text7 CODE >161:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FB9 text7 CODE >162:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FBA text7 CODE >163:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FBB text7 CODE >164:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FBC text7 CODE >165:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FBD text7 CODE >166:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FBE text7 CODE >167:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FBF text7 CODE >168:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FC0 text7 CODE >170:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FC1 text7 CODE >171:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FC2 text7 CODE >172:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FC3 text7 CODE >173:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FC4 text7 CODE >174:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FC5 text7 CODE >175:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FC6 text7 CODE >176:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FC7 text7 CODE >177:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FC8 text7 CODE >179:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FC9 text7 CODE >180:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FCA text7 CODE >181:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FCB text7 CODE >182:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FCC text7 CODE >183:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FCD text7 CODE >184:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FCE text7 CODE >185:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FCF text7 CODE >186:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FD0 text7 CODE >188:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FD1 text7 CODE >189:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FD2 text7 CODE >190:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FD3 text7 CODE >191:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FD4 text7 CODE >192:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FD5 text7 CODE >193:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FD6 text7 CODE >194:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FD7 text7 CODE >195:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+1FD8 text7 CODE >199:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
 1FD9 text7 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwdiv.c
 1FD9 text7 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwdiv.c
 1FDB text7 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwdiv.c
@@ -2092,14 +2095,14 @@ F8A text41 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\al
 1FF7 text7 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwdiv.c
 1FF9 text7 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwdiv.c
 1FFD text7 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwdiv.c
-770 clrtext CODE >4591:C:\Users\gtetil\AppData\Local\Temp\sikc.
-770 clrtext CODE >4592:C:\Users\gtetil\AppData\Local\Temp\sikc.
-771 clrtext CODE >4593:C:\Users\gtetil\AppData\Local\Temp\sikc.
-771 clrtext CODE >4594:C:\Users\gtetil\AppData\Local\Temp\sikc.
-772 clrtext CODE >4595:C:\Users\gtetil\AppData\Local\Temp\sikc.
-773 clrtext CODE >4596:C:\Users\gtetil\AppData\Local\Temp\sikc.
-774 clrtext CODE >4597:C:\Users\gtetil\AppData\Local\Temp\sikc.
-775 clrtext CODE >4598:C:\Users\gtetil\AppData\Local\Temp\sikc.
+76D clrtext CODE >4591:C:\Users\gtetil\AppData\Local\Temp\s73c.
+76D clrtext CODE >4592:C:\Users\gtetil\AppData\Local\Temp\s73c.
+76E clrtext CODE >4593:C:\Users\gtetil\AppData\Local\Temp\s73c.
+76E clrtext CODE >4594:C:\Users\gtetil\AppData\Local\Temp\s73c.
+76F clrtext CODE >4595:C:\Users\gtetil\AppData\Local\Temp\s73c.
+770 clrtext CODE >4596:C:\Users\gtetil\AppData\Local\Temp\s73c.
+771 clrtext CODE >4597:C:\Users\gtetil\AppData\Local\Temp\s73c.
+772 clrtext CODE >4598:C:\Users\gtetil\AppData\Local\Temp\s73c.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -2131,10 +2134,10 @@ _CM1CON1 112 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _Receive_Diag 624 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 _PWM1CON 294 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-PL2 2AC4 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-PL4 2AFC 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL2 2AC0 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL4 2AF8 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 PL6 786 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-PL8 2B46 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL8 2B42 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 _RD CA8 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _WR CA9 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _pt 52 0 BANK0 1 bssBANK0 dist/default/production\BVH2.X.production.obj
@@ -2149,24 +2152,24 @@ EOL@ui8_b_DResB5_RD 232 0 BANK4 1 cstackBANK4 dist/default/production\BVH2.X.pro
 _Cb34_oPWM_SC_Alarm 149 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 __ELINMIntStatus1 D4 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 __Hstrings 0 0 ABS 0 strings -
-PL100 DB4 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-PL102 B20 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-PL104 D0A 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-PL106 3F48 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL108 2C48 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-PL110 1FEC 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-PL112 3F54 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL114 3F60 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL100 3EFA 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL102 3F06 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL104 DAE 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+PL106 B20 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+PL108 3F12 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL110 2C44 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL112 1FEC 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+PL114 3F1E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 PL116 1FF8 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-PL118 3F6C 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL120 3F76 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL122 3F80 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL124 3F8A 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL126 DC0 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-PL128 3F94 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL130 DC8 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-PL132 3F9E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL134 3FA8 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL118 DBA 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+PL120 3F2A 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL122 DC2 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+PL124 3F34 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL126 3F3E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL128 3F48 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL130 3F52 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL132 3F5C 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL134 3F66 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 __ELINMIntSleepTimeout 1BE 0 BANK3 1 bssBANK3 dist/default/production\BVH2.X.production.obj
 _ADON 4E8 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _C1IE 495 0 ABS 0 - dist/default/production\BVH2.X.production.obj
@@ -2185,12 +2188,12 @@ _TMR2 1A 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _TMR4 415 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _TMR6 41C 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _WREN CAA 0 ABS 0 - dist/default/production\BVH2.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\gtetil\AppData\Local\Temp\sikc.obj
+___sp 0 0 STACK 2 stack C:\Users\gtetil\AppData\Local\Temp\s73c.obj
 _main E6 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@Cb51_oTempRedAlarm 13B 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _Cb44_oShutoff 145 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
-start 56 0 CODE 0 init C:\Users\gtetil\AppData\Local\Temp\sikc.obj
+start 56 0 CODE 0 init C:\Users\gtetil\AppData\Local\Temp\s73c.obj
 _SIBFS_UbatHandling_b C6 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 __size_of___aldiv 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
@@ -2233,12 +2236,12 @@ __size_of_Receive_Diag 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 __end_of__ELINMIntInitialize AA0 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 _Cb56_UbatHandling_node_fcn2 1DD4 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
 _ui16_NTC_Temp_bldc_mean_cal 1DE 0 BANK3 1 bssBANK3 dist/default/production\BVH2.X.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\sikc.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\sikc.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\sikc.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\sikc.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\sikc.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\sikc.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\s73c.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\s73c.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\s73c.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\s73c.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\s73c.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\s73c.obj
 i1___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production\BVH2.X.production.obj
 __size_ofi1_ADC_Read 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 __size_ofi1_ADC_Wait 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
@@ -2257,7 +2260,7 @@ interrrupt_bldc@ui32_tmp 2C 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X
 __Hfunctab 0 0 ENTRY 0 functab -
 NegativeAnswer@LID 44 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 __end_of_FILTER_Init 9C0 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__end_of_FILTER_Temp E22 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__end_of_FILTER_Temp E1C 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __end_of_FILTER_Ubat 624 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 _ui8_b_DResB0_c 54 0 BANK0 1 bssBANK0 dist/default/production\BVH2.X.production.obj
 _ui8_b_DResB1_c 160 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
@@ -2268,7 +2271,7 @@ BVH2_Appl_Layer@Cb51_Counter 141 0 BANK2 1 bssBANK2 dist/default/production\BVH2
 ___aldiv@sign 39 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 ?i1_ADC_Read 70 0 COMMON 1 cstackCOMMON dist/default/production\BVH2.X.production.obj
 _SetDiagAlarm 6F2 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__end_of_interrupt_PWMCapture DB4 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__end_of_interrupt_PWMCapture DAE 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 ___awdiv@sign 35 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 __Hclrtext 0 0 ABS 0 clrtext -
 __ELINMIntGetPointer@_ELINMInt_tag 31 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
@@ -2330,8 +2333,8 @@ BVH2_Appl_Layer@X_Sb4_Intergrator 168 0 BANK2 1 dataBANK2 dist/default/productio
 _ui16_Speed_demand_mat 1CA 0 BANK3 1 bssBANK3 dist/default/production\BVH2.X.production.obj
 _ui8_Duty_Cycle_In_Ratio 14F 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 __ELINMIntMessageBuffer 250 0 BANK4 1 bssBANK4 dist/default/production\BVH2.X.production.obj
-__checksum0 1FFE 0 CODE 0 checksum C:\Users\gtetil\AppData\Local\Temp\sikc.obj
-__end_of_ELINMIntHandler CDE 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__checksum0 1FFE 0 CODE 0 checksum C:\Users\gtetil\AppData\Local\Temp\s73c.obj
+__end_of_ELINMIntHandler CD8 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __Lmaintext 0 0 ABS 0 maintext -
 __end_ofi1___lwdiv 3FFC 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 _FVRCON 117 0 ABS 0 - dist/default/production\BVH2.X.production.obj
@@ -2369,7 +2372,7 @@ __size_ofi1___wmul 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _Cb1_oCurrentAlarm 14C 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 __Lpa_nodes0 0 0 ABS 0 pa_nodes0 -
 __size_of_PWMReadDC 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
-_NegativeAnswer 2C52 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+_NegativeAnswer 2C4E 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __ELINMIntReadBack D2 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 ___lwdiv@quotient 35 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 __size_of_cksum 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
@@ -2380,7 +2383,7 @@ i1___lwdiv 3FB2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 __end_of__ELINMIntSendMessage 2DC2 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __end_of_Oscill_Source_Block 9CC 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@SIBFS_Dry_RunningAlarm_b C1 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
-__ELINMIntResetProtocol CDE 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__ELINMIntResetProtocol CD8 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 _ui8_given_supply D6 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 __CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@Cb51_odPumpOff 13A 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
@@ -2391,7 +2394,7 @@ _ui16_IPhase1_bldc_cal 166 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.pro
 _OSCCON 99 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 __end_of_SetDiagAlarm 746 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 _PWMReadDC 2E8A 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-_Task1ms EEC 0 CODE 0 text58 dist/default/production\BVH2.X.production.obj
+_Task1ms EE6 0 CODE 0 text58 dist/default/production\BVH2.X.production.obj
 ___aldiv@quotient 3A 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 _ui16_IPhase2_bldc_cal 164 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 _BVH2_Appl_Layer$1207 229 0 BANK4 1 cstackBANK4 dist/default/production\BVH2.X.production.obj
@@ -2404,10 +2407,10 @@ _BVH2_Appl_Layer$1215 224 0 BANK4 1 cstackBANK4 dist/default/production\BVH2.X.p
 _BVH2_Appl_Layer$1217 226 0 BANK4 1 cstackBANK4 dist/default/production\BVH2.X.production.obj
 _BVH2_Appl_Layer$1218 220 0 BANK4 1 cstackBANK4 dist/default/production\BVH2.X.production.obj
 _GO_nDONE 4E9 0 ABS 0 - dist/default/production\BVH2.X.production.obj
-__end_ofPL2 2AFC 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__end_ofPL4 2B46 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL2 2AF8 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL4 2B42 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __end_ofPL6 796 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__end_ofPL8 2B50 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL8 2B4C 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 Transmit_LIN_8Bytes@B0 3B 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 Transmit_LIN_8Bytes@B1 3C 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 Transmit_LIN_8Bytes@B2 3D 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
@@ -2423,7 +2426,7 @@ _ELINMIntHandler B2C 0 CODE 0 cinit dist/default/production\BVH2.X.production.ob
 _BVH2_Appl_Layer 1122 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
 __ELINMIntTHeaderMax 1D0 0 BANK3 1 bssBANK3 dist/default/production\BVH2.X.production.obj
 __ELINMIntTHeaderMin 127 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
-clear_ram0 EE0 0 CODE 0 clrtext dist/default/production\BVH2.X.production.obj
+clear_ram0 EDA 0 CODE 0 clrtext dist/default/production\BVH2.X.production.obj
 _SPBRGH 19C 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 __pcstackBANK4 220 0 BANK4 1 cstackBANK4 dist/default/production\BVH2.X.production.obj
@@ -2454,11 +2457,11 @@ ___tmul@product 36 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.producti
 _ui16_I_cal_Ph1 EC 0 BANK1 1 dataBANK1 dist/default/production\BVH2.X.production.obj
 _ui16_I_cal_Ph2 EA 0 BANK1 1 dataBANK1 dist/default/production\BVH2.X.production.obj
 _ui16_I_cal_Ph3 E8 0 BANK1 1 dataBANK1 dist/default/production\BVH2.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\gtetil\AppData\Local\Temp\sikc.obj
+___int_sp 0 0 STACK 2 stack C:\Users\gtetil\AppData\Local\Temp\s73c.obj
 BVH2_Appl_Layer@Cb14_StateCnt 1C4 0 BANK3 1 bssBANK3 dist/default/production\BVH2.X.production.obj
 _ui8_duty_cycle_BLDC 56 0 BANK0 1 bssBANK0 dist/default/production\BVH2.X.production.obj
 i1___wmul 3AC4 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_of_NegativeAnswer 2C72 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_of_NegativeAnswer 2C6E 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@Sb3_Product1 22F 0 BANK4 1 cstackBANK4 dist/default/production\BVH2.X.production.obj
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
@@ -2470,7 +2473,7 @@ __Hbank6 0 0 ABS 0 bank6 -
 __Hbank7 0 0 BANK7 1 bank7 -
 __Hbank8 0 0 BANK8 1 bank8 -
 __Hbank9 0 0 BANK9 1 bank9 -
-__Hcinit E22 0 CODE 0 cinit -
+__Hcinit E1C 0 CODE 0 cinit -
 i1___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\BVH2.X.production.obj
 __size_ofi1_commutate 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 __Hidloc 0 0 IDLOC 0 idloc -
@@ -2630,52 +2633,52 @@ int$flags 7E 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@Sb1_BVH2_Appl_Layer_FirstRun 16D 0 BANK2 1 dataBANK2 dist/default/production\BVH2.X.production.obj
 _Cb56_oUbat_Alarm_High 144 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-PL10 2B50 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-PL12 2B78 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-PL14 2B96 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-PL16 3DA0 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL18 2BB2 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-PL20 2BC8 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-PL22 796 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-PL24 1F16 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+PL10 2B4C 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL12 2B74 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL14 2B90 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL16 3D5E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL18 2BAE 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL20 2BC4 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL22 1F16 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+PL24 796 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 PL26 1F30 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
 PL28 7B0 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 PL30 1F42 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-PL32 3DD2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL34 3DF2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL36 3E12 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL38 3E34 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL40 3E54 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL42 3E72 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL44 3E92 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL46 3EB2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL48 3ED0 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL50 2BDA 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-PL52 2BF2 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-PL54 2BFE 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-PL56 2C0C 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL32 3D90 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL34 3DB0 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL36 3DD2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL38 3DF2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL40 3E12 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL42 3E30 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL44 3E4E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL46 3E6E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL48 3E8E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL50 2BD6 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL52 2BEE 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL54 2BFA 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL56 2C08 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 PL58 1F68 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
 PL60 1F7C 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-PL62 CFC 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-PL64 3EE4 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL62 CF6 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+PL64 3EA2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 PL66 1F90 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-PL68 3EF0 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL70 2C1A 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-PL72 3EFC 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL74 1FA2 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-PL76 2C2C 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-PL78 1FB4 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-PL80 3F08 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL82 2C3C 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL68 3EAE 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL70 1FA2 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+PL72 3EBA 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL74 2C16 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL76 1FB4 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+PL78 2C28 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL80 3EC6 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL82 2C38 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 PL84 1FC4 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-PL86 3F14 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL88 1FD0 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-PL90 B12 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-PL92 3F20 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL94 1FDE 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-PL96 3F2E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-PL98 3F3C 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-_EOL 212A 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+PL86 1FD0 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+PL88 3ED2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL90 3EE0 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL92 1FDE 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+PL94 B12 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+PL96 3EEC 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+PL98 D04 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+_EOL 2126 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 _GIE 5F 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _PR2 1B 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _RC5 75 0 ABS 0 - dist/default/production\BVH2.X.production.obj
@@ -2697,53 +2700,53 @@ _ui8_PWMoutvalue 151 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.productio
 __size_of_I_calibrationInit 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@Cb14_oDryRunAlarm BE 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 __size_of_Transmit_LIN_8Bytes 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
-_PWM_Write_Out 2ABA 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__end_ofPL10 2B78 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__end_ofPL12 2B96 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__end_ofPL14 2BB2 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__end_ofPL16 3DD2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL18 2BC8 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__end_ofPL20 2BDA 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__end_ofPL22 7B0 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__end_ofPL24 1F30 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+_PWM_Write_Out 2AB6 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL10 2B74 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL12 2B90 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL14 2BAE 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL16 3D90 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL18 2BC4 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL20 2BD6 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL22 1F30 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+__end_ofPL24 7B0 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __end_ofPL26 1F42 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
 __end_ofPL28 7BE 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __end_ofPL30 1F68 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-__end_ofPL32 3DF2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL34 3E12 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL36 3E34 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL38 3E54 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL40 3E72 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL42 3E92 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL44 3EB2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL46 3ED0 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL48 3EE4 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL50 2BF2 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__end_ofPL52 2BFE 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__end_ofPL54 2C0C 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__end_ofPL56 2C1A 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL32 3DB0 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL34 3DD2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL36 3DF2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL38 3E12 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL40 3E30 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL42 3E4E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL44 3E6E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL46 3E8E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL48 3EA2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL50 2BEE 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL52 2BFA 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL54 2C08 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL56 2C16 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __end_ofPL58 1F7C 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
 __end_ofPL60 1F90 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-__end_ofPL62 D0A 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__end_ofPL64 3EF0 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL62 D04 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__end_ofPL64 3EAE 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 __end_ofPL66 1FA2 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-__end_ofPL68 3EFC 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL70 2C2C 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__end_ofPL72 3F08 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL74 1FB4 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-__end_ofPL76 2C3C 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__end_ofPL78 1FC4 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-__end_ofPL80 3F14 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL82 2C48 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL68 3EBA 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL70 1FB4 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+__end_ofPL72 3EC6 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL74 2C28 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL76 1FC4 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+__end_ofPL78 2C38 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL80 3ED2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL82 2C44 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __end_ofPL84 1FD0 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-__end_ofPL86 3F20 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL88 1FDE 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-__end_ofPL90 B20 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__end_ofPL92 3F2E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL94 1FEC 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-__end_ofPL96 3F3C 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL98 3F48 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_of_EOL 2ABA 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL86 1FDE 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+__end_ofPL88 3EE0 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL90 3EEC 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL92 1FEC 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+__end_ofPL94 B20 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__end_ofPL96 3EFA 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL98 D10 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__end_of_EOL 2AB6 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __size_of_ELINMIntHandler 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _ui8_sampleState DE 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@SIBFS_Current_Analysis_low_b C2 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
@@ -2756,14 +2759,14 @@ __HnvBANK1 0 0 ABS 0 nvBANK1 -
 __HnvBANK3 0 0 ABS 0 nvBANK3 -
 __Lintentry 8 0 CODE 0 intentry -
 _ui8_BlankingCount E2 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\gtetil\AppData\Local\Temp\sikc.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\gtetil\AppData\Local\Temp\s73c.obj
 BVH2_Appl_Layer@Sb2_Error 237 0 BANK4 1 cstackBANK4 dist/default/production\BVH2.X.production.obj
 __ELINMIntCalcIDParity@ELINM_idtr 30 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 _ui8_Ubemf_sel DF 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 __pdataBANK0 59 0 BANK0 1 dataBANK0 dist/default/production\BVH2.X.production.obj
 __pdataBANK1 E8 0 BANK1 1 dataBANK1 dist/default/production\BVH2.X.production.obj
 __pdataBANK2 168 0 BANK2 1 dataBANK2 dist/default/production\BVH2.X.production.obj
-_BLDCWait 3D5E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+_BLDCWait 3F70 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 __size_of___lmul 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 __size_of___tmul 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 __size_of___wmul 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
@@ -2777,11 +2780,11 @@ i1___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\BVH2.X.pr
 _ui16_Capt_Val0 AE 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 _ui16_Capt_Val1 AC 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 _ui16_Capt_Val2 AA 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
-_interrupt_PWMCapture D16 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+_interrupt_PWMCapture D10 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 _ui8_PWM_FreqCnt CB 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
-__end_of_BLDCWait 3DA0 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_of_BLDCWait 3FB2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 __end_of_init_bldc B12 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__end_of__ELINMIntResetProtocol CFC 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__end_of__ELINMIntResetProtocol CF6 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __ELINMIntStatus 53 0 BANK0 1 bssBANK0 dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@Cb24_Reset 233 0 BANK4 1 cstackBANK4 dist/default/production\BVH2.X.production.obj
 _my_msg 1B0 0 BANK3 1 bssBANK3 dist/default/production\BVH2.X.production.obj
@@ -2797,20 +2800,20 @@ __ptext18 624 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __ptext19 6C8 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __ptext20 544 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __ptext21 54E 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__ptext22 DD0 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__ptext22 DCA 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __ptext23 7BE 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__ptext24 212A 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__ptext24 2126 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __ptext25 2E0E 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __ptext26 4BA 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __ptext27 2FA4 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __ptext28 2E40 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__ptext29 2ABA 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__ptext29 2AB6 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __ptext30 2E8A 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __ptext31 2F6A 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __ptext32 2F06 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__ptext33 2C52 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__ptext34 2C72 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__ptext35 2CF8 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__ptext33 2C4E 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__ptext34 2C6E 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__ptext35 2CF4 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __ptext36 2DC2 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __ptext37 6C2 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __ptext38 52C 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
@@ -2824,18 +2827,18 @@ __ptext45 1DD4 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
 __ptext46 1C60 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
 __ptext47 1CFE 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
 __ptext48 1C28 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-__ptext50 D16 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__ptext51 3768 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__ptext50 D10 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__ptext51 374C 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 __ptext52 3AEE 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 __ptext53 3AC4 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 __ptext54 3FB2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 __ptext55 3A76 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 __ptext56 3AA8 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__ptext57 3D5E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__ptext58 EEC 0 CODE 0 text58 dist/default/production\BVH2.X.production.obj
-__ptext59 E9A 0 CODE 0 text59 dist/default/production\BVH2.X.production.obj
+__ptext57 3F70 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__ptext58 EE6 0 CODE 0 text58 dist/default/production\BVH2.X.production.obj
+__ptext59 E94 0 CODE 0 text59 dist/default/production\BVH2.X.production.obj
 __ptext60 B2C 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__ptext61 CDE 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__ptext61 CD8 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __size_of_init_bldc 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 ___aldiv 1E3E 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
 ___awdiv 328 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
@@ -2889,7 +2892,7 @@ _ErrorCode D0 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@SIBFS_Motor_Stalled_b A0 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 _PWM_Capture_init 9CC 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 ___wmul@multiplier 30 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
-_Transmit_LIN_8Bytes 2C72 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+_Transmit_LIN_8Bytes 2C6E 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 _Cb1_RestartCounter 14D 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 _ui8_lastTaskvalue 152 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 __size_of_interrupt_handler 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
@@ -2899,8 +2902,8 @@ _init_bldc ACE 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __end_of_interrrupt_bldc 3A76 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 ?i1___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\BVH2.X.production.obj
 __ELINMIntRXMessageSize 15C 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
-stackhi 21EF 0 ABS 0 - C:\Users\gtetil\AppData\Local\Temp\sikc.obj
-stacklo 217B 0 ABS 0 - C:\Users\gtetil\AppData\Local\Temp\sikc.obj
+stackhi 21EF 0 ABS 0 - C:\Users\gtetil\AppData\Local\Temp\s73c.obj
+stacklo 217B 0 ABS 0 - C:\Users\gtetil\AppData\Local\Temp\s73c.obj
 __end_of_Cb56_UbatHandling_node_fcn2 1E3E 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
 __size_of_Cb1_Current_An___High_node_fcn1 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@SIBFS_Temperature_Alarm_b BF 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
@@ -2931,7 +2934,7 @@ __end_of_PWM_trans_table 30CA 0 STRCODE 0 stringtext1 dist/default/production\BV
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 _phaseCal D7 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 ___tmul@multiplier 30 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
-__ELINMIntSendMessage 2CF8 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__ELINMIntSendMessage 2CF4 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 end_of_initialization E0 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __ELINMIntReceiveMessage 6C8 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __ELINMIntReceiveMessage@_ELINM_tag 3D 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
@@ -2953,7 +2956,7 @@ _PSTR1CON 296 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@Sb3_Sum1 23C 0 BANK4 1 cstackBANK4 dist/default/production\BVH2.X.production.obj
 __Hreset_vec 4 0 CODE 0 reset_vec -
 _FILTER_Init 990 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-_FILTER_Temp DD0 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+_FILTER_Temp DCA 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 _FILTER_Ubat 54E 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __end_of_I_calibrationInit 4BA 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 _checksum 1B8 0 BANK3 1 bssBANK3 dist/default/production\BVH2.X.production.obj
@@ -2973,10 +2976,10 @@ __ptext3 8EA 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __ptext4 AA0 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __ptext5 ACE 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __ptext6 746 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__ptext7 34F4 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__ptext7 34D8 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 __ptext8 A70 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __ptext9 9CC 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-_interrrupt_bldc 3768 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+_interrrupt_bldc 374C 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 _ui8_Pulse_State 150 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 __size_of_Task1ms 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 cksum@addr 36 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
@@ -2999,7 +3002,7 @@ _filter1 1E4 0 BANK3 1 bssBANK3 dist/default/production\BVH2.X.production.obj
 _filter3 1E2 0 BANK3 1 bssBANK3 dist/default/production\BVH2.X.production.obj
 ___ltdiv@dividend 3C 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 __Lreset_vec 0 0 CODE 0 reset_vec -
-__end_of_PWM_Write_Out 2AC4 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_of_PWM_Write_Out 2AC0 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 __size_of__ELINMIntInitialize 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 __Hstringtext1 0 0 ABS 0 stringtext1 -
 timer_init@ui8_TmrNb 31 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
@@ -3021,7 +3024,7 @@ PWM_Write_Out@ui8_DutyCycle_Out 30 0 BANK0 1 cstackBANK0 dist/default/production
 __end_of_clear_timer 92E 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __Lfunctab 0 0 ENTRY 0 functab -
 __size_of__ELINMIntCalcIDParity 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
-__end_of_Transmit_LIN_8Bytes 2CF8 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_of_Transmit_LIN_8Bytes 2CF4 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
 EOL@_dcnt_413 221 0 BANK4 1 cstackBANK4 dist/default/production\BVH2.X.production.obj
 EOL@_dcnt_414 222 0 BANK4 1 cstackBANK4 dist/default/production\BVH2.X.production.obj
 EOL@_dcnt_415 223 0 BANK4 1 cstackBANK4 dist/default/production\BVH2.X.production.obj
@@ -3054,29 +3057,29 @@ _ui8_Task_Cont3ms 154 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.producti
 _ui8_Task_Cont5ms 153 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 __ELINMIntResetProtocol@code 70 0 COMMON 1 cstackCOMMON dist/default/production\BVH2.X.production.obj
 _ui16_dryRun_Thresh 1EE 0 BANK3 1 nvBANK3 dist/default/production\BVH2.X.production.obj
-_PWM_CTRL E9A 0 CODE 0 text59 dist/default/production\BVH2.X.production.obj
+_PWM_CTRL E94 0 CODE 0 text59 dist/default/production\BVH2.X.production.obj
 __Hend_init 5A 0 CODE 0 end_init -
 ___aldiv@counter 38 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 _ui16_fir_IPhase_mean 133 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 __ELINMIntReceiveMessage@_ELINM_id 3B 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
-__end_ofPL100 DC0 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__end_ofPL102 B2C 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__end_ofPL104 D16 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__end_ofPL106 3F54 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL108 2C52 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
-__end_ofPL110 1FF8 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-__end_ofPL112 3F60 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL114 3F6C 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL100 3F06 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL102 3F12 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL104 DBA 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__end_ofPL106 B2C 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__end_ofPL108 3F1E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL110 2C4E 0 CODE 0 text24 dist/default/production\BVH2.X.production.obj
+__end_ofPL112 1FF8 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
+__end_ofPL114 3F2A 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 __end_ofPL116 2000 0 CODE 0 text41 dist/default/production\BVH2.X.production.obj
-__end_ofPL118 3F76 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL120 3F80 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL122 3F8A 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL124 3F94 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL126 DC8 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__end_ofPL128 3F9E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL130 DD0 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
-__end_ofPL132 3FA8 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
-__end_ofPL134 3FB2 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL118 DC2 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__end_ofPL120 3F34 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL122 DCA 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
+__end_ofPL124 3F3E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL126 3F48 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL128 3F52 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL130 3F5C 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL132 3F66 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_ofPL134 3F70 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 _bool_mat_currAlarm_bldc CE 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 Receive_Diag@id 3F 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 __end_of_main 328 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
@@ -3110,7 +3113,7 @@ _TRISB 8D 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _TRISC 8E 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _TXREG 19A 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _TXSTA 19E 0 ABS 0 - dist/default/production\BVH2.X.production.obj
-__end_of_PWM_CTRL EC0 0 CODE 0 text59 dist/default/production\BVH2.X.production.obj
+__end_of_PWM_CTRL EBA 0 CODE 0 text59 dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@Cb24_RestartCounter 142 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@Cb24_StateCnt A2 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 __Hram 0 0 ABS 0 ram -
@@ -3132,7 +3135,7 @@ EnableMCP201@_dcnt_712 31 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.p
 EnableMCP201@_dcnt_713 32 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 _ui16_comm_time_max 12D 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 __size_of_EOL 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
-__end_of_commutate 3768 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+__end_of_commutate 374C 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 _FILTER_IPhase 7BE 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 _I_calibrationInit 3A8 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __HdataBANK0 0 0 ABS 0 dataBANK0 -
@@ -3154,7 +3157,7 @@ __pbssBANK3 1A0 0 BANK3 1 bssBANK3 dist/default/production\BVH2.X.production.obj
 __pbssBANK4 240 0 BANK4 1 bssBANK4 dist/default/production\BVH2.X.production.obj
 __size_of_interrrupt_bldc 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@Cb9_oCurrentAlarm 139 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
-__end_of_Task1ms EF2 0 CODE 0 text58 dist/default/production\BVH2.X.production.obj
+__end_of_Task1ms EEC 0 CODE 0 text58 dist/default/production\BVH2.X.production.obj
 ___wmul@product 34 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.production.obj
 __size_of_Get_Analog_Value 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 __ELINMIntTFrameMax 1D2 0 BANK3 1 bssBANK3 dist/default/production\BVH2.X.production.obj
@@ -3166,13 +3169,13 @@ _ui8_UPhase_sel E0 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.
 _comm_time 50 0 BANK0 1 bssBANK0 dist/default/production\BVH2.X.production.obj
 _ui8_Ki_mat 1CC 0 BANK3 1 bssBANK3 dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@Cb51_oTempAlarm 13C 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
-__pswtext1 E22 0 CONST 0 swtext1 dist/default/production\BVH2.X.production.obj
-__pswtext2 EC0 0 CONST 0 swtext2 dist/default/production\BVH2.X.production.obj
-__pswtext3 E4A 0 CONST 0 swtext3 dist/default/production\BVH2.X.production.obj
-__pswtext4 E72 0 CONST 0 swtext4 dist/default/production\BVH2.X.production.obj
+__pswtext1 E1C 0 CONST 0 swtext1 dist/default/production\BVH2.X.production.obj
+__pswtext2 EBA 0 CONST 0 swtext2 dist/default/production\BVH2.X.production.obj
+__pswtext3 E44 0 CONST 0 swtext3 dist/default/production\BVH2.X.production.obj
+__pswtext4 E6C 0 CONST 0 swtext4 dist/default/production\BVH2.X.production.obj
 _ui8_Kp_mat 15A 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 __size_of_Oscill_Source_Block 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
-_commutate 34F4 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
+_commutate 34D8 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -3198,20 +3201,20 @@ _commutate 34F4 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text7 0 1A7A 34F4 584 2
-text24 0 1095 212A 76B 2
+text7 0 1A6C 34D8 592 2
+text24 0 1093 2126 76D 2
 text41 0 891 1122 76F 2
-text59 0 74D E9A 13 2
+text59 0 74A E94 13 2
 cstackCOMMON 1 70 70 B 1
 cstackBANK0 1 20 20 3A 1
 cstackBANK4 1 220 220 3B 1
 stringtext1 0 1800 3000 65 2
-intentry 0 4 8 70D 2
+intentry 0 4 8 70A 2
 reset_vec 0 0 0 2 2
 bssBANK1 1 A0 A0 50 1
 bssBANK2 1 120 120 50 1
 bssBANK3 1 1A0 1A0 50 1
-swtext1 0 711 E22 3C 2
-swtext2 0 760 EC0 10 2
-clrtext 0 770 EE0 9 2
+swtext1 0 70E E1C 3C 2
+swtext2 0 75D EBA 10 2
+clrtext 0 76D EDA 9 2
 config 0 8007 1000E 2 2

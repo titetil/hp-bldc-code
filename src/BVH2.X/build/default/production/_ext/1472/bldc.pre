@@ -5318,7 +5318,7 @@ if (ui16_Ubat_bldc.w)
 {
 
 
-ui32_tmp = ( 400 * 40 ) / ui16_Ubat_bldc.w ;
+ui32_tmp = ( 400 * 100 ) / ui16_Ubat_bldc.w ;
 
 }
 
