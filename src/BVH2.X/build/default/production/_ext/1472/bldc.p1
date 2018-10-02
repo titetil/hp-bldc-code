@@ -4672,9 +4672,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.c: 1116: {
 "1116
 {
-[; ;bldc.c: 1119: ui32_tmp = ( 400 * 100 ) / ui16_Ubat_bldc.w ;
+[; ;bldc.c: 1119: ui32_tmp = ( 400 * 40 ) / ui16_Ubat_bldc.w ;
 "1119
-[e = _ui32_tmp -> / -> * -> 400 `i -> 100 `i `ui . _ui16_Ubat_bldc 0 `ul ]
+[e = _ui32_tmp -> / -> * -> 400 `i -> 40 `i `ui . _ui16_Ubat_bldc 0 `ul ]
 "1121
 }
 [e :U 425 ]
@@ -4893,9 +4893,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.c: 1463: {
 "1463
 {
-[; ;bldc.c: 1468: ui16_phase_advancement = ( ( ui16_speed_rar>>3 ) * 100 )>>7;
+[; ;bldc.c: 1468: ui16_phase_advancement = ( ( ui16_speed_rar>>3 ) * 128 )>>7;
 "1468
-[e = _ui16_phase_advancement -> >> * >> -> _ui16_speed_rar `ui -> 3 `i -> -> 100 `i `ui -> 7 `i `us ]
+[e = _ui16_phase_advancement -> >> * >> -> _ui16_speed_rar `ui -> 3 `i -> -> 128 `i `ui -> 7 `i `us ]
 [; ;bldc.c: 1472: if( comm_time > ui16_phase_advancement )
 "1472
 [e $ ! > -> _comm_time `ui -> _ui16_phase_advancement `ui 440  ]
@@ -4997,9 +4997,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.c: 1554: {
 "1554
 {
-[; ;bldc.c: 1556: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2400 * 2 ) ) ;
+[; ;bldc.c: 1556: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 1600 * 2 ) ) ;
 "1556
-[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 2400 `i -> 2 `i `l `ul `us ]
+[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 1600 `i -> 2 `i `l `ul `us ]
 [; ;bldc.c: 1557: break;
 "1557
 [e $U 442  ]
@@ -5012,9 +5012,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.c: 1564: {
 "1564
 {
-[; ;bldc.c: 1566: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) ) ;
+[; ;bldc.c: 1566: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) ) ;
 "1566
-[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 3000 `i -> 2 `i `l `ul `us ]
+[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 2000 `i -> 2 `i `l `ul `us ]
 [; ;bldc.c: 1567: break;
 "1567
 [e $U 442  ]
@@ -5027,9 +5027,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.c: 1574: {
 "1574
 {
-[; ;bldc.c: 1576: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) ) ;
+[; ;bldc.c: 1576: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) ) ;
 "1576
-[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 3000 `i -> 2 `i `l `ul `us ]
+[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 2000 `i -> 2 `i `l `ul `us ]
 [; ;bldc.c: 1577: break;
 "1577
 [e $U 442  ]
@@ -5042,9 +5042,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.c: 1584: {
 "1584
 {
-[; ;bldc.c: 1586: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) ) ;
+[; ;bldc.c: 1586: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) ) ;
 "1586
-[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 3000 `i -> 2 `i `l `ul `us ]
+[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 2000 `i -> 2 `i `l `ul `us ]
 [; ;bldc.c: 1587: break;
 "1587
 [e $U 442  ]
@@ -5057,9 +5057,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.c: 1594: {
 "1594
 {
-[; ;bldc.c: 1596: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) ) ;
+[; ;bldc.c: 1596: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) ) ;
 "1596
-[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 3000 `i -> 2 `i `l `ul `us ]
+[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 2000 `i -> 2 `i `l `ul `us ]
 [; ;bldc.c: 1597: break;
 "1597
 [e $U 442  ]
@@ -5072,9 +5072,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.c: 1604: {
 "1604
 {
-[; ;bldc.c: 1606: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) ) ;
+[; ;bldc.c: 1606: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) ) ;
 "1606
-[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 3000 `i -> 2 `i `l `ul `us ]
+[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 2000 `i -> 2 `i `l `ul `us ]
 [; ;bldc.c: 1607: break;
 "1607
 [e $U 442  ]
@@ -5087,9 +5087,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.c: 1614: {
 "1614
 {
-[; ;bldc.c: 1616: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) );
+[; ;bldc.c: 1616: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) );
 "1616
-[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 3000 `i -> 2 `i `l `ul `us ]
+[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 2000 `i -> 2 `i `l `ul `us ]
 "1618
 }
 "1620
@@ -5112,15 +5112,15 @@ Version 3.2 HI-TECH Software Intermediate Code
  454 ]
 "1620
 [e :U 442 ]
-[; ;bldc.c: 1624: if( ui16_comm_time_max < ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) ) )
+[; ;bldc.c: 1624: if( ui16_comm_time_max < ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) ) )
 "1624
-[e $ ! < -> _ui16_comm_time_max `ui -> -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 3000 `i -> 2 `i `l `ul `us `ui 455  ]
+[e $ ! < -> _ui16_comm_time_max `ui -> -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 2000 `i -> 2 `i `l `ul `us `ui 455  ]
 [; ;bldc.c: 1626: {
 "1626
 {
-[; ;bldc.c: 1628: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) );
+[; ;bldc.c: 1628: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) );
 "1628
-[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 3000 `i -> 2 `i `l `ul `us ]
+[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 2000 `i -> 2 `i `l `ul `us ]
 "1630
 }
 [e :U 455 ]
@@ -5180,9 +5180,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.c: 1680: phase_delay_counter_debug = phase_delay_counter;
 "1680
 [e = _phase_delay_counter_debug _phase_delay_counter ]
-[; ;bldc.c: 1686: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) );
+[; ;bldc.c: 1686: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) );
 "1686
-[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 3000 `i -> 2 `i `l `ul `us ]
+[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 2000 `i -> 2 `i `l `ul `us ]
 [; ;bldc.c: 1691: if( MotorFlags.bits.B6 )
 "1691
 [e $ ! != -> . . _MotorFlags 1 6 `i -> -> -> 0 `i `uc `i 460  ]

@@ -83,7 +83,7 @@
 //#define def_phase_angle       110  // optimum for high speed 
 #define     def_phase_angle            128 // optimum for high speed 
 //#define def_phase_angle       120  // optimum for high speed 
-#define     def_PhaseAdvanceStart      100
+#define     def_PhaseAdvanceStart      128
 
 #define     def_MINSPEED               300
 //#define def_MaxSPEED                9000   /* not used at the moment */
@@ -97,14 +97,14 @@
 //#define     def_ramp1_start_SPEED       300   // consider 5/4 ( 16 to 20 Khz) 1. alignment step   
 #define     def_ramp2_start_SPEED       800   // 2. alignement step 
 #define     def_ramp3_start_SPEED       1200  // 1. first speed step 
-#define     def_ramp4_start_SPEED       2400  // 2. second speed step  
-#define     def_ramp5_start_SPEED       3000
-#define     def_ramp6_start_SPEED       3000
-#define     def_ramp7_start_SPEED       3000
-#define     def_ramp8_start_SPEED       3000
-#define     def_ramp9_start_SPEED       3000
-#define     def_ramp_end_SPEED          3000
-#define     def_STARTUP_PWM             100   /*  PWM based on PWM period  */
+#define     def_ramp4_start_SPEED       1600  // 2. second speed step  
+#define     def_ramp5_start_SPEED       2000
+#define     def_ramp6_start_SPEED       2000
+#define     def_ramp7_start_SPEED       2000
+#define     def_ramp8_start_SPEED       2000
+#define     def_ramp9_start_SPEED       2000
+#define     def_ramp_end_SPEED          2000
+#define     def_STARTUP_PWM             40   /*  PWM based on PWM period  */
 #define     def_Align_PWM               40   /*  PWM based on PWM period  */
 
 //#define     def_STARTUP_PWM             30   /*  PWM based on PWM period  */

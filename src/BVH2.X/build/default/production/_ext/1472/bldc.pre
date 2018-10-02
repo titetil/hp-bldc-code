@@ -5318,7 +5318,7 @@ if (ui16_Ubat_bldc.w)
 {
 
 
-ui32_tmp = ( 400 * 100 ) / ui16_Ubat_bldc.w ;
+ui32_tmp = ( 400 * 40 ) / ui16_Ubat_bldc.w ;
 
 }
 
@@ -5496,7 +5496,7 @@ if( MotorFlags.bits.B3 )
 
 
 
-ui16_phase_advancement = ( ( ui16_speed_rar>>3 ) * 100 )>>7;
+ui16_phase_advancement = ( ( ui16_speed_rar>>3 ) * 128 )>>7;
 
 
 
@@ -5568,7 +5568,7 @@ case 4:
 
 {
 
-ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2400 * 2 ) ) ;
+ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 1600 * 2 ) ) ;
 break;
 
 }
@@ -5578,7 +5578,7 @@ case 5:
 
 {
 
-ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) ) ;
+ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) ) ;
 break;
 
 }
@@ -5588,7 +5588,7 @@ case 6:
 
 {
 
-ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) ) ;
+ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) ) ;
 break;
 
 }
@@ -5598,7 +5598,7 @@ case 7:
 
 {
 
-ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) ) ;
+ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) ) ;
 break;
 
 }
@@ -5608,7 +5608,7 @@ case 8:
 
 {
 
-ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) ) ;
+ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) ) ;
 break;
 
 }
@@ -5618,7 +5618,7 @@ case 9:
 
 {
 
-ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) ) ;
+ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) ) ;
 break;
 
 }
@@ -5628,7 +5628,7 @@ break;
 default:
 {
 
-ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) );
+ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) );
 
 }
 
@@ -5636,11 +5636,11 @@ ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) );
 
 
 
-if( ui16_comm_time_max < ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) ) )
+if( ui16_comm_time_max < ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) ) )
 
 {
 
-ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) );
+ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) );
 
 }
 
@@ -5695,7 +5695,7 @@ phase_delay_counter = 0;
 phase_delay_counter_debug = phase_delay_counter;
 
 # 1686
-ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 3000 * 2 ) );
+ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 2000 * 2 ) );
 
 
 

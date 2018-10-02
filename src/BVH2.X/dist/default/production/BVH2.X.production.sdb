@@ -715,7 +715,7 @@
 {
 [v timer_init@ui8_TmrNb ui8_TmrNb `uc  1 a 1 wreg ]
 [v timer_init@ui8_TmrNb ui8_TmrNb `uc  1 a 1 wreg ]
-[v timer_init@ui8_TmrNb ui8_TmrNb `uc  1 a 1 17 ]
+[v timer_init@ui8_TmrNb ui8_TmrNb `uc  1 a 1 5 ]
 "186
 } 0
 "302
@@ -723,7 +723,7 @@
 {
 [v clear_timer@ui8_TmrNb ui8_TmrNb `uc  1 a 1 wreg ]
 [v clear_timer@ui8_TmrNb ui8_TmrNb `uc  1 a 1 wreg ]
-[v clear_timer@ui8_TmrNb ui8_TmrNb `uc  1 a 1 16 ]
+[v clear_timer@ui8_TmrNb ui8_TmrNb `uc  1 a 1 4 ]
 "373
 } 0
 "404 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/main.c
@@ -757,7 +757,7 @@
 [v PWM_Capture_init@ui8_CCP_Nb ui8_CCP_Nb `uc  1 a 1 wreg ]
 [v PWM_Capture_init@ui8_CCP_Nb ui8_CCP_Nb `uc  1 a 1 wreg ]
 "83
-[v PWM_Capture_init@ui8_CCP_Nb ui8_CCP_Nb `uc  1 a 1 16 ]
+[v PWM_Capture_init@ui8_CCP_Nb ui8_CCP_Nb `uc  1 a 1 4 ]
 "183
 } 0
 "478 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/timer.c
@@ -779,11 +779,11 @@
 [v _EnableMCP201 EnableMCP201 `(v  1 e 1 0 ]
 {
 "452
-[v EnableMCP201@_dcnt_713 _dcnt `uc  1 a 1 18 ]
+[v EnableMCP201@_dcnt_713 _dcnt `uc  1 a 1 6 ]
 "450
-[v EnableMCP201@_dcnt_712 _dcnt `uc  1 a 1 17 ]
+[v EnableMCP201@_dcnt_712 _dcnt `uc  1 a 1 5 ]
 "448
-[v EnableMCP201@_dcnt _dcnt `uc  1 a 1 16 ]
+[v EnableMCP201@_dcnt _dcnt `uc  1 a 1 4 ]
 "455
 } 0
 "148 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
@@ -800,13 +800,13 @@
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "11
-[v ___awdiv@quotient quotient `i  1 a 2 22 ]
+[v ___awdiv@quotient quotient `i  1 a 2 10 ]
 "12
-[v ___awdiv@sign sign `uc  1 a 1 21 ]
-[v ___awdiv@counter counter `uc  1 a 1 20 ]
+[v ___awdiv@sign sign `uc  1 a 1 9 ]
+[v ___awdiv@counter counter `uc  1 a 1 8 ]
 "6
-[v ___awdiv@divisor divisor `i  1 p 2 16 ]
-[v ___awdiv@dividend dividend `i  1 p 2 18 ]
+[v ___awdiv@divisor divisor `i  1 p 2 4 ]
+[v ___awdiv@dividend dividend `i  1 p 2 6 ]
 "42
 } 0
 "210 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
@@ -819,7 +819,7 @@
 {
 [v Receive_Diag@id id `uc  1 a 1 wreg ]
 [v Receive_Diag@id id `uc  1 a 1 wreg ]
-[v Receive_Diag@id id `uc  1 a 1 31 ]
+[v Receive_Diag@id id `uc  1 a 1 19 ]
 "367
 } 0
 "1321
@@ -828,9 +828,9 @@
 [v __ELINMIntReceiveMessage@_ELINM_tag _ELINM_tag `uc  1 a 1 wreg ]
 [v __ELINMIntReceiveMessage@_ELINM_tag _ELINM_tag `uc  1 a 1 wreg ]
 "1322
-[v __ELINMIntReceiveMessage@_ELINM_id _ELINM_id `uc  1 p 1 27 ]
+[v __ELINMIntReceiveMessage@_ELINM_id _ELINM_id `uc  1 p 1 15 ]
 "1323
-[v __ELINMIntReceiveMessage@_ELINM_size _ELINM_size `uc  1 p 1 28 ]
+[v __ELINMIntReceiveMessage@_ELINM_size _ELINM_size `uc  1 p 1 16 ]
 "1343
 } 0
 "442 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
@@ -857,53 +857,53 @@
 [v _EOL EOL `(v  1 e 1 0 ]
 {
 "1120
-[v EOL@_dcnt_429 _dcnt `uc  1 a 1 17 ]
+[v EOL@_dcnt_429 _dcnt `uc  1 a 1 45 ]
 "1119
-[v EOL@_dcnt_428 _dcnt `uc  1 a 1 16 ]
+[v EOL@_dcnt_428 _dcnt `uc  1 a 1 44 ]
 "1118
-[v EOL@_dcnt_427 _dcnt `uc  1 a 1 15 ]
+[v EOL@_dcnt_427 _dcnt `uc  1 a 1 43 ]
 "1117
-[v EOL@_dcnt_426 _dcnt `uc  1 a 1 14 ]
+[v EOL@_dcnt_426 _dcnt `uc  1 a 1 42 ]
 "1116
-[v EOL@_dcnt_425 _dcnt `uc  1 a 1 13 ]
+[v EOL@_dcnt_425 _dcnt `uc  1 a 1 41 ]
 "1115
-[v EOL@_dcnt_424 _dcnt `uc  1 a 1 12 ]
+[v EOL@_dcnt_424 _dcnt `uc  1 a 1 40 ]
 "1093
-[v EOL@_dcnt_423 _dcnt `uc  1 a 1 11 ]
+[v EOL@_dcnt_423 _dcnt `uc  1 a 1 39 ]
 "1092
-[v EOL@_dcnt_422 _dcnt `uc  1 a 1 10 ]
+[v EOL@_dcnt_422 _dcnt `uc  1 a 1 38 ]
 "1091
-[v EOL@_dcnt_421 _dcnt `uc  1 a 1 9 ]
+[v EOL@_dcnt_421 _dcnt `uc  1 a 1 37 ]
 "1090
-[v EOL@_dcnt_420 _dcnt `uc  1 a 1 8 ]
+[v EOL@_dcnt_420 _dcnt `uc  1 a 1 36 ]
 "1089
-[v EOL@_dcnt_419 _dcnt `uc  1 a 1 7 ]
+[v EOL@_dcnt_419 _dcnt `uc  1 a 1 35 ]
 "1088
-[v EOL@_dcnt_418 _dcnt `uc  1 a 1 6 ]
+[v EOL@_dcnt_418 _dcnt `uc  1 a 1 34 ]
 "1066
-[v EOL@_dcnt_417 _dcnt `uc  1 a 1 5 ]
+[v EOL@_dcnt_417 _dcnt `uc  1 a 1 33 ]
 "1065
-[v EOL@_dcnt_416 _dcnt `uc  1 a 1 4 ]
+[v EOL@_dcnt_416 _dcnt `uc  1 a 1 32 ]
 "1064
-[v EOL@_dcnt_415 _dcnt `uc  1 a 1 3 ]
+[v EOL@_dcnt_415 _dcnt `uc  1 a 1 31 ]
 "1063
-[v EOL@_dcnt_414 _dcnt `uc  1 a 1 2 ]
+[v EOL@_dcnt_414 _dcnt `uc  1 a 1 30 ]
 "1062
-[v EOL@_dcnt_413 _dcnt `uc  1 a 1 1 ]
+[v EOL@_dcnt_413 _dcnt `uc  1 a 1 29 ]
 "1061
-[v EOL@_dcnt _dcnt `uc  1 a 1 0 ]
+[v EOL@_dcnt _dcnt `uc  1 a 1 28 ]
 "463
-[v EOL@ui8_b_DResB3_RD ui8_b_DResB3_RD `uc  1 a 1 23 ]
+[v EOL@ui8_b_DResB3_RD ui8_b_DResB3_RD `uc  1 a 1 51 ]
 "462
-[v EOL@ui8_b_DResB2_RD ui8_b_DResB2_RD `uc  1 a 1 22 ]
+[v EOL@ui8_b_DResB2_RD ui8_b_DResB2_RD `uc  1 a 1 50 ]
 "461
-[v EOL@ui8_b_DResB1_RD ui8_b_DResB1_RD `uc  1 a 1 21 ]
+[v EOL@ui8_b_DResB1_RD ui8_b_DResB1_RD `uc  1 a 1 49 ]
 "460
-[v EOL@ui8_b_DResB0_RD ui8_b_DResB0_RD `uc  1 a 1 20 ]
+[v EOL@ui8_b_DResB0_RD ui8_b_DResB0_RD `uc  1 a 1 48 ]
 "464
-[v EOL@ui8_b_DResB4_RD ui8_b_DResB4_RD `uc  1 a 1 19 ]
+[v EOL@ui8_b_DResB4_RD ui8_b_DResB4_RD `uc  1 a 1 47 ]
 "465
-[v EOL@ui8_b_DResB5_RD ui8_b_DResB5_RD `uc  1 a 1 18 ]
+[v EOL@ui8_b_DResB5_RD ui8_b_DResB5_RD `uc  1 a 1 46 ]
 "2430
 } 0
 "83 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/eeprom.c
@@ -912,9 +912,9 @@
 [v write_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 wreg ]
 [v write_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 wreg ]
 "84
-[v write_eeprom_data@ui8_adress_data ui8_adress_data `uc  1 p 1 23 ]
+[v write_eeprom_data@ui8_adress_data ui8_adress_data `uc  1 p 1 11 ]
 "89
-[v write_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 24 ]
+[v write_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 12 ]
 "113
 } 0
 "52
@@ -922,34 +922,34 @@
 {
 [v read_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 wreg ]
 "56
-[v read_eeprom_data@ui8_adress_data ui8_adress_data `uc  1 a 1 17 ]
+[v read_eeprom_data@ui8_adress_data ui8_adress_data `uc  1 a 1 5 ]
 "52
 [v read_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 wreg ]
 "58
-[v read_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 16 ]
+[v read_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 4 ]
 "67
 } 0
 "6 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/cksum.c
 [v _cksum cksum `(ui  1 e 2 0 ]
 {
 "8
-[v cksum@addr addr `us  1 a 2 22 ]
+[v cksum@addr addr `us  1 a 2 10 ]
 "7
-[v cksum@sum sum `ui  1 a 2 20 ]
+[v cksum@sum sum `ui  1 a 2 8 ]
 "9
-[v cksum@counter counter `ui  1 a 2 18 ]
+[v cksum@counter counter `ui  1 a 2 6 ]
 "34
 } 0
 "6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "11
-[v ___lwdiv@quotient quotient `ui  1 a 2 21 ]
+[v ___lwdiv@quotient quotient `ui  1 a 2 9 ]
 "12
-[v ___lwdiv@counter counter `uc  1 a 1 20 ]
+[v ___lwdiv@counter counter `uc  1 a 1 8 ]
 "6
-[v ___lwdiv@divisor divisor `ui  1 p 2 16 ]
-[v ___lwdiv@dividend dividend `ui  1 p 2 18 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 4 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 6 ]
 "31
 } 0
 "340 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
@@ -958,7 +958,7 @@
 [v PWM_Write_Out@ui8_DutyCycle_Out ui8_DutyCycle_Out `uc  1 a 1 wreg ]
 [v PWM_Write_Out@ui8_DutyCycle_Out ui8_DutyCycle_Out `uc  1 a 1 wreg ]
 "344
-[v PWM_Write_Out@ui8_DutyCycle_Out ui8_DutyCycle_Out `uc  1 a 1 16 ]
+[v PWM_Write_Out@ui8_DutyCycle_Out ui8_DutyCycle_Out `uc  1 a 1 4 ]
 "346
 } 0
 "361
@@ -970,22 +970,22 @@
 [v ___tmul __tmul `(um  1 e 3 0 ]
 {
 "17
-[v ___tmul@product product `um  1 a 3 22 ]
+[v ___tmul@product product `um  1 a 3 10 ]
 "15
-[v ___tmul@multiplier multiplier `um  1 p 3 16 ]
-[v ___tmul@multiplicand multiplicand `um  1 p 3 19 ]
+[v ___tmul@multiplier multiplier `um  1 p 3 4 ]
+[v ___tmul@multiplicand multiplicand `um  1 p 3 7 ]
 "99
 } 0
 "6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ltdiv.c
 [v ___ltdiv __ltdiv `(um  1 e 3 0 ]
 {
 "11
-[v ___ltdiv@quotient quotient `um  1 a 3 31 ]
+[v ___ltdiv@quotient quotient `um  1 a 3 19 ]
 "12
-[v ___ltdiv@counter counter `uc  1 a 1 34 ]
+[v ___ltdiv@counter counter `uc  1 a 1 22 ]
 "6
-[v ___ltdiv@divisor divisor `um  1 p 3 25 ]
-[v ___ltdiv@dividend dividend `um  1 p 3 28 ]
+[v ___ltdiv@divisor divisor `um  1 p 3 13 ]
+[v ___ltdiv@dividend dividend `um  1 p 3 16 ]
 "31
 } 0
 "2436 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
@@ -994,7 +994,7 @@
 [v NegativeAnswer@LID LID `uc  1 a 1 wreg ]
 [v NegativeAnswer@LID LID `uc  1 a 1 wreg ]
 "2440
-[v NegativeAnswer@LID LID `uc  1 a 1 36 ]
+[v NegativeAnswer@LID LID `uc  1 a 1 24 ]
 "2450
 } 0
 "167 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
@@ -1002,18 +1002,18 @@
 {
 [v Transmit_LIN_8Bytes@ID ID `uc  1 a 1 wreg ]
 [v Transmit_LIN_8Bytes@ID ID `uc  1 a 1 wreg ]
-[v Transmit_LIN_8Bytes@B0 B0 `uc  1 p 1 27 ]
-[v Transmit_LIN_8Bytes@B1 B1 `uc  1 p 1 28 ]
+[v Transmit_LIN_8Bytes@B0 B0 `uc  1 p 1 15 ]
+[v Transmit_LIN_8Bytes@B1 B1 `uc  1 p 1 16 ]
 "168
-[v Transmit_LIN_8Bytes@B2 B2 `uc  1 p 1 29 ]
-[v Transmit_LIN_8Bytes@B3 B3 `uc  1 p 1 30 ]
-[v Transmit_LIN_8Bytes@B4 B4 `uc  1 p 1 31 ]
+[v Transmit_LIN_8Bytes@B2 B2 `uc  1 p 1 17 ]
+[v Transmit_LIN_8Bytes@B3 B3 `uc  1 p 1 18 ]
+[v Transmit_LIN_8Bytes@B4 B4 `uc  1 p 1 19 ]
 "169
-[v Transmit_LIN_8Bytes@B5 B5 `uc  1 p 1 32 ]
-[v Transmit_LIN_8Bytes@B6 B6 `uc  1 p 1 33 ]
-[v Transmit_LIN_8Bytes@B7 B7 `uc  1 p 1 34 ]
+[v Transmit_LIN_8Bytes@B5 B5 `uc  1 p 1 20 ]
+[v Transmit_LIN_8Bytes@B6 B6 `uc  1 p 1 21 ]
+[v Transmit_LIN_8Bytes@B7 B7 `uc  1 p 1 22 ]
 "167
-[v Transmit_LIN_8Bytes@ID ID `uc  1 a 1 35 ]
+[v Transmit_LIN_8Bytes@ID ID `uc  1 a 1 23 ]
 "200
 } 0
 "1178
@@ -1021,9 +1021,9 @@
 {
 [v __ELINMIntSendMessage@_ELINM_idr _ELINM_idr `uc  1 a 1 wreg ]
 "1188
-[v __ELINMIntSendMessage@_ELINM_chk _ELINM_chk `ui  1 a 2 25 ]
+[v __ELINMIntSendMessage@_ELINM_chk _ELINM_chk `ui  1 a 2 13 ]
 "1186
-[v __ELINMIntSendMessage@_ELINM_i _ELINM_i `uc  1 a 1 24 ]
+[v __ELINMIntSendMessage@_ELINM_i _ELINM_i `uc  1 a 1 12 ]
 [s S566 . 1 `uc 1 ID0 1 0 :1:0 
 `uc 1 ID1 1 0 :1:1 
 `uc 1 ID2 1 0 :1:2 
@@ -1035,17 +1035,17 @@
 ]
 "1187
 [u S575 ELINMINT_ID 1 `uc 1 ID 1 0 `S566 1 IDbits 1 0 ]
-[v __ELINMIntSendMessage@_ELINM_tid _ELINM_tid `S575  1 a 1 23 ]
+[v __ELINMIntSendMessage@_ELINM_tid _ELINM_tid `S575  1 a 1 11 ]
 "1178
 [v __ELINMIntSendMessage@_ELINM_idr _ELINM_idr `uc  1 a 1 wreg ]
 "1179
-[v __ELINMIntSendMessage@_ELINM_size _ELINM_size `uc  1 p 1 17 ]
+[v __ELINMIntSendMessage@_ELINM_size _ELINM_size `uc  1 p 1 5 ]
 "1180
-[v __ELINMIntSendMessage@_ELINM_fmin _ELINM_fmin `ui  1 p 2 18 ]
+[v __ELINMIntSendMessage@_ELINM_fmin _ELINM_fmin `ui  1 p 2 6 ]
 "1181
-[v __ELINMIntSendMessage@_ELINM_fmax _ELINM_fmax `ui  1 p 2 20 ]
+[v __ELINMIntSendMessage@_ELINM_fmax _ELINM_fmax `ui  1 p 2 8 ]
 "1191
-[v __ELINMIntSendMessage@_ELINM_idr _ELINM_idr `uc  1 a 1 22 ]
+[v __ELINMIntSendMessage@_ELINM_idr _ELINM_idr `uc  1 a 1 10 ]
 "1290
 } 0
 "1048
@@ -1065,7 +1065,7 @@
 [v __ELINMIntCalcIDParity@ELINM_idtr ELINM_idtr `S575  1 a 1 wreg ]
 "1053
 "1048
-[v __ELINMIntCalcIDParity@ELINM_idtr ELINM_idtr `S575  1 a 1 16 ]
+[v __ELINMIntCalcIDParity@ELINM_idtr ELINM_idtr `S575  1 a 1 4 ]
 "1150
 } 0
 "1375
@@ -1074,7 +1074,7 @@
 [v __ELINMIntGetPointer@_ELINMInt_tag _ELINMInt_tag `uc  1 a 1 wreg ]
 [v __ELINMIntGetPointer@_ELINMInt_tag _ELINMInt_tag `uc  1 a 1 wreg ]
 "1376
-[v __ELINMIntGetPointer@_ELINMInt_position _ELINMInt_position `uc  1 p 1 16 ]
+[v __ELINMIntGetPointer@_ELINMInt_position _ELINMInt_position `uc  1 p 1 4 ]
 "1385
 } 0
 "2221 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
@@ -1091,7 +1091,7 @@
 [v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
 {
 "179
-[v ADC_Read@i i `uc  1 a 1 18 ]
+[v ADC_Read@i i `uc  1 a 1 6 ]
 "206
 } 0
 "331 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
@@ -1206,33 +1206,33 @@
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
-[v ___wmul@product product `ui  1 a 2 20 ]
+[v ___wmul@product product `ui  1 a 2 8 ]
 "15
-[v ___wmul@multiplier multiplier `ui  1 p 2 16 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 18 ]
+[v ___wmul@multiplier multiplier `ui  1 p 2 4 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 6 ]
 "53
 } 0
 "15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 {
 "17
-[v ___lmul@product product `ul  1 a 4 24 ]
+[v ___lmul@product product `ul  1 a 4 12 ]
 "15
-[v ___lmul@multiplier multiplier `ul  1 p 4 16 ]
-[v ___lmul@multiplicand multiplicand `ul  1 p 4 20 ]
+[v ___lmul@multiplier multiplier `ul  1 p 4 4 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 8 ]
 "129
 } 0
 "6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
 {
 "11
-[v ___aldiv@quotient quotient `l  1 a 4 26 ]
+[v ___aldiv@quotient quotient `l  1 a 4 14 ]
 "12
-[v ___aldiv@sign sign `uc  1 a 1 25 ]
-[v ___aldiv@counter counter `uc  1 a 1 24 ]
+[v ___aldiv@sign sign `uc  1 a 1 13 ]
+[v ___aldiv@counter counter `uc  1 a 1 12 ]
 "6
-[v ___aldiv@divisor divisor `l  1 p 4 16 ]
-[v ___aldiv@dividend dividend `l  1 p 4 20 ]
+[v ___aldiv@divisor divisor `l  1 p 4 4 ]
+[v ___aldiv@dividend dividend `l  1 p 4 8 ]
 "42
 } 0
 "1880 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
@@ -1269,7 +1269,7 @@
 [v _interrrupt_bldc interrrupt_bldc `(v  1 e 1 0 ]
 {
 "286
-[v interrrupt_bldc@ui32_tmp ui32_tmp `ul  1 a 4 12 ]
+[v interrrupt_bldc@ui32_tmp ui32_tmp `ul  1 a 4 0 ]
 "1420
 } 0
 "1426
