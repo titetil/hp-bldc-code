@@ -926,8 +926,10 @@ void main( void )
          /*~-*/
 #else
          /*~T*/
-         PR2 = DEF_PWM_PERIOD_VALUE * 5 / 4;
-         ui8_duty_cycle_BLDC = ui8_duty_cycle_mat*5/4
+         //PR2 = DEF_PWM_PERIOD_VALUE * 5 / 4;
+         //ui8_duty_cycle_BLDC = ui8_duty_cycle_mat*5/4;
+         PR2 = 200 * 5/4;  // this sets the resolution/range of the PWM output
+         ui8_duty_cycle_BLDC = ui8_duty_cycle_mat*5/4;
          /*~-*/
 #endif
          /*~E*/
@@ -1049,9 +1051,9 @@ void main( void )
             /*~+:Input connection of matlab layer*/
             /*~T*/
             /** Connect the matlab layer with the program */
-            //ui8_PWM_dc_mat    = PWMReadDC( );          /* connect input duty cycle to Matlab ui8_duty_cycle 0 .. 200 */
+            ui8_PWM_dc_mat    = PWMReadDC( );          /* connect input duty cycle to Matlab ui8_duty_cycle 0 .. 200 */
             //ui8_PWM_dc_mat    = 160; // constant 80% duty cycle command
-            ui8_PWM_dc_mat    = 200; // constant 100% duty cycle command
+            //ui8_PWM_dc_mat    = 200; // constant 100% duty cycle command
             ui16_PWM_Freq_mat = ui16_PWM_Freq_In;
             ui16_Speed_mat    = ui16_speed_fil;
             ui16_mat_inpTemp = ui16_NTC_Temp_bldc_mean_cal;
@@ -1090,7 +1092,7 @@ void main( void )
 
                /* Max Speed assignement */
                ui16_Speed_demand_mat_Max = ( PWM_trans_table[ 95 ] ) * 4 / 5;
-                
+                    
                /* Min Speed assignement */
                ui16_Speed_demand_mat_min = ( PWM_trans_table[ 11 ] ) * 4 / 5;
             /*~-*/
@@ -1104,13 +1106,13 @@ void main( void )
             /*~+:Normal - 16kHz*/
             /*~T*/
             /* Speed assignement */
-            ui16_Speed_demand_mat = PWM_trans_table[ ( ui8_PWM_dc_mat>>1 ) ] * 4 / 5;
+            ui16_Speed_demand_mat = PWM_trans_table[ ( ui8_PWM_dc_mat ) ];
 
             /* Max Speed assignement */
-            ui16_Speed_demand_mat_Max = ( PWM_trans_table[ 95 ] ) * 4 / 5;
+            ui16_Speed_demand_mat_Max = ( PWM_trans_table[ 200 ] );
 
             /* Min Speed assignement */
-            ui16_Speed_demand_mat_min = ( PWM_trans_table[ 11 ] ) * 4 / 5;
+            ui16_Speed_demand_mat_min = ( PWM_trans_table[ 0 ] );
             /*~E*/
             /*~-*/
 #endif

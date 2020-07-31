@@ -140,7 +140,7 @@ Int16 F__I16ATANI16(Int16 v, Int32 c);
 
 Int16 F__I16ATAN2I16(Int16 v, Int32 c, Int16 y);
 
-# 30 "C:\Program Files (x86)\Microchip\xc8\v1.44\include\math.h"
+# 30 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\c90\math.h"
 extern double fabs(double);
 extern double floor(double);
 extern double ceil(double);
@@ -1589,14 +1589,14 @@ Sb2_Switch2 = ( ( (Sb4_PI_sum > 0) && ((UInt16)Sb4_PI_sum > 202) ) ? 202 : ( ( (
 }
 }
 
-# 1637
-ui8_duty_cycle_mat = (UInt8) (Int16) (Sb2_Switch2 >> 1);
+# 1638
+ui8_duty_cycle_mat = (UInt8)ui16_Speed_demand_mat;
 
 
 bl_Pumpoff_Alarm = Sb1_Logical_Operator2;
 X_Sb4_Intergrator_TriggerIn = Sb2_Logical_Operator2;
 
-# 1645
+# 1646
 X_Sb4_Intergrator = X_Sb4_Intergrator + ((Int32) (Int16) ((((Int16) ui8_Ki_mat) * Sb2_Error) <<
 3));
 
@@ -1607,11 +1607,11 @@ X_Sb4_Intergrator = ( (X_Sb4_Intergrator > 161600) ? 161600 : ( (X_Sb4_Intergrat
 Sb1_BVH2_Appl_Layer_FirstRun = 0;
 }
 
-# 1676
+# 1677
 static Void Cb1_Current_An___High_node_fcn1(Void)
 {
 
-# 1680
+# 1681
 if (bool_mat_currAlarm_bldc) {
 
 SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
@@ -1635,10 +1635,11 @@ SIBFS_Current_Analysis_High_b.Cb1_glflag = 1 ;
 }
 }
 
-# 1720
+# 1721
 static Void Cb34_PWM_Detection_node_fcn1(Void)
 {
 if ((Cb34_idPWM < 1) || (Cb34_idPWM > 199)) {
+if (Cb34_idPWM > 199) {
 
 SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int) (UInt8)7;
 Cb34_odPumpOff = 0;
@@ -1647,9 +1648,10 @@ Cb34_odFixedLowValueSel = 0;
 Cb34_oPWM_SC_Alarm = 0;
 Cb34_oPWM_Alarm = 1;
 }
+}
 else {
 
-# 1734
+# 1737
 if ((ui16_PWM_Freq_mat < 36000) || (ui16_PWM_Freq_mat > 44000)) {
 
 SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int) (UInt8)6;
@@ -1672,7 +1674,7 @@ Cb34_oPWM_Alarm = 0;
 else {
 if (Cb34_idPWM < 9) {
 
-# 1757
+# 1760
 SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
 (UInt8)8;
 Cb34_odPumpOff = 1;
@@ -1684,7 +1686,7 @@ Cb34_oPWM_Alarm = 0;
 else {
 if (Cb34_idPWM > 191) {
 
-# 1769
+# 1772
 SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
 (UInt8)4;
 Cb34_odPumpOff = 0;
@@ -1696,7 +1698,7 @@ Cb34_oPWM_Alarm = 0;
 else {
 if (Cb34_idPWM >= 23) {
 
-# 1781
+# 1784
 SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
 (UInt8)2;
 Cb34_odPumpOff = 0;
@@ -1708,7 +1710,7 @@ Cb34_oPWM_Alarm = 0;
 else {
 if (Cb34_idPWM > 19) {
 
-# 1793
+# 1796
 SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
 (UInt8)5;
 Cb34_odPumpOff = 0;
@@ -1720,7 +1722,7 @@ Cb34_oPWM_Alarm = 0;
 else {
 if (Cb34_idPWM <= 19) {
 
-# 1805
+# 1808
 SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
 (UInt8)1;
 Cb34_odPumpOff = 1;
@@ -1738,11 +1740,11 @@ Cb34_oPWM_Alarm = 0;
 }
 }
 
-# 1839
+# 1842
 static Void Cb44_Pic_etat_monitor_node_fcn1(Void)
 {
 
-# 1843
+# 1846
 if (bool_mat_pic_etat) {
 
 SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) (UInt8)2;
@@ -1763,7 +1765,7 @@ SIBFS_Pic_etat_monitor_b.Cb44_glflag = 1 ;
 }
 }
 
-# 1880
+# 1883
 static Void Cb56_UbatHandling_node_fcn2(Void)
 {
 

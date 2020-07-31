@@ -250,7 +250,7 @@ void init_bldc( void  )
    CCPR2L            = 0xff;
    CCPR2H            = 0xff;
 
-   PR2               = DEF_PWM_PERIOD_VALUE;
+   PR2               = DEF_PWM_PERIOD_VALUE;  // not sure why this is here, when it's used again in line 929 of main.c
 
    T2CON             = 0x05;
    //T2CON = 0x0c ;

@@ -51,6 +51,7 @@ volatile  _u_wb          ui16_Capt_Val2 = 0;    /**< Value of CCPR on the second
           unsigned  char ui8_Duty_Cycle_In_Ratio = 0; /**< Calculate DC from 0 to 200, corresponding to 0 to 100%, with or without inversion by the transistor  */
           unsigned  char ui8_PWMinDC_sav; /**< Calculation of real DC read by the microcontroller. Must be inverted for all HW from B1 */
           unsigned  char ui8_PWMin_failCnt; /**< Counter for the time of bad detection of ETAT_MJP */ 
+          unsigned  int  ui16_PWM_Input_State = 0;
 /*~T*/
 /*-----------------------------  Prototypes --------------------------------------------------------------*/
           void PWM_Capture_init( unsigned char  ui8_CCP_Nb );
@@ -158,6 +159,7 @@ void PWM_Capture_init( unsigned char  ui8_CCP_Nb )
       /*~-*/
       {
          /*~T*/
+         ui16_PWM_Input_State = RA4;
          CCP5CON = Capt_Mode_Off;            /* CCP5 Module is off */
          CCPR5L  = CCP_Regis_Low_Clear;      /* Set CCP5 register to 0 */
          CCPR5H  = CCP_Regis_High_Clear;
@@ -405,7 +407,25 @@ unsigned  char PWMReadDC( void  )
    /*~I*/
 #ifdef def_PWMinInvert
    /*~T*/
-   return ( 200 - ui8_Duty_Cycle_In_Ratio );
+   if(ui8_Duty_Cycle_In_Ratio == 0)
+   {
+       // THIS FEATURE ONLY WORKS IF GROUNDED OR UNCONNECTED ON POWER UP!
+       if(ui16_PWM_Input_State == 1)  // inverted
+       {
+           ui16_PWM_Freq_In = 40000;
+           return 20;  // run at min speed if CMD is connection to ground
+       }
+       else
+       {
+           ui16_PWM_Freq_In = 40000;
+           return 200;  // run at max speed if CMD unconnected (pulled up to battery)
+       }
+   }
+   else
+   {  
+       return ( 200 - ui8_Duty_Cycle_In_Ratio );
+       
+   }
    /*~O*/
    /*~-*/
 #else

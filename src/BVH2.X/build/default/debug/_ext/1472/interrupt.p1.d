@@ -1,9 +1,0 @@
-build/default/debug/_ext/1472/interrupt.p1:	\
-	../ELINMInt.def	\
-	../pwm.h	\
-	../project.h	\
-	../timer.h	\
-	../bldc.h	\
-	../lin.h	\
-	../diag.h	\
-	../config.h	\

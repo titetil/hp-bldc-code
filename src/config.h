@@ -244,29 +244,29 @@ yy-mm-dd
 //#define def_forced_comm_mode     /**< Only for test purposes */
 
 //#define def_fixed_PWM    200     /**< Define a fixed output PWM value which is 100% */
-#define def_fixed_PWM    100*5/4     /**< Define a fixed output PWM value which is 100% */
+//#define def_fixed_PWM    100*5/4     /**< Define a fixed output PWM value which is 100% */
 
 //#define def_update_PhaseAngle    /**< removed from project */
 #define     def_filterPWMtoPowerStage /**< \warning To be disable for A samples */
 #define     def_Auto_Demag
-//#define def_OpenLoopMode         /**< if defined the Control Loop is disabled an  Open loop is configured */
+//#define     def_OpenLoopMode         /**< if defined the Control Loop is disabled an  Open loop is configured */
 //#define def_patchUbatSens            /* only for old hardware to be able to patch the Battery voltage sensing */
 /*~T*/
-extern const unsigned char PWM_trans_table[101] = {
-110, 110, 110, /* 2 */      /* = 800000 / MAXSPEED (rpm) */
-                 0,   0,   0,   0,   0,   0,   0, /*  9 */  /* = 0 */
-211, 211, /* 11 */          /* = 800000 / MINSPEED (rpm) */
-          211, 208, 206, 204, 201, 199, 197, 195, /* 19 */  /* = ((94 - 12) * 800000) / (( 94 -  i ) * MINSPEED + (i - 12) * MAXSPEED); with 12 < i < 94 */
-193, 191, 189, 187, 186, 184, 182, 180, 178, 177, /* 29 */
-175, 173, 172, 170, 169, 167, 166, 164, 163, 162, /* 39 */
-160, 159, 157, 156, 155, 154, 152, 151, 150, 149, /* 49 */
-148, 146, 145, 144, 143, 142, 141, 140, 139, 138, /* 59 */
-137, 136, 135, 134, 133, 132, 131, 130, 129, 128, /* 69 */
-127, 127, 126, 125, 124, 123, 122, 122, 121, 120, /* 79 */
-119, 119, 118, 117, 116, 116, 115, 114, 114, 113, /* 89 */
-112, 112, 111, 110, 110, /* 94 */
-                         110, 110, 110, 110, 110, 110 /* 100 */      /* = 800000 / MAXSPEED (rpm) */
+extern const unsigned char PWM_trans_table[202] = {
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0,/* 0-4% */
+90, 90, 90, 90, 90, 90, 90, 90, 90, 90, /* 5-9 */
+90, 91, 91, 92, 93, 93, 94, 95, 95, 96, 96, 97, 98, 98, 99, 100, 100, 101, 102, 102,
+103, 104, 104, 105, 106, 106, 107, 107, 108, 109, 109, 110, 111, 111, 112, 113, 113, 114, 115, 115,
+116, 117, 117, 118, 118, 119, 120, 120, 121, 122, 122, 123, 124, 124, 125, 126, 126, 127, 128, 128,
+129, 129, 130, 131, 131, 132, 133, 133, 134, 135, 135, 136, 137, 137, 138, 139, 139, 140, 140, 141,
+142, 142, 143, 144, 144, 145, 146, 146, 147, 148, 148, 149, 150, 150, 151, 151, 152, 153, 153, 154,
+155, 155, 156, 157, 157, 158, 159, 159, 160, 161, 161, 162, 162, 163, 164, 164, 165, 166, 166, 167,
+168, 168, 169, 170, 170, 171, 172, 172, 173, 173, 174, 175, 175, 176, 177, 177, 178, 179, 179, 180,
+181, 181, 182, 183, 183, 184, 184, 185, 186, 186, 187, 188, 188, 189, 190, 190, 191, 192, 192, 193,
+194, 194, 195, 195, 196, 197, 197, 198, 199, 199, 200, 200,
+200, 200, 200, 200, 200, 200, 200, 200, 200, 200 /* 96-100 */
 }; /**< Assign to a PWM input value a speed for the pump */
+
 #define     def_adr_SoftwareVersion     0xF9 /**< Defines the first address in the EEPROM of the SW version number */ 
 #define     ui8_SoftwareVersion_MSB     0x02 /**< 0xXY describes the version number X.Y */ 
 #define     ui8_SoftwareVersion_LSB     0x00 /**< This byte precises the version number. */ 
@@ -279,12 +279,12 @@ extern const unsigned char PWM_trans_table[101] = {
 //#define ver_ETAT                  /**< #Etat_PIC_Monitor verification */
 /*~T*/
 //#define def_EnableTempErrorSwitch /**< Switches off when temperature exceed the maximum Temp */
-#define     HIGH_TEMPERATURE10kHz /**< Modification of the frequency of the pump at high temperature to reduce this temperature to 10kHz */
+//#define     HIGH_TEMPERATURE10kHz /**< Modification of the frequency of the pump at high temperature to reduce this temperature to 10kHz */
 
 /*~T*/
 //#define def_overshooting 300  /**< Overshooting at the starting of the pump of 300ms */
 /*~T*/
-#define     def_LIN /**< Be careful generates a high interrupt load */
+//#define     def_LIN /**< Be careful generates a high interrupt load */
 //#define  def_LIN_Sync             /**< Define for synchronisation between LIN interface and oscilloscope. */
 //#define  def_LIN_5ms              /**< LIN enable for 5 ms task */
 //#define  def_LIN_status             /**< LIN debugger?*/

@@ -1634,7 +1634,8 @@ Void BVH2_Appl_Layer(Void)
 
    /* Outport: BVH2_Appl_Layer/DutyCyclePowerStage
       # combined # Gain: BVH2_Appl_Layer/Gain */
-   ui8_duty_cycle_mat = (UInt8) (Int16) (Sb2_Switch2 >> 1);
+   //ui8_duty_cycle_mat = (UInt8) (Int16) (Sb2_Switch2 >> 1);
+   ui8_duty_cycle_mat = (UInt8)ui16_Speed_demand_mat;  // bypass control loop
 
    /* Outport: BVH2_Appl_Layer/Pump_off */
    bl_Pumpoff_Alarm = Sb1_Logical_Operator2;
@@ -1720,13 +1721,15 @@ static Void Cb1_Current_An___High_node_fcn1(Void)
 static Void Cb34_PWM_Detection_node_fcn1(Void)
 {
    if ((Cb34_idPWM < 1) || (Cb34_idPWM > 199)) {
-      /* State transition to BVH2_Appl_Layer/PWM_Detection.PWMinput_handling.CMD_MJP_0_100 */
-      SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int) Cb40_CMD_MJP_0_100_id;
-      Cb34_odPumpOff = 0;
-      Cb34_odFixedValueSel = 1;
-      Cb34_odFixedLowValueSel = 0;
-      Cb34_oPWM_SC_Alarm = 0;
-      Cb34_oPWM_Alarm = 1;
+       if (Cb34_idPWM > 199) {
+        /* State transition to BVH2_Appl_Layer/PWM_Detection.PWMinput_handling.CMD_MJP_0_100 */
+        SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int) Cb40_CMD_MJP_0_100_id;
+        Cb34_odPumpOff = 0;
+        Cb34_odFixedValueSel = 1;
+        Cb34_odFixedLowValueSel = 0;
+        Cb34_oPWM_SC_Alarm = 0;
+        Cb34_oPWM_Alarm = 1;
+       }
    }
    else {
       /* # combined # update of inport for BVH2_Appl_Layer/PWM_Detection

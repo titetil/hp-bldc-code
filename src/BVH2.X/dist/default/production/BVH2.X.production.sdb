@@ -40,8 +40,6 @@
 [v _DiagInit DiagInit `(v  1 e 1 0 ]
 "210
 [v _SetDiagAlarm SetDiagAlarm `(v  1 e 1 0 ]
-"456
-[v _EOL EOL `(v  1 e 1 0 ]
 "2436
 [v _NegativeAnswer NegativeAnswer `(v  1 e 1 0 ]
 "52 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/eeprom.c
@@ -52,26 +50,6 @@
 [v _Task1ms Task1ms `(v  1 e 1 0 ]
 "77
 [v _interrupt_handler interrupt_handler `II(v  1 s 1 interrupt_handler ]
-"167 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-[v _Transmit_LIN_8Bytes Transmit_LIN_8Bytes `(v  1 e 1 0 ]
-"315
-[v _Receive_Diag Receive_Diag `(v  1 e 1 0 ]
-"434
-[v _EnableMCP201 EnableMCP201 `(v  1 e 1 0 ]
-"482
-[v __ELINMIntInitialize _ELINMIntInitialize `(uc  1 e 1 0 ]
-"524
-[v __ELINMIntResetProtocol _ELINMIntResetProtocol `(v  1 e 1 0 ]
-"555
-[v _ELINMIntHandler ELINMIntHandler `(v  1 e 1 0 ]
-"1048
-[v __ELINMIntCalcIDParity _ELINMIntCalcIDParity `(uc  1 e 1 0 ]
-"1178
-[v __ELINMIntSendMessage _ELINMIntSendMessage `(v  1 e 1 0 ]
-"1321
-[v __ELINMIntReceiveMessage _ELINMIntReceiveMessage `(v  1 e 1 0 ]
-"1375
-[v __ELINMIntGetPointer _ELINMIntGetPointer `(*.6uc  1 e 1 0 ]
 "174 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/main.c
 [v _I_calibrationInit I_calibrationInit `(v  1 e 1 0 ]
 "404
@@ -80,25 +58,25 @@
 [v _system_init system_init `(v  1 e 1 0 ]
 "630
 [v _main main `(v  1 e 1 0 ]
-"78 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+"79 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
 [v _PWM_Capture_init PWM_Capture_init `(v  1 e 1 0 ]
-"198
+"200
 [v _PWM_CTRL PWM_CTRL `(v  1 e 1 0 ]
-"340
+"342
 [v _PWM_Write_Out PWM_Write_Out `(v  1 e 1 0 ]
-"361
+"363
 [v _PWMReadDC PWMReadDC `(uc  1 e 1 0 ]
-"438
+"458
 [v _interrupt_PWMCapture interrupt_PWMCapture `(v  1 e 1 0 ]
 "331 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
 [v _BVH2_Appl_Layer BVH2_Appl_Layer `(v  1 e 1 0 ]
-"1676
+"1677
 [v _Cb1_Current_An___High_node_fcn1 Cb1_Current_An___High_node_fcn1 `(v  1 s 1 Cb1_Current_An___High_node_fcn1 ]
-"1720
+"1721
 [v _Cb34_PWM_Detection_node_fcn1 Cb34_PWM_Detection_node_fcn1 `(v  1 s 1 Cb34_PWM_Detection_node_fcn1 ]
-"1839
+"1842
 [v _Cb44_Pic_etat_monitor_node_fcn1 Cb44_Pic_etat_monitor_node_fcn1 `(v  1 s 1 Cb44_Pic_etat_monitor_node_fcn1 ]
-"1880
+"1883
 [v _Cb56_UbatHandling_node_fcn2 Cb56_UbatHandling_node_fcn2 `(v  1 s 1 Cb56_UbatHandling_node_fcn2 ]
 "73 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/timer.c
 [v _timer_init timer_init `(v  1 e 1 0 ]
@@ -106,40 +84,41 @@
 [v _clear_timer clear_timer `(v  1 e 1 0 ]
 "478
 [v _Oscill_Source_Block Oscill_Source_Block `(v  1 e 1 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\aldiv.c
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awdiv.c
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\float.c
+"62 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
-"86 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ftadd.c
+"86 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ltdiv.c
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ltdiv.c
 [v ___ltdiv __ltdiv `(um  1 e 3 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwdiv.c
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-[v i1___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 [v i1___wmul __wmul `(ui  1 e 2 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul24.c
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul24.c
 [v ___tmul __tmul `(um  1 e 3 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul32.c
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\pic\eeprom.c
-[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
-[v _memcpyee memcpyee `(v  1 e 1 0 ]
-[s S19 . 2 `uc 1 lo 1 0 `uc 1 hi 1 1 ]
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"7 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\flash.c
+[v ___flash_read __flash_read `(uc  1 e 1 0 ]
+[s S22 . 2 `uc 1 lo 1 0 `uc 1 hi 1 1 ]
 "54 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
-[u S22 . 2 `ui 1 w 2 0 `S19 1 b 2 0 ]
-[v _analog_value analog_value `VES22  1 e 2 0 ]
+[u S25 . 2 `ui 1 w 2 0 `S22 1 b 2 0 ]
+[v _analog_value analog_value `VES25  1 e 2 0 ]
 "55
 [v _inputArray1 inputArray1 `[8]ui  1 e 16 0 ]
 "56
 [v _ui16_fir_Bat_mittel ui16_fir_Bat_mittel `ui  1 e 2 0 ]
 "57
-[v _ui16_fir_IPhase_mean ui16_fir_IPhase_mean `S22  1 e 2 0 ]
+[v _ui16_fir_IPhase_mean ui16_fir_IPhase_mean `S25  1 e 2 0 ]
 "59
 [v _ui16_NTC_Temp_bldc_mean ui16_NTC_Temp_bldc_mean `ui  1 e 2 0 ]
 "61
@@ -171,13 +150,13 @@
 "75
 [v _ui8_BlankingCount ui8_BlankingCount `uc  1 e 1 0 ]
 "78
-[v _ui16_IPhase_bldc ui16_IPhase_bldc `VES22  1 e 2 0 ]
+[v _ui16_IPhase_bldc ui16_IPhase_bldc `VES25  1 e 2 0 ]
 "80
-[v _ui16_IPhase1_bldc ui16_IPhase1_bldc `VES22  1 e 2 0 ]
+[v _ui16_IPhase1_bldc ui16_IPhase1_bldc `VES25  1 e 2 0 ]
 "81
-[v _ui16_IPhase2_bldc ui16_IPhase2_bldc `VES22  1 e 2 0 ]
+[v _ui16_IPhase2_bldc ui16_IPhase2_bldc `VES25  1 e 2 0 ]
 "82
-[v _ui16_IPhase3_bldc ui16_IPhase3_bldc `VES22  1 e 2 0 ]
+[v _ui16_IPhase3_bldc ui16_IPhase3_bldc `VES25  1 e 2 0 ]
 "84
 [v _ui8_IPhase_sel ui8_IPhase_sel `uc  1 e 1 0 ]
 "85
@@ -185,11 +164,11 @@
 "86
 [v _ui8_Ubemf_sel ui8_Ubemf_sel `uc  1 e 1 0 ]
 "89
-[v _ui16_Ubemf_bldc ui16_Ubemf_bldc `VES22  1 e 2 0 ]
+[v _ui16_Ubemf_bldc ui16_Ubemf_bldc `VES25  1 e 2 0 ]
 "91
 [v _ui16_NTC_Temp_bldc ui16_NTC_Temp_bldc `us  1 e 2 0 ]
 "94
-[v _ui16_Ubat_bldc ui16_Ubat_bldc `VES22  1 e 2 0 ]
+[v _ui16_Ubat_bldc ui16_Ubat_bldc `VES25  1 e 2 0 ]
 "95
 [v _ui8_sampleState ui8_sampleState `uc  1 e 1 0 ]
 "97
@@ -202,7 +181,7 @@
 [v _ui16_speed_fil ui16_speed_fil `us  1 e 2 0 ]
 "103
 [v _ui8_duty_cycle_BLDC ui8_duty_cycle_BLDC `uc  1 e 1 0 ]
-[s S99 . 1 `uc 1 B0 1 0 :1:0 
+[s S102 . 1 `uc 1 B0 1 0 :1:0 
 `uc 1 B1 1 0 :1:1 
 `uc 1 B2 1 0 :1:2 
 `uc 1 B3 1 0 :1:3 
@@ -212,127 +191,22 @@
 `uc 1 B7 1 0 :1:7 
 ]
 "104
-[u S108 . 1 `uc 1 b 1 0 `S99 1 bits 1 0 ]
-[v _MotorFlags MotorFlags `S108  1 e 1 0 ]
+[u S111 . 1 `uc 1 b 1 0 `S102 1 bits 1 0 ]
+[v _MotorFlags MotorFlags `S111  1 e 1 0 ]
 "131
 [v _rising_bemf_flag rising_bemf_flag `b  1 e 0 0 ]
 "255 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/config.h
-[v _PWM_trans_table PWM_trans_table `DC[101]uc  1 e 101 0 ]
-"100 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-[v _ict_stamp ict_stamp `uc  1 e 1 0 ]
-"101
-[v _wkpoint wkpoint `uc  1 e 1 0 ]
-"102
-[v _phaseCal phaseCal `uc  1 e 1 0 ]
-"103
-[v _ui8_failure ui8_failure `uc  1 e 1 0 ]
-"104
-[v _ui8_given_supply ui8_given_supply `uc  1 e 1 0 ]
-"106
-[v _ui16_IPhase1_bldc_cal ui16_IPhase1_bldc_cal `S22  1 e 2 0 ]
+[v _PWM_trans_table PWM_trans_table `DC[202]uc  1 e 202 0 ]
+"106 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
+[v _ui16_IPhase1_bldc_cal ui16_IPhase1_bldc_cal `S25  1 e 2 0 ]
 "107
-[v _ui16_IPhase2_bldc_cal ui16_IPhase2_bldc_cal `S22  1 e 2 0 ]
+[v _ui16_IPhase2_bldc_cal ui16_IPhase2_bldc_cal `S25  1 e 2 0 ]
 "108
-[v _ui16_IPhase3_bldc_cal ui16_IPhase3_bldc_cal `S22  1 e 2 0 ]
+[v _ui16_IPhase3_bldc_cal ui16_IPhase3_bldc_cal `S25  1 e 2 0 ]
 "111
-[v _ui8_error_Flags ui8_error_Flags `S108  1 e 1 0 ]
+[v _ui8_error_Flags ui8_error_Flags `S111  1 e 1 0 ]
 "35 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrupt.c
 [v _ui8_Task_Cont1ms ui8_Task_Cont1ms `uc  1 e 1 0 ]
-[s S478 . 2 `uc 1 CRC0 1 0 :1:0 
-`uc 1 CRC1 1 0 :1:1 
-`uc 1 CRC2 1 0 :1:2 
-`uc 1 CRC3 1 0 :1:3 
-`uc 1 CRC4 1 0 :1:4 
-`uc 1 CRC5 1 0 :1:5 
-`uc 1 CRC6 1 0 :1:6 
-`uc 1 CRC7 1 0 :1:7 
-`uc 1 CRC8 1 1 :1:0 
-`uc 1 CRC9 1 1 :1:1 
-`uc 1 CRC10 1 1 :1:2 
-`uc 1 CRC11 1 1 :1:3 
-`uc 1 CRC12 1 1 :1:4 
-`uc 1 CRC13 1 1 :1:5 
-`uc 1 CRC14 1 1 :1:6 
-`uc 1 CRC15 1 1 :1:7 
-]
-"101 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-[u S495 ELINMINT_CRC 2 `i 1 CRC 2 0 `uc 1 CRCL 1 0 `S478 1 CRCbits 2 0 ]
-[v __ELINMIntRXCRC _ELINMIntRXCRC `S495  1 e 2 0 ]
-[s S499 . 1 `uc 1 TX 1 0 :1:0 
-`uc 1 RX 1 0 :1:1 
-`uc 1 ERROR 1 0 :1:2 
-`uc 1 IDLE 1 0 :1:3 
-`uc 1 ERROR_BIT0 1 0 :1:4 
-`uc 1 ERROR_BIT1 1 0 :1:5 
-`uc 1 ERROR_BIT2 1 0 :1:6 
-`uc 1 ERROR_BIT3 1 0 :1:7 
-]
-"102
-[u S508 ELINMINT_STATUS 1 `uc 1 ELINMIntStatusByte 1 0 `S499 1 ELINMINTSTS 1 0 ]
-[v __ELINMIntStatus _ELINMIntStatus `S508  1 e 1 0 ]
-[s S511 . 1 `uc 1 WAKEUP 1 0 :1:0 
-`uc 1 HEADER 1 0 :1:1 
-`uc 1 FRAME 1 0 :1:2 
-`uc 1 EXTENDED 1 0 :1:3 
-`uc 1 WAKEUP_RECEIVED 1 0 :1:4 
-`uc 1 WAKEUP_SENT 1 0 :1:5 
-`uc 1 SLEEP_TIMEOUT 1 0 :1:6 
-]
-"103
-[u S519 ELINMINT_STATUS1 1 `uc 1 ELINMIntStatusByte 1 0 `S511 1 ELINMINTSTS 1 0 ]
-[v __ELINMIntStatus1 _ELINMIntStatus1 `S519  1 e 1 0 ]
-[s S522 . 1 `uc 1 SIZE0 1 0 :1:0 
-`uc 1 SIZE1 1 0 :1:1 
-`uc 1 SIZE2 1 0 :1:2 
-`uc 1 SIZE3 1 0 :1:3 
-`uc 1 SIZE4 1 0 :1:4 
-`uc 1 SIZE5 1 0 :1:5 
-`uc 1 SIZE6 1 0 :1:6 
-`uc 1 SIZE7 1 0 :1:7 
-]
-"104
-[u S531 ELINMINT_MESSAGE_SIZE 1 `uc 1 SIZE 1 0 `S522 1 SIZEbits 1 0 ]
-[v __ELINMIntMessageSize _ELINMIntMessageSize `S531  1 e 1 0 ]
-"105
-[v __ELINMIntRXMessageSize _ELINMIntRXMessageSize `S531  1 e 1 0 ]
-"106
-[v __ELINMIntMessageBuffer _ELINMIntMessageBuffer `[11]uc  1 e 11 0 ]
-"107
-[v __ELINMIntReadBack _ELINMIntReadBack `uc  1 e 1 0 ]
-"109
-[v __ELINMIntMessageBufferPointer _ELINMIntMessageBufferPointer `uc  1 e 1 0 ]
-"110
-[v __ELINMIntSpace _ELINMIntSpace `uc  1 e 1 0 ]
-"111
-[v __ELINMIntTFrameMin _ELINMIntTFrameMin `ui  1 e 2 0 ]
-"112
-[v __ELINMIntTFrameMax _ELINMIntTFrameMax `ui  1 e 2 0 ]
-"113
-[v __ELINMIntTHeaderMin _ELINMIntTHeaderMin `ui  1 e 2 0 ]
-"114
-[v __ELINMIntTHeaderMax _ELINMIntTHeaderMax `ui  1 e 2 0 ]
-"115
-[v __ELINMIntSleepTimeout _ELINMIntSleepTimeout `ul  1 e 4 0 ]
-"132
-[v _ui8_b_DResServID_c ui8_b_DResServID_c `uc  1 e 1 0 ]
-"133
-[v _ui8_b_DResLocID_c ui8_b_DResLocID_c `uc  1 e 1 0 ]
-"134
-[v _ui8_b_DResB0_c ui8_b_DResB0_c `uc  1 e 1 0 ]
-"135
-[v _ui8_b_DResB1_c ui8_b_DResB1_c `uc  1 e 1 0 ]
-"136
-[v _ui8_b_DResB2_c ui8_b_DResB2_c `uc  1 e 1 0 ]
-"137
-[v _ui8_b_DResB3_c ui8_b_DResB3_c `uc  1 e 1 0 ]
-"138
-[v _ui8_b_DResB4_c ui8_b_DResB4_c `uc  1 e 1 0 ]
-"163
-[v _my_msg my_msg `[8]uc  1 e 8 0 ]
-"164
-[v _pt pt `*.6uc  1 e 1 0 ]
-"165
-[v _ErrorCode ErrorCode `uc  1 e 1 0 ]
 "120 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/main.c
 [v _ui8_Task_Cont3ms ui8_Task_Cont3ms `uc  1 e 1 0 ]
 "121
@@ -349,12 +223,6 @@
 [v _ui16_I_cal_Ph3 ui16_I_cal_Ph3 `ui  1 e 2 0 ]
 "129
 [v _ui16_Temp_cal ui16_Temp_cal `ui  1 e 2 0 ]
-"132
-[v _ui8_selected_lid ui8_selected_lid `uc  1 e 1 0 ]
-"134
-[v _sum sum `ui  1 e 2 0 ]
-"135
-[v _checksum checksum `[3]ui  1 e 6 0 ]
 "137
 [v _ui8_current_cal ui8_current_cal `[3]uc  1 e 3 0 ]
 "43 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
@@ -368,17 +236,19 @@
 "47
 [v _ui16_PWM_Freq_In ui16_PWM_Freq_In `ui  1 e 2 0 ]
 "48
-[v _ui16_Capt_Val0 ui16_Capt_Val0 `VES22  1 e 2 0 ]
+[v _ui16_Capt_Val0 ui16_Capt_Val0 `VES25  1 e 2 0 ]
 "49
-[v _ui16_Capt_Val1 ui16_Capt_Val1 `VES22  1 e 2 0 ]
+[v _ui16_Capt_Val1 ui16_Capt_Val1 `VES25  1 e 2 0 ]
 "50
-[v _ui16_Capt_Val2 ui16_Capt_Val2 `VES22  1 e 2 0 ]
+[v _ui16_Capt_Val2 ui16_Capt_Val2 `VES25  1 e 2 0 ]
 "51
 [v _ui8_Duty_Cycle_In_Ratio ui8_Duty_Cycle_In_Ratio `uc  1 e 1 0 ]
 "52
 [v _ui8_PWMinDC_sav ui8_PWMinDC_sav `uc  1 e 1 0 ]
 "53
 [v _ui8_PWMin_failCnt ui8_PWMin_failCnt `uc  1 e 1 0 ]
+"54
+[v _ui16_PWM_Input_State ui16_PWM_Input_State `ui  1 e 2 0 ]
 "211 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
 [v _ui16_Current_Thresh ui16_Current_Thresh `us  1 e 2 0 ]
 "212
@@ -439,31 +309,31 @@
 [v _Cb44_StateCnt Cb44_StateCnt `us  1 s 2 Cb44_StateCnt ]
 "249
 [v _Cb1_RestartCounter Cb1_RestartCounter `uc  1 s 1 Cb1_RestartCounter ]
-[s S1017 tag_SIBFS_Current_Analysis_High 1 `uc 1 Cb1_Current_Analysis_High_ns 1 0 :4:0 
+[s S845 tag_SIBFS_Current_Analysis_High 1 `uc 1 Cb1_Current_Analysis_High_ns 1 0 :4:0 
 `uc 1 Cb1_glflag 1 0 :2:4 
 `uc 1 Cb1_Current_Analysis_High 1 0 :1:6 
 ]
 "251
-[v _SIBFS_Current_Analysis_High_b SIBFS_Current_Analysis_High_b `S1017  1 s 1 SIBFS_Current_Analysis_High_b ]
-[s S1021 tag_SIBFS_PWM_Detection_b_tp 1 `uc 1 Cb35_PWMinput_handling_ns 1 0 :4:0 
+[v _SIBFS_Current_Analysis_High_b SIBFS_Current_Analysis_High_b `S845  1 s 1 SIBFS_Current_Analysis_High_b ]
+[s S849 tag_SIBFS_PWM_Detection_b_tp 1 `uc 1 Cb35_PWMinput_handling_ns 1 0 :4:0 
 `uc 1 Cb35_PWMinput_handling 1 0 :1:4 
 ]
 "257
-[v _SIBFS_PWM_Detection_b SIBFS_PWM_Detection_b `S1021  1 s 1 SIBFS_PWM_Detection_b ]
-[s S1024 tag_SIBFS_Pic_etat_monitor_b_tp 1 `uc 1 Cb44_Pic_etat_monitor_ns 1 0 :3:0 
+[v _SIBFS_PWM_Detection_b SIBFS_PWM_Detection_b `S849  1 s 1 SIBFS_PWM_Detection_b ]
+[s S852 tag_SIBFS_Pic_etat_monitor_b_tp 1 `uc 1 Cb44_Pic_etat_monitor_ns 1 0 :3:0 
 `uc 1 Cb44_glflag 1 0 :2:3 
 `uc 1 Cb44_Pic_etat_monitor 1 0 :1:5 
 ]
 "262
-[v _SIBFS_Pic_etat_monitor_b SIBFS_Pic_etat_monitor_b `S1024  1 s 1 SIBFS_Pic_etat_monitor_b ]
-[s S1028 tag_SIBFS_UbatHandling_b_tp 1 `uc 1 Aux_sflag3 1 0 :3:0 
+[v _SIBFS_Pic_etat_monitor_b SIBFS_Pic_etat_monitor_b `S852  1 s 1 SIBFS_Pic_etat_monitor_b ]
+[s S856 tag_SIBFS_UbatHandling_b_tp 1 `uc 1 Aux_sflag3 1 0 :3:0 
 `uc 1 Cb57_Ubat_Handling 1 0 :1:3 
 `uc 1 Cb58_SaturationHigh 1 0 :1:4 
 `uc 1 Cb59_SaturationLow 1 0 :1:5 
 `uc 1 Cb60_NormalUbat 1 0 :1:6 
 ]
 "268
-[v _SIBFS_UbatHandling_b SIBFS_UbatHandling_b `S1028  1 s 1 SIBFS_UbatHandling_b ]
+[v _SIBFS_UbatHandling_b SIBFS_UbatHandling_b `S856  1 s 1 SIBFS_UbatHandling_b ]
 "279
 [v _Cb1_oCurrentAlarm Cb1_oCurrentAlarm `uc  1 s 1 Cb1_oCurrentAlarm ]
 "280
@@ -488,222 +358,190 @@
 [v _Cb56_odFixedValueSel Cb56_odFixedValueSel `uc  1 s 1 Cb56_odFixedValueSel ]
 "291
 [v _Cb56_odPumpOff Cb56_odPumpOff `uc  1 s 1 Cb56_odPumpOff ]
-"349 C:\Program Files (x86)\Microchip\xc8\v1.44\include\pic16f1936.h
+"351 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f1936.h
 [v _INTCON INTCON `VEuc  1 e 1 @11 ]
-"799
+"801
 [v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
-"826
+"828
 [v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
-"846
+"848
 [v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
-"866
+"868
 [v _T1CON T1CON `VEuc  1 e 1 @24 ]
-"1015
+"1017
 [v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
-"1035
+"1037
 [v _PR2 PR2 `VEuc  1 e 1 @27 ]
-"1055
+"1057
 [v _T2CON T2CON `VEuc  1 e 1 @28 ]
-"1220
+"1222
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
-"1282
+"1284
 [v _TRISB TRISB `VEuc  1 e 1 @141 ]
-"1344
+"1346
 [v _TRISC TRISC `VEuc  1 e 1 @142 ]
-"1427
+"1429
 [v _PIE1 PIE1 `VEuc  1 e 1 @145 ]
-"1489
+"1491
 [v _PIE2 PIE2 `VEuc  1 e 1 @146 ]
-"1546
+"1548
 [v _PIE3 PIE3 `VEuc  1 e 1 @147 ]
-"1592
+"1594
 [v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
-"1726
+"1728
 [v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
-"1843
+"1845
 [v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
-"1984
+"1986
 [v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
-"2004
+"2006
 [v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
-"2024
+"2026
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
-"2113
+"2115
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
-"2185
+"2187
 [v _LATA LATA `VEuc  1 e 1 @268 ]
-"2247
+"2249
 [v _LATB LATB `VEuc  1 e 1 @269 ]
-"2309
+"2311
 [v _LATC LATC `VEuc  1 e 1 @270 ]
-"2392
+"2394
 [v _CM1CON0 CM1CON0 `VEuc  1 e 1 @273 ]
-"2449
+"2451
 [v _CM1CON1 CM1CON1 `VEuc  1 e 1 @274 ]
-"2691
+"2693
 [v _FVRCON FVRCON `VEuc  1 e 1 @279 ]
-"3069
+"3071
 [v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
-"3127
+"3129
 [v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
-"3192
+"3194
 [v _EEADRL EEADRL `VEuc  1 e 1 @401 ]
-"3212
-[v _EEADRH EEADRH `VEuc  1 e 1 @402 ]
-"3239
+"3241
 [v _EEDATL EEDATL `VEuc  1 e 1 @403 ]
-"3244
-[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
-"3277
-[v _EEDATH EEDATH `VEuc  1 e 1 @404 ]
-"3297
-[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
-"3359
-[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
-"3379
-[v _RCREG RCREG `VEuc  1 e 1 @409 ]
-"3399
-[v _TXREG TXREG `VEuc  1 e 1 @410 ]
-"3431
-[v _SPBRG SPBRG `VEuc  1 e 1 @411 ]
-"3485
-[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
-"3518
-[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
-"3580
-[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
-"3642
-[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
-"4160
+"4162
 [v _CCPR1L CCPR1L `VEuc  1 e 1 @657 ]
-"4180
+"4182
 [v _CCPR1H CCPR1H `VEuc  1 e 1 @658 ]
-"4200
+"4202
 [v _CCP1CON CCP1CON `VEuc  1 e 1 @659 ]
-"4282
+"4284
 [v _PWM1CON PWM1CON `VEuc  1 e 1 @660 ]
-"4344
+"4346
 [v _CCP1AS CCP1AS `VEuc  1 e 1 @661 ]
-"4466
+"4468
 [v _PSTR1CON PSTR1CON `VEuc  1 e 1 @662 ]
-"4517
+"4519
 [v _CCPR2L CCPR2L `VEuc  1 e 1 @664 ]
-"4537
+"4539
 [v _CCPR2H CCPR2H `VEuc  1 e 1 @665 ]
-"4557
+"4559
 [v _CCP2CON CCP2CON `VEuc  1 e 1 @666 ]
-"4996
+"4998
 [v _CCPR3L CCPR3L `VEuc  1 e 1 @785 ]
-"5016
+"5018
 [v _CCPR3H CCPR3H `VEuc  1 e 1 @786 ]
-"5036
+"5038
 [v _CCP3CON CCP3CON `VEuc  1 e 1 @787 ]
-"5333
+"5335
 [v _CCPR4L CCPR4L `VEuc  1 e 1 @792 ]
-"5353
+"5355
 [v _CCPR4H CCPR4H `VEuc  1 e 1 @793 ]
-"5373
+"5375
 [v _CCP4CON CCP4CON `VEuc  1 e 1 @794 ]
-"5430
+"5432
 [v _CCPR5L CCPR5L `VEuc  1 e 1 @796 ]
-"5450
+"5452
 [v _CCPR5H CCPR5H `VEuc  1 e 1 @797 ]
-"5470
+"5472
 [v _CCP5CON CCP5CON `VEuc  1 e 1 @798 ]
-"5730
+"5732
 [v _TMR4 TMR4 `VEuc  1 e 1 @1045 ]
-"5770
+"5772
 [v _T4CON T4CON `VEuc  1 e 1 @1047 ]
-"5841
+"5843
 [v _TMR6 TMR6 `VEuc  1 e 1 @1052 ]
-"5881
+"5883
 [v _T6CON T6CON `VEuc  1 e 1 @1054 ]
-"7154
+"7174
 [v _ADON ADON `VEb  1 e 0 @1256 ]
-"7214
+"7264
 [v _C1IE C1IE `VEb  1 e 0 @1173 ]
-"7230
+"7288
 [v _C1OUT C1OUT `VEb  1 e 0 @2190 ]
-"7302
+"7396
 [v _CCP1ASE CCP1ASE `VEb  1 e 0 @5295 ]
-"7304
+"7399
 [v _CCP1IE CCP1IE `VEb  1 e 0 @1162 ]
-"7306
+"7402
 [v _CCP1IF CCP1IF `VEb  1 e 0 @138 ]
-"7324
+"7429
 [v _CCP2IE CCP2IE `VEb  1 e 0 @1168 ]
-"7326
+"7432
 [v _CCP2IF CCP2IF `VEb  1 e 0 @144 ]
-"7346
+"7462
 [v _CCP3IE CCP3IE `VEb  1 e 0 @1180 ]
-"7348
+"7465
 [v _CCP3IF CCP3IF `VEb  1 e 0 @156 ]
-"7360
+"7483
 [v _CCP4IE CCP4IE `VEb  1 e 0 @1181 ]
-"7362
+"7486
 [v _CCP4IF CCP4IF `VEb  1 e 0 @157 ]
-"7372
+"7501
 [v _CCP5IE CCP5IE `VEb  1 e 0 @1182 ]
-"7374
+"7504
 [v _CCP5IF CCP5IF `VEb  1 e 0 @158 ]
-"7388
+"7525
 [v _CFGS CFGS `VEb  1 e 0 @3246 ]
-"7482
+"7666
 [v _EEPGD EEPGD `VEb  1 e 0 @3247 ]
-"7494
+"7684
 [v _GIE GIE `VEb  1 e 0 @95 ]
-"7498
+"7690
 [v _GO_nDONE GO_nDONE `VEb  1 e 0 @1257 ]
-"7590
+"7828
 [v _LATB1 LATB1 `VEb  1 e 0 @2153 ]
-"7592
+"7831
 [v _LATB2 LATB2 `VEb  1 e 0 @2154 ]
-"7604
+"7849
 [v _LATC0 LATC0 `VEb  1 e 0 @2160 ]
-"7606
+"7852
 [v _LATC1 LATC1 `VEb  1 e 0 @2161 ]
-"7608
+"7855
 [v _LATC2 LATC2 `VEb  1 e 0 @2162 ]
-"7610
+"7858
 [v _LATC3 LATC3 `VEb  1 e 0 @2163 ]
-"7612
+"7861
 [v _LATC4 LATC4 `VEb  1 e 0 @2164 ]
-"7750
+"8068
 [v _PEIE PEIE `VEb  1 e 0 @94 ]
-"7830
-[v _RC5 RC5 `VEb  1 e 0 @117 ]
-"7842
-[v _RCIF RCIF `VEb  1 e 0 @141 ]
-"7844
+"8137
+[v _RA4 RA4 `VEb  1 e 0 @100 ]
+"8209
 [v _RD RD `VEb  1 e 0 @3240 ]
-"8032
-[v _SENDB SENDB `VEb  1 e 0 @3315 ]
-"8208
+"8755
 [v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
-"8224
+"8779
 [v _TMR1IE TMR1IE `VEb  1 e 0 @1160 ]
-"8226
+"8782
 [v _TMR1IF TMR1IF `VEb  1 e 0 @136 ]
-"8230
+"8788
 [v _TMR2IE TMR2IE `VEb  1 e 0 @1161 ]
-"8232
+"8791
 [v _TMR2IF TMR2IF `VEb  1 e 0 @137 ]
-"8236
+"8797
 [v _TMR4IE TMR4IE `VEb  1 e 0 @1177 ]
-"8238
+"8800
 [v _TMR4IF TMR4IF `VEb  1 e 0 @153 ]
-"8242
+"8806
 [v _TMR6IE TMR6IE `VEb  1 e 0 @1179 ]
-"8244
+"8809
 [v _TMR6IF TMR6IF `VEb  1 e 0 @155 ]
-"8370
-[v _WR WR `VEb  1 e 0 @3241 ]
-"8372
-[v _WREN WREN `VEb  1 e 0 @3242 ]
 "630 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"1574
+"1576
 } 0
 "545
 [v _system_init system_init `(v  1 e 1 0 ]
@@ -746,19 +584,14 @@
 {
 "2164
 } 0
-"482 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-[v __ELINMIntInitialize _ELINMIntInitialize `(uc  1 e 1 0 ]
-{
-"501
-} 0
-"78 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+"79 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
 [v _PWM_Capture_init PWM_Capture_init `(v  1 e 1 0 ]
 {
 [v PWM_Capture_init@ui8_CCP_Nb ui8_CCP_Nb `uc  1 a 1 wreg ]
 [v PWM_Capture_init@ui8_CCP_Nb ui8_CCP_Nb `uc  1 a 1 wreg ]
-"83
+"84
 [v PWM_Capture_init@ui8_CCP_Nb ui8_CCP_Nb `uc  1 a 1 4 ]
-"183
+"185
 } 0
 "478 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/timer.c
 [v _Oscill_Source_Block Oscill_Source_Block `(v  1 e 1 0 ]
@@ -770,21 +603,34 @@
 {
 "357
 } 0
+"52 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/eeprom.c
+[v _read_eeprom_data read_eeprom_data `(uc  1 e 1 0 ]
+{
+[v read_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 wreg ]
+"56
+[v read_eeprom_data@ui8_adress_data ui8_adress_data `uc  1 a 1 5 ]
+"52
+[v read_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 wreg ]
+"58
+[v read_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 4 ]
+"67
+} 0
 "226 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
 [v _FILTER_Init FILTER_Init `(v  1 e 1 0 ]
 {
 "242
 } 0
-"434 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-[v _EnableMCP201 EnableMCP201 `(v  1 e 1 0 ]
+"128
+[v _ADC_Wait ADC_Wait `(v  1 e 1 0 ]
 {
-"452
-[v EnableMCP201@_dcnt_713 _dcnt `uc  1 a 1 6 ]
-"450
-[v EnableMCP201@_dcnt_712 _dcnt `uc  1 a 1 5 ]
-"448
-[v EnableMCP201@_dcnt _dcnt `uc  1 a 1 4 ]
-"455
+"160
+} 0
+"175
+[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
+{
+"179
+[v ADC_Read@i i `uc  1 a 1 6 ]
+"206
 } 0
 "148 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
 [v _DiagInit DiagInit `(v  1 e 1 0 ]
@@ -796,42 +642,64 @@
 {
 "113
 } 0
-"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\awdiv.c
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 16 ]
 "11
-[v ___awdiv@quotient quotient `i  1 a 2 10 ]
-"12
-[v ___awdiv@sign sign `uc  1 a 1 9 ]
-[v ___awdiv@counter counter `uc  1 a 1 8 ]
-"6
-[v ___awdiv@divisor divisor `i  1 p 2 4 ]
-[v ___awdiv@dividend dividend `i  1 p 2 6 ]
-"42
+[v ___awdiv@sign sign `uc  1 a 1 15 ]
+[v ___awdiv@counter counter `uc  1 a 1 14 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 10 ]
+[v ___awdiv@dividend dividend `i  1 p 2 12 ]
+"41
 } 0
 "210 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
 [v _SetDiagAlarm SetDiagAlarm `(v  1 e 1 0 ]
 {
 "344
 } 0
-"315 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-[v _Receive_Diag Receive_Diag `(v  1 e 1 0 ]
+"342 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+[v _PWM_Write_Out PWM_Write_Out `(v  1 e 1 0 ]
 {
-[v Receive_Diag@id id `uc  1 a 1 wreg ]
-[v Receive_Diag@id id `uc  1 a 1 wreg ]
-[v Receive_Diag@id id `uc  1 a 1 19 ]
-"367
+[v PWM_Write_Out@ui8_DutyCycle_Out ui8_DutyCycle_Out `uc  1 a 1 wreg ]
+[v PWM_Write_Out@ui8_DutyCycle_Out ui8_DutyCycle_Out `uc  1 a 1 wreg ]
+"346
+[v PWM_Write_Out@ui8_DutyCycle_Out ui8_DutyCycle_Out `uc  1 a 1 4 ]
+"348
 } 0
-"1321
-[v __ELINMIntReceiveMessage _ELINMIntReceiveMessage `(v  1 e 1 0 ]
+"363
+[v _PWMReadDC PWMReadDC `(uc  1 e 1 0 ]
 {
-[v __ELINMIntReceiveMessage@_ELINM_tag _ELINM_tag `uc  1 a 1 wreg ]
-[v __ELINMIntReceiveMessage@_ELINM_tag _ELINM_tag `uc  1 a 1 wreg ]
-"1322
-[v __ELINMIntReceiveMessage@_ELINM_id _ELINM_id `uc  1 p 1 15 ]
-"1323
-[v __ELINMIntReceiveMessage@_ELINM_size _ELINM_size `uc  1 p 1 16 ]
-"1343
+"438
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+{
+"17
+[v ___tmul@product product `um  1 a 3 10 ]
+"15
+[v ___tmul@multiplier multiplier `um  1 p 3 4 ]
+[v ___tmul@multiplicand multiplicand `um  1 p 3 7 ]
+"99
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+{
+"10
+[v ___ltdiv@quotient quotient `um  1 a 3 19 ]
+"11
+[v ___ltdiv@counter counter `uc  1 a 1 22 ]
+"5
+[v ___ltdiv@divisor divisor `um  1 p 3 13 ]
+[v ___ltdiv@dividend dividend `um  1 p 3 16 ]
+"30
+} 0
+"2221 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
+[v _InitMotorStop InitMotorStop `(v  1 e 1 0 ]
+{
+"2244
 } 0
 "442 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
 [v _Get_Analog_Value Get_Analog_Value `(v  1 e 1 0 ]
@@ -853,264 +721,21 @@
 {
 "376
 } 0
-"456 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-[v _EOL EOL `(v  1 e 1 0 ]
-{
-"1120
-[v EOL@_dcnt_429 _dcnt `uc  1 a 1 45 ]
-"1119
-[v EOL@_dcnt_428 _dcnt `uc  1 a 1 44 ]
-"1118
-[v EOL@_dcnt_427 _dcnt `uc  1 a 1 43 ]
-"1117
-[v EOL@_dcnt_426 _dcnt `uc  1 a 1 42 ]
-"1116
-[v EOL@_dcnt_425 _dcnt `uc  1 a 1 41 ]
-"1115
-[v EOL@_dcnt_424 _dcnt `uc  1 a 1 40 ]
-"1093
-[v EOL@_dcnt_423 _dcnt `uc  1 a 1 39 ]
-"1092
-[v EOL@_dcnt_422 _dcnt `uc  1 a 1 38 ]
-"1091
-[v EOL@_dcnt_421 _dcnt `uc  1 a 1 37 ]
-"1090
-[v EOL@_dcnt_420 _dcnt `uc  1 a 1 36 ]
-"1089
-[v EOL@_dcnt_419 _dcnt `uc  1 a 1 35 ]
-"1088
-[v EOL@_dcnt_418 _dcnt `uc  1 a 1 34 ]
-"1066
-[v EOL@_dcnt_417 _dcnt `uc  1 a 1 33 ]
-"1065
-[v EOL@_dcnt_416 _dcnt `uc  1 a 1 32 ]
-"1064
-[v EOL@_dcnt_415 _dcnt `uc  1 a 1 31 ]
-"1063
-[v EOL@_dcnt_414 _dcnt `uc  1 a 1 30 ]
-"1062
-[v EOL@_dcnt_413 _dcnt `uc  1 a 1 29 ]
-"1061
-[v EOL@_dcnt _dcnt `uc  1 a 1 28 ]
-"463
-[v EOL@ui8_b_DResB3_RD ui8_b_DResB3_RD `uc  1 a 1 51 ]
-"462
-[v EOL@ui8_b_DResB2_RD ui8_b_DResB2_RD `uc  1 a 1 50 ]
-"461
-[v EOL@ui8_b_DResB1_RD ui8_b_DResB1_RD `uc  1 a 1 49 ]
-"460
-[v EOL@ui8_b_DResB0_RD ui8_b_DResB0_RD `uc  1 a 1 48 ]
-"464
-[v EOL@ui8_b_DResB4_RD ui8_b_DResB4_RD `uc  1 a 1 47 ]
-"465
-[v EOL@ui8_b_DResB5_RD ui8_b_DResB5_RD `uc  1 a 1 46 ]
-"2430
-} 0
-"83 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/eeprom.c
-[v _write_eeprom_data write_eeprom_data `(v  1 e 1 0 ]
-{
-[v write_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 wreg ]
-[v write_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 wreg ]
-"84
-[v write_eeprom_data@ui8_adress_data ui8_adress_data `uc  1 p 1 11 ]
-"89
-[v write_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 12 ]
-"113
-} 0
-"52
-[v _read_eeprom_data read_eeprom_data `(uc  1 e 1 0 ]
-{
-[v read_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 wreg ]
-"56
-[v read_eeprom_data@ui8_adress_data ui8_adress_data `uc  1 a 1 5 ]
-"52
-[v read_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 wreg ]
-"58
-[v read_eeprom_data@ui8_adress ui8_adress `uc  1 a 1 4 ]
-"67
-} 0
-"6 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/cksum.c
-[v _cksum cksum `(ui  1 e 2 0 ]
-{
-"8
-[v cksum@addr addr `us  1 a 2 10 ]
-"7
-[v cksum@sum sum `ui  1 a 2 8 ]
-"9
-[v cksum@counter counter `ui  1 a 2 6 ]
-"34
-} 0
-"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwdiv.c
-[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-{
-"11
-[v ___lwdiv@quotient quotient `ui  1 a 2 9 ]
-"12
-[v ___lwdiv@counter counter `uc  1 a 1 8 ]
-"6
-[v ___lwdiv@divisor divisor `ui  1 p 2 4 ]
-[v ___lwdiv@dividend dividend `ui  1 p 2 6 ]
-"31
-} 0
-"340 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-[v _PWM_Write_Out PWM_Write_Out `(v  1 e 1 0 ]
-{
-[v PWM_Write_Out@ui8_DutyCycle_Out ui8_DutyCycle_Out `uc  1 a 1 wreg ]
-[v PWM_Write_Out@ui8_DutyCycle_Out ui8_DutyCycle_Out `uc  1 a 1 wreg ]
-"344
-[v PWM_Write_Out@ui8_DutyCycle_Out ui8_DutyCycle_Out `uc  1 a 1 4 ]
-"346
-} 0
-"361
-[v _PWMReadDC PWMReadDC `(uc  1 e 1 0 ]
-{
-"418
-} 0
-"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul24.c
-[v ___tmul __tmul `(um  1 e 3 0 ]
-{
-"17
-[v ___tmul@product product `um  1 a 3 10 ]
-"15
-[v ___tmul@multiplier multiplier `um  1 p 3 4 ]
-[v ___tmul@multiplicand multiplicand `um  1 p 3 7 ]
-"99
-} 0
-"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\ltdiv.c
-[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
-{
-"11
-[v ___ltdiv@quotient quotient `um  1 a 3 19 ]
-"12
-[v ___ltdiv@counter counter `uc  1 a 1 22 ]
-"6
-[v ___ltdiv@divisor divisor `um  1 p 3 13 ]
-[v ___ltdiv@dividend dividend `um  1 p 3 16 ]
-"31
-} 0
-"2436 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/diag.c
-[v _NegativeAnswer NegativeAnswer `(v  1 e 1 0 ]
-{
-[v NegativeAnswer@LID LID `uc  1 a 1 wreg ]
-[v NegativeAnswer@LID LID `uc  1 a 1 wreg ]
-"2440
-[v NegativeAnswer@LID LID `uc  1 a 1 24 ]
-"2450
-} 0
-"167 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-[v _Transmit_LIN_8Bytes Transmit_LIN_8Bytes `(v  1 e 1 0 ]
-{
-[v Transmit_LIN_8Bytes@ID ID `uc  1 a 1 wreg ]
-[v Transmit_LIN_8Bytes@ID ID `uc  1 a 1 wreg ]
-[v Transmit_LIN_8Bytes@B0 B0 `uc  1 p 1 15 ]
-[v Transmit_LIN_8Bytes@B1 B1 `uc  1 p 1 16 ]
-"168
-[v Transmit_LIN_8Bytes@B2 B2 `uc  1 p 1 17 ]
-[v Transmit_LIN_8Bytes@B3 B3 `uc  1 p 1 18 ]
-[v Transmit_LIN_8Bytes@B4 B4 `uc  1 p 1 19 ]
-"169
-[v Transmit_LIN_8Bytes@B5 B5 `uc  1 p 1 20 ]
-[v Transmit_LIN_8Bytes@B6 B6 `uc  1 p 1 21 ]
-[v Transmit_LIN_8Bytes@B7 B7 `uc  1 p 1 22 ]
-"167
-[v Transmit_LIN_8Bytes@ID ID `uc  1 a 1 23 ]
-"200
-} 0
-"1178
-[v __ELINMIntSendMessage _ELINMIntSendMessage `(v  1 e 1 0 ]
-{
-[v __ELINMIntSendMessage@_ELINM_idr _ELINM_idr `uc  1 a 1 wreg ]
-"1188
-[v __ELINMIntSendMessage@_ELINM_chk _ELINM_chk `ui  1 a 2 13 ]
-"1186
-[v __ELINMIntSendMessage@_ELINM_i _ELINM_i `uc  1 a 1 12 ]
-[s S566 . 1 `uc 1 ID0 1 0 :1:0 
-`uc 1 ID1 1 0 :1:1 
-`uc 1 ID2 1 0 :1:2 
-`uc 1 ID3 1 0 :1:3 
-`uc 1 ID4 1 0 :1:4 
-`uc 1 ID5 1 0 :1:5 
-`uc 1 ID6 1 0 :1:6 
-`uc 1 ID7 1 0 :1:7 
-]
-"1187
-[u S575 ELINMINT_ID 1 `uc 1 ID 1 0 `S566 1 IDbits 1 0 ]
-[v __ELINMIntSendMessage@_ELINM_tid _ELINM_tid `S575  1 a 1 11 ]
-"1178
-[v __ELINMIntSendMessage@_ELINM_idr _ELINM_idr `uc  1 a 1 wreg ]
-"1179
-[v __ELINMIntSendMessage@_ELINM_size _ELINM_size `uc  1 p 1 5 ]
-"1180
-[v __ELINMIntSendMessage@_ELINM_fmin _ELINM_fmin `ui  1 p 2 6 ]
-"1181
-[v __ELINMIntSendMessage@_ELINM_fmax _ELINM_fmax `ui  1 p 2 8 ]
-"1191
-[v __ELINMIntSendMessage@_ELINM_idr _ELINM_idr `uc  1 a 1 10 ]
-"1290
-} 0
-"1048
-[v __ELINMIntCalcIDParity _ELINMIntCalcIDParity `(uc  1 e 1 0 ]
-{
-[s S566 . 1 `uc 1 ID0 1 0 :1:0 
-`uc 1 ID1 1 0 :1:1 
-`uc 1 ID2 1 0 :1:2 
-`uc 1 ID3 1 0 :1:3 
-`uc 1 ID4 1 0 :1:4 
-`uc 1 ID5 1 0 :1:5 
-`uc 1 ID6 1 0 :1:6 
-`uc 1 ID7 1 0 :1:7 
-]
-[u S575 ELINMINT_ID 1 `uc 1 ID 1 0 `S566 1 IDbits 1 0 ]
-[v __ELINMIntCalcIDParity@ELINM_idtr ELINM_idtr `S575  1 a 1 wreg ]
-[v __ELINMIntCalcIDParity@ELINM_idtr ELINM_idtr `S575  1 a 1 wreg ]
-"1053
-"1048
-[v __ELINMIntCalcIDParity@ELINM_idtr ELINM_idtr `S575  1 a 1 4 ]
-"1150
-} 0
-"1375
-[v __ELINMIntGetPointer _ELINMIntGetPointer `(*.6uc  1 e 1 0 ]
-{
-[v __ELINMIntGetPointer@_ELINMInt_tag _ELINMInt_tag `uc  1 a 1 wreg ]
-[v __ELINMIntGetPointer@_ELINMInt_tag _ELINMInt_tag `uc  1 a 1 wreg ]
-"1376
-[v __ELINMIntGetPointer@_ELINMInt_position _ELINMInt_position `uc  1 p 1 4 ]
-"1385
-} 0
-"2221 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
-[v _InitMotorStop InitMotorStop `(v  1 e 1 0 ]
-{
-"2244
-} 0
-"128 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
-[v _ADC_Wait ADC_Wait `(v  1 e 1 0 ]
-{
-"160
-} 0
-"175
-[v _ADC_Read ADC_Read `(ui  1 e 2 0 ]
-{
-"179
-[v ADC_Read@i i `uc  1 a 1 6 ]
-"206
-} 0
 "331 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
 [v _BVH2_Appl_Layer BVH2_Appl_Layer `(v  1 e 1 0 ]
 {
 "1599
-[v BVH2_Appl_Layer@Sb3_Sum1 Sb3_Sum1 `s  1 a 2 28 ]
+[v BVH2_Appl_Layer@Sb3_Sum1 Sb3_Sum1 `s  1 a 2 26 ]
 "1598
 [v BVH2_Appl_Layer@Sb3_Product1 Sb3_Product1 `us  1 a 2 15 ]
 "1622
-[v BVH2_Appl_Layer@Sb4_PI_sum Sb4_PI_sum `s  1 a 2 30 ]
-"385
-[v BVH2_Appl_Layer@Sb2_Switch2 Sb2_Switch2 `us  1 a 2 25 ]
+[v BVH2_Appl_Layer@Sb4_PI_sum Sb4_PI_sum `s  1 a 2 28 ]
 "384
 [v BVH2_Appl_Layer@Sb2_Error Sb2_Error `s  1 a 2 23 ]
 "386
 [v BVH2_Appl_Layer@Sb2_Switch5 Sb2_Switch5 `us  1 a 2 17 ]
 "388
-[v BVH2_Appl_Layer@Sb1_Logical_Operator1 Sb1_Logical_Operator1 `uc  1 a 1 27 ]
+[v BVH2_Appl_Layer@Sb1_Logical_Operator1 Sb1_Logical_Operator1 `uc  1 a 1 25 ]
 "392
 [v BVH2_Appl_Layer@Sb2_Logical_Operator2 Sb2_Logical_Operator2 `uc  1 a 1 22 ]
 "391
@@ -1135,31 +760,31 @@
 [v BVH2_Appl_Layer@Cb51_Counter Cb51_Counter `uc  1 s 1 Cb51_Counter ]
 "340
 [v BVH2_Appl_Layer@Cb9_StateCnt Cb9_StateCnt `uc  1 s 1 Cb9_StateCnt ]
-[s S1034 tag_SIBFS_Current_Analysis_low_ 1 `uc 1 Cb10_greenState 1 0 :1:0 
+[s S862 tag_SIBFS_Current_Analysis_low_ 1 `uc 1 Cb10_greenState 1 0 :1:0 
 `uc 1 Cb11_Wait 1 0 :1:1 
 `uc 1 Cb12_CntOverCurrent 1 0 :1:2 
 `uc 1 Cb13_redState 1 0 :1:3 
 `uc 1 Cb9_Current_Analysis_low 1 0 :1:4 
 ]
 "342
-[v BVH2_Appl_Layer@SIBFS_Current_Analysis_low_b SIBFS_Current_Analysis_low_b `S1034  1 s 1 SIBFS_Current_Analysis_low_b ]
-[s S1040 tag_SIBFS_Dry_RunningAlarm_b_tp 1 `uc 1 Cb19_Dry_RunningAlarm 1 0 :1:0 
+[v BVH2_Appl_Layer@SIBFS_Current_Analysis_low_b SIBFS_Current_Analysis_low_b `S862  1 s 1 SIBFS_Current_Analysis_low_b ]
+[s S868 tag_SIBFS_Dry_RunningAlarm_b_tp 1 `uc 1 Cb19_Dry_RunningAlarm 1 0 :1:0 
 `uc 1 Cb20_greenState 1 0 :1:1 
 `uc 1 Cb21_DryRunningAlarm 1 0 :1:2 
 `uc 1 Cb22_DryRun66 1 0 :1:3 
 `uc 1 Cb23_DryRun55 1 0 :1:4 
 ]
 "350
-[v BVH2_Appl_Layer@SIBFS_Dry_RunningAlarm_b SIBFS_Dry_RunningAlarm_b `S1040  1 s 1 SIBFS_Dry_RunningAlarm_b ]
-[s S1046 tag_SIBFS_Dry_Running_b_tp 1 `uc 1 Cb14_Dry_Running 1 0 :1:0 
+[v BVH2_Appl_Layer@SIBFS_Dry_RunningAlarm_b SIBFS_Dry_RunningAlarm_b `S868  1 s 1 SIBFS_Dry_RunningAlarm_b ]
+[s S874 tag_SIBFS_Dry_Running_b_tp 1 `uc 1 Cb14_Dry_Running 1 0 :1:0 
 `uc 1 Cb15_greenState 1 0 :1:1 
 `uc 1 Cb16_DryRunning 1 0 :1:2 
 `uc 1 Cb17_redState 1 0 :1:3 
 `uc 1 Cb18_CntOverCurrent 1 0 :1:4 
 ]
 "358
-[v BVH2_Appl_Layer@SIBFS_Dry_Running_b SIBFS_Dry_Running_b `S1046  1 s 1 SIBFS_Dry_Running_b ]
-[s S1052 tag_SIBFS_Motor_Stalled_b_tp 2 `uc 1 Cb25_Motor_sta__Statemachine_ns 1 0 :3:0 
+[v BVH2_Appl_Layer@SIBFS_Dry_Running_b SIBFS_Dry_Running_b `S874  1 s 1 SIBFS_Dry_Running_b ]
+[s S880 tag_SIBFS_Motor_Stalled_b_tp 2 `uc 1 Cb25_Motor_sta__Statemachine_ns 1 0 :3:0 
 `uc 1 Cb24_glflag 1 0 :2:3 
 `uc 1 Cb24_Motor_Stalled 1 0 :1:5 
 `uc 1 Cb25_Motor_stalled_Statemachine 1 0 :1:6 
@@ -1167,15 +792,15 @@
 `uc 1 Cb33_Stop 1 1 :1:0 
 ]
 "366
-[v BVH2_Appl_Layer@SIBFS_Motor_Stalled_b SIBFS_Motor_Stalled_b `S1052  1 s 2 SIBFS_Motor_Stalled_b ]
-[s S1059 tag_SIBFS_Temperature_Alarm_b_t 1 `uc 1 Cb51_Temperature_Alarm 1 0 :1:0 
+[v BVH2_Appl_Layer@SIBFS_Motor_Stalled_b SIBFS_Motor_Stalled_b `S880  1 s 2 SIBFS_Motor_Stalled_b ]
+[s S887 tag_SIBFS_Temperature_Alarm_b_t 1 `uc 1 Cb51_Temperature_Alarm 1 0 :1:0 
 `uc 1 Cb52_CntOverTemp 1 0 :1:1 
 `uc 1 Cb53_reset 1 0 :1:2 
 `uc 1 Cb54_greenTemp 1 0 :1:3 
 `uc 1 Cb55_redTemp 1 0 :1:4 
 ]
 "375
-[v BVH2_Appl_Layer@SIBFS_Temperature_Alarm_b SIBFS_Temperature_Alarm_b `S1059  1 s 1 SIBFS_Temperature_Alarm_b ]
+[v BVH2_Appl_Layer@SIBFS_Temperature_Alarm_b SIBFS_Temperature_Alarm_b `S887  1 s 1 SIBFS_Temperature_Alarm_b ]
 "395
 [v BVH2_Appl_Layer@Cb14_oDryRunAlarm Cb14_oDryRunAlarm `uc  1 s 1 Cb14_oDryRunAlarm ]
 "396
@@ -1200,9 +825,9 @@
 [v BVH2_Appl_Layer@Sb1_BVH2_Appl_Layer_FirstRun Sb1_BVH2_Appl_Layer_FirstRun `uc  1 s 1 Sb1_BVH2_Appl_Layer_FirstRun ]
 "409
 [v BVH2_Appl_Layer@X_Sb4_Intergrator_TriggerIn X_Sb4_Intergrator_TriggerIn `uc  1 s 1 X_Sb4_Intergrator_TriggerIn ]
-"1653
+"1654
 } 0
-"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
@@ -1212,7 +837,7 @@
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 6 ]
 "53
 } 0
-"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul32.c
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 {
 "17
@@ -1222,48 +847,48 @@
 [v ___lmul@multiplicand multiplicand `ul  1 p 4 8 ]
 "129
 } 0
-"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\aldiv.c
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
 {
-"11
+"10
 [v ___aldiv@quotient quotient `l  1 a 4 14 ]
-"12
+"11
 [v ___aldiv@sign sign `uc  1 a 1 13 ]
 [v ___aldiv@counter counter `uc  1 a 1 12 ]
-"6
+"5
 [v ___aldiv@divisor divisor `l  1 p 4 4 ]
 [v ___aldiv@dividend dividend `l  1 p 4 8 ]
-"42
+"41
 } 0
-"1880 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
+"1883 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
 [v _Cb56_UbatHandling_node_fcn2 Cb56_UbatHandling_node_fcn2 `(v  1 s 1 Cb56_UbatHandling_node_fcn2 ]
 {
-"1934
+"1937
 } 0
-"1839
+"1842
 [v _Cb44_Pic_etat_monitor_node_fcn1 Cb44_Pic_etat_monitor_node_fcn1 `(v  1 s 1 Cb44_Pic_etat_monitor_node_fcn1 ]
 {
-"1861
+"1864
 } 0
-"1720
+"1721
 [v _Cb34_PWM_Detection_node_fcn1 Cb34_PWM_Detection_node_fcn1 `(v  1 s 1 Cb34_PWM_Detection_node_fcn1 ]
 {
-"1820
+"1823
 } 0
-"1676
+"1677
 [v _Cb1_Current_An___High_node_fcn1 Cb1_Current_An___High_node_fcn1 `(v  1 s 1 Cb1_Current_An___High_node_fcn1 ]
 {
-"1701
+"1702
 } 0
 "77 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/interrupt.c
 [v _interrupt_handler interrupt_handler `II(v  1 s 1 interrupt_handler ]
 {
 "154
 } 0
-"438 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+"458 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
 [v _interrupt_PWMCapture interrupt_PWMCapture `(v  1 e 1 0 ]
 {
-"539
+"559
 } 0
 "281 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
 [v _interrrupt_bldc interrrupt_bldc `(v  1 e 1 0 ]
@@ -1277,22 +902,13 @@
 {
 "2164
 } 0
-"15 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\Umul16.c
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
 [v i1___wmul __wmul `(ui  1 e 2 0 ]
 {
 [v i1___wmul@product __wmul `ui  1 a 2 4 ]
 [v i1___wmul@multiplier multiplier `ui  1 p 2 0 ]
 [v i1___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
-} 0
-"6 C:\Program Files (x86)\Microchip\xc8\v1.44\sources\common\lwdiv.c
-[v i1___lwdiv __lwdiv `(ui  1 e 2 0 ]
-{
-[v i1___lwdiv@quotient __lwdiv `ui  1 a 2 5 ]
-[v i1___lwdiv@counter __lwdiv `uc  1 a 1 4 ]
-[v i1___lwdiv@divisor divisor `ui  1 p 2 0 ]
-[v i1___lwdiv@dividend dividend `ui  1 p 2 2 ]
-"31
 } 0
 "128 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/adc.c
 [v i1_ADC_Wait ADC_Wait `(v  1 e 1 0 ]
@@ -1305,6 +921,18 @@
 [v i1ADC_Read@i ADC_Read `uc  1 a 1 2 ]
 "206
 } 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
 "156 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
 [v _BLDCWait BLDCWait `(v  1 e 1 0 ]
 {
@@ -1315,22 +943,8 @@
 {
 "58
 } 0
-"198 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
+"200 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
 [v _PWM_CTRL PWM_CTRL `(v  1 e 1 0 ]
 {
-"326
-} 0
-"555 C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/lin.c
-[v _ELINMIntHandler ELINMIntHandler `(v  1 e 1 0 ]
-{
-"1024
-} 0
-"524
-[v __ELINMIntResetProtocol _ELINMIntResetProtocol `(v  1 e 1 0 ]
-{
-[v __ELINMIntResetProtocol@code code `uc  1 a 1 wreg ]
-[v __ELINMIntResetProtocol@code code `uc  1 a 1 wreg ]
-"529
-[v __ELINMIntResetProtocol@code code `uc  1 a 1 0 ]
-"536
+"328
 } 0

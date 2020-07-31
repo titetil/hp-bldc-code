@@ -1,92 +1,5 @@
 
-# 1 "../pwm.c"
-
-# 37 "../pwm.h"
-extern void PWM_Capture_init( unsigned char CCP_Nb );
-extern void PWM_CTRL( void );
-extern void PWM_Write_Out( unsigned char ui8_DutyCycle_Out );
-extern void interrupt_PWMCapture( void );
-extern unsigned char PWMReadDC( void );
-extern unsigned int ui16_PWM_Freq_In;
-extern double Duty_Cycle_In_Ratio;
-extern unsigned char ui8_Duty_Cycle_In_Ratio;
-extern unsigned char ui8_PWMoutvalue;
-extern unsigned char ui8_Duty_Cycle_In_Ratio;
-
-# 255 "../config.h"
-extern const unsigned char PWM_trans_table[202] = {
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-90, 90, 90, 90, 90, 90, 90, 90, 90, 90,
-90, 91, 91, 92, 93, 93, 94, 95, 95, 96, 96, 97, 98, 98, 99, 100, 100, 101, 102, 102,
-103, 104, 104, 105, 106, 106, 107, 107, 108, 109, 109, 110, 111, 111, 112, 113, 113, 114, 115, 115,
-116, 117, 117, 118, 118, 119, 120, 120, 121, 122, 122, 123, 124, 124, 125, 126, 126, 127, 128, 128,
-129, 129, 130, 131, 131, 132, 133, 133, 134, 135, 135, 136, 137, 137, 138, 139, 139, 140, 140, 141,
-142, 142, 143, 144, 144, 145, 146, 146, 147, 148, 148, 149, 150, 150, 151, 151, 152, 153, 153, 154,
-155, 155, 156, 157, 157, 158, 159, 159, 160, 161, 161, 162, 162, 163, 164, 164, 165, 166, 166, 167,
-168, 168, 169, 170, 170, 171, 172, 172, 173, 173, 174, 175, 175, 176, 177, 177, 178, 179, 179, 180,
-181, 181, 182, 183, 183, 184, 184, 185, 186, 186, 187, 188, 188, 189, 190, 190, 191, 192, 192, 193,
-194, 194, 195, 195, 196, 197, 197, 198, 199, 199, 200, 200,
-200, 200, 200, 200, 200, 200, 200, 200, 200, 200
-};
-
-# 39 "../project.h"
-typedef union
-{
-unsigned char b;
-struct
-{
-unsigned B0 : 1;
-unsigned B1 : 1;
-unsigned B2 : 1;
-unsigned B3 : 1;
-unsigned B4 : 1;
-unsigned B5 : 1;
-unsigned B6 : 1;
-unsigned B7 : 1;
-
-} bits;
-} _u_bits;
-
-
-
-typedef union
-{
-unsigned int w;
-struct
-{
-unsigned char lo;
-unsigned char hi;
-} b;
-} _u_wb;
-
-
-
-typedef union
-{
-unsigned long lng;
-struct
-{
-_u_wb low;
-_u_wb hiw;
-} w;
-} _u_lng;
-
-# 27 "../diag.h"
-extern unsigned int ui16_PWM_Freq_In;
-
-extern unsigned char Error_PICetatMonitor;
-extern unsigned char DC_pic_etat_monitor;
-
-
-extern void DiagInit( void );
-extern void SetDiagAlarm( void );
-extern unsigned char read_eeprom_data( unsigned char ui8_adress );
-extern void ReadCal_Value( void );
-extern void DiagPicEtatMonitor( void );
-extern void EOL( void );
-
-# 74
-extern _u_bits ui8_error_Flags;
+# 1 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c"
 
 # 18 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\xc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -4896,341 +4809,175 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 
-# 43 "../pwm.c"
-unsigned char ui8_PWM_FreqCnt = 0;
-unsigned char ui8_PWMoutvalue = 0;
-unsigned char ui8_Pulse_State = 0;
-unsigned int ui16_Duty_Cycle_In = 0;
-unsigned int ui16_PWM_Freq_In = 0;
-volatile _u_wb ui16_Capt_Val0 = 0;
-volatile _u_wb ui16_Capt_Val1 = 0;
-volatile _u_wb ui16_Capt_Val2 = 0;
-unsigned char ui8_Duty_Cycle_In_Ratio = 0;
-unsigned char ui8_PWMinDC_sav;
-unsigned char ui8_PWMin_failCnt;
-unsigned int ui16_PWM_Input_State = 0;
-
-
-void PWM_Capture_init( unsigned char ui8_CCP_Nb );
-void PWM_CTRL( void );
-void PWM_Write_Out( unsigned char ui8_DutyCycle_Out );
-void interrupt_PWMCapture( void );
-unsigned char PWMReadDC( void );
-
-# 79
-void PWM_Capture_init( unsigned char ui8_CCP_Nb )
-
+# 5 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c"
+void
+__eecpymem(volatile unsigned char *to, __eeprom unsigned char * from, unsigned char size)
 {
+volatile unsigned char *cp = to;
 
+while (EECON1bits.WR) continue;
+EEADR = (unsigned char)from;
+while(size--) {
+while (EECON1bits.WR) continue;
 
-ui8_PWMinDC_sav = 0;
-ui8_PWMin_failCnt = 0;
+EECON1 &= 0x7F;
 
-# 94
-switch( ui8_CCP_Nb )
-
-{
-
-case 1:
-
-{
-
-CCP1CON = 0x00;
-CCPR1L = 0x00;
-CCPR1H = 0x00;
-CCP1IE = 1;
-CCP1IF = 0;
-CCP1CON = 0x05;
-break;
-
+EECON1bits.RD = 1;
+*cp++ = EEDATA;
+++EEADR;
 }
 
+# 36
+}
 
-case 2:
-
+void
+__memcpyee(__eeprom unsigned char * to, const unsigned char *from, unsigned char size)
 {
+const unsigned char *ptr =from;
 
-CCP2CON = 0x00;
-CCPR2L = 0x00;
-CCPR2H = 0x00;
-CCP2IE = 1;
-CCP2IF = 0;
-CCP2CON = 0x05;
-break;
+while (EECON1bits.WR) continue;
+EEADR = (unsigned char)to - 1U;
 
+EECON1 &= 0x7F;
+
+while(size--) {
+while (EECON1bits.WR) {
+continue;
+}
+EEDATA = *ptr++;
+++EEADR;
+STATUSbits.CARRY = 0;
+if (INTCONbits.GIE) {
+STATUSbits.CARRY = 1;
+}
+INTCONbits.GIE = 0;
+EECON1bits.WREN = 1;
+EECON2 = 0x55;
+EECON2 = 0xAA;
+EECON1bits.WR = 1;
+EECON1bits.WREN = 0;
+if (STATUSbits.CARRY) {
+INTCONbits.GIE = 1;
+}
 }
 
+# 101
+}
 
-case 3:
-
+unsigned char
+__eetoc(__eeprom void *addr)
 {
-
-CCP3CON = 0x00;
-CCPR3L = 0x00;
-CCPR3H = 0x00;
-CCP3IE = 1;
-CCP3IF = 0;
-CCP3CON = 0x05;
-break;
-
+unsigned char data;
+__eecpymem((unsigned char *) &data,addr,1);
+return data;
 }
 
-
-case 4:
-
+unsigned int
+__eetoi(__eeprom void *addr)
 {
-
-CCP4CON = 0x00;
-CCPR4L = 0x00;
-CCPR4H = 0x00;
-CCP4IE = 1;
-CCP4IF = 0;
-CCP4CON = 0x05;
-break;
-
+unsigned int data;
+__eecpymem((unsigned char *) &data,addr,2);
+return data;
 }
 
-
-case 5:
-
+#pragma warning push
+#pragma warning disable 2040
+__uint24
+__eetom(__eeprom void *addr)
 {
-
-ui16_PWM_Input_State = RA4;
-CCP5CON = 0x00;
-CCPR5L = 0x00;
-CCPR5H = 0x00;
-CCP5IE = 1;
-CCP5IF = 0;
-CCP5CON = 0x05;
-break;
-
+__uint24 data;
+__eecpymem((unsigned char *) &data,addr,3);
+return data;
 }
+#pragma warning pop
 
-
-
-default:
+unsigned long
+__eetol(__eeprom void *addr)
 {
-
-break;
-
+unsigned long data;
+__eecpymem((unsigned char *) &data,addr,4);
+return data;
 }
 
-}
-
-
-}
-
-# 200
-void PWM_CTRL( void )
-
+#pragma warning push
+#pragma warning disable 1516
+unsigned long long
+__eetoo(__eeprom void *addr)
 {
+unsigned long long data;
+__eecpymem((unsigned char *) &data,addr,8);
+return data;
+}
+#pragma warning pop
 
-# 290
-ui8_PWM_FreqCnt++;
-
-if( ui8_PWM_FreqCnt >= 100 )
-
+unsigned char
+__ctoee(__eeprom void *addr, unsigned char data)
 {
-
-ui8_PWM_FreqCnt = 0;
-LATC0 = 0;
-
-
+__memcpyee(addr,(unsigned char *) &data,1);
+return data;
 }
 
-
-else
+unsigned int
+__itoee(__eeprom void *addr, unsigned int data)
 {
-
-if( ui8_PWM_FreqCnt >= ui8_PWMoutvalue )
-
-{
-
-LATC0 = 1;
-
-
+__memcpyee(addr,(unsigned char *) &data,2);
+return data;
 }
 
-
-}
-
-# 328
-}
-
-# 342
-void PWM_Write_Out( unsigned char ui8_DutyCycle_Out )
-
+#pragma warning push
+#pragma warning disable 2040
+__uint24
+__mtoee(__eeprom void *addr, __uint24 data)
 {
+__memcpyee(addr,(unsigned char *) &data,3);
+return data;
+}
+#pragma warning pop
 
-ui8_PWMoutvalue = ui8_DutyCycle_Out;
-
+unsigned long
+__ltoee(__eeprom void *addr, unsigned long data)
+{
+__memcpyee(addr,(unsigned char *) &data,4);
+return data;
 }
 
-# 363
-unsigned char PWMReadDC( void )
-
+#pragma warning push
+#pragma warning disable 1516
+unsigned long long
+__otoee(__eeprom void *addr, unsigned long long data)
 {
+__memcpyee(addr,(unsigned char *) &data,8);
+return data;
+}
+#pragma warning pop
 
-
-ui8_PWMinDC_sav = (unsigned char) ( 200*(unsigned short long )(ui16_Duty_Cycle_In) / ui16_PWM_Freq_In ) ;
-
-if( ui8_PWMinDC_sav == 0 )
-
+float
+__eetoft(__eeprom void *addr)
 {
-
-
-
-ui8_PWMin_failCnt++;
-
-if( ui8_PWMin_failCnt >= 5 )
-
-{
-
-ui8_Duty_Cycle_In_Ratio = ui8_PWMinDC_sav;
-
-
-
-
+float data;
+__eecpymem((unsigned char *) &data,addr,3);
+return data;
 }
 
-
-}
-
-
-else
+double
+__eetofl(__eeprom void *addr)
 {
-
-
-
-ui8_PWMin_failCnt = 0;
-
-
-ui8_Duty_Cycle_In_Ratio = ui8_PWMinDC_sav;
-
-ui16_Duty_Cycle_In = 0;
-
+double data;
+__eecpymem((unsigned char *) &data,addr,4);
+return data;
 }
 
-
-
-
-if(ui8_Duty_Cycle_In_Ratio == 0)
+float
+__fttoee(__eeprom void *addr, float data)
 {
+__memcpyee(addr,(unsigned char *) &data,3);
+return data;
+}
 
-if(ui16_PWM_Input_State == 1)
+double
+__fltoee(__eeprom void *addr, double data)
 {
-ui16_PWM_Freq_In = 40000;
-return 20;
-}
-else
-{
-ui16_PWM_Freq_In = 40000;
-return 200;
-}
-}
-else
-{
-return ( 200 - ui8_Duty_Cycle_In_Ratio );
-
-}
-
-# 438
-}
-
-# 458
-void interrupt_PWMCapture( void )
-
-{
-
-# 470
-switch( ui8_Pulse_State )
-
-{
-
-case 0:
-
-{
-
-
-
-ui8_Pulse_State = 1;
-ui16_Capt_Val0.b.lo = CCPR5L;
-ui16_Capt_Val0.b.hi = CCPR5H;
-CCP5CON = 0x04;
-break;
-
-
-}
-
-
-case 1:
-
-{
-
-
-
-ui8_Pulse_State = 2;
-ui16_Capt_Val1.b.lo = CCPR5L;
-ui16_Capt_Val1.b.hi = CCPR5H;
-CCP5CON = 0x05;
-break;
-
-
-}
-
-
-case 2:
-
-{
-
-
-
-ui8_Pulse_State = 1;
-ui16_Capt_Val2.b.lo = CCPR5L;
-ui16_Capt_Val2.b.hi = CCPR5H;
-ui16_PWM_Freq_In = ui16_Capt_Val2.w - ui16_Capt_Val0.w;
-ui16_Duty_Cycle_In = ui16_Capt_Val1.w - ui16_Capt_Val0.w;
-ui16_Capt_Val0.w = ui16_Capt_Val2.w;
-CCP5CON = 0x04;
-
-
-if( ui16_Duty_Cycle_In )
-
-{
-
-
-
-}
-
-
-else
-{
-
-
-
-}
-
-
-break;
-
-
-}
-
-
-
-default:
-{
-
-
-
-ui8_Pulse_State = 0;
-break;
-
-
-}
-
-}
-
-
+__memcpyee(addr,(unsigned char *) &data,4);
+return data;
 }
 
