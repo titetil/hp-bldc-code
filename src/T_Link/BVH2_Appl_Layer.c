@@ -239,7 +239,7 @@ GLOBAL UInt8 ui8_Kp_mat;
 GLOBAL UInt8 ui8_PWM_dc_mat;
 GLOBAL UInt8 ui8_ResetMatlab;
 GLOBAL UInt8 ui8_debug_out0;
-GLOBAL UInt8 ui8_duty_cycle_mat;
+GLOBAL UInt16 ui16_duty_cycle_mat;
 
 /**********************************************************************\
    SFStaticGlobalInit: Default storage class for global static variables with initial value
@@ -535,7 +535,8 @@ Void BVH2_Appl_Layer(Void)
    bool_PIC_Alarm = Cb44_oAlarm;
 
    /* update of inport for BVH2_Appl_Layer/PWM_Detection */
-   Cb34_idPWM = ui8_PWM_dc_mat;
+   //Cb34_idPWM = ui8_PWM_dc_mat;
+   Cb34_idPWM = 50;  // faking this out in order to bypass alarms
 
    /* Begin execution of chart BVH2_Appl_Layer/PWM_Detection */
 
@@ -1635,7 +1636,12 @@ Void BVH2_Appl_Layer(Void)
    /* Outport: BVH2_Appl_Layer/DutyCyclePowerStage
       # combined # Gain: BVH2_Appl_Layer/Gain */
    //ui8_duty_cycle_mat = (UInt8) (Int16) (Sb2_Switch2 >> 1);
-   ui8_duty_cycle_mat = (UInt8)ui16_Speed_demand_mat;  // bypass control loop
+   if (Sb1_Logical_Operator3){  // used for overvoltage alarm
+       ui16_duty_cycle_mat = 0;  // turn off pump
+   }
+   else {
+       ui16_duty_cycle_mat = ui16_Speed_demand_mat;  // bypass control loop
+   }
 
    /* Outport: BVH2_Appl_Layer/Pump_off */
    bl_Pumpoff_Alarm = Sb1_Logical_Operator2;

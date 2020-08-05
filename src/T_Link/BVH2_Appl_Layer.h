@@ -169,7 +169,7 @@ extern GLOBAL UInt8 ui8_Kp_mat;
 extern GLOBAL UInt8 ui8_PWM_dc_mat;
 extern GLOBAL UInt8 ui8_ResetMatlab;
 extern GLOBAL UInt8 ui8_debug_out0;
-extern GLOBAL UInt8 ui8_duty_cycle_mat;
+extern GLOBAL UInt16 ui16_duty_cycle_mat;
 
 /*--------------------------------------------------------------------*\
   PARAMETERIZED MACROS

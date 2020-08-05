@@ -3097,239 +3097,239 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 138: extern __bank0 __bit __powerdown;
 [; ;pic.h: 139: extern __bank0 __bit __timeout;
 "255 ../config.h
-[v _PWM_trans_table `Cuc ~T0 @X0 -> 202 `i e ]
+[v _PWM_trans_table `Cus ~T0 @X0 -> 202 `i e ]
 [i _PWM_trans_table
 :U ..
 "256
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
--> -> 0 `i `uc
+-> -> 0 `i `us
+-> -> 0 `i `us
+-> -> 0 `i `us
+-> -> 0 `i `us
+-> -> 0 `i `us
+-> -> 0 `i `us
+-> -> 0 `i `us
+-> -> 0 `i `us
+-> -> 0 `i `us
+-> -> 0 `i `us
 "257
--> -> 90 `i `uc
--> -> 90 `i `uc
--> -> 90 `i `uc
--> -> 90 `i `uc
--> -> 90 `i `uc
--> -> 90 `i `uc
--> -> 90 `i `uc
--> -> 90 `i `uc
--> -> 90 `i `uc
--> -> 90 `i `uc
+-> -> 181 `i `us
+-> -> 181 `i `us
+-> -> 181 `i `us
+-> -> 181 `i `us
+-> -> 181 `i `us
+-> -> 181 `i `us
+-> -> 181 `i `us
+-> -> 181 `i `us
+-> -> 181 `i `us
+-> -> 181 `i `us
 "258
--> -> 90 `i `uc
--> -> 91 `i `uc
--> -> 91 `i `uc
--> -> 92 `i `uc
--> -> 93 `i `uc
--> -> 93 `i `uc
--> -> 94 `i `uc
--> -> 95 `i `uc
--> -> 95 `i `uc
--> -> 96 `i `uc
--> -> 96 `i `uc
--> -> 97 `i `uc
--> -> 98 `i `uc
--> -> 98 `i `uc
--> -> 99 `i `uc
--> -> 100 `i `uc
--> -> 100 `i `uc
--> -> 101 `i `uc
--> -> 102 `i `uc
--> -> 102 `i `uc
+-> -> 181 `i `us
+-> -> 182 `i `us
+-> -> 184 `i `us
+-> -> 185 `i `us
+-> -> 186 `i `us
+-> -> 187 `i `us
+-> -> 189 `i `us
+-> -> 190 `i `us
+-> -> 191 `i `us
+-> -> 193 `i `us
+-> -> 194 `i `us
+-> -> 195 `i `us
+-> -> 196 `i `us
+-> -> 198 `i `us
+-> -> 199 `i `us
+-> -> 200 `i `us
+-> -> 202 `i `us
+-> -> 203 `i `us
+-> -> 204 `i `us
+-> -> 205 `i `us
 "259
--> -> 103 `i `uc
--> -> 104 `i `uc
--> -> 104 `i `uc
--> -> 105 `i `uc
--> -> 106 `i `uc
--> -> 106 `i `uc
--> -> 107 `i `uc
--> -> 107 `i `uc
--> -> 108 `i `uc
--> -> 109 `i `uc
--> -> 109 `i `uc
--> -> 110 `i `uc
--> -> 111 `i `uc
--> -> 111 `i `uc
--> -> 112 `i `uc
--> -> 113 `i `uc
--> -> 113 `i `uc
--> -> 114 `i `uc
--> -> 115 `i `uc
--> -> 115 `i `uc
+-> -> 207 `i `us
+-> -> 208 `i `us
+-> -> 209 `i `us
+-> -> 211 `i `us
+-> -> 212 `i `us
+-> -> 213 `i `us
+-> -> 214 `i `us
+-> -> 216 `i `us
+-> -> 217 `i `us
+-> -> 218 `i `us
+-> -> 220 `i `us
+-> -> 221 `i `us
+-> -> 222 `i `us
+-> -> 224 `i `us
+-> -> 225 `i `us
+-> -> 226 `i `us
+-> -> 227 `i `us
+-> -> 229 `i `us
+-> -> 230 `i `us
+-> -> 231 `i `us
 "260
--> -> 116 `i `uc
--> -> 117 `i `uc
--> -> 117 `i `uc
--> -> 118 `i `uc
--> -> 118 `i `uc
--> -> 119 `i `uc
--> -> 120 `i `uc
--> -> 120 `i `uc
--> -> 121 `i `uc
--> -> 122 `i `uc
--> -> 122 `i `uc
--> -> 123 `i `uc
--> -> 124 `i `uc
--> -> 124 `i `uc
--> -> 125 `i `uc
--> -> 126 `i `uc
--> -> 126 `i `uc
--> -> 127 `i `uc
--> -> 128 `i `uc
--> -> 128 `i `uc
+-> -> 233 `i `us
+-> -> 234 `i `us
+-> -> 235 `i `us
+-> -> 236 `i `us
+-> -> 238 `i `us
+-> -> 239 `i `us
+-> -> 240 `i `us
+-> -> 242 `i `us
+-> -> 243 `i `us
+-> -> 244 `i `us
+-> -> 245 `i `us
+-> -> 247 `i `us
+-> -> 248 `i `us
+-> -> 249 `i `us
+-> -> 251 `i `us
+-> -> 252 `i `us
+-> -> 253 `i `us
+-> -> 254 `i `us
+-> -> 256 `i `us
+-> -> 257 `i `us
 "261
--> -> 129 `i `uc
--> -> 129 `i `uc
--> -> 130 `i `uc
--> -> 131 `i `uc
--> -> 131 `i `uc
--> -> 132 `i `uc
--> -> 133 `i `uc
--> -> 133 `i `uc
--> -> 134 `i `uc
--> -> 135 `i `uc
--> -> 135 `i `uc
--> -> 136 `i `uc
--> -> 137 `i `uc
--> -> 137 `i `uc
--> -> 138 `i `uc
--> -> 139 `i `uc
--> -> 139 `i `uc
--> -> 140 `i `uc
--> -> 140 `i `uc
--> -> 141 `i `uc
+-> -> 258 `i `us
+-> -> 260 `i `us
+-> -> 261 `i `us
+-> -> 262 `i `us
+-> -> 263 `i `us
+-> -> 265 `i `us
+-> -> 266 `i `us
+-> -> 267 `i `us
+-> -> 269 `i `us
+-> -> 270 `i `us
+-> -> 271 `i `us
+-> -> 272 `i `us
+-> -> 274 `i `us
+-> -> 275 `i `us
+-> -> 276 `i `us
+-> -> 278 `i `us
+-> -> 279 `i `us
+-> -> 280 `i `us
+-> -> 281 `i `us
+-> -> 283 `i `us
 "262
--> -> 142 `i `uc
--> -> 142 `i `uc
--> -> 143 `i `uc
--> -> 144 `i `uc
--> -> 144 `i `uc
--> -> 145 `i `uc
--> -> 146 `i `uc
--> -> 146 `i `uc
--> -> 147 `i `uc
--> -> 148 `i `uc
--> -> 148 `i `uc
--> -> 149 `i `uc
--> -> 150 `i `uc
--> -> 150 `i `uc
--> -> 151 `i `uc
--> -> 151 `i `uc
--> -> 152 `i `uc
--> -> 153 `i `uc
--> -> 153 `i `uc
--> -> 154 `i `uc
+-> -> 284 `i `us
+-> -> 285 `i `us
+-> -> 287 `i `us
+-> -> 288 `i `us
+-> -> 289 `i `us
+-> -> 290 `i `us
+-> -> 292 `i `us
+-> -> 293 `i `us
+-> -> 294 `i `us
+-> -> 296 `i `us
+-> -> 297 `i `us
+-> -> 298 `i `us
+-> -> 300 `i `us
+-> -> 301 `i `us
+-> -> 302 `i `us
+-> -> 303 `i `us
+-> -> 305 `i `us
+-> -> 306 `i `us
+-> -> 307 `i `us
+-> -> 309 `i `us
 "263
--> -> 155 `i `uc
--> -> 155 `i `uc
--> -> 156 `i `uc
--> -> 157 `i `uc
--> -> 157 `i `uc
--> -> 158 `i `uc
--> -> 159 `i `uc
--> -> 159 `i `uc
--> -> 160 `i `uc
--> -> 161 `i `uc
--> -> 161 `i `uc
--> -> 162 `i `uc
--> -> 162 `i `uc
--> -> 163 `i `uc
--> -> 164 `i `uc
--> -> 164 `i `uc
--> -> 165 `i `uc
--> -> 166 `i `uc
--> -> 166 `i `uc
--> -> 167 `i `uc
+-> -> 310 `i `us
+-> -> 311 `i `us
+-> -> 312 `i `us
+-> -> 314 `i `us
+-> -> 315 `i `us
+-> -> 316 `i `us
+-> -> 318 `i `us
+-> -> 319 `i `us
+-> -> 320 `i `us
+-> -> 321 `i `us
+-> -> 323 `i `us
+-> -> 324 `i `us
+-> -> 325 `i `us
+-> -> 327 `i `us
+-> -> 328 `i `us
+-> -> 329 `i `us
+-> -> 330 `i `us
+-> -> 332 `i `us
+-> -> 333 `i `us
+-> -> 334 `i `us
 "264
--> -> 168 `i `uc
--> -> 168 `i `uc
--> -> 169 `i `uc
--> -> 170 `i `uc
--> -> 170 `i `uc
--> -> 171 `i `uc
--> -> 172 `i `uc
--> -> 172 `i `uc
--> -> 173 `i `uc
--> -> 173 `i `uc
--> -> 174 `i `uc
--> -> 175 `i `uc
--> -> 175 `i `uc
--> -> 176 `i `uc
--> -> 177 `i `uc
--> -> 177 `i `uc
--> -> 178 `i `uc
--> -> 179 `i `uc
--> -> 179 `i `uc
--> -> 180 `i `uc
+-> -> 336 `i `us
+-> -> 337 `i `us
+-> -> 338 `i `us
+-> -> 339 `i `us
+-> -> 341 `i `us
+-> -> 342 `i `us
+-> -> 343 `i `us
+-> -> 345 `i `us
+-> -> 346 `i `us
+-> -> 347 `i `us
+-> -> 348 `i `us
+-> -> 350 `i `us
+-> -> 351 `i `us
+-> -> 352 `i `us
+-> -> 354 `i `us
+-> -> 355 `i `us
+-> -> 356 `i `us
+-> -> 357 `i `us
+-> -> 359 `i `us
+-> -> 360 `i `us
 "265
--> -> 181 `i `uc
--> -> 181 `i `uc
--> -> 182 `i `uc
--> -> 183 `i `uc
--> -> 183 `i `uc
--> -> 184 `i `uc
--> -> 184 `i `uc
--> -> 185 `i `uc
--> -> 186 `i `uc
--> -> 186 `i `uc
--> -> 187 `i `uc
--> -> 188 `i `uc
--> -> 188 `i `uc
--> -> 189 `i `uc
--> -> 190 `i `uc
--> -> 190 `i `uc
--> -> 191 `i `uc
--> -> 192 `i `uc
--> -> 192 `i `uc
--> -> 193 `i `uc
+-> -> 361 `i `us
+-> -> 363 `i `us
+-> -> 364 `i `us
+-> -> 365 `i `us
+-> -> 367 `i `us
+-> -> 368 `i `us
+-> -> 369 `i `us
+-> -> 370 `i `us
+-> -> 372 `i `us
+-> -> 373 `i `us
+-> -> 374 `i `us
+-> -> 376 `i `us
+-> -> 377 `i `us
+-> -> 378 `i `us
+-> -> 379 `i `us
+-> -> 381 `i `us
+-> -> 382 `i `us
+-> -> 383 `i `us
+-> -> 385 `i `us
+-> -> 386 `i `us
 "266
--> -> 194 `i `uc
--> -> 194 `i `uc
--> -> 195 `i `uc
--> -> 195 `i `uc
--> -> 196 `i `uc
--> -> 197 `i `uc
--> -> 197 `i `uc
--> -> 198 `i `uc
--> -> 199 `i `uc
--> -> 199 `i `uc
--> -> 200 `i `uc
--> -> 200 `i `uc
+-> -> 387 `i `us
+-> -> 388 `i `us
+-> -> 390 `i `us
+-> -> 391 `i `us
+-> -> 392 `i `us
+-> -> 394 `i `us
+-> -> 395 `i `us
+-> -> 396 `i `us
+-> -> 397 `i `us
+-> -> 399 `i `us
+-> -> 400 `i `us
+-> -> 400 `i `us
 "267
--> -> 200 `i `uc
--> -> 200 `i `uc
--> -> 200 `i `uc
--> -> 200 `i `uc
--> -> 200 `i `uc
--> -> 200 `i `uc
--> -> 200 `i `uc
--> -> 200 `i `uc
--> -> 200 `i `uc
+-> -> 400 `i `us
+-> -> 400 `i `us
+-> -> 400 `i `us
+-> -> 400 `i `us
+-> -> 400 `i `us
+-> -> 400 `i `us
+-> -> 400 `i `us
+-> -> 400 `i `us
+-> -> 400 `i `us
 "268
--> -> 200 `i `uc
+-> -> 400 `i `us
 ..
 ]
-[; ;config.h: 255: extern const unsigned char PWM_trans_table[202] = {
+[; ;config.h: 255: extern const unsigned short PWM_trans_table[202] = {
 [; ;config.h: 256: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-[; ;config.h: 257: 90, 90, 90, 90, 90, 90, 90, 90, 90, 90,
-[; ;config.h: 258: 90, 91, 91, 92, 93, 93, 94, 95, 95, 96, 96, 97, 98, 98, 99, 100, 100, 101, 102, 102,
-[; ;config.h: 259: 103, 104, 104, 105, 106, 106, 107, 107, 108, 109, 109, 110, 111, 111, 112, 113, 113, 114, 115, 115,
-[; ;config.h: 260: 116, 117, 117, 118, 118, 119, 120, 120, 121, 122, 122, 123, 124, 124, 125, 126, 126, 127, 128, 128,
-[; ;config.h: 261: 129, 129, 130, 131, 131, 132, 133, 133, 134, 135, 135, 136, 137, 137, 138, 139, 139, 140, 140, 141,
-[; ;config.h: 262: 142, 142, 143, 144, 144, 145, 146, 146, 147, 148, 148, 149, 150, 150, 151, 151, 152, 153, 153, 154,
-[; ;config.h: 263: 155, 155, 156, 157, 157, 158, 159, 159, 160, 161, 161, 162, 162, 163, 164, 164, 165, 166, 166, 167,
-[; ;config.h: 264: 168, 168, 169, 170, 170, 171, 172, 172, 173, 173, 174, 175, 175, 176, 177, 177, 178, 179, 179, 180,
-[; ;config.h: 265: 181, 181, 182, 183, 183, 184, 184, 185, 186, 186, 187, 188, 188, 189, 190, 190, 191, 192, 192, 193,
-[; ;config.h: 266: 194, 194, 195, 195, 196, 197, 197, 198, 199, 199, 200, 200,
-[; ;config.h: 267: 200, 200, 200, 200, 200, 200, 200, 200, 200, 200
+[; ;config.h: 257: 181, 181, 181, 181, 181, 181, 181, 181, 181, 181,
+[; ;config.h: 258: 181, 182, 184, 185, 186, 187, 189, 190, 191, 193, 194, 195, 196, 198, 199, 200, 202, 203, 204, 205,
+[; ;config.h: 259: 207, 208, 209, 211, 212, 213, 214, 216, 217, 218, 220, 221, 222, 224, 225, 226, 227, 229, 230, 231,
+[; ;config.h: 260: 233, 234, 235, 236, 238, 239, 240, 242, 243, 244, 245, 247, 248, 249, 251, 252, 253, 254, 256, 257,
+[; ;config.h: 261: 258, 260, 261, 262, 263, 265, 266, 267, 269, 270, 271, 272, 274, 275, 276, 278, 279, 280, 281, 283,
+[; ;config.h: 262: 284, 285, 287, 288, 289, 290, 292, 293, 294, 296, 297, 298, 300, 301, 302, 303, 305, 306, 307, 309,
+[; ;config.h: 263: 310, 311, 312, 314, 315, 316, 318, 319, 320, 321, 323, 324, 325, 327, 328, 329, 330, 332, 333, 334,
+[; ;config.h: 264: 336, 337, 338, 339, 341, 342, 343, 345, 346, 347, 348, 350, 351, 352, 354, 355, 356, 357, 359, 360,
+[; ;config.h: 265: 361, 363, 364, 365, 367, 368, 369, 370, 372, 373, 374, 376, 377, 378, 379, 381, 382, 383, 385, 386,
+[; ;config.h: 266: 387, 388, 390, 391, 392, 394, 395, 396, 397, 399, 400, 400,
+[; ;config.h: 267: 400, 400, 400, 400, 400, 400, 400, 400, 400, 400
 [; ;config.h: 268: };
 [; ;project.h: 39: typedef union
 [; ;project.h: 40: {
@@ -3418,7 +3418,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.h: 235: extern volatile _u_wb ui16_Ubat_bldc;
 [; ;bldc.h: 236: extern volatile _u_wb ui16_Ubemf_bldc;
 [; ;bldc.h: 237: extern unsigned short ui8_zero_cros_cnt;
-[; ;bldc.h: 238: extern unsigned char ui8_duty_cycle_BLDC;
+[; ;bldc.h: 238: extern unsigned short ui16_duty_cycle_BLDC;
 [; ;bldc.h: 245: void InitSystem( void );
 [; ;bldc.h: 246: void InitDriver( void );
 [; ;bldc.h: 247: void Commutate( void );
@@ -3554,7 +3554,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;T_Link\BVH2_Appl_Layer.h: 169: extern  UInt8 ui8_PWM_dc_mat;
 [; ;T_Link\BVH2_Appl_Layer.h: 170: extern  UInt8 ui8_ResetMatlab;
 [; ;T_Link\BVH2_Appl_Layer.h: 171: extern  UInt8 ui8_debug_out0;
-[; ;T_Link\BVH2_Appl_Layer.h: 172: extern  UInt8 ui8_duty_cycle_mat;
+[; ;T_Link\BVH2_Appl_Layer.h: 172: extern  UInt16 ui16_duty_cycle_mat;
 [; ;T_Link\BVH2_Appl_Layer.h: 183: extern Void BVH2_Appl_Layer(Void);
 "55 ../bldc.c
 [v _comm_time `us ~T0 @X0 1 e ]
@@ -3653,8 +3653,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _ui16_speed_fil `us ~T0 @X0 1 e ]
 [; ;bldc.c: 102: unsigned short ui16_speed_fil;
 "103
-[v _ui8_duty_cycle_BLDC `uc ~T0 @X0 1 e ]
-[; ;bldc.c: 103: unsigned char ui8_duty_cycle_BLDC;
+[v _ui16_duty_cycle_BLDC `us ~T0 @X0 1 e ]
+[; ;bldc.c: 103: unsigned short ui16_duty_cycle_BLDC;
 "104
 [v _MotorFlags `S349 ~T0 @X0 1 e ]
 [; ;bldc.c: 104: _u_bits MotorFlags;
@@ -4161,9 +4161,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.c: 511: ( GO_nDONE = 1 );
 "511
 [e = _GO_nDONE -> -> 1 `i `b ]
-[; ;bldc.c: 519: if( ( MotorFlags.bits.B6 ) && ( ui8_duty_cycle_BLDC != 0 ) )
+[; ;bldc.c: 519: if( ( MotorFlags.bits.B6 ) && ( ui16_duty_cycle_BLDC != 0 ) )
 "519
-[e $ ! && != -> . . _MotorFlags 1 6 `i -> -> -> 0 `i `uc `i != -> _ui8_duty_cycle_BLDC `i -> 0 `i 384  ]
+[e $ ! && != -> . . _MotorFlags 1 6 `i -> -> -> 0 `i `uc `i != -> _ui16_duty_cycle_BLDC `ui -> -> 0 `i `ui 384  ]
 [; ;bldc.c: 521: {
 "521
 {
@@ -5288,642 +5288,576 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;bldc.c: 1693: {
 "1693
 {
-[; ;bldc.c: 1697: if (CCPR1L == ui8_duty_cycle_BLDC)
-"1697
-[e $ ! == -> _CCPR1L `i -> _ui8_duty_cycle_BLDC `i 461  ]
-[; ;bldc.c: 1699: {
-"1699
-{
-"1703
+[; ;bldc.c: 1751: CCPR1L = ui16_duty_cycle_BLDC >> 2;
+"1751
+[e = _CCPR1L -> >> -> _ui16_duty_cycle_BLDC `ui -> 2 `i `uc ]
+[; ;bldc.c: 1752: CCP1CON = ((ui16_duty_cycle_BLDC & 0b11) << 4) | 0x0C;
+"1752
+[e = _CCP1CON -> | << & -> _ui16_duty_cycle_BLDC `ui -> -> 3 `i `ui -> 4 `i -> -> 12 `i `ui `uc ]
+"1766
 }
-[; ;bldc.c: 1703: }
-[e $U 462  ]
-"1706
-[e :U 461 ]
-[; ;bldc.c: 1706: else
-[; ;bldc.c: 1707: {
-"1707
-{
-[; ;bldc.c: 1709: if( CCPR1L > ui8_duty_cycle_BLDC )
-"1709
-[e $ ! > -> _CCPR1L `i -> _ui8_duty_cycle_BLDC `i 463  ]
-[; ;bldc.c: 1712: {
-"1712
-{
-[; ;bldc.c: 1714: CCPR1L--;
-"1714
-[e -- _CCPR1L -> -> 1 `i `uc ]
-[; ;bldc.c: 1716: if (CCPR1L > ui8_duty_cycle_BLDC)
-"1716
-[e $ ! > -> _CCPR1L `i -> _ui8_duty_cycle_BLDC `i 464  ]
-[; ;bldc.c: 1718: {
-"1718
-{
-[; ;bldc.c: 1720: CCPR1L--;
-"1720
-[e -- _CCPR1L -> -> 1 `i `uc ]
-"1722
-}
-[e :U 464 ]
-"1725
-}
-[; ;bldc.c: 1722: }
-[; ;bldc.c: 1725: }
-[e $U 465  ]
-"1728
-[e :U 463 ]
-[; ;bldc.c: 1728: else
-[; ;bldc.c: 1729: {
-"1729
-{
-[; ;bldc.c: 1731: CCPR1L++;
-"1731
-[e ++ _CCPR1L -> -> 1 `i `uc ]
-[; ;bldc.c: 1733: if (CCPR1L < ui8_duty_cycle_BLDC)
-"1733
-[e $ ! < -> _CCPR1L `i -> _ui8_duty_cycle_BLDC `i 466  ]
-[; ;bldc.c: 1735: {
-"1735
-{
-[; ;bldc.c: 1737: CCPR1L++;
-"1737
-[e ++ _CCPR1L -> -> 1 `i `uc ]
-"1739
-}
-[e :U 466 ]
-"1742
-}
-[e :U 465 ]
-"1745
-}
-[e :U 462 ]
-"1765
-}
-[; ;bldc.c: 1739: }
-[; ;bldc.c: 1742: }
-[; ;bldc.c: 1745: }
-[; ;bldc.c: 1765: }
-[e $U 467  ]
-"1768
-[e :U 460 ]
-[; ;bldc.c: 1768: else
-[; ;bldc.c: 1769: {
+[; ;bldc.c: 1766: }
+[e $U 461  ]
 "1769
+[e :U 460 ]
+[; ;bldc.c: 1769: else
+[; ;bldc.c: 1770: {
+"1770
 {
-[; ;bldc.c: 1771: CCPR1L = 0;
-"1771
+[; ;bldc.c: 1772: CCPR1L = 0;
+"1772
 [e = _CCPR1L -> -> 0 `i `uc ]
-"1773
+"1774
 }
-[e :U 467 ]
-"1777
+[e :U 461 ]
+"1778
 }
 [e :U 457 ]
-[; ;bldc.c: 1773: }
-[; ;bldc.c: 1777: }
-[; ;bldc.c: 1780: comm_time = 0;
-"1780
+[; ;bldc.c: 1774: }
+[; ;bldc.c: 1778: }
+[; ;bldc.c: 1781: comm_time = 0;
+"1781
 [e = _comm_time -> -> 0 `i `us ]
-[; ;bldc.c: 1784: if( comm_state == 0xff )
-"1784
-[e $ ! == -> _comm_state `i -> 255 `i 468  ]
-[; ;bldc.c: 1786: {
-"1786
+[; ;bldc.c: 1785: if( comm_state == 0xff )
+"1785
+[e $ ! == -> _comm_state `i -> 255 `i 462  ]
+[; ;bldc.c: 1787: {
+"1787
 {
-[; ;bldc.c: 1788: comm_state = 6;
-"1788
+[; ;bldc.c: 1789: comm_state = 6;
+"1789
 [e = _comm_state -> -> 6 `i `uc ]
-"1790
+"1791
+}
+[e :U 462 ]
+[; ;bldc.c: 1791: }
+[; ;bldc.c: 1794: switch( comm_state )
+"1794
+[e $U 464  ]
+[; ;bldc.c: 1796: {
+"1796
+{
+[; ;bldc.c: 1798: case 1:
+"1798
+[e :U 465 ]
+[; ;bldc.c: 1801: {
+"1801
+{
+[; ;bldc.c: 1807: PSTR1CON = 0b00000001;
+"1807
+[e = _PSTR1CON -> -> 1 `i `uc ]
+[; ;bldc.c: 1810: if( MotorFlags.bits.B6 )
+"1810
+[e $ ! != -> . . _MotorFlags 1 6 `i -> -> -> 0 `i `uc `i 466  ]
+[; ;bldc.c: 1812: {
+"1812
+{
+[; ;bldc.c: 1814: LATC = ( LATC & 0b11100101 ) | 0b00001010;
+"1814
+[e = _LATC -> | & -> _LATC `i -> 229 `i -> 10 `i `uc ]
+"1816
+}
+[e :U 466 ]
+[; ;bldc.c: 1816: }
+[; ;bldc.c: 1820: LATB2 = 0;
+"1820
+[e = _LATB2 -> -> 0 `i `b ]
+[; ;bldc.c: 1821: LATB1 = 0;
+"1821
+[e = _LATB1 -> -> 0 `i `b ]
+[; ;bldc.c: 1822: ui8_IPhase_sel = ( 0x02 << 2 ) | 0x01;
+"1822
+[e = _ui8_IPhase_sel -> | << -> 2 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 1823: ui8_UPhase_sel = ( 0x00 << 2 ) | 0x01;
+"1823
+[e = _ui8_UPhase_sel -> | << -> 0 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 1824: ui8_Ubemf_sel = ( 0x09 << 2 ) | 0x01;
+"1824
+[e = _ui8_Ubemf_sel -> | << -> 9 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 1825: CM1CON1 = 0x02;
+"1825
+[e = _CM1CON1 -> -> 2 `i `uc ]
+[; ;bldc.c: 1838: CM1CON0 = 0x84;
+"1838
+[e = _CM1CON0 -> -> 132 `i `uc ]
+[; ;bldc.c: 1839: rising_bemf_flag = 1;
+"1839
+[e = _rising_bemf_flag -> -> 1 `i `b ]
+[; ;bldc.c: 1840: comm_state = 6;
+"1840
+[e = _comm_state -> -> 6 `i `uc ]
+[; ;bldc.c: 1846: break;
+"1846
+[e $U 463  ]
+"1850
+}
+[; ;bldc.c: 1850: }
+[; ;bldc.c: 1853: case 2:
+"1853
+[e :U 467 ]
+[; ;bldc.c: 1856: {
+"1856
+{
+[; ;bldc.c: 1861: PSTR1CON = 0b00000001;
+"1861
+[e = _PSTR1CON -> -> 1 `i `uc ]
+[; ;bldc.c: 1864: if( MotorFlags.bits.B6 )
+"1864
+[e $ ! != -> . . _MotorFlags 1 6 `i -> -> -> 0 `i `uc `i 468  ]
+[; ;bldc.c: 1866: {
+"1866
+{
+[; ;bldc.c: 1868: LATC = ( LATC & 0b11100101 ) | 0b00010010;
+"1868
+[e = _LATC -> | & -> _LATC `i -> 229 `i -> 18 `i `uc ]
+"1870
 }
 [e :U 468 ]
-[; ;bldc.c: 1790: }
-[; ;bldc.c: 1793: switch( comm_state )
-"1793
-[e $U 470  ]
-[; ;bldc.c: 1795: {
-"1795
+[; ;bldc.c: 1870: }
+[; ;bldc.c: 1874: LATB2 = 1;
+"1874
+[e = _LATB2 -> -> 1 `i `b ]
+[; ;bldc.c: 1875: LATB1 = 0;
+"1875
+[e = _LATB1 -> -> 0 `i `b ]
+[; ;bldc.c: 1876: ui8_IPhase_sel = ( 0x02 << 2 ) | 0x01;
+"1876
+[e = _ui8_IPhase_sel -> | << -> 2 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 1877: ui8_UPhase_sel = ( 0x00 << 2 ) | 0x01;
+"1877
+[e = _ui8_UPhase_sel -> | << -> 0 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 1878: ui8_Ubemf_sel = ( 0x01 << 2 ) | 0x01;
+"1878
+[e = _ui8_Ubemf_sel -> | << -> 1 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 1879: CM1CON1 = 0x01;
+"1879
+[e = _CM1CON1 -> -> 1 `i `uc ]
+[; ;bldc.c: 1893: CM1CON0 = 0x94;
+"1893
+[e = _CM1CON0 -> -> 148 `i `uc ]
+[; ;bldc.c: 1894: rising_bemf_flag = 0;
+"1894
+[e = _rising_bemf_flag -> -> 0 `i `b ]
+[; ;bldc.c: 1895: comm_state = 1;
+"1895
+[e = _comm_state -> -> 1 `i `uc ]
+[; ;bldc.c: 1903: break;
+"1903
+[e $U 463  ]
+"1907
+}
+[; ;bldc.c: 1907: }
+[; ;bldc.c: 1910: case 3:
+"1910
+[e :U 469 ]
+[; ;bldc.c: 1913: {
+"1913
 {
-[; ;bldc.c: 1797: case 1:
-"1797
+[; ;bldc.c: 1918: PSTR1CON = 0b00000010;
+"1918
+[e = _PSTR1CON -> -> 2 `i `uc ]
+[; ;bldc.c: 1921: if( MotorFlags.bits.B6 )
+"1921
+[e $ ! != -> . . _MotorFlags 1 6 `i -> -> -> 0 `i `uc `i 470  ]
+[; ;bldc.c: 1923: {
+"1923
+{
+[; ;bldc.c: 1925: LATC = ( LATC & 0b11100101 ) | 0b00011000;
+"1925
+[e = _LATC -> | & -> _LATC `i -> 229 `i -> 24 `i `uc ]
+"1927
+}
+[e :U 470 ]
+[; ;bldc.c: 1927: }
+[; ;bldc.c: 1930: LATC2 = 0;
+"1930
+[e = _LATC2 -> -> 0 `i `b ]
+[; ;bldc.c: 1932: LATB1 = 0;
+"1932
+[e = _LATB1 -> -> 0 `i `b ]
+[; ;bldc.c: 1933: ui8_IPhase_sel = ( 0x0D << 2 ) | 0x01;
+"1933
+[e = _ui8_IPhase_sel -> | << -> 13 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 1934: ui8_UPhase_sel = ( 0x01 << 2 ) | 0x01;
+"1934
+[e = _ui8_UPhase_sel -> | << -> 1 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 1935: ui8_Ubemf_sel = ( 0x00 << 2 ) | 0x01;
+"1935
+[e = _ui8_Ubemf_sel -> | << -> 0 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 1936: CM1CON1 = 0x00;
+"1936
+[e = _CM1CON1 -> -> 0 `i `uc ]
+[; ;bldc.c: 1950: CM1CON0 = 0x84;
+"1950
+[e = _CM1CON0 -> -> 132 `i `uc ]
+[; ;bldc.c: 1951: rising_bemf_flag = 1;
+"1951
+[e = _rising_bemf_flag -> -> 1 `i `b ]
+[; ;bldc.c: 1952: comm_state = 2;
+"1952
+[e = _comm_state -> -> 2 `i `uc ]
+[; ;bldc.c: 1957: break;
+"1957
+[e $U 463  ]
+"1961
+}
+[; ;bldc.c: 1961: }
+[; ;bldc.c: 1964: case 4:
+"1964
 [e :U 471 ]
-[; ;bldc.c: 1800: {
-"1800
+[; ;bldc.c: 1967: {
+"1967
 {
-[; ;bldc.c: 1806: PSTR1CON = 0b00000001;
-"1806
-[e = _PSTR1CON -> -> 1 `i `uc ]
-[; ;bldc.c: 1809: if( MotorFlags.bits.B6 )
-"1809
+[; ;bldc.c: 1973: PSTR1CON = 0b00000010;
+"1973
+[e = _PSTR1CON -> -> 2 `i `uc ]
+[; ;bldc.c: 1976: if( MotorFlags.bits.B6 )
+"1976
 [e $ ! != -> . . _MotorFlags 1 6 `i -> -> -> 0 `i `uc `i 472  ]
-[; ;bldc.c: 1811: {
-"1811
+[; ;bldc.c: 1978: {
+"1978
 {
-[; ;bldc.c: 1813: LATC = ( LATC & 0b11100101 ) | 0b00001010;
-"1813
+[; ;bldc.c: 1980: LATC = ( LATC & 0b11100101 ) | 0b00001010;
+"1980
 [e = _LATC -> | & -> _LATC `i -> 229 `i -> 10 `i `uc ]
-"1815
+"1982
 }
 [e :U 472 ]
-[; ;bldc.c: 1815: }
-[; ;bldc.c: 1819: LATB2 = 0;
-"1819
-[e = _LATB2 -> -> 0 `i `b ]
-[; ;bldc.c: 1820: LATB1 = 0;
-"1820
-[e = _LATB1 -> -> 0 `i `b ]
-[; ;bldc.c: 1821: ui8_IPhase_sel = ( 0x02 << 2 ) | 0x01;
-"1821
-[e = _ui8_IPhase_sel -> | << -> 2 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 1822: ui8_UPhase_sel = ( 0x00 << 2 ) | 0x01;
-"1822
-[e = _ui8_UPhase_sel -> | << -> 0 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 1823: ui8_Ubemf_sel = ( 0x09 << 2 ) | 0x01;
-"1823
+[; ;bldc.c: 1982: }
+[; ;bldc.c: 1985: LATC2 = 0;
+"1985
+[e = _LATC2 -> -> 0 `i `b ]
+[; ;bldc.c: 1987: LATB1 = 1;
+"1987
+[e = _LATB1 -> -> 1 `i `b ]
+[; ;bldc.c: 1988: ui8_IPhase_sel = ( 0x0D << 2 ) | 0x01;
+"1988
+[e = _ui8_IPhase_sel -> | << -> 13 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 1989: ui8_UPhase_sel = ( 0x01 << 2 ) | 0x01;
+"1989
+[e = _ui8_UPhase_sel -> | << -> 1 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 1990: ui8_Ubemf_sel = ( 0x09 << 2 ) | 0x01;
+"1990
 [e = _ui8_Ubemf_sel -> | << -> 9 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 1824: CM1CON1 = 0x02;
-"1824
+[; ;bldc.c: 1991: CM1CON1 = 0x02;
+"1991
 [e = _CM1CON1 -> -> 2 `i `uc ]
-[; ;bldc.c: 1837: CM1CON0 = 0x84;
-"1837
-[e = _CM1CON0 -> -> 132 `i `uc ]
-[; ;bldc.c: 1838: rising_bemf_flag = 1;
-"1838
-[e = _rising_bemf_flag -> -> 1 `i `b ]
-[; ;bldc.c: 1839: comm_state = 6;
-"1839
-[e = _comm_state -> -> 6 `i `uc ]
-[; ;bldc.c: 1845: break;
-"1845
-[e $U 469  ]
-"1849
+[; ;bldc.c: 2005: CM1CON0 = 0x94;
+"2005
+[e = _CM1CON0 -> -> 148 `i `uc ]
+[; ;bldc.c: 2006: rising_bemf_flag = 0;
+"2006
+[e = _rising_bemf_flag -> -> 0 `i `b ]
+[; ;bldc.c: 2007: comm_state = 3;
+"2007
+[e = _comm_state -> -> 3 `i `uc ]
+[; ;bldc.c: 2012: break;
+"2012
+[e $U 463  ]
+"2015
 }
-[; ;bldc.c: 1849: }
-[; ;bldc.c: 1852: case 2:
-"1852
+[; ;bldc.c: 2015: }
+[; ;bldc.c: 2018: case 5:
+"2018
 [e :U 473 ]
-[; ;bldc.c: 1855: {
-"1855
+[; ;bldc.c: 2021: {
+"2021
 {
-[; ;bldc.c: 1860: PSTR1CON = 0b00000001;
-"1860
-[e = _PSTR1CON -> -> 1 `i `uc ]
-[; ;bldc.c: 1863: if( MotorFlags.bits.B6 )
-"1863
+[; ;bldc.c: 2027: PSTR1CON = 0b00000100;
+"2027
+[e = _PSTR1CON -> -> 4 `i `uc ]
+[; ;bldc.c: 2030: if( MotorFlags.bits.B6 )
+"2030
 [e $ ! != -> . . _MotorFlags 1 6 `i -> -> -> 0 `i `uc `i 474  ]
-[; ;bldc.c: 1865: {
-"1865
+[; ;bldc.c: 2032: {
+"2032
 {
-[; ;bldc.c: 1867: LATC = ( LATC & 0b11100101 ) | 0b00010010;
-"1867
+[; ;bldc.c: 2034: LATC = ( LATC & 0b11100101 ) | 0b00010010;
+"2034
 [e = _LATC -> | & -> _LATC `i -> 229 `i -> 18 `i `uc ]
-"1869
+"2036
 }
 [e :U 474 ]
-[; ;bldc.c: 1869: }
-[; ;bldc.c: 1873: LATB2 = 1;
-"1873
-[e = _LATB2 -> -> 1 `i `b ]
-[; ;bldc.c: 1874: LATB1 = 0;
-"1874
-[e = _LATB1 -> -> 0 `i `b ]
-[; ;bldc.c: 1875: ui8_IPhase_sel = ( 0x02 << 2 ) | 0x01;
-"1875
-[e = _ui8_IPhase_sel -> | << -> 2 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 1876: ui8_UPhase_sel = ( 0x00 << 2 ) | 0x01;
-"1876
-[e = _ui8_UPhase_sel -> | << -> 0 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 1877: ui8_Ubemf_sel = ( 0x01 << 2 ) | 0x01;
-"1877
+[; ;bldc.c: 2036: }
+[; ;bldc.c: 2039: LATC2 = 0;
+"2039
+[e = _LATC2 -> -> 0 `i `b ]
+[; ;bldc.c: 2040: LATB2 = 0;
+"2040
+[e = _LATB2 -> -> 0 `i `b ]
+[; ;bldc.c: 2042: ui8_IPhase_sel = ( 0x04 << 2 ) | 0x01;
+"2042
+[e = _ui8_IPhase_sel -> | << -> 4 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 2043: ui8_UPhase_sel = ( 0x09 << 2 ) | 0x01;
+"2043
+[e = _ui8_UPhase_sel -> | << -> 9 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 2044: ui8_Ubemf_sel = ( 0x01 << 2 ) | 0x01;
+"2044
 [e = _ui8_Ubemf_sel -> | << -> 1 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 1878: CM1CON1 = 0x01;
-"1878
+[; ;bldc.c: 2045: CM1CON1 = 0x01;
+"2045
 [e = _CM1CON1 -> -> 1 `i `uc ]
-[; ;bldc.c: 1892: CM1CON0 = 0x94;
-"1892
-[e = _CM1CON0 -> -> 148 `i `uc ]
-[; ;bldc.c: 1893: rising_bemf_flag = 0;
-"1893
-[e = _rising_bemf_flag -> -> 0 `i `b ]
-[; ;bldc.c: 1894: comm_state = 1;
-"1894
-[e = _comm_state -> -> 1 `i `uc ]
-[; ;bldc.c: 1902: break;
-"1902
-[e $U 469  ]
-"1906
+[; ;bldc.c: 2060: CM1CON0 = 0x84;
+"2060
+[e = _CM1CON0 -> -> 132 `i `uc ]
+[; ;bldc.c: 2061: rising_bemf_flag = 1;
+"2061
+[e = _rising_bemf_flag -> -> 1 `i `b ]
+[; ;bldc.c: 2062: comm_state = 4;
+"2062
+[e = _comm_state -> -> 4 `i `uc ]
+[; ;bldc.c: 2067: break;
+"2067
+[e $U 463  ]
+"2071
 }
-[; ;bldc.c: 1906: }
-[; ;bldc.c: 1909: case 3:
-"1909
+[; ;bldc.c: 2071: }
+[; ;bldc.c: 2074: case 6:
+"2074
 [e :U 475 ]
-[; ;bldc.c: 1912: {
-"1912
+[; ;bldc.c: 2077: {
+"2077
 {
-[; ;bldc.c: 1917: PSTR1CON = 0b00000010;
-"1917
-[e = _PSTR1CON -> -> 2 `i `uc ]
-[; ;bldc.c: 1920: if( MotorFlags.bits.B6 )
-"1920
+[; ;bldc.c: 2082: PSTR1CON = 0b00000100;
+"2082
+[e = _PSTR1CON -> -> 4 `i `uc ]
+[; ;bldc.c: 2085: if( MotorFlags.bits.B6 )
+"2085
 [e $ ! != -> . . _MotorFlags 1 6 `i -> -> -> 0 `i `uc `i 476  ]
-[; ;bldc.c: 1922: {
-"1922
+[; ;bldc.c: 2087: {
+"2087
 {
-[; ;bldc.c: 1924: LATC = ( LATC & 0b11100101 ) | 0b00011000;
-"1924
+[; ;bldc.c: 2089: LATC = ( LATC & 0b11100101 ) | 0b00011000;
+"2089
 [e = _LATC -> | & -> _LATC `i -> 229 `i -> 24 `i `uc ]
-"1926
+"2091
 }
 [e :U 476 ]
-[; ;bldc.c: 1926: }
-[; ;bldc.c: 1929: LATC2 = 0;
-"1929
-[e = _LATC2 -> -> 0 `i `b ]
-[; ;bldc.c: 1931: LATB1 = 0;
-"1931
-[e = _LATB1 -> -> 0 `i `b ]
-[; ;bldc.c: 1932: ui8_IPhase_sel = ( 0x0D << 2 ) | 0x01;
-"1932
-[e = _ui8_IPhase_sel -> | << -> 13 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 1933: ui8_UPhase_sel = ( 0x01 << 2 ) | 0x01;
-"1933
-[e = _ui8_UPhase_sel -> | << -> 1 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 1934: ui8_Ubemf_sel = ( 0x00 << 2 ) | 0x01;
-"1934
-[e = _ui8_Ubemf_sel -> | << -> 0 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 1935: CM1CON1 = 0x00;
-"1935
-[e = _CM1CON1 -> -> 0 `i `uc ]
-[; ;bldc.c: 1949: CM1CON0 = 0x84;
-"1949
-[e = _CM1CON0 -> -> 132 `i `uc ]
-[; ;bldc.c: 1950: rising_bemf_flag = 1;
-"1950
-[e = _rising_bemf_flag -> -> 1 `i `b ]
-[; ;bldc.c: 1951: comm_state = 2;
-"1951
-[e = _comm_state -> -> 2 `i `uc ]
-[; ;bldc.c: 1956: break;
-"1956
-[e $U 469  ]
-"1960
-}
-[; ;bldc.c: 1960: }
-[; ;bldc.c: 1963: case 4:
-"1963
-[e :U 477 ]
-[; ;bldc.c: 1966: {
-"1966
-{
-[; ;bldc.c: 1972: PSTR1CON = 0b00000010;
-"1972
-[e = _PSTR1CON -> -> 2 `i `uc ]
-[; ;bldc.c: 1975: if( MotorFlags.bits.B6 )
-"1975
-[e $ ! != -> . . _MotorFlags 1 6 `i -> -> -> 0 `i `uc `i 478  ]
-[; ;bldc.c: 1977: {
-"1977
-{
-[; ;bldc.c: 1979: LATC = ( LATC & 0b11100101 ) | 0b00001010;
-"1979
-[e = _LATC -> | & -> _LATC `i -> 229 `i -> 10 `i `uc ]
-"1981
-}
-[e :U 478 ]
-[; ;bldc.c: 1981: }
-[; ;bldc.c: 1984: LATC2 = 0;
-"1984
-[e = _LATC2 -> -> 0 `i `b ]
-[; ;bldc.c: 1986: LATB1 = 1;
-"1986
-[e = _LATB1 -> -> 1 `i `b ]
-[; ;bldc.c: 1987: ui8_IPhase_sel = ( 0x0D << 2 ) | 0x01;
-"1987
-[e = _ui8_IPhase_sel -> | << -> 13 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 1988: ui8_UPhase_sel = ( 0x01 << 2 ) | 0x01;
-"1988
-[e = _ui8_UPhase_sel -> | << -> 1 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 1989: ui8_Ubemf_sel = ( 0x09 << 2 ) | 0x01;
-"1989
-[e = _ui8_Ubemf_sel -> | << -> 9 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 1990: CM1CON1 = 0x02;
-"1990
-[e = _CM1CON1 -> -> 2 `i `uc ]
-[; ;bldc.c: 2004: CM1CON0 = 0x94;
-"2004
-[e = _CM1CON0 -> -> 148 `i `uc ]
-[; ;bldc.c: 2005: rising_bemf_flag = 0;
-"2005
-[e = _rising_bemf_flag -> -> 0 `i `b ]
-[; ;bldc.c: 2006: comm_state = 3;
-"2006
-[e = _comm_state -> -> 3 `i `uc ]
-[; ;bldc.c: 2011: break;
-"2011
-[e $U 469  ]
-"2014
-}
-[; ;bldc.c: 2014: }
-[; ;bldc.c: 2017: case 5:
-"2017
-[e :U 479 ]
-[; ;bldc.c: 2020: {
-"2020
-{
-[; ;bldc.c: 2026: PSTR1CON = 0b00000100;
-"2026
-[e = _PSTR1CON -> -> 4 `i `uc ]
-[; ;bldc.c: 2029: if( MotorFlags.bits.B6 )
-"2029
-[e $ ! != -> . . _MotorFlags 1 6 `i -> -> -> 0 `i `uc `i 480  ]
-[; ;bldc.c: 2031: {
-"2031
-{
-[; ;bldc.c: 2033: LATC = ( LATC & 0b11100101 ) | 0b00010010;
-"2033
-[e = _LATC -> | & -> _LATC `i -> 229 `i -> 18 `i `uc ]
-"2035
-}
-[e :U 480 ]
-[; ;bldc.c: 2035: }
-[; ;bldc.c: 2038: LATC2 = 0;
-"2038
-[e = _LATC2 -> -> 0 `i `b ]
-[; ;bldc.c: 2039: LATB2 = 0;
-"2039
-[e = _LATB2 -> -> 0 `i `b ]
-[; ;bldc.c: 2041: ui8_IPhase_sel = ( 0x04 << 2 ) | 0x01;
-"2041
-[e = _ui8_IPhase_sel -> | << -> 4 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 2042: ui8_UPhase_sel = ( 0x09 << 2 ) | 0x01;
-"2042
-[e = _ui8_UPhase_sel -> | << -> 9 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 2043: ui8_Ubemf_sel = ( 0x01 << 2 ) | 0x01;
-"2043
-[e = _ui8_Ubemf_sel -> | << -> 1 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 2044: CM1CON1 = 0x01;
-"2044
-[e = _CM1CON1 -> -> 1 `i `uc ]
-[; ;bldc.c: 2059: CM1CON0 = 0x84;
-"2059
-[e = _CM1CON0 -> -> 132 `i `uc ]
-[; ;bldc.c: 2060: rising_bemf_flag = 1;
-"2060
-[e = _rising_bemf_flag -> -> 1 `i `b ]
-[; ;bldc.c: 2061: comm_state = 4;
-"2061
-[e = _comm_state -> -> 4 `i `uc ]
-[; ;bldc.c: 2066: break;
-"2066
-[e $U 469  ]
-"2070
-}
-[; ;bldc.c: 2070: }
-[; ;bldc.c: 2073: case 6:
-"2073
-[e :U 481 ]
-[; ;bldc.c: 2076: {
-"2076
-{
-[; ;bldc.c: 2081: PSTR1CON = 0b00000100;
-"2081
-[e = _PSTR1CON -> -> 4 `i `uc ]
-[; ;bldc.c: 2084: if( MotorFlags.bits.B6 )
-"2084
-[e $ ! != -> . . _MotorFlags 1 6 `i -> -> -> 0 `i `uc `i 482  ]
-[; ;bldc.c: 2086: {
-"2086
-{
-[; ;bldc.c: 2088: LATC = ( LATC & 0b11100101 ) | 0b00011000;
-"2088
-[e = _LATC -> | & -> _LATC `i -> 229 `i -> 24 `i `uc ]
-"2090
-}
-[e :U 482 ]
-[; ;bldc.c: 2090: }
-[; ;bldc.c: 2093: LATC2 = 1;
-"2093
-[e = _LATC2 -> -> 1 `i `b ]
-[; ;bldc.c: 2094: LATB2 = 0;
+[; ;bldc.c: 2091: }
+[; ;bldc.c: 2094: LATC2 = 1;
 "2094
+[e = _LATC2 -> -> 1 `i `b ]
+[; ;bldc.c: 2095: LATB2 = 0;
+"2095
 [e = _LATB2 -> -> 0 `i `b ]
-[; ;bldc.c: 2096: ui8_IPhase_sel = ( 0x04 << 2 ) | 0x01;
-"2096
-[e = _ui8_IPhase_sel -> | << -> 4 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 2097: ui8_UPhase_sel = ( 0x09 << 2 ) | 0x01;
+[; ;bldc.c: 2097: ui8_IPhase_sel = ( 0x04 << 2 ) | 0x01;
 "2097
-[e = _ui8_UPhase_sel -> | << -> 9 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 2098: ui8_Ubemf_sel = ( 0x00 << 2 ) | 0x01;
+[e = _ui8_IPhase_sel -> | << -> 4 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 2098: ui8_UPhase_sel = ( 0x09 << 2 ) | 0x01;
 "2098
-[e = _ui8_Ubemf_sel -> | << -> 0 `i -> 2 `i -> 1 `i `uc ]
-[; ;bldc.c: 2099: CM1CON1 = 0x00;
+[e = _ui8_UPhase_sel -> | << -> 9 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 2099: ui8_Ubemf_sel = ( 0x00 << 2 ) | 0x01;
 "2099
+[e = _ui8_Ubemf_sel -> | << -> 0 `i -> 2 `i -> 1 `i `uc ]
+[; ;bldc.c: 2100: CM1CON1 = 0x00;
+"2100
 [e = _CM1CON1 -> -> 0 `i `uc ]
-[; ;bldc.c: 2113: CM1CON0 = 0x94;
-"2113
-[e = _CM1CON0 -> -> 148 `i `uc ]
-[; ;bldc.c: 2114: rising_bemf_flag = 0;
+[; ;bldc.c: 2114: CM1CON0 = 0x94;
 "2114
-[e = _rising_bemf_flag -> -> 0 `i `b ]
-[; ;bldc.c: 2115: comm_state = 5;
+[e = _CM1CON0 -> -> 148 `i `uc ]
+[; ;bldc.c: 2115: rising_bemf_flag = 0;
 "2115
-[e = _comm_state -> -> 5 `i `uc ]
-[; ;bldc.c: 2120: break;
-"2120
-[e $U 469  ]
-"2124
-}
-[; ;bldc.c: 2124: }
-[; ;bldc.c: 2128: default:
-"2128
-[e :U 483 ]
-[; ;bldc.c: 2129: {
-"2129
-{
-[; ;bldc.c: 2131: PSTR1CON = 0x00;
-"2131
-[e = _PSTR1CON -> -> 0 `i `uc ]
-[; ;bldc.c: 2132: CM1CON0 = 0x00;
-"2132
-[e = _CM1CON0 -> -> 0 `i `uc ]
-[; ;bldc.c: 2133: rising_bemf_flag = 0;
-"2133
 [e = _rising_bemf_flag -> -> 0 `i `b ]
-[; ;bldc.c: 2134: comm_state = 1;
+[; ;bldc.c: 2116: comm_state = 5;
+"2116
+[e = _comm_state -> -> 5 `i `uc ]
+[; ;bldc.c: 2121: break;
+"2121
+[e $U 463  ]
+"2125
+}
+[; ;bldc.c: 2125: }
+[; ;bldc.c: 2129: default:
+"2129
+[e :U 477 ]
+[; ;bldc.c: 2130: {
+"2130
+{
+[; ;bldc.c: 2132: PSTR1CON = 0x00;
+"2132
+[e = _PSTR1CON -> -> 0 `i `uc ]
+[; ;bldc.c: 2133: CM1CON0 = 0x00;
+"2133
+[e = _CM1CON0 -> -> 0 `i `uc ]
+[; ;bldc.c: 2134: rising_bemf_flag = 0;
 "2134
-[e = _comm_state -> -> 1 `i `uc ]
-[; ;bldc.c: 2135: break;
+[e = _rising_bemf_flag -> -> 0 `i `b ]
+[; ;bldc.c: 2135: comm_state = 1;
 "2135
-[e $U 469  ]
-"2138
+[e = _comm_state -> -> 1 `i `uc ]
+[; ;bldc.c: 2136: break;
+"2136
+[e $U 463  ]
+"2139
 }
-"2140
+"2141
 }
-[; ;bldc.c: 2138: }
-[; ;bldc.c: 2140: }
-[e $U 469  ]
-"1793
-[e :U 470 ]
-[e [\ _comm_state , $ -> -> 1 `i `uc 471
- , $ -> -> 2 `i `uc 473
- , $ -> -> 3 `i `uc 475
- , $ -> -> 4 `i `uc 477
- , $ -> -> 5 `i `uc 479
- , $ -> -> 6 `i `uc 481
- 483 ]
-"2140
-[e :U 469 ]
-[; ;bldc.c: 2144: if( rising_bemf_flag )
-"2144
-[e $ ! _rising_bemf_flag 484  ]
-[; ;bldc.c: 2146: {
-"2146
+[; ;bldc.c: 2139: }
+[; ;bldc.c: 2141: }
+[e $U 463  ]
+"1794
+[e :U 464 ]
+[e [\ _comm_state , $ -> -> 1 `i `uc 465
+ , $ -> -> 2 `i `uc 467
+ , $ -> -> 3 `i `uc 469
+ , $ -> -> 4 `i `uc 471
+ , $ -> -> 5 `i `uc 473
+ , $ -> -> 6 `i `uc 475
+ 477 ]
+"2141
+[e :U 463 ]
+[; ;bldc.c: 2145: if( rising_bemf_flag )
+"2145
+[e $ ! _rising_bemf_flag 478  ]
+[; ;bldc.c: 2147: {
+"2147
 {
-[; ;bldc.c: 2148: ui8_BlankingCount = ( unsigned char ) ( 0.002 * 20000UL );
-"2148
+[; ;bldc.c: 2149: ui8_BlankingCount = ( unsigned char ) ( 0.002 * 20000UL );
+"2149
 [e = _ui8_BlankingCount -> * .0.002 -> -> 20000 `ul `d `uc ]
-"2150
+"2151
 }
-[; ;bldc.c: 2150: }
-[e $U 485  ]
-"2153
-[e :U 484 ]
-[; ;bldc.c: 2153: else
-[; ;bldc.c: 2154: {
+[; ;bldc.c: 2151: }
+[e $U 479  ]
 "2154
+[e :U 478 ]
+[; ;bldc.c: 2154: else
+[; ;bldc.c: 2155: {
+"2155
 {
-[; ;bldc.c: 2156: ui8_BlankingCount = ( unsigned char ) ( 0.002 * 20000UL );
-"2156
+[; ;bldc.c: 2157: ui8_BlankingCount = ( unsigned char ) ( 0.002 * 20000UL );
+"2157
 [e = _ui8_BlankingCount -> * .0.002 -> -> 20000 `ul `d `uc ]
-"2158
+"2159
 }
-[e :U 485 ]
-[; ;bldc.c: 2158: }
-[; ;bldc.c: 2161: comm_time = 0;
-"2161
+[e :U 479 ]
+[; ;bldc.c: 2159: }
+[; ;bldc.c: 2162: comm_time = 0;
+"2162
 [e = _comm_time -> -> 0 `i `us ]
-[; ;bldc.c: 2164: }
-"2164
+[; ;bldc.c: 2165: }
+"2165
 [e :UE 437 ]
 }
-"2170
+"2171
 [v _InitMotorRun `(v ~T0 @X0 1 ef ]
-"2173
+"2174
 {
-[; ;bldc.c: 2170: void InitMotorRun( void )
-[; ;bldc.c: 2173: {
+[; ;bldc.c: 2171: void InitMotorRun( void )
+[; ;bldc.c: 2174: {
 [e :U _InitMotorRun ]
 [f ]
-[; ;bldc.c: 2175: if( 0 == MotorFlags.bits.B6 )
-"2175
-[e $ ! == -> 0 `i -> . . _MotorFlags 1 6 `i 487  ]
-[; ;bldc.c: 2178: {
-"2178
+[; ;bldc.c: 2176: if( 0 == MotorFlags.bits.B6 )
+"2176
+[e $ ! == -> 0 `i -> . . _MotorFlags 1 6 `i 481  ]
+[; ;bldc.c: 2179: {
+"2179
 {
-[; ;bldc.c: 2180: MotorFlags.bits.B5 = 0;
-"2180
-[e = . . _MotorFlags 1 5 -> -> 0 `i `uc ]
-[; ;bldc.c: 2181: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 600 * 2 ) );
+[; ;bldc.c: 2181: MotorFlags.bits.B5 = 0;
 "2181
-[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 600 `i -> 2 `i `l `ul `us ]
-[; ;bldc.c: 2182: comm_state = 1;
+[e = . . _MotorFlags 1 5 -> -> 0 `i `uc ]
+[; ;bldc.c: 2182: ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 600 * 2 ) );
 "2182
-[e = _comm_state -> -> 1 `i `uc ]
-[; ;bldc.c: 2183: ui16_step_cnt = 0;
+[e = _ui16_comm_time_max -> / * -> -> -> 10 `i `l `ul -> 20000 `ul -> -> * -> 600 `i -> 2 `i `l `ul `us ]
+[; ;bldc.c: 2183: comm_state = 1;
 "2183
-[e = _ui16_step_cnt -> -> 0 `i `ui ]
-[; ;bldc.c: 2184: ui8_duty_cycle_BLDC = 0;
+[e = _comm_state -> -> 1 `i `uc ]
+[; ;bldc.c: 2184: ui16_step_cnt = 0;
 "2184
-[e = _ui8_duty_cycle_BLDC -> -> 0 `i `uc ]
-[; ;bldc.c: 2185: comm_time = 0;
+[e = _ui16_step_cnt -> -> 0 `i `ui ]
+[; ;bldc.c: 2185: ui16_duty_cycle_BLDC = 0;
 "2185
-[e = _comm_time -> -> 0 `i `us ]
-[; ;bldc.c: 2186: bemf_filter = 0;
+[e = _ui16_duty_cycle_BLDC -> -> 0 `i `us ]
+[; ;bldc.c: 2186: comm_time = 0;
 "2186
-[e = _bemf_filter -> -> 0 `i `uc ]
-[; ;bldc.c: 2187: phase_delay_counter = 0;
+[e = _comm_time -> -> 0 `i `us ]
+[; ;bldc.c: 2187: bemf_filter = 0;
 "2187
-[e = _phase_delay_counter -> -> 0 `i `s ]
-[; ;bldc.c: 2188: phase_delay_counter_debug = 0;
+[e = _bemf_filter -> -> 0 `i `uc ]
+[; ;bldc.c: 2188: phase_delay_counter = 0;
 "2188
-[e = _phase_delay_counter_debug -> -> 0 `i `s ]
-[; ;bldc.c: 2189: PSTR1CON = 0;
+[e = _phase_delay_counter -> -> 0 `i `s ]
+[; ;bldc.c: 2189: phase_delay_counter_debug = 0;
 "2189
+[e = _phase_delay_counter_debug -> -> 0 `i `s ]
+[; ;bldc.c: 2190: PSTR1CON = 0;
+"2190
 [e = _PSTR1CON -> -> 0 `i `uc ]
-[; ;bldc.c: 2192: MotorFlags.bits.B3 = 1 ;
-"2192
-[e = . . _MotorFlags 1 3 -> -> 1 `i `uc ]
-[; ;bldc.c: 2193: MotorFlags.bits.B6 = 1 ;
+[; ;bldc.c: 2193: MotorFlags.bits.B3 = 1 ;
 "2193
-[e = . . _MotorFlags 1 6 -> -> 1 `i `uc ]
-[; ;bldc.c: 2194: ui16_phase_angle = 128;
+[e = . . _MotorFlags 1 3 -> -> 1 `i `uc ]
+[; ;bldc.c: 2194: MotorFlags.bits.B6 = 1 ;
 "2194
-[e = _ui16_phase_angle -> -> 128 `i `us ]
-[; ;bldc.c: 2195: ui8_StartupPWM = 0 ;
+[e = . . _MotorFlags 1 6 -> -> 1 `i `uc ]
+[; ;bldc.c: 2195: ui16_phase_angle = 128;
 "2195
-[e = _ui8_StartupPWM -> -> 0 `i `uc ]
-[; ;bldc.c: 2196: CCPR1L = 0 ;
+[e = _ui16_phase_angle -> -> 128 `i `us ]
+[; ;bldc.c: 2196: ui8_StartupPWM = 0 ;
 "2196
-[e = _CCPR1L -> -> 0 `i `uc ]
-[; ;bldc.c: 2197: ui8_sampleState = 0 ;
+[e = _ui8_StartupPWM -> -> 0 `i `uc ]
+[; ;bldc.c: 2197: CCPR1L = 0 ;
 "2197
-[e = _ui8_sampleState -> -> 0 `i `uc ]
-[; ;bldc.c: 2198: ui8_zero_cros_cnt = 0 ;
+[e = _CCPR1L -> -> 0 `i `uc ]
+[; ;bldc.c: 2198: ui8_sampleState = 0 ;
 "2198
-[e = _ui8_zero_cros_cnt -> -> 0 `i `us ]
-[; ;bldc.c: 2199: MotorFlags.bits.B4 = 1 ;
+[e = _ui8_sampleState -> -> 0 `i `uc ]
+[; ;bldc.c: 2199: ui8_zero_cros_cnt = 0 ;
 "2199
+[e = _ui8_zero_cros_cnt -> -> 0 `i `us ]
+[; ;bldc.c: 2200: MotorFlags.bits.B4 = 1 ;
+"2200
 [e = . . _MotorFlags 1 4 -> -> 1 `i `uc ]
-[; ;bldc.c: 2207: commutate( );
-"2207
+[; ;bldc.c: 2208: commutate( );
+"2208
 [e ( _commutate ..  ]
-"2209
+"2210
 }
-[e :U 487 ]
-[; ;bldc.c: 2209: }
-[; ;bldc.c: 2212: }
-"2212
-[e :UE 486 ]
+[e :U 481 ]
+[; ;bldc.c: 2210: }
+[; ;bldc.c: 2213: }
+"2213
+[e :UE 480 ]
 }
-"2221
+"2222
 [v _InitMotorStop `(v ~T0 @X0 1 ef ]
-"2224
+"2225
 {
-[; ;bldc.c: 2221: void InitMotorStop( )
-[; ;bldc.c: 2224: {
+[; ;bldc.c: 2222: void InitMotorStop( )
+[; ;bldc.c: 2225: {
 [e :U _InitMotorStop ]
 [f ]
-[; ;bldc.c: 2226: if( 1 == MotorFlags.bits.B6 )
-"2226
-[e $ ! == -> 1 `i -> . . _MotorFlags 1 6 `i 489  ]
-[; ;bldc.c: 2229: {
-"2229
+[; ;bldc.c: 2227: if( 1 == MotorFlags.bits.B6 )
+"2227
+[e $ ! == -> 1 `i -> . . _MotorFlags 1 6 `i 483  ]
+[; ;bldc.c: 2230: {
+"2230
 {
-[; ;bldc.c: 2231: LATC1 = 0;
-"2231
-[e = _LATC1 -> -> 0 `i `b ]
-[; ;bldc.c: 2232: LATC3 = 0;
+[; ;bldc.c: 2232: LATC1 = 0;
 "2232
-[e = _LATC3 -> -> 0 `i `b ]
-[; ;bldc.c: 2233: LATC4 = 0;
+[e = _LATC1 -> -> 0 `i `b ]
+[; ;bldc.c: 2233: LATC3 = 0;
 "2233
+[e = _LATC3 -> -> 0 `i `b ]
+[; ;bldc.c: 2234: LATC4 = 0;
+"2234
 [e = _LATC4 -> -> 0 `i `b ]
-[; ;bldc.c: 2235: CCP1ASE = 0;
-"2235
-[e = _CCP1ASE -> -> 0 `i `b ]
-[; ;bldc.c: 2236: CCPR1L = 0;
+[; ;bldc.c: 2236: CCP1ASE = 0;
 "2236
-[e = _CCPR1L -> -> 0 `i `uc ]
-[; ;bldc.c: 2237: MotorFlags.bits.B6 = 0;
+[e = _CCP1ASE -> -> 0 `i `b ]
+[; ;bldc.c: 2237: CCPR1L = 0;
 "2237
-[e = . . _MotorFlags 1 6 -> -> 0 `i `uc ]
-[; ;bldc.c: 2238: MotorFlags.bits.B7 = 0;
+[e = _CCPR1L -> -> 0 `i `uc ]
+[; ;bldc.c: 2238: MotorFlags.bits.B6 = 0;
 "2238
+[e = . . _MotorFlags 1 6 -> -> 0 `i `uc ]
+[; ;bldc.c: 2239: MotorFlags.bits.B7 = 0;
+"2239
 [e = . . _MotorFlags 1 7 -> -> 0 `i `uc ]
-"2241
+"2242
 }
-[e :U 489 ]
-[; ;bldc.c: 2241: }
-[; ;bldc.c: 2244: }
-"2244
-[e :UE 488 ]
+[e :U 483 ]
+[; ;bldc.c: 2242: }
+[; ;bldc.c: 2245: }
+"2245
+[e :UE 482 ]
 }

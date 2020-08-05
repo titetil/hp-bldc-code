@@ -235,7 +235,7 @@ extern            unsigned  short       ui16_CPU_Temp_bldc;
 extern  volatile  _u_wb                 ui16_Ubat_bldc;
 extern  volatile  _u_wb                 ui16_Ubemf_bldc;
 extern            unsigned  short       ui8_zero_cros_cnt;
-extern            unsigned         char ui8_duty_cycle_BLDC;
+extern            unsigned  short       ui16_duty_cycle_BLDC;
 
 
 /************************************************************************

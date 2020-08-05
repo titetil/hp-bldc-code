@@ -149,7 +149,7 @@ extern  unsigned  char ui8_b_DResB2_c;
 extern  unsigned  char ui8_b_DResB3_c;
 extern  unsigned  char ui8_b_DResB4_c;
 extern  unsigned  char ui8_b_DResB5_c;
-extern  unsigned  char ui8_duty_cycle_mat;
+extern  unsigned  short ui16_duty_cycle_mat;
 
 
 /*~T*/
@@ -741,14 +741,14 @@ void main( void )
 #ifdef adap_DC_wobb
          /*~T*/
          /** Adapt the PWM DC with the frequency */
-         ui8_duty_cycle_BLDC = ui8_duty_cycle_mat * PR2 / 100;
+         ui16_duty_cycle_BLDC = ui16_duty_cycle_mat * PR2 / 100;
 
          /*~O*/
          /*~-*/
 #else
          /*~T*/
          /** No adaptation of the PWM DC with the frequency */
-         ui8_duty_cycle_BLDC = ui8_duty_cycle_mat;
+         ui16_duty_cycle_BLDC = ui16_duty_cycle_mat;
          /*~-*/
 #endif
          /*~E*/
@@ -778,7 +778,7 @@ void main( void )
             /*~T*/
             /** With overtemperature, the PWM DC of the motor is fixed to the value #def_dixed_PWM and the frequency of this PWM is 10kHz (just if the DC is different to 0% or 100%. */
             PR2                 = DEF_PWM_PERIOD_VALUE * 2;
-            ui8_duty_cycle_BLDC = def_fixed_PWM;
+            ui16_duty_cycle_BLDC = def_fixed_PWM;
             /*~E*/
             /*~O*/
             /*~-*/
@@ -794,7 +794,7 @@ void main( void )
                /*~T*/
                /** In case of overshooting at every start of the pump: during the start time define by #def_overshooting, the PWM DC of the pump is forced to 100%. The frequency is also forced to 10kHz, which have no really impact for this time. But there is an impact for the initialisation */
                PR2 = DEF_PWM_PERIOD_VALUE * 2;
-               ui8_duty_cycle_BLDC = 125;
+               ui16_duty_cycle_BLDC = 125;
             /*~-*/
             }
             /*~O*/
@@ -804,7 +804,7 @@ void main( void )
                /*~T*/
                /** If there is still the overtemperature flag and the system is not in the starting phase, the frequency of the motor is 10kHz and the duty cycle is preserved. It has for impact a multiplication of 2 of #ui8_duty_cycle_mat because this variable is define for 20kHz. */
                PR2 = DEF_PWM_PERIOD_VALUE * 2;
-               ui8_duty_cycle_BLDC = ui8_duty_cycle_mat * 2;
+               ui16_duty_cycle_BLDC = ui16_duty_cycle_mat * 2;
             /*~-*/
             }
             /*~E*/
@@ -817,7 +817,7 @@ void main( void )
             /*~T*/
             /** Each time the flag for over temperature is set, the frequency of the Motor PWM is set to 10kHz to reduce the temperature. The DC is always the same. But to have this same DC, the variable #ui8_duty_cycle_mat must be adapted and multiply by 2 because it is given for 20kHz. */
             PR2 = DEF_PWM_PERIOD_VALUE * 2;
-            ui8_duty_cycle_BLDC = ui8_duty_cycle_mat * 2;
+            ui16_duty_cycle_BLDC = ui16_duty_cycle_mat * 2;
             /*~E*/
             /*~-*/
 #endif
@@ -838,7 +838,7 @@ void main( void )
             /*~T*/
             /** With overtemperature, the PWM DC of the motor is fixed to the value #def_dixed_PWM and the frequency of this PWM is 16kHz (just if the DC is different to 0% or 100%. */
             PR2 = DEF_PWM_PERIOD_VALUE * 5 / 4;
-            ui8_duty_cycle_BLDC = def_fixed_PWM;
+            ui16_duty_cycle_BLDC = def_fixed_PWM;
             /*~E*/
             /*~O*/
             /*~-*/
@@ -854,7 +854,7 @@ void main( void )
                /*~T*/
                /** In case of overshooting at every start of the pump: during the start time define by #def_overshooting, the PWM DC of the pump is forced to 100%. The frequency is also forced to 16kHz, which have no really impact for this time. But there is an impact for the initialisation */
                PR2 = DEF_PWM_PERIOD_VALUE * 5 / 4;
-               ui8_duty_cycle_BLDC = 125;
+               ui16_duty_cycle_BLDC = 125;
             /*~-*/
             }
             /*~O*/
@@ -864,7 +864,7 @@ void main( void )
                /*~T*/
                /** If there is still no overtemperature flag and the system is not in the starting phase, the frequency of the motor is 16kHz and the duty cycle is preserved. */
                PR2 = DEF_PWM_PERIOD_VALUE * 5 / 4;
-               ui8_duty_cycle_BLDC = ui8_duty_cycle_mat * 5 / 4;
+               ui16_duty_cycle_BLDC = ui16_duty_cycle_mat * 5 / 4;
 
             /*~-*/
             }
@@ -878,7 +878,7 @@ void main( void )
             /*~T*/
             /** The Normal behavior correspond to a frequency of the system of 16kHz. Each time the flag for over temperature isn't set, the frequency of the Motor PWM is set to 16kHz. */
             PR2 = DEF_PWM_PERIOD_VALUE * 5 / 4;
-            ui8_duty_cycle_BLDC = ui8_duty_cycle_mat * 5 / 4;
+            ui16_duty_cycle_BLDC = ui16_duty_cycle_mat * 5 / 4;
 
             /*~E*/
             /*~-*/
@@ -897,7 +897,7 @@ void main( void )
          /*~I*/
 #ifdef def_fixed_PWM /* period and out DC assignement */ 
          /*~T*/
-         ui8_duty_cycle_BLDC = def_fixed_PWM; /** motor DC set to def_fixed_PWM 100% */ 
+         ui16_duty_cycle_BLDC = def_fixed_PWM; /** motor DC set to def_fixed_PWM 100% */ 
          /*~O*/
          /*~-*/
 #else
@@ -909,7 +909,7 @@ void main( void )
          {
             /*~T*/
             PR2 = DEF_PWM_PERIOD_VALUE * 5 / 4;
-            ui8_duty_cycle_BLDC = 125;
+            ui16_duty_cycle_BLDC = 125;
          /*~-*/
          }
          /*~O*/
@@ -918,7 +918,7 @@ void main( void )
          {
             /*~T*/
             PR2 = DEF_PWM_PERIOD_VALUE * 5 / 4;
-            ui8_duty_cycle_BLDC = ui8_duty_cycle_mat * 5 / 4;
+            ui16_duty_cycle_BLDC = ui16_duty_cycle_mat * 5 / 4;
          /*~-*/
          }
          /*~E*/
@@ -928,8 +928,8 @@ void main( void )
          /*~T*/
          //PR2 = DEF_PWM_PERIOD_VALUE * 5 / 4;
          //ui8_duty_cycle_BLDC = ui8_duty_cycle_mat*5/4;
-         PR2 = 200 * 5/4;  // this sets the resolution/range of the PWM output
-         ui8_duty_cycle_BLDC = ui8_duty_cycle_mat*5/4;
+         PR2 = DEF_PWM_PERIOD_VALUE * 5 / 4;  // this sets the resolution/range of the PWM output
+         ui16_duty_cycle_BLDC = ui16_duty_cycle_mat*5/4;
          /*~-*/
 #endif
          /*~E*/
@@ -1106,13 +1106,13 @@ void main( void )
             /*~+:Normal - 16kHz*/
             /*~T*/
             /* Speed assignement */
-            ui16_Speed_demand_mat = PWM_trans_table[ ( ui8_PWM_dc_mat ) ];
+            ui16_Speed_demand_mat = PWM_trans_table[ ui8_PWM_dc_mat ];
 
             /* Max Speed assignement */
             ui16_Speed_demand_mat_Max = ( PWM_trans_table[ 200 ] );
 
             /* Min Speed assignement */
-            ui16_Speed_demand_mat_min = ( PWM_trans_table[ 0 ] );
+            ui16_Speed_demand_mat_min = ( PWM_trans_table[ 20 ] );
             /*~E*/
             /*~-*/
 #endif
@@ -1161,7 +1161,7 @@ void main( void )
             /*~A*/
             /*~+:Output connection of matlab layer*/
             /*~I*/
-            if( ui8_duty_cycle_mat == 0 )
+            if( ui16_duty_cycle_mat == 0 )
             /*~-*/
             {
                /*~T*/
@@ -1452,7 +1452,7 @@ void main( void )
                Transmit_LIN_8Bytes( 0x2b, ( unsigned char )( PR2 ),
                                         ( unsigned char )( ui8_b_DResServID_c ),
                                         ( unsigned char )( ui16_PWM_Freq_In>>8 ),
-                                        ( unsigned char )( ui8_duty_cycle_BLDC ),
+                                        ( unsigned char )( ui16_duty_cycle_BLDC ),
                                         ( unsigned char )( ui8_PWM_dc_mat ),
                                         ( unsigned char )( ui16_NTC_Temp_bldc_mean>>2 ),
                                         ( unsigned char )( ui16_CPU_Temp_bldc_mean_cal>>2 ),

@@ -270,7 +270,7 @@ extern  UInt8 ui8_Kp_mat;
 extern  UInt8 ui8_PWM_dc_mat;
 extern  UInt8 ui8_ResetMatlab;
 extern  UInt8 ui8_debug_out0;
-extern  UInt8 ui8_duty_cycle_mat;
+extern  UInt16 ui16_duty_cycle_mat;
 
 # 183
 extern Void BVH2_Appl_Layer(Void);
@@ -310,7 +310,7 @@ const UInt16 Sb2_Fixed_Power = 202;
  UInt8 ui8_PWM_dc_mat;
  UInt8 ui8_ResetMatlab;
  UInt8 ui8_debug_out0;
- UInt8 ui8_duty_cycle_mat;
+ UInt16 ui16_duty_cycle_mat;
 
 # 247
 static UInt16 Cb1_StateCnt = 0;
@@ -567,7 +567,8 @@ Cb44_StateCnt = 0 ;
 bool_PIC_Alarm = Cb44_oAlarm;
 
 
-Cb34_idPWM = ui8_PWM_dc_mat;
+
+Cb34_idPWM = 50;
 
 
 
@@ -577,7 +578,7 @@ if (SIBFS_PWM_Detection_b.Cb35_PWMinput_handling) {
 switch (SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns) {
 case (UInt8)3: {
 
-# 549
+# 550
 Cb34_PWM_Detection_node_fcn1();
 
 
@@ -585,18 +586,18 @@ break;
 }
 case (UInt8)8: {
 
-# 557
+# 558
 Cb34_PWM_Detection_node_fcn1();
 
-# 561
+# 562
 break;
 }
 case (UInt8)4: {
 
-# 566
+# 567
 Cb34_PWM_Detection_node_fcn1();
 
-# 570
+# 571
 break;
 }
 case (UInt8)6: {
@@ -608,10 +609,10 @@ break;
 }
 case (UInt8)7: {
 
-# 582
+# 583
 Cb34_PWM_Detection_node_fcn1();
 
-# 586
+# 587
 break;
 }
 case (UInt8)2: {
@@ -623,10 +624,10 @@ break;
 }
 case (UInt8)5: {
 
-# 598
+# 599
 Cb34_PWM_Detection_node_fcn1();
 
-# 602
+# 603
 break;
 }
 case (UInt8)1: {
@@ -728,7 +729,7 @@ if (SIBFS_Temperature_Alarm_b.Cb52_CntOverTemp) {
 
 if (Cb51_Counter > 80) {
 
-# 704
+# 705
 SIBFS_Temperature_Alarm_b.Cb52_CntOverTemp = 0;
 SIBFS_Temperature_Alarm_b.Cb54_greenTemp = 1;
 Cb51_oTempRedAlarm = 0;
@@ -746,7 +747,7 @@ else {
 
 if (SIBFS_Temperature_Alarm_b.Cb53_reset) {
 
-# 724
+# 725
 SIBFS_Temperature_Alarm_b.Cb53_reset = 0;
 SIBFS_Temperature_Alarm_b.Cb52_CntOverTemp = 1;
 
@@ -760,7 +761,7 @@ if (SIBFS_Temperature_Alarm_b.Cb54_greenTemp) {
 
 if (ui16_mat_inpTemp < 72) {
 
-# 738
+# 739
 SIBFS_Temperature_Alarm_b.Cb54_greenTemp = 0;
 SIBFS_Temperature_Alarm_b.Cb55_redTemp = 1;
 Cb51_oTempRedAlarm = 1;
@@ -780,7 +781,7 @@ if (SIBFS_Temperature_Alarm_b.Cb55_redTemp) {
 
 if (ui16_mat_inpTemp > 185) {
 
-# 758
+# 759
 SIBFS_Temperature_Alarm_b.Cb55_redTemp = 0;
 SIBFS_Temperature_Alarm_b.Cb54_greenTemp = 1;
 Cb51_oTempRedAlarm = 0;
@@ -796,7 +797,7 @@ else {
 if (!(SIBFS_Temperature_Alarm_b.Cb51_Temperature_Alarm)) {
 SIBFS_Temperature_Alarm_b.Cb51_Temperature_Alarm = 1;
 
-# 775
+# 776
 if (ui8_ResetMatlab != 0) {
 
 SIBFS_Temperature_Alarm_b.Cb53_reset = 1;
@@ -816,7 +817,7 @@ case (UInt8)6: {
 
 if (Cb1_StateCnt > 50) {
 
-# 795
+# 796
 SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
 (UInt8)5;
 Cb1_oShutoff = 0;
@@ -844,7 +845,7 @@ case (UInt8)7: {
 
 if (Cb1_RestartCounter < 10) {
 
-# 823
+# 824
 SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
 (UInt8)3;
 Cb1_oShutoff = 0;
@@ -872,7 +873,7 @@ Cb1_RestartCounter = Cb1_RestartCounter + 1 ;
 }
 else {
 
-# 851
+# 852
 if (bool_mat_currAlarm_bldc) {
 
 SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
@@ -891,7 +892,7 @@ break;
 }
 case (UInt8)2: {
 
-# 872
+# 873
 if (!(bool_mat_currAlarm_bldc)) {
 
 SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
@@ -919,10 +920,10 @@ break;
 }
 case (UInt8)1: {
 
-# 902
+# 903
 if (!(bool_mat_currAlarm_bldc)) {
 
-# 905
+# 906
 SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int) (UInt8)4;
 Cb1_StateCnt = 0 ;
 }
@@ -938,7 +939,7 @@ default: {
 if (!(SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High)) {
 SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High = 1;
 
-# 922
+# 923
 if (ui8_ResetMatlab != 0) {
 
 SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
@@ -962,10 +963,10 @@ Cb24_Reset = ui8_ResetMatlab != 0 ;
 
 if (SIBFS_Motor_Stalled_b.Cb25_Motor_stalled_Statemachine) {
 
-# 949
+# 950
 if (Sb1_Logical_Operator1 || Cb24_Reset) {
 
-# 952
+# 953
 switch (SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns) {
 case (UInt8)3: {
 Cb24_StateCnt = 0 ;
@@ -1003,10 +1004,10 @@ else {
 switch (SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns) {
 case (UInt8)3: {
 
-# 990
+# 991
 if (Cb24_StateCnt) {
 
-# 994
+# 995
 Cb24_StateCnt = 0 ;
 SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
 (UInt8)2;
@@ -1015,15 +1016,15 @@ else {
 Cb24_StateCnt = Cb24_StateCnt + 1 ;
 }
 
-# 1004
+# 1005
 break;
 }
 case (UInt8)2: {
 
-# 1009
+# 1010
 if (Cb24_StateCnt > 1000) {
 
-# 1012
+# 1013
 SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
 (UInt8)5;
 Cb24_StateCnt = 0 ;
@@ -1035,10 +1036,10 @@ Cb24_oStalledAlarm = 0;
 }
 else {
 
-# 1024
+# 1025
 if ((ui16_Speed_mat < 5) || (ui16_Speed_mat > 300)) {
 
-# 1027
+# 1028
 SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
 (UInt8)1;
 Cb24_oStalledAlarm = 0;
@@ -1049,15 +1050,15 @@ Cb24_StateCnt = Cb24_StateCnt + 1 ;
 }
 }
 
-# 1039
+# 1040
 break;
 }
 case (UInt8)1: {
 
-# 1044
+# 1045
 if (Cb24_BadCnt > 100) {
 
-# 1047
+# 1048
 SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
 (UInt8)4;
 Cb24_StateCnt = 0 ;
@@ -1066,10 +1067,10 @@ Cb24_oStalledAlarm = 1;
 }
 else {
 
-# 1056
+# 1057
 if ((ui16_Speed_mat >= 5) && (ui16_Speed_mat <= 300)) {
 
-# 1059
+# 1060
 SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
 (UInt8)2;
 }
@@ -1079,21 +1080,21 @@ Cb24_StateCnt = Cb24_StateCnt + 1 ;
 }
 }
 
-# 1070
+# 1071
 break;
 }
 case (UInt8)5: {
 
-# 1079
+# 1080
 SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
 (UInt8)2;
 
-# 1084
+# 1085
 break;
 }
 case (UInt8)6: {
 
-# 1089
+# 1090
 if (Cb24_StateCnt > 10) {
 if (Cb24_RestartCounter == 10) {
 
@@ -1106,10 +1107,10 @@ SIBFS_Motor_Stalled_b.Cb24_glflag = 3 ;
 }
 else {
 
-# 1102
+# 1103
 if ((ui16_Speed_mat < 5) || (ui16_Speed_mat > 300)) {
 
-# 1105
+# 1106
 SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
 (UInt8)4;
 Cb24_StateCnt = 0 ;
@@ -1120,7 +1121,7 @@ SIBFS_Motor_Stalled_b.Cb24_glflag = 3 ;
 else {
 if (Cb24_StateCnt > 200) {
 
-# 1116
+# 1117
 SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
 (UInt8)5;
 Cb24_StateCnt = 0 ;
@@ -1144,15 +1145,15 @@ if (SIBFS_Motor_Stalled_b.Cb24_glflag <= 2) {
 Cb24_StateCnt = Cb24_StateCnt + 1 ;
 }
 
-# 1141
+# 1142
 break;
 }
 case (UInt8)4: {
 
-# 1146
+# 1147
 if (Cb24_StateCnt > 200) {
 
-# 1150
+# 1151
 SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int)
 (UInt8)6;
 Cb24_StateCnt = 0 ;
@@ -1164,7 +1165,7 @@ else {
 Cb24_StateCnt = Cb24_StateCnt + 1 ;
 }
 
-# 1163
+# 1164
 break;
 }
 }
@@ -1176,10 +1177,10 @@ else {
 
 if (SIBFS_Motor_Stalled_b.Cb32_default) {
 
-# 1177
+# 1178
 if (!(Sb1_Logical_Operator1)) {
 
-# 1180
+# 1181
 SIBFS_Motor_Stalled_b.Cb32_default = 0;
 SIBFS_Motor_Stalled_b.Cb25_Motor_stalled_Statemachine = 1;
 SIBFS_Motor_Stalled_b.Cb25_Motor_sta__Statemachine_ns = (unsigned int) (UInt8)3;
@@ -1215,19 +1216,19 @@ Cb24_RestartCounter = 0 ;
 bool_StalledMotorStop = Cb24_oMotorStalled;
 Sb1_Logical_Operator5 = Cb34_odFixedValueSel || Cb56_odFixedValueSel;
 
-# 1217
+# 1218
 if (bool_start_demand_mat) {
 Sb2_Switch5 = ui8_fixed_start_speed_mat;
 }
 else {
 
-# 1223
+# 1224
 if (Cb34_odFixedLowValueSel) {
 Sb2_Switch5 = ui16_Speed_demand_mat_min;
 }
 else {
 
-# 1229
+# 1230
 if (Sb1_Logical_Operator5) {
 Sb2_Switch5 = ui16_Speed_demand_mat_Max;
 }
@@ -1245,11 +1246,11 @@ Sb2_Error = (Int16) (ui16_Speed_mat - Sb2_Switch5);
 
 if (SIBFS_Dry_Running_b.Cb15_greenState) {
 
-# 1251
+# 1252
 if ((((Int32)ui16_mat_Current) < (ui16_dryRun_Thresh - 5)) && (ui16_Speed_mat < 400) &&
 (ui16_Speed_mat > 80)) {
 
-# 1260
+# 1261
 }
 
 
@@ -1264,7 +1265,7 @@ if (!(SIBFS_Dry_Running_b.Cb17_redState)) {
 
 if (SIBFS_Dry_Running_b.Cb18_CntOverCurrent) {
 
-# 1279
+# 1280
 if ((((UInt32)ui16_mat_Current) > (ui16_dryRun_Thresh + 5)) || (ui16_Speed_mat >
 400) || (ui16_Speed_mat < 80)) {
 
@@ -1315,13 +1316,13 @@ Cb14_oDryRunAlarm = 0;
 }
 }
 
-# 1334
+# 1335
 if (SIBFS_Dry_RunningAlarm_b.Cb20_greenState) {
 
-# 1339
+# 1340
 if (Cb14_oDryRunAlarm) {
 
-# 1342
+# 1343
 SIBFS_Dry_RunningAlarm_b.Cb20_greenState = 0;
 SIBFS_Dry_RunningAlarm_b.Cb21_DryRunningAlarm = 1;
 SIBFS_Dry_RunningAlarm_b.Cb22_DryRun66 = 1;
@@ -1336,10 +1337,10 @@ else {
 
 if (SIBFS_Dry_RunningAlarm_b.Cb21_DryRunningAlarm) {
 
-# 1359
+# 1360
 if (!(Cb14_oDryRunAlarm)) {
 
-# 1364
+# 1365
 if (SIBFS_Dry_RunningAlarm_b.Cb22_DryRun66) {
 SIBFS_Dry_RunningAlarm_b.Cb22_DryRun66 = 0;
 }
@@ -1359,10 +1360,10 @@ else {
 
 if (SIBFS_Dry_RunningAlarm_b.Cb22_DryRun66) {
 
-# 1384
+# 1385
 if (Cb19_Counter > 400) {
 
-# 1387
+# 1388
 SIBFS_Dry_RunningAlarm_b.Cb22_DryRun66 = 0;
 SIBFS_Dry_RunningAlarm_b.Cb23_DryRun55 = 1;
 Cb19_Counter = 0 ;
@@ -1373,16 +1374,16 @@ else {
 Cb19_Counter = Cb19_Counter + 1 ;
 }
 
-# 1399
+# 1400
 }
 else {
 
 if (SIBFS_Dry_RunningAlarm_b.Cb23_DryRun55) {
 
-# 1405
+# 1406
 if (Cb19_Counter > 400) {
 
-# 1408
+# 1409
 SIBFS_Dry_RunningAlarm_b.Cb23_DryRun55 = 0;
 SIBFS_Dry_RunningAlarm_b.Cb22_DryRun66 = 1;
 Cb19_Counter = 0 ;
@@ -1393,7 +1394,7 @@ else {
 Cb19_Counter = Cb19_Counter + 1 ;
 }
 
-# 1420
+# 1421
 }
 }
 }
@@ -1405,7 +1406,7 @@ else {
 if (!(SIBFS_Dry_RunningAlarm_b.Cb19_Dry_RunningAlarm)) {
 SIBFS_Dry_RunningAlarm_b.Cb19_Dry_RunningAlarm = 1;
 
-# 1433
+# 1434
 if (!(Cb14_oDryRunAlarm)) {
 
 SIBFS_Dry_RunningAlarm_b.Cb20_greenState = 1;
@@ -1430,10 +1431,10 @@ bool_CPU_TempAlarm = Cb51_oTempAlarm;
 
 if (SIBFS_Current_Analysis_low_b.Cb10_greenState) {
 
-# 1460
+# 1461
 if (((Int32)ui16_mat_Current) > (ui16_Current_Thresh - 2)) {
 
-# 1463
+# 1464
 SIBFS_Current_Analysis_low_b.Cb10_greenState = 0;
 SIBFS_Current_Analysis_low_b.Cb12_CntOverCurrent = 1;
 Cb9_StateCnt = 0 ;
@@ -1445,7 +1446,7 @@ else {
 
 if (SIBFS_Current_Analysis_low_b.Cb11_Wait) {
 
-# 1477
+# 1478
 if (((Int32)ui16_mat_Current) > (ui16_Current_Thresh - 2)) {
 
 SIBFS_Current_Analysis_low_b.Cb11_Wait = 0;
@@ -1470,7 +1471,7 @@ else {
 
 if (SIBFS_Current_Analysis_low_b.Cb12_CntOverCurrent) {
 
-# 1504
+# 1505
 if (((UInt32)ui16_mat_Current) < (ui16_Current_Thresh + 2)) {
 
 SIBFS_Current_Analysis_low_b.Cb12_CntOverCurrent = 0;
@@ -1495,10 +1496,10 @@ else {
 
 if (SIBFS_Current_Analysis_low_b.Cb13_redState) {
 
-# 1531
+# 1532
 if (((UInt32)ui16_mat_Current) < (ui16_Current_Thresh + 2)) {
 
-# 1534
+# 1535
 SIBFS_Current_Analysis_low_b.Cb13_redState = 0;
 SIBFS_Current_Analysis_low_b.Cb11_Wait = 1;
 Cb9_StateCnt = 0 ;
@@ -1547,16 +1548,16 @@ if ((Sb2_Logical_Operator2 ^ X_Sb4_Intergrator_TriggerIn) && (!(Sb1_BVH2_Appl_La
 X_Sb4_Intergrator = 80000 ;
 }
 
-# 1584
+# 1585
 if (Sb1_Logical_Operator3) {
 Sb2_Switch2 = 0 ;
 }
 else {
 
-# 1590
+# 1591
 if (bool_ControlLoopMode) {
 
-# 1593
+# 1594
 if (Sb1_Logical_Operator5) {
 Sb2_Switch2 = Sb2_Fixed_Power;
 }
@@ -1565,10 +1566,10 @@ else {
 UInt16 Sb3_Product1 ;
 Int16 Sb3_Sum1;
 
-# 1607
+# 1608
 Sb3_Product1 = (UInt16) (((UInt16) (140 << 8)) / 160 );
 
-# 1613
+# 1614
 Sb3_Sum1 = (Int16) (((UInt16) ((((UInt32) ui8_PWM_dc_mat) * ((UInt32) Sb3_Product1)) >>
 8)) + ((Int16) (((Int16) (-((Int16) (UInt16) ((((UInt32) Sb3_Product1) * 95) >> 7)))) + 200)));
 
@@ -1580,7 +1581,7 @@ else {
 
 Int16 Sb4_PI_sum;
 
-# 1627
+# 1628
 Sb4_PI_sum = (Int16) (((UInt16) (Int16) (X_Sb4_Intergrator / ((Int32) 800))) + ((UInt16)
 (Sb2_Error * ((Int16) ui8_Kp_mat))));
 
@@ -1589,14 +1590,19 @@ Sb2_Switch2 = ( ( (Sb4_PI_sum > 0) && ((UInt16)Sb4_PI_sum > 202) ) ? 202 : ( ( (
 }
 }
 
-# 1638
-ui8_duty_cycle_mat = (UInt8)ui16_Speed_demand_mat;
+# 1639
+if (Sb1_Logical_Operator3){
+ui16_duty_cycle_mat = 0;
+}
+else {
+ui16_duty_cycle_mat = ui16_Speed_demand_mat;
+}
 
 
 bl_Pumpoff_Alarm = Sb1_Logical_Operator2;
 X_Sb4_Intergrator_TriggerIn = Sb2_Logical_Operator2;
 
-# 1646
+# 1652
 X_Sb4_Intergrator = X_Sb4_Intergrator + ((Int32) (Int16) ((((Int16) ui8_Ki_mat) * Sb2_Error) <<
 3));
 
@@ -1607,11 +1613,11 @@ X_Sb4_Intergrator = ( (X_Sb4_Intergrator > 161600) ? 161600 : ( (X_Sb4_Intergrat
 Sb1_BVH2_Appl_Layer_FirstRun = 0;
 }
 
-# 1677
+# 1683
 static Void Cb1_Current_An___High_node_fcn1(Void)
 {
 
-# 1681
+# 1687
 if (bool_mat_currAlarm_bldc) {
 
 SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
@@ -1635,7 +1641,7 @@ SIBFS_Current_Analysis_High_b.Cb1_glflag = 1 ;
 }
 }
 
-# 1721
+# 1727
 static Void Cb34_PWM_Detection_node_fcn1(Void)
 {
 if ((Cb34_idPWM < 1) || (Cb34_idPWM > 199)) {
@@ -1651,7 +1657,7 @@ Cb34_oPWM_Alarm = 1;
 }
 else {
 
-# 1737
+# 1743
 if ((ui16_PWM_Freq_mat < 36000) || (ui16_PWM_Freq_mat > 44000)) {
 
 SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int) (UInt8)6;
@@ -1674,7 +1680,7 @@ Cb34_oPWM_Alarm = 0;
 else {
 if (Cb34_idPWM < 9) {
 
-# 1760
+# 1766
 SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
 (UInt8)8;
 Cb34_odPumpOff = 1;
@@ -1686,7 +1692,7 @@ Cb34_oPWM_Alarm = 0;
 else {
 if (Cb34_idPWM > 191) {
 
-# 1772
+# 1778
 SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
 (UInt8)4;
 Cb34_odPumpOff = 0;
@@ -1698,7 +1704,7 @@ Cb34_oPWM_Alarm = 0;
 else {
 if (Cb34_idPWM >= 23) {
 
-# 1784
+# 1790
 SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
 (UInt8)2;
 Cb34_odPumpOff = 0;
@@ -1710,7 +1716,7 @@ Cb34_oPWM_Alarm = 0;
 else {
 if (Cb34_idPWM > 19) {
 
-# 1796
+# 1802
 SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
 (UInt8)5;
 Cb34_odPumpOff = 0;
@@ -1722,7 +1728,7 @@ Cb34_oPWM_Alarm = 0;
 else {
 if (Cb34_idPWM <= 19) {
 
-# 1808
+# 1814
 SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns = (unsigned int)
 (UInt8)1;
 Cb34_odPumpOff = 1;
@@ -1740,11 +1746,11 @@ Cb34_oPWM_Alarm = 0;
 }
 }
 
-# 1842
+# 1848
 static Void Cb44_Pic_etat_monitor_node_fcn1(Void)
 {
 
-# 1846
+# 1852
 if (bool_mat_pic_etat) {
 
 SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) (UInt8)2;
@@ -1765,7 +1771,7 @@ SIBFS_Pic_etat_monitor_b.Cb44_glflag = 1 ;
 }
 }
 
-# 1883
+# 1889
 static Void Cb56_UbatHandling_node_fcn2(Void)
 {
 

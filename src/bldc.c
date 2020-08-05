@@ -100,7 +100,7 @@ unsigned         char CompFlag_prev; /* previous comp Flag  */
 unsigned         int  B[ 8 ];
 unsigned         char Bcnt;
 unsigned  short       ui16_speed_fil;
-unsigned         char ui8_duty_cycle_BLDC;
+unsigned  short       ui16_duty_cycle_BLDC;
 _u_bits               MotorFlags;
 
 
@@ -516,7 +516,7 @@ void interrrupt_bldc( void  )
          /*~A*/
          /*~+:increment State if end of Demag is detected */
          /*~I*/
-         if( ( Flag_RUN_MOTOR ) && ( ui8_duty_cycle_BLDC != 0 ) )
+         if( ( Flag_RUN_MOTOR ) && ( ui16_duty_cycle_BLDC != 0 ) )
          /*~-*/
          {
             /*~I*/
@@ -1694,7 +1694,7 @@ void commutate( void  )
          /*~I*/
 #ifdef def_filterPWMtoPowerStage
          /*~I*/
-         if (CCPR1L == ui8_duty_cycle_BLDC)
+         if (CCPR1L == ui16_duty_cycle_BLDC)
          /*~-*/
          {
             /*~T*/
@@ -1706,14 +1706,14 @@ void commutate( void  )
          else
          {
             /*~I*/
-            if( CCPR1L > ui8_duty_cycle_BLDC )
+            if( CCPR1L > ui16_duty_cycle_BLDC )
 
             /*~-*/
             {
                /*~T*/
                CCPR1L--;
                /*~I*/
-               if (CCPR1L > ui8_duty_cycle_BLDC)
+               if (CCPR1L > ui16_duty_cycle_BLDC)
                /*~-*/
                {
                   /*~T*/
@@ -1730,7 +1730,7 @@ void commutate( void  )
                /*~T*/
                CCPR1L++;
                /*~I*/
-               if (CCPR1L < ui8_duty_cycle_BLDC)
+               if (CCPR1L < ui16_duty_cycle_BLDC)
                /*~-*/
                {
                   /*~T*/
@@ -1748,7 +1748,8 @@ void commutate( void  )
          /*~-*/
 #else
          /*~T*/
-         CCPR1L = ui8_duty_cycle_BLDC;
+         CCPR1L = ui16_duty_cycle_BLDC >> 2;
+         CCP1CON = ((ui16_duty_cycle_BLDC & 0b11) << 4) | 0x0C;
          /*~I*/
 #ifdef def_fixed_PWM
          /*~T*/
@@ -2181,7 +2182,7 @@ void InitMotorRun( void  )
       ui16_comm_time_max        = def_ramp0_start; /* first init with the timeout during ramp up */
       comm_state                = 1;
       ui16_step_cnt             = 0;
-      ui8_duty_cycle_BLDC       = 0;
+      ui16_duty_cycle_BLDC       = 0;
       comm_time                 = 0;
       bemf_filter               = 0;
       phase_delay_counter       = 0;

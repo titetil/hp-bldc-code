@@ -4810,19 +4810,19 @@ extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 
 # 255 "../config.h"
-extern const unsigned char PWM_trans_table[202] = {
+extern const unsigned short PWM_trans_table[202] = {
 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-90, 90, 90, 90, 90, 90, 90, 90, 90, 90,
-90, 91, 91, 92, 93, 93, 94, 95, 95, 96, 96, 97, 98, 98, 99, 100, 100, 101, 102, 102,
-103, 104, 104, 105, 106, 106, 107, 107, 108, 109, 109, 110, 111, 111, 112, 113, 113, 114, 115, 115,
-116, 117, 117, 118, 118, 119, 120, 120, 121, 122, 122, 123, 124, 124, 125, 126, 126, 127, 128, 128,
-129, 129, 130, 131, 131, 132, 133, 133, 134, 135, 135, 136, 137, 137, 138, 139, 139, 140, 140, 141,
-142, 142, 143, 144, 144, 145, 146, 146, 147, 148, 148, 149, 150, 150, 151, 151, 152, 153, 153, 154,
-155, 155, 156, 157, 157, 158, 159, 159, 160, 161, 161, 162, 162, 163, 164, 164, 165, 166, 166, 167,
-168, 168, 169, 170, 170, 171, 172, 172, 173, 173, 174, 175, 175, 176, 177, 177, 178, 179, 179, 180,
-181, 181, 182, 183, 183, 184, 184, 185, 186, 186, 187, 188, 188, 189, 190, 190, 191, 192, 192, 193,
-194, 194, 195, 195, 196, 197, 197, 198, 199, 199, 200, 200,
-200, 200, 200, 200, 200, 200, 200, 200, 200, 200
+181, 181, 181, 181, 181, 181, 181, 181, 181, 181,
+181, 182, 184, 185, 186, 187, 189, 190, 191, 193, 194, 195, 196, 198, 199, 200, 202, 203, 204, 205,
+207, 208, 209, 211, 212, 213, 214, 216, 217, 218, 220, 221, 222, 224, 225, 226, 227, 229, 230, 231,
+233, 234, 235, 236, 238, 239, 240, 242, 243, 244, 245, 247, 248, 249, 251, 252, 253, 254, 256, 257,
+258, 260, 261, 262, 263, 265, 266, 267, 269, 270, 271, 272, 274, 275, 276, 278, 279, 280, 281, 283,
+284, 285, 287, 288, 289, 290, 292, 293, 294, 296, 297, 298, 300, 301, 302, 303, 305, 306, 307, 309,
+310, 311, 312, 314, 315, 316, 318, 319, 320, 321, 323, 324, 325, 327, 328, 329, 330, 332, 333, 334,
+336, 337, 338, 339, 341, 342, 343, 345, 346, 347, 348, 350, 351, 352, 354, 355, 356, 357, 359, 360,
+361, 363, 364, 365, 367, 368, 369, 370, 372, 373, 374, 376, 377, 378, 379, 381, 382, 383, 385, 386,
+387, 388, 390, 391, 392, 394, 395, 396, 397, 399, 400, 400,
+400, 400, 400, 400, 400, 400, 400, 400, 400, 400
 };
 
 # 39 "../project.h"
@@ -4935,7 +4935,7 @@ extern unsigned short ui16_CPU_Temp_bldc;
 extern volatile _u_wb ui16_Ubat_bldc;
 extern volatile _u_wb ui16_Ubemf_bldc;
 extern unsigned short ui8_zero_cros_cnt;
-extern unsigned char ui8_duty_cycle_BLDC;
+extern unsigned short ui16_duty_cycle_BLDC;
 
 # 245
 void InitSystem( void );
@@ -5099,7 +5099,7 @@ extern  UInt8 ui8_Kp_mat;
 extern  UInt8 ui8_PWM_dc_mat;
 extern  UInt8 ui8_ResetMatlab;
 extern  UInt8 ui8_debug_out0;
-extern  UInt8 ui8_duty_cycle_mat;
+extern  UInt16 ui16_duty_cycle_mat;
 
 # 183
 extern Void BVH2_Appl_Layer(Void);
@@ -5153,7 +5153,7 @@ unsigned char CompFlag_prev;
 unsigned int B[ 8 ];
 unsigned char Bcnt;
 unsigned short ui16_speed_fil;
-unsigned char ui8_duty_cycle_BLDC;
+unsigned short ui16_duty_cycle_BLDC;
 _u_bits MotorFlags;
 
 
@@ -5476,7 +5476,7 @@ ui16_Ubemf_bldc.b.hi = ADRESH;
 ( GO_nDONE = 1 );
 
 # 519
-if( ( MotorFlags.bits.B6 ) && ( ui8_duty_cycle_BLDC != 0 ) )
+if( ( MotorFlags.bits.B6 ) && ( ui16_duty_cycle_BLDC != 0 ) )
 
 {
 
@@ -6344,59 +6344,11 @@ if( MotorFlags.bits.B6 )
 
 {
 
+# 1751
+CCPR1L = ui16_duty_cycle_BLDC >> 2;
+CCP1CON = ((ui16_duty_cycle_BLDC & 0b11) << 4) | 0x0C;
 
-
-if (CCPR1L == ui8_duty_cycle_BLDC)
-
-{
-
-
-
-}
-
-
-else
-{
-
-if( CCPR1L > ui8_duty_cycle_BLDC )
-
-
-{
-
-CCPR1L--;
-
-if (CCPR1L > ui8_duty_cycle_BLDC)
-
-{
-
-CCPR1L--;
-
-}
-
-
-}
-
-
-else
-{
-
-CCPR1L++;
-
-if (CCPR1L < ui8_duty_cycle_BLDC)
-
-{
-
-CCPR1L++;
-
-}
-
-
-}
-
-
-}
-
-# 1765
+# 1766
 }
 
 
@@ -6434,7 +6386,7 @@ case 1:
 
 {
 
-# 1806
+# 1807
 PSTR1CON = 0b00000001;
 
 
@@ -6455,12 +6407,12 @@ ui8_UPhase_sel = ( 0x00 << 2 ) | 0x01;
 ui8_Ubemf_sel = ( 0x09 << 2 ) | 0x01;
 CM1CON1 = 0x02;
 
-# 1837
+# 1838
 CM1CON0 = 0x84;
 rising_bemf_flag = 1;
 comm_state = 6;
 
-# 1845
+# 1846
 break;
 
 
@@ -6496,12 +6448,12 @@ ui8_UPhase_sel = ( 0x00 << 2 ) | 0x01;
 ui8_Ubemf_sel = ( 0x01 << 2 ) | 0x01;
 CM1CON1 = 0x01;
 
-# 1892
+# 1893
 CM1CON0 = 0x94;
 rising_bemf_flag = 0;
 comm_state = 1;
 
-# 1902
+# 1903
 break;
 
 
@@ -6537,7 +6489,7 @@ ui8_UPhase_sel = ( 0x01 << 2 ) | 0x01;
 ui8_Ubemf_sel = ( 0x00 << 2 ) | 0x01;
 CM1CON1 = 0x00;
 
-# 1949
+# 1950
 CM1CON0 = 0x84;
 rising_bemf_flag = 1;
 comm_state = 2;
@@ -6557,7 +6509,7 @@ case 4:
 
 {
 
-# 1972
+# 1973
 PSTR1CON = 0b00000010;
 
 
@@ -6578,7 +6530,7 @@ ui8_UPhase_sel = ( 0x01 << 2 ) | 0x01;
 ui8_Ubemf_sel = ( 0x09 << 2 ) | 0x01;
 CM1CON1 = 0x02;
 
-# 2004
+# 2005
 CM1CON0 = 0x94;
 rising_bemf_flag = 0;
 comm_state = 3;
@@ -6597,7 +6549,7 @@ case 5:
 
 {
 
-# 2026
+# 2027
 PSTR1CON = 0b00000100;
 
 
@@ -6618,7 +6570,7 @@ ui8_UPhase_sel = ( 0x09 << 2 ) | 0x01;
 ui8_Ubemf_sel = ( 0x01 << 2 ) | 0x01;
 CM1CON1 = 0x01;
 
-# 2059
+# 2060
 CM1CON0 = 0x84;
 rising_bemf_flag = 1;
 comm_state = 4;
@@ -6661,7 +6613,7 @@ ui8_UPhase_sel = ( 0x09 << 2 ) | 0x01;
 ui8_Ubemf_sel = ( 0x00 << 2 ) | 0x01;
 CM1CON1 = 0x00;
 
-# 2113
+# 2114
 CM1CON0 = 0x94;
 rising_bemf_flag = 0;
 comm_state = 5;
@@ -6715,7 +6667,7 @@ comm_time = 0;
 
 }
 
-# 2170
+# 2171
 void InitMotorRun( void )
 
 
@@ -6730,7 +6682,7 @@ MotorFlags.bits.B5 = 0;
 ui16_comm_time_max = ( unsigned short ) ( ( 10 * 20000UL ) / ( 600 * 2 ) );
 comm_state = 1;
 ui16_step_cnt = 0;
-ui8_duty_cycle_BLDC = 0;
+ui16_duty_cycle_BLDC = 0;
 comm_time = 0;
 bemf_filter = 0;
 phase_delay_counter = 0;
@@ -6747,7 +6699,7 @@ ui8_sampleState = 0 ;
 ui8_zero_cros_cnt = 0 ;
 MotorFlags.bits.B4 = 1 ;
 
-# 2207
+# 2208
 commutate( );
 
 }
@@ -6755,7 +6707,7 @@ commutate( );
 
 }
 
-# 2221
+# 2222
 void InitMotorStop( )
 
 
