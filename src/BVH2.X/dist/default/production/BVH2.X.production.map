@@ -5,7 +5,7 @@ Linker command line:
 --edf=C:\Program Files (x86)\Microchip\xc8\v2.00\pic\dat\en_msgs.txt -cs \
   -h+dist/default/production\BVH2.X.production.sym \
   --cmf=dist/default/production\BVH2.X.production.cmf -z -Q16F1936 \
-  -oC:\Users\gtetil\AppData\Local\Temp\s5k0.2 \
+  -oC:\Users\gtetil\AppData\Local\Temp\sd4o.2 \
   -Mdist/default/production/BVH2.X.production.map -E1 -ver=XC8 \
   -ASTACK=02134h-021efh -pstack=STACK \
   -ACODE=00h-07FFhx3,01800h-01FFDh,01FFFh-01FFFh \
@@ -33,7 +33,7 @@ Linker command line:
   -pfunctab=ENTRY -ACONFIG=08007h-08008h -pconfig=CONFIG -DCONFIG=2 \
   -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/0F000h \
   -peeprom_data=EEDATA -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
-  -DENTRY=2 -k C:\Users\gtetil\AppData\Local\Temp\s5k0.obj \
+  -DENTRY=2 -k C:\Users\gtetil\AppData\Local\Temp\sd4o.obj \
   dist/default/production\BVH2.X.production.obj 
 
 Object code version is 3.11
@@ -43,7 +43,7 @@ Machine type is 16F1936
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
+C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
                 end_init                             26       26        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0

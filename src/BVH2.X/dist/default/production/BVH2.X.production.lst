@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC PRO Macro Assembler V2.00 build -1524193055 
-                                                                                               Wed Aug 05 15:15:30 2020
+                                                                                               Thu Aug 27 10:25:07 2020
 
 Microchip Technology Omniscient Code Generator v2.00 (PRO mode) build 20180527130849
      1                           	processor	16F1936
@@ -13318,7 +13318,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.00 build -1524193055 
-Symbol Table                                                                                   Wed Aug 05 15:15:30 2020
+Symbol Table                                                                                   Thu Aug 27 10:25:07 2020
 
                           ?_PWM_Capture_init 0070                                            _B 01A0  
                                           pc 0002                                           PL2 042B  

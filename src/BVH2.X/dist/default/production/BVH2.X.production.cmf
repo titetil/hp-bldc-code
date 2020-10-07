@@ -11,6 +11,10 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
+$C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 26 26 2 2
+config CONFIG 0 8007 8007 2 2
 $dist/default/production\BVH2.X.production.obj
 cinit CODE 0 81A 81A 7E6 2
 text1 CODE 0 14DE 14DE 322 2
@@ -41,10 +45,6 @@ swtext3 CONST 0 73D 73D 14 2
 swtext4 CONST 0 751 751 14 2
 dataBANK2 BANK2 1 162 162 C 1
 clrtext CODE 0 786 786 6 2
-$C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
-reset_vec CODE 0 0 0 2 2
-end_init CODE 0 26 26 2 2
-config CONFIG 0 8007 8007 2 2
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -136,54 +136,54 @@ STRING 1FFF-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\BVH2.X.production.obj
-81A cinit CODE >4783:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-81A cinit CODE >4786:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-81A cinit CODE >5214:C:\Users\gtetil\AppData\Local\Temp\s5k0.
+81A cinit CODE >4783:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+81A cinit CODE >4786:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+81A cinit CODE >5214:C:\Users\gtetil\AppData\Local\Temp\sd4o.
 81B cinit CODE >406:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
-81C cinit CODE >5216:C:\Users\gtetil\AppData\Local\Temp\s5k0.
+81C cinit CODE >5216:C:\Users\gtetil\AppData\Local\Temp\sd4o.
 81D cinit CODE >406:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
-81E cinit CODE >5218:C:\Users\gtetil\AppData\Local\Temp\s5k0.
+81E cinit CODE >5218:C:\Users\gtetil\AppData\Local\Temp\sd4o.
 81F cinit CODE >406:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/T_Link/BVH2_Appl_Layer.c
-820 cinit CODE >5220:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-821 cinit CODE >5222:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-822 cinit CODE >5224:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-823 cinit CODE >5226:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-824 cinit CODE >5228:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-825 cinit CODE >5230:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-826 cinit CODE >5232:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-827 cinit CODE >5234:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-828 cinit CODE >5236:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-829 cinit CODE >5238:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-82A cinit CODE >5255:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-82B cinit CODE >5260:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-82C cinit CODE >5256:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-82D cinit CODE >5261:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-82E cinit CODE >5262:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-82F cinit CODE >5263:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-830 cinit CODE >5264:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-831 cinit CODE >5265:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-834 cinit CODE >5269:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-835 cinit CODE >5270:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-836 cinit CODE >5271:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-837 cinit CODE >5272:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-838 cinit CODE >5273:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-839 cinit CODE >5274:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-83C cinit CODE >5278:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-83D cinit CODE >5279:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-83E cinit CODE >5280:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-83F cinit CODE >5281:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-840 cinit CODE >5282:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-841 cinit CODE >5283:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-844 cinit CODE >5287:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-845 cinit CODE >5288:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-846 cinit CODE >5289:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-847 cinit CODE >5290:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-848 cinit CODE >5291:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-849 cinit CODE >5292:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-84C cinit CODE >5298:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-84C cinit CODE >5300:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-84D cinit CODE >5301:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-84E cinit CODE >5302:C:\Users\gtetil\AppData\Local\Temp\s5k0.
+820 cinit CODE >5220:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+821 cinit CODE >5222:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+822 cinit CODE >5224:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+823 cinit CODE >5226:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+824 cinit CODE >5228:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+825 cinit CODE >5230:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+826 cinit CODE >5232:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+827 cinit CODE >5234:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+828 cinit CODE >5236:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+829 cinit CODE >5238:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+82A cinit CODE >5255:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+82B cinit CODE >5260:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+82C cinit CODE >5256:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+82D cinit CODE >5261:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+82E cinit CODE >5262:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+82F cinit CODE >5263:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+830 cinit CODE >5264:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+831 cinit CODE >5265:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+834 cinit CODE >5269:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+835 cinit CODE >5270:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+836 cinit CODE >5271:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+837 cinit CODE >5272:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+838 cinit CODE >5273:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+839 cinit CODE >5274:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+83C cinit CODE >5278:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+83D cinit CODE >5279:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+83E cinit CODE >5280:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+83F cinit CODE >5281:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+840 cinit CODE >5282:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+841 cinit CODE >5283:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+844 cinit CODE >5287:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+845 cinit CODE >5288:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+846 cinit CODE >5289:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+847 cinit CODE >5290:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+848 cinit CODE >5291:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+849 cinit CODE >5292:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+84C cinit CODE >5298:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+84C cinit CODE >5300:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+84D cinit CODE >5301:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+84E cinit CODE >5302:C:\Users\gtetil\AppData\Local\Temp\sd4o.
 84F cinit CODE >630:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/main.c
 84F cinit CODE >642:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/main.c
 852 cinit CODE >643:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/main.c
@@ -1488,14 +1488,14 @@ FE text7 CODE >1930:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/bldc.c
 17E4 text1 CODE >547:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
 17E5 text1 CODE >466:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
 17F1 text1 CODE >555:C:\Users\gtetil\Documents\Projects\hp-bldc-code\src/pwm.c
-786 clrtext CODE >5244:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-786 clrtext CODE >5245:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-787 clrtext CODE >5246:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-787 clrtext CODE >5247:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-788 clrtext CODE >5248:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-789 clrtext CODE >5249:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-78A clrtext CODE >5250:C:\Users\gtetil\AppData\Local\Temp\s5k0.
-78B clrtext CODE >5251:C:\Users\gtetil\AppData\Local\Temp\s5k0.
+786 clrtext CODE >5244:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+786 clrtext CODE >5245:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+787 clrtext CODE >5246:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+787 clrtext CODE >5247:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+788 clrtext CODE >5248:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+789 clrtext CODE >5249:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+78A clrtext CODE >5250:C:\Users\gtetil\AppData\Local\Temp\sd4o.
+78B clrtext CODE >5251:C:\Users\gtetil\AppData\Local\Temp\sd4o.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1544,12 +1544,12 @@ _TMR0 15 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _TMR2 1A 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _TMR4 415 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _TMR6 41C 0 ABS 0 - dist/default/production\BVH2.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
+___sp 0 0 STACK 2 stack C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
 _main 109E 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@Cb51_oTempRedAlarm 15B 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _Cb44_oShutoff C3 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
-start 4C 0 CODE 0 init C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
+start 4C 0 CODE 0 init C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
 _SIBFS_UbatHandling_b 4C 0 BANK0 1 bssBANK0 dist/default/production\BVH2.X.production.obj
 __size_of___aldiv 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _interrupt_handler 8 0 CODE 0 intentry dist/default/production\BVH2.X.production.obj
@@ -1583,12 +1583,12 @@ __size_of_ADC_Wait 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _Cb1_oShutoff C9 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 _Cb56_UbatHandling_node_fcn2 1F82 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 _ui16_NTC_Temp_bldc_mean_cal 145 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
 __size_ofi1_ADC_Read 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 __size_ofi1_ADC_Wait 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 _ui16_mat_inpTemp 12F 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
@@ -1660,7 +1660,7 @@ _ui16_duty_cycle_BLDC AE 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.produ
 BVH2_Appl_Layer@X_Sb4_Intergrator 162 0 BANK2 1 dataBANK2 dist/default/production\BVH2.X.production.obj
 _ui16_Speed_demand_mat 12B 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 _ui8_Duty_Cycle_In_Ratio D1 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
-__checksum0 1FFE 0 CODE 0 checksum C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
+__checksum0 1FFE 0 CODE 0 checksum C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
 __Lmaintext 0 0 ABS 0 maintext -
 _FVRCON 117 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 __end_of_BVH2_Appl_Layer 1DC6 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
@@ -1752,7 +1752,7 @@ ___tmul@product 2A 0 BANK0 1 cstackBANK0 dist/default/production\BVH2.X.producti
 _ui16_I_cal_Ph1 16A 0 BANK2 1 dataBANK2 dist/default/production\BVH2.X.production.obj
 _ui16_I_cal_Ph2 168 0 BANK2 1 dataBANK2 dist/default/production\BVH2.X.production.obj
 _ui16_I_cal_Ph3 166 0 BANK2 1 dataBANK2 dist/default/production\BVH2.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
+___int_sp 0 0 STACK 2 stack C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
 BVH2_Appl_Layer@Cb14_StateCnt 125 0 BANK2 1 bssBANK2 dist/default/production\BVH2.X.production.obj
 i1___wmul 5EC 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@Sb3_Product1 1D3 0 BANK3 1 cstackBANK3 dist/default/production\BVH2.X.production.obj
@@ -2032,7 +2032,7 @@ __HnvBANK2 0 0 ABS 0 nvBANK2 -
 __HnvBANK3 0 0 ABS 0 nvBANK3 -
 __Lintentry 8 0 CODE 0 intentry -
 _ui8_BlankingCount EB 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
 BVH2_Appl_Layer@Sb2_Error 1DA 0 BANK3 1 cstackBANK3 dist/default/production\BVH2.X.production.obj
 _ui8_Ubemf_sel E8 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
 __pdataBANK2 162 0 BANK2 1 dataBANK2 dist/default/production\BVH2.X.production.obj
@@ -2142,8 +2142,8 @@ ___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\BVH2.X.produ
 _init_bldc 2DD6 0 CODE 0 text1 dist/default/production\BVH2.X.production.obj
 __end_of_interrrupt_bldc 59E 0 CODE 0 text7 dist/default/production\BVH2.X.production.obj
 ?i1___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\BVH2.X.production.obj
-stackhi 21EF 0 ABS 0 - C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
-stacklo 2134 0 ABS 0 - C:\Users\gtetil\AppData\Local\Temp\s5k0.obj
+stackhi 21EF 0 ABS 0 - C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
+stacklo 2134 0 ABS 0 - C:\Users\gtetil\AppData\Local\Temp\sd4o.obj
 __end_of_Cb56_UbatHandling_node_fcn2 1FF2 0 CODE 0 cinit dist/default/production\BVH2.X.production.obj
 __size_of_Cb1_Current_An___High_node_fcn1 0 0 ABS 0 - dist/default/production\BVH2.X.production.obj
 BVH2_Appl_Layer@SIBFS_Temperature_Alarm_b BA 0 BANK1 1 bssBANK1 dist/default/production\BVH2.X.production.obj
