@@ -3031,6 +3031,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pwm.h: 44: extern unsigned char ui8_Duty_Cycle_In_Ratio;
 [; ;pwm.h: 45: extern unsigned char ui8_PWMoutvalue;
 [; ;pwm.h: 46: extern unsigned char ui8_Duty_Cycle_In_Ratio;
+[; ;pwm.h: 47: extern unsigned char ui8_CMD_Mode;
 "255 ../config.h
 [v _PWM_trans_table `Cus ~T0 @X0 -> 202 `i e ]
 [i _PWM_trans_table

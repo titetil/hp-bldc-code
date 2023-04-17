@@ -53,9 +53,6 @@ volatile  _u_wb          ui16_Capt_Val2 = 0;    /**< Value of CCPR on the second
           unsigned  int  ui16_PWMin_failCnt; /**< Counter for the time of bad detection of ETAT_MJP */ 
           unsigned  char ui8_CMD_Mode = 0; //0 = unknown, 1 = PWM mode, 2 = Toggle mode
           unsigned  int  ui16_CMD_Mode_Tmr = 0;
-          unsigned  int  prev_RA4 = 0;
-          unsigned  int  Debounce_Tmr = 0;
-          unsigned  int  prev_Debounce_Tmr = 0;
           
 //extern  unsigned  char ui8_Task_Cont100ms;
 /*~T*/
@@ -369,68 +366,92 @@ unsigned  char PWMReadDC( void  )
 /*~-*/
 {
     
-    /* First the PWM duty cycle is calculated */
-    ui8_PWMinDC_sav  =   (unsigned char) ( 200*(unsigned  short long )(ui16_Duty_Cycle_In) / ui16_PWM_Freq_In ) ;  /* Calculation of duty cycle  */
-    /*~I*/
-    if( ui8_PWMinDC_sav == 0 )
-    /*~-*/
-    {
-        /*~T*/
-       /* if calculation is zero */
-       /*~T*/
-       ui16_PWMin_failCnt++;
+    
+    if( ui8_CMD_Mode <= 1 ) {
+       
+       /*if( ui8_CMD_Mode == 0 ) {
+          ui16_CMD_Mode_Tmr++;
+          if( ui16_CMD_Mode_Tmr > 1000) {  //set for 5 seconds, each call is 5ms
+              if( ui16_PWMin_failCnt >= 800 ) {  
+                  ui8_CMD_Mode = 2;
+                  CCP5CON = Capt_Mode_Off;            // CCP5 Module is off
+                  CCPR5L  = CCP_Regis_Low_Clear;      // Set CCP5 register to 0
+                  CCPR5H  = CCP_Regis_High_Clear;
+                  CCP5IE  = 0;                        // Capture mode Interrupt disabled
+                  CCP5IF = 0;                         // clear flag
+              }
+              else {
+                  ui8_CMD_Mode = 1;
+              }
+          }
+       }/*
+        
+       /* First the PWM duty cycle is calculated */
+       ui8_PWMinDC_sav  =   (unsigned char) ( 200*(unsigned  short long )(ui16_Duty_Cycle_In) / ui16_PWM_Freq_In ) ;  /* Calculation of duty cycle  */
        /*~I*/
-       if( ui16_PWMin_failCnt >= 5 )
+       if( ui8_PWMinDC_sav == 0 )
+       /*~-*/
        {
-
-          //ui8_Duty_Cycle_In_Ratio = 180; //ui8_PWMinDC_sav;
-          //def_DebugPort0 = 1 ;
-          //def_DebugPort0 = 0 ;
-
-         Debounce_Tmr++;
-
-         if(RA4 != prev_RA4) {
-             prev_Debounce_Tmr = Debounce_Tmr;
-         }
-         prev_RA4 = RA4;
-
-         if((Debounce_Tmr - prev_Debounce_Tmr) > 10) {
-             if(RA4 == 1)  // check state of PWM input (the input is inverted)
-             {
-                 ui16_PWM_Freq_In = 40000;
-                 ui8_Duty_Cycle_In_Ratio = 180;  // run at min speed if CMD is connected to ground
-             }
-             else
-             {
-                 ui16_PWM_Freq_In = 40000;
-                 ui8_Duty_Cycle_In_Ratio = 0;  // run at max speed if CMD unconnected (pulled up to battery)
-             }
-             Debounce_Tmr = 0;
-         }
-
+           /*~T*/
+          /* if calculation is zero */
+          /*~T*/
+          ui16_PWMin_failCnt++;
+          /*~I*/
+          if( ui16_PWMin_failCnt >= 5 )
+          {
+          
+             //ui8_Duty_Cycle_In_Ratio = 180; //ui8_PWMinDC_sav;
+             //def_DebugPort0 = 1 ;
+             //def_DebugPort0 = 0 ;
+              
+            if(RA4 == 1)  // check state of PWM input (the input is inverted)
+            {
+                ui16_PWM_Freq_In = 40000;
+                ui8_Duty_Cycle_In_Ratio = 180;  // run at min speed if CMD is connected to ground
+            }
+            else
+            {
+                ui16_PWM_Freq_In = 40000;
+                ui8_Duty_Cycle_In_Ratio = 0;  // run at max speed if CMD unconnected (pulled up to battery)
+            }
+            
+          }
+          
+          /*~E*/
+       /*~-*/
        }
+       /*~O*/
+       /*~-2*/
+       else
+       {
+          /*~T*/
+          /* duty cycle is not zero */
+          /*~T*/
+          ui16_PWMin_failCnt       = 0;
 
+          /*~T*/
+          ui8_Duty_Cycle_In_Ratio = ui8_PWMinDC_sav;
+          /*~T*/
+          ui16_Duty_Cycle_In      = 0;
+       /*~-*/
+       }
        /*~E*/
-    /*~-*/
-    }
-    /*~O*/
-    /*~-2*/
-    else
-    {
-       /*~T*/
-       /* duty cycle is not zero */
-       /*~T*/
-       ui16_PWMin_failCnt       = 0;
-
-       /*~T*/
-       ui8_Duty_Cycle_In_Ratio = ui8_PWMinDC_sav;
-       /*~T*/
-       ui16_Duty_Cycle_In      = 0;
-    /*~-*/
-    }
-    /*~E*/
-    /*~I*/
-    return ( 200 - ui8_Duty_Cycle_In_Ratio );
+       /*~I*/
+       return ( 200 - ui8_Duty_Cycle_In_Ratio );
+    } 
+    else {
+     
+        if(RA4 == 1)  // check state of PWM input (the input is inverted)
+        {
+            ui16_PWM_Freq_In = 40000;
+            return 20;  // run at min speed if CMD is connected to ground
+        }
+        else
+        {
+            ui16_PWM_Freq_In = 40000;
+            return 200;  // run at max speed if CMD unconnected (pulled up to battery)
+        }
+    }  
     
 /*~-*/
     

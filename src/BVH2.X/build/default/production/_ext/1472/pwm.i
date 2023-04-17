@@ -1,5 +1,93 @@
 
-# 1 "../interrupt.c"
+# 1 "../pwm.c"
+
+# 37 "../pwm.h"
+extern void PWM_Capture_init( unsigned char CCP_Nb );
+extern void PWM_CTRL( void );
+extern void PWM_Write_Out( unsigned char ui8_DutyCycle_Out );
+extern void interrupt_PWMCapture( void );
+extern unsigned char PWMReadDC( void );
+extern unsigned int ui16_PWM_Freq_In;
+extern double Duty_Cycle_In_Ratio;
+extern unsigned char ui8_Duty_Cycle_In_Ratio;
+extern unsigned char ui8_PWMoutvalue;
+extern unsigned char ui8_Duty_Cycle_In_Ratio;
+extern unsigned char ui8_CMD_Mode;
+
+# 255 "../config.h"
+extern const unsigned short PWM_trans_table[202] = {
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+181, 181, 181, 181, 181, 181, 181, 181, 181, 181,
+181, 182, 184, 185, 186, 187, 189, 190, 191, 193, 194, 195, 196, 198, 199, 200, 202, 203, 204, 205,
+207, 208, 209, 211, 212, 213, 214, 216, 217, 218, 220, 221, 222, 224, 225, 226, 227, 229, 230, 231,
+233, 234, 235, 236, 238, 239, 240, 242, 243, 244, 245, 247, 248, 249, 251, 252, 253, 254, 256, 257,
+258, 260, 261, 262, 263, 265, 266, 267, 269, 270, 271, 272, 274, 275, 276, 278, 279, 280, 281, 283,
+284, 285, 287, 288, 289, 290, 292, 293, 294, 296, 297, 298, 300, 301, 302, 303, 305, 306, 307, 309,
+310, 311, 312, 314, 315, 316, 318, 319, 320, 321, 323, 324, 325, 327, 328, 329, 330, 332, 333, 334,
+336, 337, 338, 339, 341, 342, 343, 345, 346, 347, 348, 350, 351, 352, 354, 355, 356, 357, 359, 360,
+361, 363, 364, 365, 367, 368, 369, 370, 372, 373, 374, 376, 377, 378, 379, 381, 382, 383, 385, 386,
+387, 388, 390, 391, 392, 394, 395, 396, 397, 399, 400, 400,
+400, 400, 400, 400, 400, 400, 400, 400, 400, 400
+};
+
+# 39 "../project.h"
+typedef union
+{
+unsigned char b;
+struct
+{
+unsigned B0 : 1;
+unsigned B1 : 1;
+unsigned B2 : 1;
+unsigned B3 : 1;
+unsigned B4 : 1;
+unsigned B5 : 1;
+unsigned B6 : 1;
+unsigned B7 : 1;
+
+} bits;
+} _u_bits;
+
+
+
+typedef union
+{
+unsigned int w;
+struct
+{
+unsigned char lo;
+unsigned char hi;
+} b;
+} _u_wb;
+
+
+
+typedef union
+{
+unsigned long lng;
+struct
+{
+_u_wb low;
+_u_wb hiw;
+} w;
+} _u_lng;
+
+# 27 "../diag.h"
+extern unsigned int ui16_PWM_Freq_In;
+
+extern unsigned char Error_PICetatMonitor;
+extern unsigned char DC_pic_etat_monitor;
+
+
+extern void DiagInit( void );
+extern void SetDiagAlarm( void );
+extern unsigned char read_eeprom_data( unsigned char ui8_adress );
+extern void ReadCal_Value( void );
+extern void DiagPicEtatMonitor( void );
+extern void EOL( void );
+
+# 74
+extern _u_bits ui8_error_Flags;
 
 # 18 "C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\xc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -4809,402 +4897,341 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 
-# 255 "../config.h"
-extern const unsigned short PWM_trans_table[202] = {
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-181, 181, 181, 181, 181, 181, 181, 181, 181, 181,
-181, 182, 184, 185, 186, 187, 189, 190, 191, 193, 194, 195, 196, 198, 199, 200, 202, 203, 204, 205,
-207, 208, 209, 211, 212, 213, 214, 216, 217, 218, 220, 221, 222, 224, 225, 226, 227, 229, 230, 231,
-233, 234, 235, 236, 238, 239, 240, 242, 243, 244, 245, 247, 248, 249, 251, 252, 253, 254, 256, 257,
-258, 260, 261, 262, 263, 265, 266, 267, 269, 270, 271, 272, 274, 275, 276, 278, 279, 280, 281, 283,
-284, 285, 287, 288, 289, 290, 292, 293, 294, 296, 297, 298, 300, 301, 302, 303, 305, 306, 307, 309,
-310, 311, 312, 314, 315, 316, 318, 319, 320, 321, 323, 324, 325, 327, 328, 329, 330, 332, 333, 334,
-336, 337, 338, 339, 341, 342, 343, 345, 346, 347, 348, 350, 351, 352, 354, 355, 356, 357, 359, 360,
-361, 363, 364, 365, 367, 368, 369, 370, 372, 373, 374, 376, 377, 378, 379, 381, 382, 383, 385, 386,
-387, 388, 390, 391, 392, 394, 395, 396, 397, 399, 400, 400,
-400, 400, 400, 400, 400, 400, 400, 400, 400, 400
-};
+# 43 "../pwm.c"
+unsigned char ui8_PWM_FreqCnt = 0;
+unsigned char ui8_PWMoutvalue = 0;
+unsigned char ui8_Pulse_State = 0;
+unsigned int ui16_Duty_Cycle_In = 0;
+unsigned int ui16_PWM_Freq_In = 0;
+volatile _u_wb ui16_Capt_Val0 = 0;
+volatile _u_wb ui16_Capt_Val1 = 0;
+volatile _u_wb ui16_Capt_Val2 = 0;
+unsigned char ui8_Duty_Cycle_In_Ratio = 0;
+unsigned char ui8_PWMinDC_sav;
+unsigned int ui16_PWMin_failCnt;
+unsigned char ui8_CMD_Mode = 0;
+unsigned int ui16_CMD_Mode_Tmr = 0;
+unsigned int prev_RA4 = 0;
+unsigned int Debounce_Tmr = 0;
+unsigned int prev_Debounce_Tmr = 0;
 
-# 39 "../project.h"
-typedef union
+
+
+
+void PWM_Capture_init( unsigned char ui8_CCP_Nb );
+void PWM_CTRL( void );
+void PWM_Write_Out( unsigned char ui8_DutyCycle_Out );
+void interrupt_PWMCapture( void );
+unsigned char PWMReadDC( void );
+
+# 85
+void PWM_Capture_init( unsigned char ui8_CCP_Nb )
+
 {
-unsigned char b;
-struct
+
+
+ui8_PWMinDC_sav = 0;
+ui16_PWMin_failCnt = 0;
+
+# 100
+switch( ui8_CCP_Nb )
+
 {
-unsigned B0 : 1;
-unsigned B1 : 1;
-unsigned B2 : 1;
-unsigned B3 : 1;
-unsigned B4 : 1;
-unsigned B5 : 1;
-unsigned B6 : 1;
-unsigned B7 : 1;
 
-} bits;
-} _u_bits;
+case 1:
 
-
-
-typedef union
 {
-unsigned int w;
-struct
-{
-unsigned char lo;
-unsigned char hi;
-} b;
-} _u_wb;
 
+CCP1CON = 0x00;
+CCPR1L = 0x00;
+CCPR1H = 0x00;
+CCP1IE = 1;
+CCP1IF = 0;
+CCP1CON = 0x05;
+break;
 
-
-typedef union
-{
-unsigned long lng;
-struct
-{
-_u_wb low;
-_u_wb hiw;
-} w;
-} _u_lng;
-
-# 37 "../timer.h"
-extern void timer_init( unsigned char ui8_TmrNb );
-extern unsigned int get_timer( unsigned char ui8_TmrNb );
-extern void clear_timer( unsigned char ui8_TmrNb );
-extern void start_timer( unsigned char ui8_TmrNb, unsigned char ui8_start_spec_time );
-extern void Oscill_Source_Block( void );
-
-# 37 "../pwm.h"
-extern void PWM_Capture_init( unsigned char CCP_Nb );
-extern void PWM_CTRL( void );
-extern void PWM_Write_Out( unsigned char ui8_DutyCycle_Out );
-extern void interrupt_PWMCapture( void );
-extern unsigned char PWMReadDC( void );
-extern unsigned int ui16_PWM_Freq_In;
-extern double Duty_Cycle_In_Ratio;
-extern unsigned char ui8_Duty_Cycle_In_Ratio;
-extern unsigned char ui8_PWMoutvalue;
-extern unsigned char ui8_Duty_Cycle_In_Ratio;
-
-# 39 "../project.h"
-typedef union
-{
-unsigned char b;
-struct
-{
-unsigned B0 : 1;
-unsigned B1 : 1;
-unsigned B2 : 1;
-unsigned B3 : 1;
-unsigned B4 : 1;
-unsigned B5 : 1;
-unsigned B6 : 1;
-unsigned B7 : 1;
-
-} bits;
-} _u_bits;
-
-
-
-typedef union
-{
-unsigned int w;
-struct
-{
-unsigned char lo;
-unsigned char hi;
-} b;
-} _u_wb;
-
-
-
-typedef union
-{
-unsigned long lng;
-struct
-{
-_u_wb low;
-_u_wb hiw;
-} w;
-} _u_lng;
-
-# 213 "../bldc.h"
-extern void init_bldc( void );
-extern void interrrupt_bldc( void );
-extern void InitMotorStop( void );
-extern void InitMotorRun( void );
-extern signed short phase_delay_counter_debug;
-extern unsigned char BlankingCountdbg;
-
-extern unsigned short ui16_phase_angle;
-extern unsigned int B[ 8 ];
-extern _u_bits MotorFlags;
-extern unsigned short ui16_speed_fil;
-extern unsigned short ui16_speed_rar;
-extern volatile _u_wb ui16_IPhase1_bldc;
-extern volatile _u_wb ui16_IPhase2_bldc;
-extern volatile _u_wb ui16_IPhase3_bldc;
-extern volatile _u_wb ui16_IPhase_bldc;
-
-extern unsigned short ui16_UPhase_bldc;
-
-extern unsigned short ui16_NTC_Temp_bldc;
-extern unsigned short ui16_CPU_Temp_bldc;
-
-extern volatile _u_wb ui16_Ubat_bldc;
-extern volatile _u_wb ui16_Ubemf_bldc;
-extern unsigned short ui8_zero_cros_cnt;
-extern unsigned short ui16_duty_cycle_BLDC;
-
-# 245
-void InitSystem( void );
-void InitDriver( void );
-void Commutate( void );
-void ControlStartUp( void );
-void StallControl( void );
-void AdcManager( void );
-void WarmUpControl( void );
-void TimeBaseManager( void );
-void CalcFilter( void );
-void ControlSlowStart( void );
-
-# 56 "../lin.h"
-typedef enum _BOOL
-{
-FALSE = 0,
-TRUE
 }
-BOOL;
-typedef unsigned char BYTE;
 
-# 72
-extern void Transmit_LIN_8Bytes( BYTE ID, BYTE B0, BYTE B1, BYTE B2, BYTE B3, BYTE B4, BYTE B5, BYTE B6,
-BYTE B7 );
-extern void Receive_ETAT_PADD( void );
-extern void Receive_Diag( char id );
-extern void Transmit_LIN_Byte( BYTE ID, BYTE B0 );
-extern void Transmit_LIN_3Bytes( BYTE ID, BYTE B0, BYTE B1, BYTE B2 );
-extern void EnableMCP201( void );
 
-# 291
-typedef union ELINMINT_ID
-{
-unsigned char ID;
+case 2:
 
-struct
 {
-unsigned ID0 : 1;
-unsigned ID1 : 1;
-unsigned ID2 : 1;
-unsigned ID3 : 1;
-unsigned ID4 : 1;
-unsigned ID5 : 1;
-unsigned ID6 : 1;
-unsigned ID7 : 1;
-} IDbits;
-} ELINMINT_ID;
 
-# 314
-typedef union ELINMINT_MESSAGE_SIZE
-{
-unsigned char SIZE;
+CCP2CON = 0x00;
+CCPR2L = 0x00;
+CCPR2H = 0x00;
+CCP2IE = 1;
+CCP2IF = 0;
+CCP2CON = 0x05;
+break;
 
-struct
-{
-unsigned SIZE0 : 1;
-unsigned SIZE1 : 1;
-unsigned SIZE2 : 1;
-unsigned SIZE3 : 1;
-unsigned SIZE4 : 1;
-unsigned SIZE5 : 1;
-unsigned SIZE6 : 1;
-unsigned SIZE7 : 1;
-} SIZEbits;
-} ELINMINT_MESSAGE_SIZE;
+}
 
-# 336
-typedef union ELINMINT_CRC
-{
-int CRC;
-BYTE CRCL;
-struct
-{
-unsigned CRC0 : 1;
-unsigned CRC1 : 1;
-unsigned CRC2 : 1;
-unsigned CRC3 : 1;
-unsigned CRC4 : 1;
-unsigned CRC5 : 1;
-unsigned CRC6 : 1;
-unsigned CRC7 : 1;
-unsigned CRC8 : 1;
-unsigned CRC9 : 1;
-unsigned CRC10 : 1;
-unsigned CRC11 : 1;
-unsigned CRC12 : 1;
-unsigned CRC13 : 1;
-unsigned CRC14 : 1;
-unsigned CRC15 : 1;
-} CRCbits;
-} ELINMINT_CRC;
 
-# 369
-typedef union ELINMINT_STATUS
+case 3:
+
 {
-BYTE ELINMIntStatusByte;
-struct
+
+CCP3CON = 0x00;
+CCPR3L = 0x00;
+CCPR3H = 0x00;
+CCP3IE = 1;
+CCP3IF = 0;
+CCP3CON = 0x05;
+break;
+
+}
+
+
+case 4:
+
 {
-unsigned TX : 1;
-unsigned RX : 1;
-unsigned ERROR : 1;
-unsigned IDLE : 1;
-unsigned ERROR_BIT0 : 1;
-unsigned ERROR_BIT1 : 1;
-unsigned ERROR_BIT2 : 1;
-unsigned ERROR_BIT3 : 1;
-} ELINMINTSTS;
-} ELINMINT_STATUS;
+
+CCP4CON = 0x00;
+CCPR4L = 0x00;
+CCPR4H = 0x00;
+CCP4IE = 1;
+CCP4IF = 0;
+CCP4CON = 0x05;
+break;
+
+}
+
+
+case 5:
+
+{
+
+CCP5CON = 0x00;
+CCPR5L = 0x00;
+CCPR5H = 0x00;
+CCP5IE = 1;
+CCP5IF = 0;
+CCP5CON = 0x05;
+break;
+
+}
+
+
+
+default:
+{
+
+break;
+
+}
+
+}
+
+
+}
+
+# 205
+void PWM_CTRL( void )
+
+{
+
+# 295
+ui8_PWM_FreqCnt++;
+
+if( ui8_PWM_FreqCnt >= 100 )
+
+{
+
+ui8_PWM_FreqCnt = 0;
+LATC0 = 0;
+
+
+}
+
+
+else
+{
+
+if( ui8_PWM_FreqCnt >= ui8_PWMoutvalue )
+
+{
+
+LATC0 = 1;
+
+
+}
+
+
+}
+
+# 333
+}
+
+# 347
+void PWM_Write_Out( unsigned char ui8_DutyCycle_Out )
+
+{
+
+ui8_PWMoutvalue = ui8_DutyCycle_Out;
+
+}
+
+# 368
+unsigned char PWMReadDC( void )
+
+{
+
+
+ui8_PWMinDC_sav = (unsigned char) ( 200*(unsigned short long )(ui16_Duty_Cycle_In) / ui16_PWM_Freq_In ) ;
+
+if( ui8_PWMinDC_sav == 0 )
+
+{
+
+
+
+ui16_PWMin_failCnt++;
+
+if( ui16_PWMin_failCnt >= 5 )
+{
 
 # 390
-typedef union ELINMINT_STATUS1
-{
-BYTE ELINMIntStatusByte;
-struct
-{
-unsigned WAKEUP : 1;
-unsigned HEADER : 1;
-unsigned FRAME : 1;
-unsigned EXTENDED : 1;
-unsigned WAKEUP_RECEIVED : 1;
-unsigned WAKEUP_SENT : 1;
-unsigned SLEEP_TIMEOUT : 1;
-} ELINMINTSTS;
-} ELINMINT_STATUS1;
+Debounce_Tmr++;
 
-# 427
-BYTE _ELINMIntInitialize( void );
+if(RA4 != prev_RA4) {
+prev_Debounce_Tmr = Debounce_Tmr;
+}
+prev_RA4 = RA4;
 
-# 446
-void ELINMIntHandler( void );
+if((Debounce_Tmr - prev_Debounce_Tmr) > 10) {
+if(RA4 == 1)
+{
+ui16_PWM_Freq_In = 40000;
+ui8_Duty_Cycle_In_Ratio = 180;
+}
+else
+{
+ui16_PWM_Freq_In = 40000;
+ui8_Duty_Cycle_In_Ratio = 0;
+}
+Debounce_Tmr = 0;
+}
+
+}
+
+
+
+}
+
+
+else
+{
+
+
+
+ui16_PWMin_failCnt = 0;
+
+
+ui8_Duty_Cycle_In_Ratio = ui8_PWMinDC_sav;
+
+ui16_Duty_Cycle_In = 0;
+
+}
+
+
+return ( 200 - ui8_Duty_Cycle_In_Ratio );
+
+
+
+}
+
+# 457
+void interrupt_PWMCapture( void )
+
+{
 
 # 469
-void _ELINMIntSendMessage( BYTE id, char size, unsigned int fmin, unsigned int fmax );
-
-# 488
-void _ELINMIntResetProtocol( BYTE code );
-
-# 508
-void _ELINMIntReceiveMessage( BYTE tag, BYTE id, char size );
-
-# 536
-BYTE * _ELINMIntGetPointer( char _ELINMInt_tag, BYTE _ELINMInt_position );
-
-# 554
-BYTE _ELINMIntCalcIDParity( ELINMINT_ID ELINM_idtr );
-
-# 1001
-extern ELINMINT_STATUS _ELINMIntStatus;
-extern ELINMINT_STATUS1 _ELINMIntStatus1;
-extern BYTE _ELINMIntMessageTag;
-extern BYTE _ELINMIntMessageBuffer[ ];
-
-# 27 "../diag.h"
-extern unsigned int ui16_PWM_Freq_In;
-
-extern unsigned char Error_PICetatMonitor;
-extern unsigned char DC_pic_etat_monitor;
-
-
-extern void DiagInit( void );
-extern void SetDiagAlarm( void );
-extern unsigned char read_eeprom_data( unsigned char ui8_adress );
-extern void ReadCal_Value( void );
-extern void DiagPicEtatMonitor( void );
-extern void EOL( void );
-
-# 74
-extern _u_bits ui8_error_Flags;
-
-# 35 "../interrupt.c"
-unsigned char ui8_Task_Cont1ms;
-
-
-void Task1ms( void );
-static void interrupt interrupt_handler( void );
-
-# 52
-void Task1ms( void )
+switch( ui8_Pulse_State )
 
 {
 
-ui8_Task_Cont1ms++;
-
-}
-
-# 77
-static void interrupt interrupt_handler( void )
+case 0:
 
 {
 
-if( TMR1IF )
 
-{
 
-TMR1IF = 0;
+ui8_Pulse_State = 1;
+ui16_Capt_Val0.b.lo = CCPR5L;
+ui16_Capt_Val0.b.hi = CCPR5H;
+CCP5CON = 0x04;
+break;
+
 
 }
 
 
-if( TMR4IF )
+case 1:
 
 {
 
-TMR4IF = 0;
 
-PWM_CTRL( );
 
-Task1ms( );
+ui8_Pulse_State = 2;
+ui16_Capt_Val1.b.lo = CCPR5L;
+ui16_Capt_Val1.b.hi = CCPR5H;
+CCP5CON = 0x05;
+break;
 
-}
-
-# 106
-if( TMR2IF )
-
-{
-
-TMR2IF = 0;
-
-interrrupt_bldc( );
 
 }
 
 
-if( TMR6IF )
+case 2:
 
 {
 
-TMR6IF = 0;
 
-# 131
+
+ui8_Pulse_State = 1;
+ui16_Capt_Val2.b.lo = CCPR5L;
+ui16_Capt_Val2.b.hi = CCPR5H;
+ui16_PWM_Freq_In = ui16_Capt_Val2.w - ui16_Capt_Val0.w;
+ui16_Duty_Cycle_In = ui16_Capt_Val1.w - ui16_Capt_Val0.w;
+ui16_Capt_Val0.w = ui16_Capt_Val2.w;
+CCP5CON = 0x04;
+
+
+if( ui16_Duty_Cycle_In )
+
+{
+
+
+
 }
 
 
-if( CCP5IF )
-
+else
 {
 
-CCP5IF = 0;
 
-interrupt_PWMCapture( );
 
 }
 
 
-if( CCP2IF )
+break;
 
+
+}
+
+
+
+default:
 {
 
-CCP2IF = 0;
+
+
+ui8_Pulse_State = 0;
+break;
+
+
+}
 
 }
 

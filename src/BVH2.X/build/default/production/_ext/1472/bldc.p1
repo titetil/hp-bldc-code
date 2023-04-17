@@ -3465,12 +3465,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;T_Link\tl_basetypes.h: 24: typedef unsigned long int UInt32;
 [; ;T_Link\tl_basetypes.h: 25: typedef unsigned char UInt8;
 [; ;T_Link\tl_basetypes.h: 26: typedef void Void;
-[; ;T_Link\BVH2_Appl_Layer.h: 61: struct tag_SIBFS_Current_Analysis_High {
+[; ;T_Link\BVH2_Appl_Layer.h: 61: struct tag_SIBFS_Current_Analysis_High_b_tp {
 [; ;T_Link\BVH2_Appl_Layer.h: 62: unsigned int Cb1_Current_Analysis_High_ns : 4;
 [; ;T_Link\BVH2_Appl_Layer.h: 63: unsigned int Cb1_glflag : 2;
 [; ;T_Link\BVH2_Appl_Layer.h: 64: unsigned int Cb1_Current_Analysis_High : 1;
 [; ;T_Link\BVH2_Appl_Layer.h: 65: };
-[; ;T_Link\BVH2_Appl_Layer.h: 67: struct tag_SIBFS_Current_Analysis_low_ {
+[; ;T_Link\BVH2_Appl_Layer.h: 67: struct tag_SIBFS_Current_Analysis_low_b_tp {
 [; ;T_Link\BVH2_Appl_Layer.h: 68: unsigned int Cb10_greenState : 1;
 [; ;T_Link\BVH2_Appl_Layer.h: 69: unsigned int Cb11_Wait : 1;
 [; ;T_Link\BVH2_Appl_Layer.h: 70: unsigned int Cb12_CntOverCurrent : 1;
@@ -3508,7 +3508,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;T_Link\BVH2_Appl_Layer.h: 107: unsigned int Cb44_glflag : 2;
 [; ;T_Link\BVH2_Appl_Layer.h: 108: unsigned int Cb44_Pic_etat_monitor : 1;
 [; ;T_Link\BVH2_Appl_Layer.h: 109: };
-[; ;T_Link\BVH2_Appl_Layer.h: 111: struct tag_SIBFS_Temperature_Alarm_b_t {
+[; ;T_Link\BVH2_Appl_Layer.h: 111: struct tag_SIBFS_Temperature_Alarm_b_tp {
 [; ;T_Link\BVH2_Appl_Layer.h: 112: unsigned int Cb51_Temperature_Alarm : 1;
 [; ;T_Link\BVH2_Appl_Layer.h: 113: unsigned int Cb52_CntOverTemp : 1;
 [; ;T_Link\BVH2_Appl_Layer.h: 114: unsigned int Cb53_reset : 1;

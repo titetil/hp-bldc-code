@@ -33,6 +33,7 @@
 /*~T*/
 /*----------------  globale Variables      --------------------------------------------------------------*/
 unsigned  char ui8_Task_Cont1ms;  /**< Counter value incremented by Task1ms */ 
+extern unsigned  char ui8_CMD_Mode;
 /*~T*/
 /*----------------  Prototypes             --------------------------------------------------------------*/
         void           Task1ms( void  );
@@ -138,6 +139,7 @@ static  void interrupt  interrupt_handler( void  )
       CCP5IF = 0;
       /*~T*/
       interrupt_PWMCapture( );
+      
    /*~-*/
    }
    /*~E*/

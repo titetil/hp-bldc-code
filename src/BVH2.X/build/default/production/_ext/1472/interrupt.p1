@@ -3302,6 +3302,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pwm.h: 44: extern unsigned char ui8_Duty_Cycle_In_Ratio;
 [; ;pwm.h: 45: extern unsigned char ui8_PWMoutvalue;
 [; ;pwm.h: 46: extern unsigned char ui8_Duty_Cycle_In_Ratio;
+[; ;pwm.h: 47: extern unsigned char ui8_CMD_Mode;
 [; ;project.h: 39: typedef union
 [; ;project.h: 40: {
 [; ;project.h: 41: unsigned char b;
@@ -3488,123 +3489,124 @@ Version 3.2 HI-TECH Software Intermediate Code
 "35 ../interrupt.c
 [v _ui8_Task_Cont1ms `uc ~T0 @X0 1 e ]
 [; ;interrupt.c: 35: unsigned char ui8_Task_Cont1ms;
-[; ;interrupt.c: 38: void Task1ms( void );
-[; ;interrupt.c: 39: static void interrupt interrupt_handler( void );
-"52
+[; ;interrupt.c: 36: extern unsigned char ui8_CMD_Mode;
+[; ;interrupt.c: 39: void Task1ms( void );
+[; ;interrupt.c: 40: static void interrupt interrupt_handler( void );
+"53
 [v _Task1ms `(v ~T0 @X0 1 ef ]
-"54
+"55
 {
-[; ;interrupt.c: 52: void Task1ms( void )
-[; ;interrupt.c: 54: {
+[; ;interrupt.c: 53: void Task1ms( void )
+[; ;interrupt.c: 55: {
 [e :U _Task1ms ]
 [f ]
-[; ;interrupt.c: 56: ui8_Task_Cont1ms++;
-"56
+[; ;interrupt.c: 57: ui8_Task_Cont1ms++;
+"57
 [e ++ _ui8_Task_Cont1ms -> -> 1 `i `uc ]
-[; ;interrupt.c: 58: }
-"58
+[; ;interrupt.c: 59: }
+"59
 [e :UE 371 ]
 }
-[v F2793 `(v ~T0 @X0 1 tf ]
-"77
-[v _interrupt_handler `IF2793 ~T0 @X0 1 s ]
-"79
+[v F2794 `(v ~T0 @X0 1 tf ]
+"78
+[v _interrupt_handler `IF2794 ~T0 @X0 1 s ]
+"80
 {
-[; ;interrupt.c: 77: static void interrupt interrupt_handler( void )
-[; ;interrupt.c: 79: {
+[; ;interrupt.c: 78: static void interrupt interrupt_handler( void )
+[; ;interrupt.c: 80: {
 [e :U _interrupt_handler ]
 [f ]
-[; ;interrupt.c: 81: if( TMR1IF )
-"81
+[; ;interrupt.c: 82: if( TMR1IF )
+"82
 [e $ ! _TMR1IF 373  ]
-[; ;interrupt.c: 83: {
-"83
+[; ;interrupt.c: 84: {
+"84
 {
-[; ;interrupt.c: 85: TMR1IF = 0;
-"85
+[; ;interrupt.c: 86: TMR1IF = 0;
+"86
 [e = _TMR1IF -> -> 0 `i `b ]
-"87
+"88
 }
 [e :U 373 ]
-[; ;interrupt.c: 87: }
-[; ;interrupt.c: 90: if( TMR4IF )
-"90
+[; ;interrupt.c: 88: }
+[; ;interrupt.c: 91: if( TMR4IF )
+"91
 [e $ ! _TMR4IF 374  ]
-[; ;interrupt.c: 92: {
-"92
+[; ;interrupt.c: 93: {
+"93
 {
-[; ;interrupt.c: 94: TMR4IF = 0;
-"94
+[; ;interrupt.c: 95: TMR4IF = 0;
+"95
 [e = _TMR4IF -> -> 0 `i `b ]
-[; ;interrupt.c: 96: PWM_CTRL( );
-"96
+[; ;interrupt.c: 97: PWM_CTRL( );
+"97
 [e ( _PWM_CTRL ..  ]
-[; ;interrupt.c: 98: Task1ms( );
-"98
+[; ;interrupt.c: 99: Task1ms( );
+"99
 [e ( _Task1ms ..  ]
-"100
+"101
 }
 [e :U 374 ]
-[; ;interrupt.c: 100: }
-[; ;interrupt.c: 106: if( TMR2IF )
-"106
+[; ;interrupt.c: 101: }
+[; ;interrupt.c: 107: if( TMR2IF )
+"107
 [e $ ! _TMR2IF 375  ]
-[; ;interrupt.c: 108: {
-"108
+[; ;interrupt.c: 109: {
+"109
 {
-[; ;interrupt.c: 110: TMR2IF = 0;
-"110
+[; ;interrupt.c: 111: TMR2IF = 0;
+"111
 [e = _TMR2IF -> -> 0 `i `b ]
-[; ;interrupt.c: 112: interrrupt_bldc( );
-"112
+[; ;interrupt.c: 113: interrrupt_bldc( );
+"113
 [e ( _interrrupt_bldc ..  ]
-"114
+"115
 }
 [e :U 375 ]
-[; ;interrupt.c: 114: }
-[; ;interrupt.c: 117: if( TMR6IF )
-"117
+[; ;interrupt.c: 115: }
+[; ;interrupt.c: 118: if( TMR6IF )
+"118
 [e $ ! _TMR6IF 376  ]
-[; ;interrupt.c: 119: {
-"119
+[; ;interrupt.c: 120: {
+"120
 {
-[; ;interrupt.c: 121: TMR6IF = 0;
-"121
+[; ;interrupt.c: 122: TMR6IF = 0;
+"122
 [e = _TMR6IF -> -> 0 `i `b ]
-"131
+"132
 }
 [e :U 376 ]
-[; ;interrupt.c: 131: }
-[; ;interrupt.c: 134: if( CCP5IF )
-"134
+[; ;interrupt.c: 132: }
+[; ;interrupt.c: 135: if( CCP5IF )
+"135
 [e $ ! _CCP5IF 377  ]
-[; ;interrupt.c: 136: {
-"136
+[; ;interrupt.c: 137: {
+"137
 {
-[; ;interrupt.c: 138: CCP5IF = 0;
-"138
+[; ;interrupt.c: 139: CCP5IF = 0;
+"139
 [e = _CCP5IF -> -> 0 `i `b ]
-[; ;interrupt.c: 140: interrupt_PWMCapture( );
-"140
+[; ;interrupt.c: 141: interrupt_PWMCapture( );
+"141
 [e ( _interrupt_PWMCapture ..  ]
-"142
+"144
 }
 [e :U 377 ]
-[; ;interrupt.c: 142: }
-[; ;interrupt.c: 145: if( CCP2IF )
-"145
-[e $ ! _CCP2IF 378  ]
-[; ;interrupt.c: 147: {
+[; ;interrupt.c: 144: }
+[; ;interrupt.c: 147: if( CCP2IF )
 "147
-{
-[; ;interrupt.c: 149: CCP2IF = 0;
+[e $ ! _CCP2IF 378  ]
+[; ;interrupt.c: 149: {
 "149
-[e = _CCP2IF -> -> 0 `i `b ]
+{
+[; ;interrupt.c: 151: CCP2IF = 0;
 "151
+[e = _CCP2IF -> -> 0 `i `b ]
+"153
 }
 [e :U 378 ]
-[; ;interrupt.c: 151: }
-[; ;interrupt.c: 154: }
-"154
+[; ;interrupt.c: 153: }
+[; ;interrupt.c: 156: }
+"156
 [e :UE 372 ]
 }

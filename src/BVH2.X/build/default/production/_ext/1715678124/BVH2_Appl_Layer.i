@@ -169,13 +169,13 @@ extern double trunc(double);
 extern double round(double);
 
 # 61 "../T_Link/BVH2_Appl_Layer.h"
-struct tag_SIBFS_Current_Analysis_High {
+struct tag_SIBFS_Current_Analysis_High_b_tp {
 unsigned int Cb1_Current_Analysis_High_ns : 4;
 unsigned int Cb1_glflag : 2;
 unsigned int Cb1_Current_Analysis_High : 1;
 };
 
-struct tag_SIBFS_Current_Analysis_low_ {
+struct tag_SIBFS_Current_Analysis_low_b_tp {
 unsigned int Cb10_greenState : 1;
 unsigned int Cb11_Wait : 1;
 unsigned int Cb12_CntOverCurrent : 1;
@@ -219,7 +219,7 @@ unsigned int Cb44_glflag : 2;
 unsigned int Cb44_Pic_etat_monitor : 1;
 };
 
-struct tag_SIBFS_Temperature_Alarm_b_t {
+struct tag_SIBFS_Temperature_Alarm_b_tp {
 unsigned int Cb51_Temperature_Alarm : 1;
 unsigned int Cb52_CntOverTemp : 1;
 unsigned int Cb53_reset : 1;
@@ -317,7 +317,7 @@ static UInt16 Cb1_StateCnt = 0;
 static UInt16 Cb44_StateCnt = 0;
 static UInt8 Cb1_RestartCounter = 0;
 
-static struct tag_SIBFS_Current_Analysis_High SIBFS_Current_Analysis_High_b = {
+static struct tag_SIBFS_Current_Analysis_High_b_tp SIBFS_Current_Analysis_High_b = {
 0 ,
 0 ,
 0
@@ -375,7 +375,7 @@ static UInt8 Cb24_RestartCounter = 0;
 static UInt8 Cb51_Counter = 0;
 static UInt8 Cb9_StateCnt = 0;
 
-static struct tag_SIBFS_Current_Analysis_low_ SIBFS_Current_Analysis_low_b = {
+static struct tag_SIBFS_Current_Analysis_low_b_tp SIBFS_Current_Analysis_low_b = {
 0 ,
 0 ,
 0 ,
@@ -408,7 +408,7 @@ static struct tag_SIBFS_Motor_Stalled_b_tp SIBFS_Motor_Stalled_b = {
 0
 } ;
 
-static struct tag_SIBFS_Temperature_Alarm_b_t SIBFS_Temperature_Alarm_b = {
+static struct tag_SIBFS_Temperature_Alarm_b_tp SIBFS_Temperature_Alarm_b = {
 0 ,
 0 ,
 0 ,

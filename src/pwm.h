@@ -44,6 +44,7 @@ extern            double Duty_Cycle_In_Ratio;
 extern  unsigned  char   ui8_Duty_Cycle_In_Ratio;
 extern  unsigned  char   ui8_PWMoutvalue;
 extern  unsigned  char   ui8_Duty_Cycle_In_Ratio;
+extern  unsigned  char   ui8_CMD_Mode;
 
 /****************************Defines*******************************************************************/
 #define     PWM_Freq10               100         /*  PWM frequenz is 10 Hz (100ms)                   */ 

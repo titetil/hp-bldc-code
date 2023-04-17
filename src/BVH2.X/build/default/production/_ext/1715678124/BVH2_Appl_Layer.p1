@@ -1,7 +1,7 @@
 Version 3.2 HI-TECH Software Intermediate Code
 "61 ../T_Link/BVH2_Appl_Layer.h
 [s S3 :4 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S3 tag_SIBFS_Current_Analysis_High Cb1_Current_Analysis_High_ns Cb1_glflag Cb1_Current_Analysis_High ]
+[n S3 tag_SIBFS_Current_Analysis_High_b_tp Cb1_Current_Analysis_High_ns Cb1_glflag Cb1_Current_Analysis_High ]
 "100
 [s S8 :4 `uc 1 :1 `uc 1 ]
 [n S8 tag_SIBFS_PWM_Detection_b_tp Cb35_PWMinput_handling_ns Cb35_PWMinput_handling ]
@@ -13,7 +13,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S11 tag_SIBFS_UbatHandling_b_tp Aux_sflag3 Cb57_Ubat_Handling Cb58_SaturationHigh Cb59_SaturationLow Cb60_NormalUbat ]
 "67
 [s S4 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S4 tag_SIBFS_Current_Analysis_low_ Cb10_greenState Cb11_Wait Cb12_CntOverCurrent Cb13_redState Cb9_Current_Analysis_low ]
+[n S4 tag_SIBFS_Current_Analysis_low_b_tp Cb10_greenState Cb11_Wait Cb12_CntOverCurrent Cb13_redState Cb9_Current_Analysis_low ]
 "75
 [s S5 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S5 tag_SIBFS_Dry_RunningAlarm_b_tp Cb19_Dry_RunningAlarm Cb20_greenState Cb21_DryRunningAlarm Cb22_DryRun66 Cb23_DryRun55 ]
@@ -25,7 +25,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S7 tag_SIBFS_Motor_Stalled_b_tp Cb25_Motor_sta__Statemachine_ns Cb24_glflag Cb24_Motor_Stalled Cb25_Motor_stalled_Statemachine Cb32_default Cb33_Stop ]
 "111
 [s S10 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S10 tag_SIBFS_Temperature_Alarm_b_t Cb51_Temperature_Alarm Cb52_CntOverTemp Cb53_reset Cb54_greenTemp Cb55_redTemp ]
+[n S10 tag_SIBFS_Temperature_Alarm_b_tp Cb51_Temperature_Alarm Cb52_CntOverTemp Cb53_reset Cb54_greenTemp Cb55_redTemp ]
 "304 ../T_Link/BVH2_Appl_Layer.c
 [v _Cb44_Pic_etat_monitor_node_fcn1 `(v ~T0 @X0 0 sf ]
 "303
@@ -131,12 +131,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;math.h: 53: extern double fmod(double, double);
 [; ;math.h: 54: extern double trunc(double);
 [; ;math.h: 55: extern double round(double);
-[; ;BVH2_Appl_Layer.h: 61: struct tag_SIBFS_Current_Analysis_High {
+[; ;BVH2_Appl_Layer.h: 61: struct tag_SIBFS_Current_Analysis_High_b_tp {
 [; ;BVH2_Appl_Layer.h: 62: unsigned int Cb1_Current_Analysis_High_ns : 4;
 [; ;BVH2_Appl_Layer.h: 63: unsigned int Cb1_glflag : 2;
 [; ;BVH2_Appl_Layer.h: 64: unsigned int Cb1_Current_Analysis_High : 1;
 [; ;BVH2_Appl_Layer.h: 65: };
-[; ;BVH2_Appl_Layer.h: 67: struct tag_SIBFS_Current_Analysis_low_ {
+[; ;BVH2_Appl_Layer.h: 67: struct tag_SIBFS_Current_Analysis_low_b_tp {
 [; ;BVH2_Appl_Layer.h: 68: unsigned int Cb10_greenState : 1;
 [; ;BVH2_Appl_Layer.h: 69: unsigned int Cb11_Wait : 1;
 [; ;BVH2_Appl_Layer.h: 70: unsigned int Cb12_CntOverCurrent : 1;
@@ -174,7 +174,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;BVH2_Appl_Layer.h: 107: unsigned int Cb44_glflag : 2;
 [; ;BVH2_Appl_Layer.h: 108: unsigned int Cb44_Pic_etat_monitor : 1;
 [; ;BVH2_Appl_Layer.h: 109: };
-[; ;BVH2_Appl_Layer.h: 111: struct tag_SIBFS_Temperature_Alarm_b_t {
+[; ;BVH2_Appl_Layer.h: 111: struct tag_SIBFS_Temperature_Alarm_b_tp {
 [; ;BVH2_Appl_Layer.h: 112: unsigned int Cb51_Temperature_Alarm : 1;
 [; ;BVH2_Appl_Layer.h: 113: unsigned int Cb52_CntOverTemp : 1;
 [; ;BVH2_Appl_Layer.h: 114: unsigned int Cb53_reset : 1;
@@ -356,7 +356,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 ..
 ..
 ]
-[; ;BVH2_Appl_Layer.c: 251: static struct tag_SIBFS_Current_Analysis_High SIBFS_Current_Analysis_High_b = {
+[; ;BVH2_Appl_Layer.c: 251: static struct tag_SIBFS_Current_Analysis_High_b_tp SIBFS_Current_Analysis_High_b = {
 [; ;BVH2_Appl_Layer.c: 252: 0 ,
 [; ;BVH2_Appl_Layer.c: 253: 0 ,
 [; ;BVH2_Appl_Layer.c: 254: 0
@@ -720,7 +720,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;BVH2_Appl_Layer.c: 338: static UInt8 Cb24_RestartCounter = 0;
 [; ;BVH2_Appl_Layer.c: 339: static UInt8 Cb51_Counter = 0;
 [; ;BVH2_Appl_Layer.c: 340: static UInt8 Cb9_StateCnt = 0;
-[; ;BVH2_Appl_Layer.c: 342: static struct tag_SIBFS_Current_Analysis_low_ SIBFS_Current_Analysis_low_b = {
+[; ;BVH2_Appl_Layer.c: 342: static struct tag_SIBFS_Current_Analysis_low_b_tp SIBFS_Current_Analysis_low_b = {
 [; ;BVH2_Appl_Layer.c: 343: 0 ,
 [; ;BVH2_Appl_Layer.c: 344: 0 ,
 [; ;BVH2_Appl_Layer.c: 345: 0 ,
@@ -749,7 +749,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;BVH2_Appl_Layer.c: 371: 0 ,
 [; ;BVH2_Appl_Layer.c: 372: 0
 [; ;BVH2_Appl_Layer.c: 373: } ;
-[; ;BVH2_Appl_Layer.c: 375: static struct tag_SIBFS_Temperature_Alarm_b_t SIBFS_Temperature_Alarm_b = {
+[; ;BVH2_Appl_Layer.c: 375: static struct tag_SIBFS_Temperature_Alarm_b_tp SIBFS_Temperature_Alarm_b = {
 [; ;BVH2_Appl_Layer.c: 376: 0 ,
 [; ;BVH2_Appl_Layer.c: 377: 0 ,
 [; ;BVH2_Appl_Layer.c: 378: 0 ,

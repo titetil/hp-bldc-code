@@ -4824,6 +4824,7 @@ extern double Duty_Cycle_In_Ratio;
 extern unsigned char ui8_Duty_Cycle_In_Ratio;
 extern unsigned char ui8_PWMoutvalue;
 extern unsigned char ui8_Duty_Cycle_In_Ratio;
+extern unsigned char ui8_CMD_Mode;
 
 # 255 "../config.h"
 extern const unsigned short PWM_trans_table[202] = {

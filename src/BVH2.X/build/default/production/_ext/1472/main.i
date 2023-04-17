@@ -4885,6 +4885,7 @@ extern double Duty_Cycle_In_Ratio;
 extern unsigned char ui8_Duty_Cycle_In_Ratio;
 extern unsigned char ui8_PWMoutvalue;
 extern unsigned char ui8_Duty_Cycle_In_Ratio;
+extern unsigned char ui8_CMD_Mode;
 
 # 39 "../project.h"
 typedef union
@@ -5165,13 +5166,13 @@ typedef unsigned char UInt8;
 typedef void Void;
 
 # 61 "../T_Link\BVH2_Appl_Layer.h"
-struct tag_SIBFS_Current_Analysis_High {
+struct tag_SIBFS_Current_Analysis_High_b_tp {
 unsigned int Cb1_Current_Analysis_High_ns : 4;
 unsigned int Cb1_glflag : 2;
 unsigned int Cb1_Current_Analysis_High : 1;
 };
 
-struct tag_SIBFS_Current_Analysis_low_ {
+struct tag_SIBFS_Current_Analysis_low_b_tp {
 unsigned int Cb10_greenState : 1;
 unsigned int Cb11_Wait : 1;
 unsigned int Cb12_CntOverCurrent : 1;
@@ -5215,7 +5216,7 @@ unsigned int Cb44_glflag : 2;
 unsigned int Cb44_Pic_etat_monitor : 1;
 };
 
-struct tag_SIBFS_Temperature_Alarm_b_t {
+struct tag_SIBFS_Temperature_Alarm_b_tp {
 unsigned int Cb51_Temperature_Alarm : 1;
 unsigned int Cb52_CntOverTemp : 1;
 unsigned int Cb53_reset : 1;

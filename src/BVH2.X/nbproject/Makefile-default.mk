@@ -39,7 +39,7 @@ FINAL_IMAGE=dist/${CND_CONF}/${IMAGE_TYPE}/BVH2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 endif
 
 ifeq ($(COMPARE_BUILD), true)
-COMPARISON_BUILD=--mafrlcsj
+COMPARISON_BUILD=-mafrlcsj
 else
 COMPARISON_BUILD=
 endif
@@ -70,6 +70,7 @@ OBJECTFILES=${OBJECTDIR}/_ext/1472/adc.p1 ${OBJECTDIR}/_ext/1472/bldc.p1 ${OBJEC
 SOURCEFILES=../adc.c ../bldc.c ../diag.c ../eeprom.c ../interrupt.c ../lin.c ../main.c ../pwm.c ../T_Link/BVH2_Appl_Layer.c ../timer.c ../cksum.c
 
 
+
 CFLAGS=
 ASFLAGS=
 LDLIBSOPTIONS=
@@ -97,7 +98,7 @@ ${OBJECTDIR}/_ext/1472/adc.p1: ../adc.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/adc.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/adc.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1 --debugger=icd3  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/adc.p1  ../adc.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/adc.p1 ../adc.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/adc.d ${OBJECTDIR}/_ext/1472/adc.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/adc.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -105,7 +106,7 @@ ${OBJECTDIR}/_ext/1472/bldc.p1: ../bldc.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/bldc.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/bldc.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1 --debugger=icd3  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/bldc.p1  ../bldc.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/bldc.p1 ../bldc.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/bldc.d ${OBJECTDIR}/_ext/1472/bldc.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/bldc.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -113,7 +114,7 @@ ${OBJECTDIR}/_ext/1472/diag.p1: ../diag.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/diag.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/diag.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1 --debugger=icd3  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/diag.p1  ../diag.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/diag.p1 ../diag.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/diag.d ${OBJECTDIR}/_ext/1472/diag.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/diag.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -121,7 +122,7 @@ ${OBJECTDIR}/_ext/1472/eeprom.p1: ../eeprom.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/eeprom.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/eeprom.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1 --debugger=icd3  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/eeprom.p1  ../eeprom.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/eeprom.p1 ../eeprom.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/eeprom.d ${OBJECTDIR}/_ext/1472/eeprom.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/eeprom.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -129,7 +130,7 @@ ${OBJECTDIR}/_ext/1472/interrupt.p1: ../interrupt.c  nbproject/Makefile-${CND_CO
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/interrupt.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/interrupt.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1 --debugger=icd3  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/interrupt.p1  ../interrupt.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/interrupt.p1 ../interrupt.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/interrupt.d ${OBJECTDIR}/_ext/1472/interrupt.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/interrupt.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -137,7 +138,7 @@ ${OBJECTDIR}/_ext/1472/lin.p1: ../lin.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/lin.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/lin.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1 --debugger=icd3  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/lin.p1  ../lin.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/lin.p1 ../lin.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/lin.d ${OBJECTDIR}/_ext/1472/lin.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/lin.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -145,7 +146,7 @@ ${OBJECTDIR}/_ext/1472/main.p1: ../main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/main.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/main.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1 --debugger=icd3  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/main.p1  ../main.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/main.p1 ../main.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/main.d ${OBJECTDIR}/_ext/1472/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -153,7 +154,7 @@ ${OBJECTDIR}/_ext/1472/pwm.p1: ../pwm.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/pwm.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/pwm.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1 --debugger=icd3  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/pwm.p1  ../pwm.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/pwm.p1 ../pwm.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/pwm.d ${OBJECTDIR}/_ext/1472/pwm.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/pwm.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -161,7 +162,7 @@ ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1: ../T_Link/BVH2_Appl_Layer.c  nb
 	@${MKDIR} "${OBJECTDIR}/_ext/1715678124" 
 	@${RM} ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1 --debugger=icd3  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1  ../T_Link/BVH2_Appl_Layer.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1 ../T_Link/BVH2_Appl_Layer.c 
 	@-${MV} ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.d ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -169,7 +170,7 @@ ${OBJECTDIR}/_ext/1472/timer.p1: ../timer.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/timer.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/timer.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1 --debugger=icd3  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/timer.p1  ../timer.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/timer.p1 ../timer.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/timer.d ${OBJECTDIR}/_ext/1472/timer.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/timer.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -177,7 +178,7 @@ ${OBJECTDIR}/_ext/1472/cksum.p1: ../cksum.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/cksum.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/cksum.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  -D__DEBUG=1 --debugger=icd3  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/cksum.p1  ../cksum.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/cksum.p1 ../cksum.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/cksum.d ${OBJECTDIR}/_ext/1472/cksum.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/cksum.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -186,7 +187,7 @@ ${OBJECTDIR}/_ext/1472/adc.p1: ../adc.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/adc.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/adc.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/adc.p1  ../adc.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/adc.p1 ../adc.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/adc.d ${OBJECTDIR}/_ext/1472/adc.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/adc.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -194,7 +195,7 @@ ${OBJECTDIR}/_ext/1472/bldc.p1: ../bldc.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/bldc.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/bldc.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/bldc.p1  ../bldc.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/bldc.p1 ../bldc.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/bldc.d ${OBJECTDIR}/_ext/1472/bldc.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/bldc.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -202,7 +203,7 @@ ${OBJECTDIR}/_ext/1472/diag.p1: ../diag.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/diag.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/diag.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/diag.p1  ../diag.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/diag.p1 ../diag.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/diag.d ${OBJECTDIR}/_ext/1472/diag.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/diag.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -210,7 +211,7 @@ ${OBJECTDIR}/_ext/1472/eeprom.p1: ../eeprom.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/eeprom.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/eeprom.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/eeprom.p1  ../eeprom.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/eeprom.p1 ../eeprom.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/eeprom.d ${OBJECTDIR}/_ext/1472/eeprom.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/eeprom.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -218,7 +219,7 @@ ${OBJECTDIR}/_ext/1472/interrupt.p1: ../interrupt.c  nbproject/Makefile-${CND_CO
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/interrupt.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/interrupt.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/interrupt.p1  ../interrupt.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/interrupt.p1 ../interrupt.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/interrupt.d ${OBJECTDIR}/_ext/1472/interrupt.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/interrupt.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -226,7 +227,7 @@ ${OBJECTDIR}/_ext/1472/lin.p1: ../lin.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/lin.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/lin.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/lin.p1  ../lin.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/lin.p1 ../lin.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/lin.d ${OBJECTDIR}/_ext/1472/lin.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/lin.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -234,7 +235,7 @@ ${OBJECTDIR}/_ext/1472/main.p1: ../main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/main.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/main.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/main.p1  ../main.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/main.p1 ../main.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/main.d ${OBJECTDIR}/_ext/1472/main.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/main.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -242,7 +243,7 @@ ${OBJECTDIR}/_ext/1472/pwm.p1: ../pwm.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/pwm.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/pwm.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/pwm.p1  ../pwm.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/pwm.p1 ../pwm.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/pwm.d ${OBJECTDIR}/_ext/1472/pwm.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/pwm.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -250,7 +251,7 @@ ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1: ../T_Link/BVH2_Appl_Layer.c  nb
 	@${MKDIR} "${OBJECTDIR}/_ext/1715678124" 
 	@${RM} ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1  ../T_Link/BVH2_Appl_Layer.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1 ../T_Link/BVH2_Appl_Layer.c 
 	@-${MV} ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.d ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1715678124/BVH2_Appl_Layer.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -258,7 +259,7 @@ ${OBJECTDIR}/_ext/1472/timer.p1: ../timer.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/timer.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/timer.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/timer.p1  ../timer.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/timer.p1 ../timer.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/timer.d ${OBJECTDIR}/_ext/1472/timer.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/timer.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -266,7 +267,7 @@ ${OBJECTDIR}/_ext/1472/cksum.p1: ../cksum.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
 	@${RM} ${OBJECTDIR}/_ext/1472/cksum.p1.d 
 	@${RM} ${OBJECTDIR}/_ext/1472/cksum.p1 
-	${MP_CC} --pass1 $(MP_EXTRA_CC_PRE) --chip=$(MP_PROCESSOR_OPTION) -Q -G  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib $(COMPARISON_BUILD)  --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"    -o${OBJECTDIR}/_ext/1472/cksum.p1  ../cksum.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall $(COMPARISON_BUILD)  -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/_ext/1472/cksum.p1 ../cksum.c 
 	@-${MV} ${OBJECTDIR}/_ext/1472/cksum.d ${OBJECTDIR}/_ext/1472/cksum.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/_ext/1472/cksum.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
@@ -279,17 +280,23 @@ else
 endif
 
 # ------------------------------------------------------------------------------------
+# Rules for buildStep: assembleWithPreprocess
+ifeq ($(TYPE_IMAGE), DEBUG_RUN)
+else
+endif
+
+# ------------------------------------------------------------------------------------
 # Rules for buildStep: link
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 dist/${CND_CONF}/${IMAGE_TYPE}/BVH2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE) --chip=$(MP_PROCESSOR_OPTION) -G -mdist/${CND_CONF}/${IMAGE_TYPE}/BVH2.X.${IMAGE_TYPE}.map  -D__DEBUG=1 --debugger=icd3  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"      --ram=default,-320-32f  $(COMPARISON_BUILD) --memorysummary dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml -odist/${CND_CONF}/${IMAGE_TYPE}/BVH2.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
+	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=dist/${CND_CONF}/${IMAGE_TYPE}/BVH2.X.${IMAGE_TYPE}.map  -D__DEBUG=1  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall -std=c90 -gdwarf-3 -mstack=compiled:auto:auto      -mram=default,-320-32f  $(COMPARISON_BUILD) -Wl,--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml -o dist/${CND_CONF}/${IMAGE_TYPE}/BVH2.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 	@${RM} dist/${CND_CONF}/${IMAGE_TYPE}/BVH2.X.${IMAGE_TYPE}.hex 
 	
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/BVH2.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_CC} $(MP_EXTRA_LD_PRE) --chip=$(MP_PROCESSOR_OPTION) -G -mdist/${CND_CONF}/${IMAGE_TYPE}/BVH2.X.${IMAGE_TYPE}.map  --double=24 --float=24 --opt=+asm,+asmfile,-speed,+space,-debug,-local --addrqual=ignore --mode=pro -N31 -I"../T_Link" -I"../" --warn=0 --asmlist -DXPRJ_default=$(CND_CONF)  --summary=default,-psect,+class,+mem,+hex,-file --fill=0xffff --checksum=0-1ffd@1ffe,algorithm=2 --output=default,-inhx032 --runtime=default,+clear,+init,-keep,-no_startup,+osccal,-resetbits,-download,+stackcall,+clib --output=-mcof,+elf:multilocs --stack=compiled:auto:auto "--errformat=%f:%l: error: (%n) %s" "--warnformat=%f:%l: warning: (%n) %s" "--msgformat=%f:%l: advisory: (%n) %s"     $(COMPARISON_BUILD) --memorysummary dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml -odist/${CND_CONF}/${IMAGE_TYPE}/BVH2.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
+	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=dist/${CND_CONF}/${IMAGE_TYPE}/BVH2.X.${IMAGE_TYPE}.map  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1    -fno-short-double -fno-short-float -fasmfile -maddrqual=ignore -I"../T_Link" -I"../" -mwarn=0 -Wa,-a -msummary=-psect,+class,+mem,+hex,-file --fill=0xffff -mchecksum=0-1ffd@1ffe,algorithm=2  -ginhx032 -Wl,--data-init -mno-keep-startup -mosccal -mno-resetbits -mno-save-resetbits -mno-download -mstackcall -std=c90 -gdwarf-3 -mstack=compiled:auto:auto     $(COMPARISON_BUILD) -Wl,--memorysummary,dist/${CND_CONF}/${IMAGE_TYPE}/memoryfile.xml -o dist/${CND_CONF}/${IMAGE_TYPE}/BVH2.X.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 	
 endif
 
