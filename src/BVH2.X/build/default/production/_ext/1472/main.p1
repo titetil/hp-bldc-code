@@ -78,10 +78,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _ui16_duty_cycle_mat `us ~T0 @X0 0 e ]
 "27 ../adc.h
 [v _Get_Analog_Value `(v ~T0 @X0 0 ef ]
-"169 ../T_Link\BVH2_Appl_Layer.h
-[v _ui8_PWM_dc_mat `uc ~T0 @X0 0 e ]
 "41 ../pwm.h
 [v _PWMReadDC `(uc ~T0 @X0 0 ef ]
+"169 ../T_Link\BVH2_Appl_Layer.h
+[v _ui8_PWM_dc_mat `uc ~T0 @X0 0 e ]
+"162 ../main.c
+[v _rate_limit `(i ~T0 @X0 0 ef1`i ]
 "142 ../T_Link\BVH2_Appl_Layer.h
 [v _ui16_PWM_Freq_mat `us ~T0 @X0 0 e ]
 "42 ../pwm.h
@@ -3850,547 +3852,658 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 150: extern unsigned char ui8_b_DResB4_c;
 [; ;main.c: 151: extern unsigned char ui8_b_DResB5_c;
 [; ;main.c: 152: extern unsigned short ui16_duty_cycle_mat;
-[; ;main.c: 157: void init_ports( void );
-[; ;main.c: 158: void system_init( void );
-[; ;main.c: 160: extern void Task1ms( void );
-"174
-[v _I_calibrationInit `(v ~T0 @X0 1 ef ]
-"176
-{
-[; ;main.c: 174: void I_calibrationInit(void)
-[; ;main.c: 176: {
-[e :U _I_calibrationInit ]
-[f ]
-[; ;main.c: 178: if ( read_eeprom_data( 0x03 ) != 0x00 && read_eeprom_data( 0x03 ) != 0xFF)
+"154
+[v _last_pwm `i ~T0 @X0 1 e ]
+[; ;main.c: 154: int last_pwm;
+"155
+[v _pwm_cmd `uc ~T0 @X0 1 e ]
+[; ;main.c: 155: unsigned char pwm_cmd;
+[; ;main.c: 160: void init_ports( void );
+[; ;main.c: 161: void system_init( void );
+[; ;main.c: 162: int rate_limit(int pwm);
+[; ;main.c: 164: extern void Task1ms( void );
 "178
-[e $ ! && != -> ( _read_eeprom_data (1 -> -> 3 `i `uc `i -> 0 `i != -> ( _read_eeprom_data (1 -> -> 3 `i `uc `i -> 255 `i 381  ]
-[; ;main.c: 180: {
+[v _I_calibrationInit `(v ~T0 @X0 1 ef ]
 "180
 {
-[; ;main.c: 182: ui16_I_cal_Ph1 = ( read_eeprom_data( 0x02 )<<8 ) | read_eeprom_data( 0x03 );
+[; ;main.c: 178: void I_calibrationInit(void)
+[; ;main.c: 180: {
+[e :U _I_calibrationInit ]
+[f ]
+[; ;main.c: 182: if ( read_eeprom_data( 0x03 ) != 0x00 && read_eeprom_data( 0x03 ) != 0xFF)
 "182
-[e = _ui16_I_cal_Ph1 -> | << -> ( _read_eeprom_data (1 -> -> 2 `i `uc `i -> 8 `i -> ( _read_eeprom_data (1 -> -> 3 `i `uc `i `ui ]
-"185
-}
-[; ;main.c: 185: }
-[e $U 382  ]
-"188
-[e :U 381 ]
-[; ;main.c: 188: else
-[; ;main.c: 189: {
-"189
+[e $ ! && != -> ( _read_eeprom_data (1 -> -> 3 `i `uc `i -> 0 `i != -> ( _read_eeprom_data (1 -> -> 3 `i `uc `i -> 255 `i 381  ]
+[; ;main.c: 184: {
+"184
 {
-[; ;main.c: 191: ui16_I_cal_Ph1 = 0x0100;
-"191
+[; ;main.c: 186: ui16_I_cal_Ph1 = ( read_eeprom_data( 0x02 )<<8 ) | read_eeprom_data( 0x03 );
+"186
+[e = _ui16_I_cal_Ph1 -> | << -> ( _read_eeprom_data (1 -> -> 2 `i `uc `i -> 8 `i -> ( _read_eeprom_data (1 -> -> 3 `i `uc `i `ui ]
+"189
+}
+[; ;main.c: 189: }
+[e $U 382  ]
+"192
+[e :U 381 ]
+[; ;main.c: 192: else
+[; ;main.c: 193: {
+"193
+{
+[; ;main.c: 195: ui16_I_cal_Ph1 = 0x0100;
+"195
 [e = _ui16_I_cal_Ph1 -> -> 256 `i `ui ]
-"194
+"198
 }
 [e :U 382 ]
-[; ;main.c: 194: }
-[; ;main.c: 197: if ( read_eeprom_data( 0x05 ) != 0x00 && read_eeprom_data( 0x05 ) != 0xFF)
-"197
-[e $ ! && != -> ( _read_eeprom_data (1 -> -> 5 `i `uc `i -> 0 `i != -> ( _read_eeprom_data (1 -> -> 5 `i `uc `i -> 255 `i 383  ]
-[; ;main.c: 199: {
-"199
-{
-[; ;main.c: 201: ui16_I_cal_Ph2 = ( read_eeprom_data( 0x04 )<<8 ) | read_eeprom_data( 0x05 );
+[; ;main.c: 198: }
+[; ;main.c: 201: if ( read_eeprom_data( 0x05 ) != 0x00 && read_eeprom_data( 0x05 ) != 0xFF)
 "201
-[e = _ui16_I_cal_Ph2 -> | << -> ( _read_eeprom_data (1 -> -> 4 `i `uc `i -> 8 `i -> ( _read_eeprom_data (1 -> -> 5 `i `uc `i `ui ]
-"204
-}
-[; ;main.c: 204: }
-[e $U 384  ]
-"207
-[e :U 383 ]
-[; ;main.c: 207: else
-[; ;main.c: 208: {
-"208
+[e $ ! && != -> ( _read_eeprom_data (1 -> -> 5 `i `uc `i -> 0 `i != -> ( _read_eeprom_data (1 -> -> 5 `i `uc `i -> 255 `i 383  ]
+[; ;main.c: 203: {
+"203
 {
-[; ;main.c: 210: ui16_I_cal_Ph2 = 0x0100;
-"210
+[; ;main.c: 205: ui16_I_cal_Ph2 = ( read_eeprom_data( 0x04 )<<8 ) | read_eeprom_data( 0x05 );
+"205
+[e = _ui16_I_cal_Ph2 -> | << -> ( _read_eeprom_data (1 -> -> 4 `i `uc `i -> 8 `i -> ( _read_eeprom_data (1 -> -> 5 `i `uc `i `ui ]
+"208
+}
+[; ;main.c: 208: }
+[e $U 384  ]
+"211
+[e :U 383 ]
+[; ;main.c: 211: else
+[; ;main.c: 212: {
+"212
+{
+[; ;main.c: 214: ui16_I_cal_Ph2 = 0x0100;
+"214
 [e = _ui16_I_cal_Ph2 -> -> 256 `i `ui ]
-"213
+"217
 }
 [e :U 384 ]
-[; ;main.c: 213: }
-[; ;main.c: 216: if ( read_eeprom_data( 0x07 ) != 0x00 && read_eeprom_data( 0x07 ) != 0xFF)
-"216
-[e $ ! && != -> ( _read_eeprom_data (1 -> -> 7 `i `uc `i -> 0 `i != -> ( _read_eeprom_data (1 -> -> 7 `i `uc `i -> 255 `i 385  ]
-[; ;main.c: 218: {
-"218
-{
-[; ;main.c: 220: ui16_I_cal_Ph3 = ( read_eeprom_data( 0x06 )<<8 ) | read_eeprom_data( 0x07 );
+[; ;main.c: 217: }
+[; ;main.c: 220: if ( read_eeprom_data( 0x07 ) != 0x00 && read_eeprom_data( 0x07 ) != 0xFF)
 "220
-[e = _ui16_I_cal_Ph3 -> | << -> ( _read_eeprom_data (1 -> -> 6 `i `uc `i -> 8 `i -> ( _read_eeprom_data (1 -> -> 7 `i `uc `i `ui ]
+[e $ ! && != -> ( _read_eeprom_data (1 -> -> 7 `i `uc `i -> 0 `i != -> ( _read_eeprom_data (1 -> -> 7 `i `uc `i -> 255 `i 385  ]
+[; ;main.c: 222: {
 "222
-}
-[; ;main.c: 222: }
-[e $U 386  ]
-"225
-[e :U 385 ]
-[; ;main.c: 225: else
-[; ;main.c: 226: {
-"226
 {
-[; ;main.c: 228: ui16_I_cal_Ph3 = 0x0100;
-"228
+[; ;main.c: 224: ui16_I_cal_Ph3 = ( read_eeprom_data( 0x06 )<<8 ) | read_eeprom_data( 0x07 );
+"224
+[e = _ui16_I_cal_Ph3 -> | << -> ( _read_eeprom_data (1 -> -> 6 `i `uc `i -> 8 `i -> ( _read_eeprom_data (1 -> -> 7 `i `uc `i `ui ]
+"226
+}
+[; ;main.c: 226: }
+[e $U 386  ]
+"229
+[e :U 385 ]
+[; ;main.c: 229: else
+[; ;main.c: 230: {
+"230
+{
+[; ;main.c: 232: ui16_I_cal_Ph3 = 0x0100;
+"232
 [e = _ui16_I_cal_Ph3 -> -> 256 `i `ui ]
-"231
+"235
 }
 [e :U 386 ]
-[; ;main.c: 231: }
-[; ;main.c: 324: LATC2 = 0;
-"324
+[; ;main.c: 235: }
+[; ;main.c: 328: LATC2 = 0;
+"328
 [e = _LATC2 -> -> 0 `i `b ]
-[; ;main.c: 325: LATB2 = 0;
-"325
-[e = _LATB2 -> -> 0 `i `b ]
-[; ;main.c: 326: LATB1 = 0;
-"326
-[e = _LATB1 -> -> 0 `i `b ]
-[; ;main.c: 327: LATC = LATC | 0b00011010;
-"327
-[e = _LATC -> | -> _LATC `i -> 26 `i `uc ]
-[; ;main.c: 329: ADC_Wait();
+[; ;main.c: 329: LATB2 = 0;
 "329
-[e ( _ADC_Wait ..  ]
-[; ;main.c: 330: ADC_Wait();
+[e = _LATB2 -> -> 0 `i `b ]
+[; ;main.c: 330: LATB1 = 0;
 "330
-[e ( _ADC_Wait ..  ]
-[; ;main.c: 332: ( ADCON0 = ( 0x04 << 2 ) | 0x01 );
-"332
-[e = _ADCON0 -> | << -> 4 `i -> 2 `i -> 1 `i `uc ]
+[e = _LATB1 -> -> 0 `i `b ]
+[; ;main.c: 331: LATC = LATC | 0b00011010;
+"331
+[e = _LATC -> | -> _LATC `i -> 26 `i `uc ]
 [; ;main.c: 333: ADC_Wait();
 "333
 [e ( _ADC_Wait ..  ]
-[; ;main.c: 334: ( GO_nDONE = 1 );
+[; ;main.c: 334: ADC_Wait();
 "334
-[e = _GO_nDONE -> -> 1 `i `b ]
-[; ;main.c: 337: ui8_current_cal[2] = ADC_Read();
+[e ( _ADC_Wait ..  ]
+[; ;main.c: 336: ( ADCON0 = ( 0x04 << 2 ) | 0x01 );
+"336
+[e = _ADCON0 -> | << -> 4 `i -> 2 `i -> 1 `i `uc ]
+[; ;main.c: 337: ADC_Wait();
 "337
-[e = *U + &U _ui8_current_cal * -> -> -> 2 `i `ui `ux -> -> # *U &U _ui8_current_cal `ui `ux -> ( _ADC_Read ..  `uc ]
-[; ;main.c: 339: ( ADCON0 = ( 0x0D << 2 ) | 0x01 );
-"339
-[e = _ADCON0 -> | << -> 13 `i -> 2 `i -> 1 `i `uc ]
-[; ;main.c: 340: ADC_Wait();
-"340
 [e ( _ADC_Wait ..  ]
-[; ;main.c: 341: ( GO_nDONE = 1 );
+[; ;main.c: 338: ( GO_nDONE = 1 );
+"338
+[e = _GO_nDONE -> -> 1 `i `b ]
+[; ;main.c: 341: ui8_current_cal[2] = ADC_Read();
 "341
-[e = _GO_nDONE -> -> 1 `i `b ]
-[; ;main.c: 344: ui8_current_cal[1] = ADC_Read();
+[e = *U + &U _ui8_current_cal * -> -> -> 2 `i `ui `ux -> -> # *U &U _ui8_current_cal `ui `ux -> ( _ADC_Read ..  `uc ]
+[; ;main.c: 343: ( ADCON0 = ( 0x0D << 2 ) | 0x01 );
+"343
+[e = _ADCON0 -> | << -> 13 `i -> 2 `i -> 1 `i `uc ]
+[; ;main.c: 344: ADC_Wait();
 "344
-[e = *U + &U _ui8_current_cal * -> -> -> 1 `i `ui `ux -> -> # *U &U _ui8_current_cal `ui `ux -> ( _ADC_Read ..  `uc ]
-[; ;main.c: 346: ( ADCON0 = ( 0x02 << 2 ) | 0x01 );
-"346
-[e = _ADCON0 -> | << -> 2 `i -> 2 `i -> 1 `i `uc ]
-[; ;main.c: 347: ADC_Wait();
-"347
 [e ( _ADC_Wait ..  ]
-[; ;main.c: 348: ( GO_nDONE = 1 );
-"348
+[; ;main.c: 345: ( GO_nDONE = 1 );
+"345
 [e = _GO_nDONE -> -> 1 `i `b ]
-[; ;main.c: 351: ui8_current_cal[0] = ADC_Read();
+[; ;main.c: 348: ui8_current_cal[1] = ADC_Read();
+"348
+[e = *U + &U _ui8_current_cal * -> -> -> 1 `i `ui `ux -> -> # *U &U _ui8_current_cal `ui `ux -> ( _ADC_Read ..  `uc ]
+[; ;main.c: 350: ( ADCON0 = ( 0x02 << 2 ) | 0x01 );
+"350
+[e = _ADCON0 -> | << -> 2 `i -> 2 `i -> 1 `i `uc ]
+[; ;main.c: 351: ADC_Wait();
 "351
+[e ( _ADC_Wait ..  ]
+[; ;main.c: 352: ( GO_nDONE = 1 );
+"352
+[e = _GO_nDONE -> -> 1 `i `b ]
+[; ;main.c: 355: ui8_current_cal[0] = ADC_Read();
+"355
 [e = *U + &U _ui8_current_cal * -> -> -> 0 `i `ui `ux -> -> # *U &U _ui8_current_cal `ui `ux -> ( _ADC_Read ..  `uc ]
-[; ;main.c: 357: }
-"357
+[; ;main.c: 361: }
+"361
 [e :UE 380 ]
 }
-"404
+"408
 [v _init_ports `(v ~T0 @X0 1 ef ]
-"406
+"410
 {
-[; ;main.c: 404: void init_ports( void )
-[; ;main.c: 406: {
+[; ;main.c: 408: void init_ports( void )
+[; ;main.c: 410: {
 [e :U _init_ports ]
 [f ]
-[; ;main.c: 411: ANSELA = 0b00100111;
-"411
-[e = _ANSELA -> -> 39 `i `uc ]
-[; ;main.c: 412: ANSELB = 0b00101001;
-"412
-[e = _ANSELB -> -> 41 `i `uc ]
-[; ;main.c: 415: LATA = 0;
+[; ;main.c: 415: ANSELA = 0b00100111;
 "415
-[e = _LATA -> -> 0 `i `uc ]
-[; ;main.c: 416: LATB = 0;
+[e = _ANSELA -> -> 39 `i `uc ]
+[; ;main.c: 416: ANSELB = 0b00101001;
 "416
+[e = _ANSELB -> -> 41 `i `uc ]
+[; ;main.c: 419: LATA = 0;
+"419
+[e = _LATA -> -> 0 `i `uc ]
+[; ;main.c: 420: LATB = 0;
+"420
 [e = _LATB -> -> 0 `i `uc ]
-[; ;main.c: 417: LATC = 0;
-"417
+[; ;main.c: 421: LATC = 0;
+"421
 [e = _LATC -> -> 0 `i `uc ]
-[; ;main.c: 498: TRISA = 0b01111111;
-"498
+[; ;main.c: 502: TRISA = 0b01111111;
+"502
 [e = _TRISA -> -> 127 `i `uc ]
-[; ;main.c: 507: TRISB = 0b00111001;
-"507
+[; ;main.c: 511: TRISB = 0b00111001;
+"511
 [e = _TRISB -> -> 57 `i `uc ]
-[; ;main.c: 516: TRISC = 0b00000000;
-"516
+[; ;main.c: 520: TRISC = 0b00000000;
+"520
 [e = _TRISC -> -> 0 `i `uc ]
-[; ;main.c: 531: }
-"531
+[; ;main.c: 535: }
+"535
 [e :UE 387 ]
 }
-"545
+"549
 [v _system_init `(v ~T0 @X0 1 ef ]
-"547
+"551
 {
-[; ;main.c: 545: void system_init( void )
-[; ;main.c: 547: {
+[; ;main.c: 549: void system_init( void )
+[; ;main.c: 551: {
 [e :U _system_init ]
 [f ]
-[; ;main.c: 549: OPTION_REG = 0b10000001;
-"549
+[; ;main.c: 553: OPTION_REG = 0b10000001;
+"553
 [e = _OPTION_REG -> -> 129 `i `uc ]
-[; ;main.c: 558: ui8_ResetMatlab = 1;
-"558
-[e = _ui8_ResetMatlab -> -> 1 `i `uc ]
-[; ;main.c: 559: GIE = 0;
-"559
-[e = _GIE -> -> 0 `i `b ]
-[; ;main.c: 560: INTCON = 0;
-"560
-[e = _INTCON -> -> 0 `i `uc ]
-[; ;main.c: 561: PIE1 = 0;
-"561
-[e = _PIE1 -> -> 0 `i `uc ]
-[; ;main.c: 562: PIE2 = 0;
+[; ;main.c: 562: ui8_ResetMatlab = 1;
 "562
-[e = _PIE2 -> -> 0 `i `uc ]
-[; ;main.c: 563: PIE3 = 0;
+[e = _ui8_ResetMatlab -> -> 1 `i `uc ]
+[; ;main.c: 563: GIE = 0;
 "563
-[e = _PIE3 -> -> 0 `i `uc ]
-[; ;main.c: 565: ui16_Timer_VaL1 = 0;
+[e = _GIE -> -> 0 `i `b ]
+[; ;main.c: 564: INTCON = 0;
+"564
+[e = _INTCON -> -> 0 `i `uc ]
+[; ;main.c: 565: PIE1 = 0;
 "565
-[e = _ui16_Timer_VaL1 -> -> 0 `i `ui ]
-[; ;main.c: 566: ui8_Task_Cont3ms = 0;
+[e = _PIE1 -> -> 0 `i `uc ]
+[; ;main.c: 566: PIE2 = 0;
 "566
-[e = _ui8_Task_Cont3ms -> -> 0 `i `uc ]
-[; ;main.c: 567: ui8_Task_Cont5ms = 0;
+[e = _PIE2 -> -> 0 `i `uc ]
+[; ;main.c: 567: PIE3 = 0;
 "567
-[e = _ui8_Task_Cont5ms -> -> 0 `i `uc ]
-[; ;main.c: 568: ui8_Task_Cont100ms = 0;
-"568
-[e = _ui8_Task_Cont100ms -> -> 0 `i `uc ]
-[; ;main.c: 569: ui8_DebugCnt = 0;
+[e = _PIE3 -> -> 0 `i `uc ]
+[; ;main.c: 569: ui16_Timer_VaL1 = 0;
 "569
-[e = _ui8_DebugCnt -> -> 0 `i `uc ]
-[; ;main.c: 571: ui8_Sync_Cont10ms = 0;
+[e = _ui16_Timer_VaL1 -> -> 0 `i `ui ]
+[; ;main.c: 570: ui8_Task_Cont3ms = 0;
+"570
+[e = _ui8_Task_Cont3ms -> -> 0 `i `uc ]
+[; ;main.c: 571: ui8_Task_Cont5ms = 0;
 "571
-[e = _ui8_Sync_Cont10ms -> -> 0 `i `uc ]
-[; ;main.c: 573: ui16_dryRun_Thresh = 73;
+[e = _ui8_Task_Cont5ms -> -> 0 `i `uc ]
+[; ;main.c: 572: ui8_Task_Cont100ms = 0;
+"572
+[e = _ui8_Task_Cont100ms -> -> 0 `i `uc ]
+[; ;main.c: 573: ui8_DebugCnt = 0;
 "573
-[e = _ui16_dryRun_Thresh -> -> 73 `i `us ]
-[; ;main.c: 575: ui16_Current_Thresh = 360;
+[e = _ui8_DebugCnt -> -> 0 `i `uc ]
+[; ;main.c: 575: ui8_Sync_Cont10ms = 0;
 "575
-[e = _ui16_Current_Thresh -> -> 360 `i `us ]
-[; ;main.c: 577: init_ports( );
+[e = _ui8_Sync_Cont10ms -> -> 0 `i `uc ]
+[; ;main.c: 577: ui16_dryRun_Thresh = 73;
 "577
+[e = _ui16_dryRun_Thresh -> -> 73 `i `us ]
+[; ;main.c: 579: ui16_Current_Thresh = 360;
+"579
+[e = _ui16_Current_Thresh -> -> 360 `i `us ]
+[; ;main.c: 581: init_ports( );
+"581
 [e ( _init_ports ..  ]
-[; ;main.c: 588: Oscill_Source_Block( );
-"588
+[; ;main.c: 592: Oscill_Source_Block( );
+"592
 [e ( _Oscill_Source_Block ..  ]
-[; ;main.c: 589: timer_init( 1 );
-"589
+[; ;main.c: 593: timer_init( 1 );
+"593
 [e ( _timer_init (1 -> -> 1 `i `uc ]
-[; ;main.c: 590: timer_init( 4 );
-"590
-[e ( _timer_init (1 -> -> 4 `i `uc ]
-[; ;main.c: 591: timer_init( 6 );
-"591
-[e ( _timer_init (1 -> -> 6 `i `uc ]
-[; ;main.c: 594: PWM_Capture_init( 5 );
+[; ;main.c: 594: timer_init( 4 );
 "594
-[e ( _PWM_Capture_init (1 -> -> 5 `i `uc ]
-[; ;main.c: 595: ADC_Init( );
+[e ( _timer_init (1 -> -> 4 `i `uc ]
+[; ;main.c: 595: timer_init( 6 );
 "595
+[e ( _timer_init (1 -> -> 6 `i `uc ]
+[; ;main.c: 598: PWM_Capture_init( 5 );
+"598
+[e ( _PWM_Capture_init (1 -> -> 5 `i `uc ]
+[; ;main.c: 599: ADC_Init( );
+"599
 [e ( _ADC_Init ..  ]
-[; ;main.c: 596: DiagInit( );
-"596
-[e ( _DiagInit ..  ]
-[; ;main.c: 597: FILTER_Init( );
-"597
-[e ( _FILTER_Init ..  ]
-[; ;main.c: 600: ui16_Temp_cal = 0;
+[; ;main.c: 600: DiagInit( );
 "600
+[e ( _DiagInit ..  ]
+[; ;main.c: 601: FILTER_Init( );
+"601
+[e ( _FILTER_Init ..  ]
+[; ;main.c: 604: ui16_Temp_cal = 0;
+"604
 [e = _ui16_Temp_cal -> -> 0 `i `ui ]
-[; ;main.c: 610: I_calibrationInit();
-"610
-[e ( _I_calibrationInit ..  ]
-[; ;main.c: 612: init_bldc( );
-"612
-[e ( _init_bldc ..  ]
-[; ;main.c: 614: PEIE = 1;
+[; ;main.c: 614: I_calibrationInit();
 "614
+[e ( _I_calibrationInit ..  ]
+[; ;main.c: 616: init_bldc( );
+"616
+[e ( _init_bldc ..  ]
+[; ;main.c: 618: PEIE = 1;
+"618
 [e = _PEIE -> -> 1 `i `b ]
-[; ;main.c: 615: GIE = 1;
-"615
+[; ;main.c: 619: GIE = 1;
+"619
 [e = _GIE -> -> 1 `i `b ]
-[; ;main.c: 617: }
-"617
+[; ;main.c: 621: }
+"621
 [e :UE 388 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"630
+"634
 [v _main `(v ~T0 @X0 1 ef ]
-"632
+"636
 {
-[; ;main.c: 630: void main( void )
-[; ;main.c: 632: {
+[; ;main.c: 634: void main( void )
+[; ;main.c: 636: {
 [e :U _main ]
 [f ]
-[; ;main.c: 642: system_init( );
-"642
+[; ;main.c: 646: system_init( );
+"646
 [e ( _system_init ..  ]
-[; ;main.c: 643: clear_timer( 4 );
-"643
+[; ;main.c: 647: clear_timer( 4 );
+"647
 [e ( _clear_timer (1 -> -> 4 `i `uc ]
-[; ;main.c: 644: ui8_lastTaskvalue = 0;
-"644
+[; ;main.c: 648: ui8_lastTaskvalue = 0;
+"648
 [e = _ui8_lastTaskvalue -> -> 0 `i `uc ]
-[; ;main.c: 695: while( 1 )
-"695
-[e :U 391 ]
-[; ;main.c: 697: {
-"697
-{
-[; ;main.c: 699: if( ( ui8_Task_Cont1ms - ui8_lastTaskvalue ) != 0)
+[; ;main.c: 699: while( 1 )
 "699
-[e $ ! != - -> _ui8_Task_Cont1ms `i -> _ui8_lastTaskvalue `i -> 0 `i 393  ]
+[e :U 391 ]
 [; ;main.c: 701: {
 "701
 {
-[; ;main.c: 707: ui8_lastTaskvalue = ui8_Task_Cont1ms;
-"707
-[e = _ui8_lastTaskvalue _ui8_Task_Cont1ms ]
-[; ;main.c: 710: ui8_Task_Cont3ms++;
-"710
-[e ++ _ui8_Task_Cont3ms -> -> 1 `i `uc ]
-[; ;main.c: 711: ui8_Task_Cont5ms++;
-"711
-[e ++ _ui8_Task_Cont5ms -> -> 1 `i `uc ]
-[; ;main.c: 712: ui8_Task_Cont100ms++;
-"712
-[e ++ _ui8_Task_Cont100ms -> -> 1 `i `uc ]
-[; ;main.c: 931: PR2 = ( unsigned char ) ( 32000000UL / ( 16 * 20000UL ) ) * 5 / 4;
-"931
-[e = _PR2 -> / * -> -> / -> 32000000 `ul * -> -> -> 16 `i `l `ul -> 20000 `ul `uc `i -> 5 `i -> 4 `i `uc ]
-[; ;main.c: 932: ui16_duty_cycle_BLDC = ui16_duty_cycle_mat*5/4;
-"932
-[e = _ui16_duty_cycle_BLDC -> / * -> _ui16_duty_cycle_mat `ui -> -> 5 `i `ui -> -> 4 `i `ui `us ]
-[; ;main.c: 949: Get_Analog_Value( );
-"949
-[e ( _Get_Analog_Value ..  ]
-[; ;main.c: 995: if( ui8_Task_Cont3ms > 2 )
-"995
-[e $ ! > -> _ui8_Task_Cont3ms `i -> 2 `i 394  ]
-[; ;main.c: 997: {
-"997
+[; ;main.c: 703: if( ( ui8_Task_Cont1ms - ui8_lastTaskvalue ) != 0)
+"703
+[e $ ! != - -> _ui8_Task_Cont1ms `i -> _ui8_lastTaskvalue `i -> 0 `i 393  ]
+[; ;main.c: 705: {
+"705
 {
-[; ;main.c: 999: ui8_Task_Cont3ms = 0;
+[; ;main.c: 711: ui8_lastTaskvalue = ui8_Task_Cont1ms;
+"711
+[e = _ui8_lastTaskvalue _ui8_Task_Cont1ms ]
+[; ;main.c: 714: ui8_Task_Cont3ms++;
+"714
+[e ++ _ui8_Task_Cont3ms -> -> 1 `i `uc ]
+[; ;main.c: 715: ui8_Task_Cont5ms++;
+"715
+[e ++ _ui8_Task_Cont5ms -> -> 1 `i `uc ]
+[; ;main.c: 716: ui8_Task_Cont100ms++;
+"716
+[e ++ _ui8_Task_Cont100ms -> -> 1 `i `uc ]
+[; ;main.c: 935: PR2 = ( unsigned char ) ( 32000000UL / ( 16 * 20000UL ) ) * 5 / 4;
+"935
+[e = _PR2 -> / * -> -> / -> 32000000 `ul * -> -> -> 16 `i `l `ul -> 20000 `ul `uc `i -> 5 `i -> 4 `i `uc ]
+[; ;main.c: 936: ui16_duty_cycle_BLDC = ui16_duty_cycle_mat*5/4;
+"936
+[e = _ui16_duty_cycle_BLDC -> / * -> _ui16_duty_cycle_mat `ui -> -> 5 `i `ui -> -> 4 `i `ui `us ]
+[; ;main.c: 953: Get_Analog_Value( );
+"953
+[e ( _Get_Analog_Value ..  ]
+[; ;main.c: 999: if( ui8_Task_Cont3ms > 2 )
 "999
+[e $ ! > -> _ui8_Task_Cont3ms `i -> 2 `i 394  ]
+[; ;main.c: 1001: {
+"1001
+{
+[; ;main.c: 1003: ui8_Task_Cont3ms = 0;
+"1003
 [e = _ui8_Task_Cont3ms -> -> 0 `i `uc ]
-"1034
+"1038
 }
 [e :U 394 ]
-[; ;main.c: 1034: }
-[; ;main.c: 1040: if( ui8_Task_Cont5ms > 4 )
-"1040
+[; ;main.c: 1038: }
+[; ;main.c: 1044: if( ui8_Task_Cont5ms > 4 )
+"1044
 [e $ ! > -> _ui8_Task_Cont5ms `i -> 4 `i 395  ]
-[; ;main.c: 1042: {
-"1042
-{
-[; ;main.c: 1046: ui8_Task_Cont5ms = 0;
+[; ;main.c: 1046: {
 "1046
+{
+[; ;main.c: 1050: ui8_Task_Cont5ms = 0;
+"1050
 [e = _ui8_Task_Cont5ms -> -> 0 `i `uc ]
-[; ;main.c: 1049: asm("clrwdt");
-"1049
+[; ;main.c: 1053: asm("clrwdt");
+"1053
 [; <" clrwdt ;# ">
-[; ;main.c: 1054: ui8_PWM_dc_mat = PWMReadDC( );
-"1054
-[e = _ui8_PWM_dc_mat ( _PWMReadDC ..  ]
-[; ;main.c: 1057: ui16_PWM_Freq_mat = ui16_PWM_Freq_In;
-"1057
-[e = _ui16_PWM_Freq_mat -> _ui16_PWM_Freq_In `us ]
-[; ;main.c: 1058: ui16_Speed_mat = ui16_speed_fil;
+[; ;main.c: 1058: pwm_cmd = PWMReadDC( );
 "1058
-[e = _ui16_Speed_mat _ui16_speed_fil ]
-[; ;main.c: 1059: ui16_mat_inpTemp = ui16_NTC_Temp_bldc_mean_cal;
+[e = _pwm_cmd ( _PWMReadDC ..  ]
+[; ;main.c: 1059: ui8_PWM_dc_mat = rate_limit(pwm_cmd);
 "1059
+[e = _ui8_PWM_dc_mat -> ( _rate_limit (1 -> _pwm_cmd `i `uc ]
+[; ;main.c: 1062: ui16_PWM_Freq_mat = ui16_PWM_Freq_In;
+"1062
+[e = _ui16_PWM_Freq_mat -> _ui16_PWM_Freq_In `us ]
+[; ;main.c: 1063: ui16_Speed_mat = ui16_speed_fil;
+"1063
+[e = _ui16_Speed_mat _ui16_speed_fil ]
+[; ;main.c: 1064: ui16_mat_inpTemp = ui16_NTC_Temp_bldc_mean_cal;
+"1064
 [e = _ui16_mat_inpTemp -> _ui16_NTC_Temp_bldc_mean_cal `us ]
-[; ;main.c: 1060: ui8_Ki_mat = 5;
-"1060
+[; ;main.c: 1065: ui8_Ki_mat = 5;
+"1065
 [e = _ui8_Ki_mat -> -> 5 `i `us ]
-[; ;main.c: 1061: ui8_Kp_mat = 0;
-"1061
+[; ;main.c: 1066: ui8_Kp_mat = 0;
+"1066
 [e = _ui8_Kp_mat -> -> 0 `i `uc ]
-[; ;main.c: 1109: ui16_Speed_demand_mat = PWM_trans_table[ ui8_PWM_dc_mat ];
-"1109
+[; ;main.c: 1114: ui16_Speed_demand_mat = PWM_trans_table[ ui8_PWM_dc_mat ];
+"1114
 [e = _ui16_Speed_demand_mat *U + &U _PWM_trans_table * -> _ui8_PWM_dc_mat `ux -> -> # *U &U _PWM_trans_table `ui `ux ]
-[; ;main.c: 1112: ui16_Speed_demand_mat_Max = ( PWM_trans_table[ 200 ] );
-"1112
+[; ;main.c: 1117: ui16_Speed_demand_mat_Max = ( PWM_trans_table[ 200 ] );
+"1117
 [e = _ui16_Speed_demand_mat_Max *U + &U _PWM_trans_table * -> -> -> 200 `i `ui `ux -> -> # *U &U _PWM_trans_table `ui `ux ]
-[; ;main.c: 1115: ui16_Speed_demand_mat_min = ( PWM_trans_table[ 20 ] );
-"1115
+[; ;main.c: 1120: ui16_Speed_demand_mat_min = ( PWM_trans_table[ 20 ] );
+"1120
 [e = _ui16_Speed_demand_mat_min *U + &U _PWM_trans_table * -> -> -> 20 `i `ui `ux -> -> # *U &U _PWM_trans_table `ui `ux ]
-[; ;main.c: 1134: ui8_BattVolt_mat = ( unsigned char )( ui16_fir_Bat_mittel>>2 );
-"1134
+[; ;main.c: 1139: ui8_BattVolt_mat = ( unsigned char )( ui16_fir_Bat_mittel>>2 );
+"1139
 [e = _ui8_BattVolt_mat -> -> >> _ui16_fir_Bat_mittel -> 2 `i `uc `us ]
-[; ;main.c: 1135: ui16_mat_Current = ui16_fir_IPhase_mean.w;
-"1135
+[; ;main.c: 1140: ui16_mat_Current = ui16_fir_IPhase_mean.w;
+"1140
 [e = _ui16_mat_Current -> . _ui16_fir_IPhase_mean 0 `us ]
-[; ;main.c: 1136: bool_mat_currAlarm_bldc = MotorFlags.bits.B0;
-"1136
+[; ;main.c: 1141: bool_mat_currAlarm_bldc = MotorFlags.bits.B0;
+"1141
 [e = _bool_mat_currAlarm_bldc . . _MotorFlags 1 0 ]
-[; ;main.c: 1147: bool_ControlLoopMode = 0;
-"1147
+[; ;main.c: 1152: bool_ControlLoopMode = 0;
+"1152
 [e = _bool_ControlLoopMode -> -> 0 `i `uc ]
-[; ;main.c: 1155: BVH2_Appl_Layer( );
-"1155
+[; ;main.c: 1160: BVH2_Appl_Layer( );
+"1160
 [e ( _BVH2_Appl_Layer ..  ]
-[; ;main.c: 1158: ui8_ResetMatlab = 0;
-"1158
+[; ;main.c: 1163: ui8_ResetMatlab = 0;
+"1163
 [e = _ui8_ResetMatlab -> -> 0 `i `uc ]
-[; ;main.c: 1164: if( ui16_duty_cycle_mat == 0 )
-"1164
+[; ;main.c: 1169: if( ui16_duty_cycle_mat == 0 )
+"1169
 [e $ ! == -> _ui16_duty_cycle_mat `ui -> -> 0 `i `ui 396  ]
-[; ;main.c: 1166: {
-"1166
-{
-[; ;main.c: 1168: InitMotorStop( );
-"1168
-[e ( _InitMotorStop ..  ]
+[; ;main.c: 1171: {
 "1171
-}
-[; ;main.c: 1171: }
-[e $U 397  ]
-"1174
-[e :U 396 ]
-[; ;main.c: 1174: else
-[; ;main.c: 1175: {
-"1175
 {
-[; ;main.c: 1177: InitMotorRun( );
-"1177
-[e ( _InitMotorRun ..  ]
+[; ;main.c: 1173: InitMotorStop( );
+"1173
+[e ( _InitMotorStop ..  ]
+"1176
+}
+[; ;main.c: 1176: }
+[e $U 397  ]
+"1179
+[e :U 396 ]
+[; ;main.c: 1179: else
+[; ;main.c: 1180: {
 "1180
+{
+[; ;main.c: 1182: InitMotorRun( );
+"1182
+[e ( _InitMotorRun ..  ]
+"1185
 }
 [e :U 397 ]
-[; ;main.c: 1180: }
-[; ;main.c: 1187: ui8_error_Flags.bits.B0 = bool_PWMin_err_Alarm;
-"1187
-[e = . . _ui8_error_Flags 1 0 _bool_PWMin_err_Alarm ]
-[; ;main.c: 1188: ui8_error_Flags.bits.B1 = bool_CPU_TempAlarm;
-"1188
-[e = . . _ui8_error_Flags 1 1 _bool_CPU_TempAlarm ]
-[; ;main.c: 1189: ui8_error_Flags.bits.B7 = bool_CPU_TempRedAlarm;
-"1189
-[e = . . _ui8_error_Flags 1 7 _bool_CPU_TempRedAlarm ]
-[; ;main.c: 1190: ui8_error_Flags.bits.B2 = bool_HighCurrentAlarm;
-"1190
-[e = . . _ui8_error_Flags 1 2 _bool_HighCurrentAlarm ]
-[; ;main.c: 1191: ui8_error_Flags.bits.B3 = bool_MotorStalled;
-"1191
-[e = . . _ui8_error_Flags 1 3 _bool_MotorStalled ]
-[; ;main.c: 1192: ui8_error_Flags.bits.B4 = bool_DryRunningAlarm;
+[; ;main.c: 1185: }
+[; ;main.c: 1192: ui8_error_Flags.bits.B0 = bool_PWMin_err_Alarm;
 "1192
-[e = . . _ui8_error_Flags 1 4 _bool_DryRunningAlarm ]
-[; ;main.c: 1193: ui8_error_Flags.bits.B6 = bool_UbatAlarm;
+[e = . . _ui8_error_Flags 1 0 _bool_PWMin_err_Alarm ]
+[; ;main.c: 1193: ui8_error_Flags.bits.B1 = bool_CPU_TempAlarm;
 "1193
-[e = . . _ui8_error_Flags 1 6 _bool_UbatAlarm ]
-[; ;main.c: 1194: ui8_error_Flags.bits.B5 = bool_PWMin_Freq_err_Alarm;
+[e = . . _ui8_error_Flags 1 1 _bool_CPU_TempAlarm ]
+[; ;main.c: 1194: ui8_error_Flags.bits.B7 = bool_CPU_TempRedAlarm;
 "1194
-[e = . . _ui8_error_Flags 1 5 _bool_PWMin_Freq_err_Alarm ]
-[; ;main.c: 1199: MotorFlags.bits.B0 = 0;
+[e = . . _ui8_error_Flags 1 7 _bool_CPU_TempRedAlarm ]
+[; ;main.c: 1195: ui8_error_Flags.bits.B2 = bool_HighCurrentAlarm;
+"1195
+[e = . . _ui8_error_Flags 1 2 _bool_HighCurrentAlarm ]
+[; ;main.c: 1196: ui8_error_Flags.bits.B3 = bool_MotorStalled;
+"1196
+[e = . . _ui8_error_Flags 1 3 _bool_MotorStalled ]
+[; ;main.c: 1197: ui8_error_Flags.bits.B4 = bool_DryRunningAlarm;
+"1197
+[e = . . _ui8_error_Flags 1 4 _bool_DryRunningAlarm ]
+[; ;main.c: 1198: ui8_error_Flags.bits.B6 = bool_UbatAlarm;
+"1198
+[e = . . _ui8_error_Flags 1 6 _bool_UbatAlarm ]
+[; ;main.c: 1199: ui8_error_Flags.bits.B5 = bool_PWMin_Freq_err_Alarm;
 "1199
+[e = . . _ui8_error_Flags 1 5 _bool_PWMin_Freq_err_Alarm ]
+[; ;main.c: 1204: MotorFlags.bits.B0 = 0;
+"1204
 [e = . . _MotorFlags 1 0 -> -> 0 `i `uc ]
-"1255
+"1260
 }
 [e :U 395 ]
-[; ;main.c: 1255: }
-[; ;main.c: 1261: if( ui8_Task_Cont100ms == 25 )
-"1261
+[; ;main.c: 1260: }
+[; ;main.c: 1266: if( ui8_Task_Cont100ms == 25 )
+"1266
 [e $ ! == -> _ui8_Task_Cont100ms `i -> 25 `i 398  ]
-[; ;main.c: 1263: {
-"1263
+[; ;main.c: 1268: {
+"1268
 {
-[; ;main.c: 1274: SetDiagAlarm( );
-"1274
+[; ;main.c: 1279: SetDiagAlarm( );
+"1279
 [e ( _SetDiagAlarm ..  ]
-"1338
+"1343
 }
 [e :U 398 ]
-[; ;main.c: 1338: }
-[; ;main.c: 1344: if( ui8_Task_Cont100ms == 37 )
-"1344
+[; ;main.c: 1343: }
+[; ;main.c: 1349: if( ui8_Task_Cont100ms == 37 )
+"1349
 [e $ ! == -> _ui8_Task_Cont100ms `i -> 37 `i 399  ]
-[; ;main.c: 1346: {
-"1346
+[; ;main.c: 1351: {
+"1351
 {
-"1376
+"1381
 }
 [e :U 399 ]
-[; ;main.c: 1376: }
-[; ;main.c: 1382: if( ui8_Task_Cont100ms == 50 )
-"1382
+[; ;main.c: 1381: }
+[; ;main.c: 1387: if( ui8_Task_Cont100ms == 50 )
+"1387
 [e $ ! == -> _ui8_Task_Cont100ms `i -> 50 `i 400  ]
-[; ;main.c: 1384: {
-"1384
+[; ;main.c: 1389: {
+"1389
 {
-"1426
+"1431
 }
 [e :U 400 ]
-[; ;main.c: 1426: }
-[; ;main.c: 1432: if( ui8_Task_Cont100ms == 75 )
-"1432
+[; ;main.c: 1431: }
+[; ;main.c: 1437: if( ui8_Task_Cont100ms == 75 )
+"1437
 [e $ ! == -> _ui8_Task_Cont100ms `i -> 75 `i 401  ]
-[; ;main.c: 1434: {
-"1434
+[; ;main.c: 1439: {
+"1439
 {
-"1476
+"1481
 }
 [e :U 401 ]
-[; ;main.c: 1476: }
-[; ;main.c: 1482: if( ui8_Task_Cont100ms > 100 )
-"1482
+[; ;main.c: 1481: }
+[; ;main.c: 1487: if( ui8_Task_Cont100ms > 100 )
+"1487
 [e $ ! > -> _ui8_Task_Cont100ms `i -> 100 `i 402  ]
-[; ;main.c: 1484: {
-"1484
+[; ;main.c: 1489: {
+"1489
 {
-[; ;main.c: 1488: ui8_Task_Cont100ms = 0;
-"1488
+[; ;main.c: 1493: ui8_Task_Cont100ms = 0;
+"1493
 [e = _ui8_Task_Cont100ms -> -> 0 `i `uc ]
-"1528
+"1533
 }
 [e :U 402 ]
-[; ;main.c: 1528: }
-[; ;main.c: 1556: bool_start_demand_mat = 0;
-"1556
+[; ;main.c: 1533: }
+[; ;main.c: 1561: bool_start_demand_mat = 0;
+"1561
 [e = _bool_start_demand_mat -> -> 0 `i `uc ]
-"1562
+"1567
 }
-[; ;main.c: 1562: }
+[; ;main.c: 1567: }
 [e $U 403  ]
-"1565
-[e :U 393 ]
-[; ;main.c: 1565: else
-[; ;main.c: 1566: {
-"1566
-{
 "1570
+[e :U 393 ]
+[; ;main.c: 1570: else
+[; ;main.c: 1571: {
+"1571
+{
+"1575
 }
 [e :U 403 ]
-"1573
+"1578
 }
 [e :U 390 ]
-"695
+"699
 [e $U 391  ]
 [e :U 392 ]
-[; ;main.c: 1570: }
-[; ;main.c: 1573: }
-[; ;main.c: 1576: }
-"1576
+[; ;main.c: 1575: }
+[; ;main.c: 1578: }
+[; ;main.c: 1581: }
+"1581
 [e :UE 389 ]
+}
+"1585
+[v _sign `(i ~T0 @X0 1 ef1`i ]
+{
+[; ;main.c: 1585: int sign(int x) {
+[e :U _sign ]
+[v _x `i ~T0 @X0 1 r1 ]
+[f ]
+[; ;main.c: 1586: return (x > 0) - (x < 0);
+"1586
+[e ) - -> > _x -> 0 `i `i -> < _x -> 0 `i `i ]
+[e $UE 404  ]
+[; ;main.c: 1587: }
+"1587
+[e :UE 404 ]
+}
+"1589
+[v _rate_limit `(i ~T0 @X0 1 ef1`i ]
+{
+[; ;main.c: 1589: int rate_limit(int pwm) {
+[e :U _rate_limit ]
+[v _pwm `i ~T0 @X0 1 r1 ]
+[f ]
+"1590
+[v _delta_pwm `i ~T0 @X0 1 a ]
+[; ;main.c: 1590: int delta_pwm = last_pwm - pwm;
+[e = _delta_pwm - _last_pwm _pwm ]
+[; ;main.c: 1591: if(delta_pwm < 0) {
+"1591
+[e $ ! < _delta_pwm -> 0 `i 406  ]
+{
+"1592
+[v _sign_delta_pwm `i ~T0 @X0 1 a ]
+[; ;main.c: 1592: int sign_delta_pwm = sign(delta_pwm);
+[e = _sign_delta_pwm ( _sign (1 _delta_pwm ]
+"1593
+[v _abs_delta_pwm `i ~T0 @X0 1 a ]
+[; ;main.c: 1593: int abs_delta_pwm = delta_pwm;
+[e = _abs_delta_pwm _delta_pwm ]
+[; ;main.c: 1594: if(delta_pwm < 0) {abs_delta_pwm = delta_pwm * -1;}
+"1594
+[e $ ! < _delta_pwm -> 0 `i 407  ]
+{
+[e = _abs_delta_pwm * _delta_pwm -U -> 1 `i ]
+}
+[e :U 407 ]
+"1595
+[v _pwm_inc `i ~T0 @X0 1 a ]
+[; ;main.c: 1595: int pwm_inc = 10;
+[e = _pwm_inc -> 10 `i ]
+"1596
+[v _sign_pwm_inc `i ~T0 @X0 1 a ]
+[; ;main.c: 1596: int sign_pwm_inc = pwm_inc * sign_delta_pwm;
+[e = _sign_pwm_inc * _pwm_inc _sign_delta_pwm ]
+[; ;main.c: 1597: sign_pwm_inc = last_pwm - sign_pwm_inc;
+"1597
+[e = _sign_pwm_inc - _last_pwm _sign_pwm_inc ]
+[; ;main.c: 1599: if (pwm_inc >= abs_delta_pwm) {
+"1599
+[e $ ! >= _pwm_inc _abs_delta_pwm 408  ]
+{
+[; ;main.c: 1600: last_pwm = pwm;
+"1600
+[e = _last_pwm _pwm ]
+"1601
+}
+[; ;main.c: 1601: }
+[e $U 409  ]
+"1602
+[e :U 408 ]
+[; ;main.c: 1602: else {
+{
+[; ;main.c: 1603: last_pwm = sign_pwm_inc;
+"1603
+[e = _last_pwm _sign_pwm_inc ]
+"1604
+}
+[e :U 409 ]
+"1605
+}
+[; ;main.c: 1604: }
+[; ;main.c: 1605: }
+[e $U 410  ]
+"1606
+[e :U 406 ]
+[; ;main.c: 1606: else {
+{
+[; ;main.c: 1607: last_pwm = pwm;
+"1607
+[e = _last_pwm _pwm ]
+"1608
+}
+[e :U 410 ]
+[; ;main.c: 1608: }
+[; ;main.c: 1611: return last_pwm;
+"1611
+[e ) _last_pwm ]
+[e $UE 405  ]
+[; ;main.c: 1612: }
+"1612
+[e :UE 405 ]
 }

@@ -56,6 +56,7 @@ volatile  _u_wb          ui16_Capt_Val2 = 0;    /**< Value of CCPR on the second
           unsigned  int  prev_RA4 = 0;
           unsigned  int  Debounce_Tmr = 0;
           unsigned  int  prev_Debounce_Tmr = 0;
+         
           
 //extern  unsigned  char ui8_Task_Cont100ms;
 /*~T*/
@@ -65,6 +66,7 @@ volatile  _u_wb          ui16_Capt_Val2 = 0;    /**< Value of CCPR on the second
           void PWM_Write_Out( unsigned char  ui8_DutyCycle_Out );
           void interrupt_PWMCapture( void  );
 unsigned  char PWMReadDC( void  );
+
 /*~A*/
 /*~+:void PWM_Capture_init(unsigned char CaptNb)*/
 /*~T*/
@@ -394,7 +396,7 @@ unsigned  char PWMReadDC( void  )
          }
          prev_RA4 = RA4;
 
-         if((Debounce_Tmr - prev_Debounce_Tmr) > 10) {
+         if((Debounce_Tmr - prev_Debounce_Tmr) > 20) {
              if(RA4 == 1)  // check state of PWM input (the input is inverted)
              {
                  ui16_PWM_Freq_In = 40000;
@@ -406,8 +408,9 @@ unsigned  char PWMReadDC( void  )
                  ui8_Duty_Cycle_In_Ratio = 0;  // run at max speed if CMD unconnected (pulled up to battery)
              }
              Debounce_Tmr = 0;
+             prev_Debounce_Tmr = 0;
          }
-
+         
        }
 
        /*~E*/
@@ -435,6 +438,8 @@ unsigned  char PWMReadDC( void  )
 /*~-*/
     
 }
+
+
 /*~E*/
 /*~E*/
 /*~A*/

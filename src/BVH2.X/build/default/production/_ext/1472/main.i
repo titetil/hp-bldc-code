@@ -5321,15 +5321,19 @@ extern unsigned char ui8_b_DResB4_c;
 extern unsigned char ui8_b_DResB5_c;
 extern unsigned short ui16_duty_cycle_mat;
 
+int last_pwm;
+unsigned char pwm_cmd;
+
 
 
 
 void init_ports( void );
 void system_init( void );
+int rate_limit(int pwm);
 
 extern void Task1ms( void );
 
-# 174
+# 178
 void I_calibrationInit(void)
 
 {
@@ -5389,7 +5393,7 @@ ui16_I_cal_Ph3 = 0x0100;
 
 }
 
-# 324
+# 328
 LATC2 = 0;
 LATB2 = 0;
 LATB1 = 0;
@@ -5419,15 +5423,15 @@ ADC_Wait();
 
 ui8_current_cal[0] = ADC_Read();
 
-# 357
+# 361
 }
 
-# 404
+# 408
 void init_ports( void )
 
 {
 
-# 411
+# 415
 ANSELA = 0b00100111;
 ANSELB = 0b00101001;
 
@@ -5436,26 +5440,26 @@ LATA = 0;
 LATB = 0;
 LATC = 0;
 
-# 498
+# 502
 TRISA = 0b01111111;
 
-# 507
+# 511
 TRISB = 0b00111001;
 
-# 516
+# 520
 TRISC = 0b00000000;
 
-# 531
+# 535
 }
 
-# 545
+# 549
 void system_init( void )
 
 {
 
 OPTION_REG = 0b10000001;
 
-# 558
+# 562
 ui8_ResetMatlab = 1;
 GIE = 0;
 INTCON = 0;
@@ -5477,7 +5481,7 @@ ui16_Current_Thresh = 360;
 
 init_ports( );
 
-# 588
+# 592
 Oscill_Source_Block( );
 timer_init( 1 );
 timer_init( 4 );
@@ -5492,7 +5496,7 @@ FILTER_Init( );
 
 ui16_Temp_cal = 0;
 
-# 610
+# 614
 I_calibrationInit();
 
 init_bldc( );
@@ -5502,17 +5506,17 @@ GIE = 1;
 
 }
 
-# 630
+# 634
 void main( void )
 
 {
 
-# 642
+# 646
 system_init( );
 clear_timer( 4 );
 ui8_lastTaskvalue = 0;
 
-# 695
+# 699
 while( 1 )
 
 {
@@ -5521,7 +5525,7 @@ if( ( ui8_Task_Cont1ms - ui8_lastTaskvalue ) != 0)
 
 {
 
-# 707
+# 711
 ui8_lastTaskvalue = ui8_Task_Cont1ms;
 
 
@@ -5529,24 +5533,24 @@ ui8_Task_Cont3ms++;
 ui8_Task_Cont5ms++;
 ui8_Task_Cont100ms++;
 
-# 931
+# 935
 PR2 = ( unsigned char ) ( 32000000UL / ( 16 * 20000UL ) ) * 5 / 4;
 ui16_duty_cycle_BLDC = ui16_duty_cycle_mat*5/4;
 
-# 949
+# 953
 Get_Analog_Value( );
 
-# 995
+# 999
 if( ui8_Task_Cont3ms > 2 )
 
 {
 
 ui8_Task_Cont3ms = 0;
 
-# 1034
+# 1038
 }
 
-# 1040
+# 1044
 if( ui8_Task_Cont5ms > 4 )
 
 {
@@ -5561,7 +5565,8 @@ asm("clrwdt");
 
 
 
-ui8_PWM_dc_mat = PWMReadDC( );
+pwm_cmd = PWMReadDC( );
+ui8_PWM_dc_mat = rate_limit(pwm_cmd);
 
 
 ui16_PWM_Freq_mat = ui16_PWM_Freq_In;
@@ -5570,7 +5575,7 @@ ui16_mat_inpTemp = ui16_NTC_Temp_bldc_mean_cal;
 ui8_Ki_mat = 5;
 ui8_Kp_mat = 0;
 
-# 1109
+# 1114
 ui16_Speed_demand_mat = PWM_trans_table[ ui8_PWM_dc_mat ];
 
 
@@ -5579,21 +5584,21 @@ ui16_Speed_demand_mat_Max = ( PWM_trans_table[ 200 ] );
 
 ui16_Speed_demand_mat_min = ( PWM_trans_table[ 20 ] );
 
-# 1134
+# 1139
 ui8_BattVolt_mat = ( unsigned char )( ui16_fir_Bat_mittel>>2 );
 ui16_mat_Current = ui16_fir_IPhase_mean.w;
 bool_mat_currAlarm_bldc = MotorFlags.bits.B0;
 
-# 1147
+# 1152
 bool_ControlLoopMode = 0;
 
-# 1155
+# 1160
 BVH2_Appl_Layer( );
 
 
 ui8_ResetMatlab = 0;
 
-# 1164
+# 1169
 if( ui16_duty_cycle_mat == 0 )
 
 {
@@ -5612,7 +5617,7 @@ InitMotorRun( );
 
 }
 
-# 1187
+# 1192
 ui8_error_Flags.bits.B0 = bool_PWMin_err_Alarm;
 ui8_error_Flags.bits.B1 = bool_CPU_TempAlarm;
 ui8_error_Flags.bits.B7 = bool_CPU_TempRedAlarm;
@@ -5627,45 +5632,45 @@ ui8_error_Flags.bits.B5 = bool_PWMin_Freq_err_Alarm;
 
 MotorFlags.bits.B0 = 0;
 
-# 1255
+# 1260
 }
 
-# 1261
+# 1266
 if( ui8_Task_Cont100ms == 25 )
 
 {
 
-# 1274
+# 1279
 SetDiagAlarm( );
 
-# 1338
+# 1343
 }
 
-# 1344
+# 1349
 if( ui8_Task_Cont100ms == 37 )
 
 {
 
-# 1376
+# 1381
 }
 
-# 1382
+# 1387
 if( ui8_Task_Cont100ms == 50 )
 
 {
 
-# 1426
+# 1431
 }
 
-# 1432
+# 1437
 if( ui8_Task_Cont100ms == 75 )
 
 {
 
-# 1476
+# 1481
 }
 
-# 1482
+# 1487
 if( ui8_Task_Cont100ms > 100 )
 
 {
@@ -5674,13 +5679,13 @@ if( ui8_Task_Cont100ms > 100 )
 
 ui8_Task_Cont100ms = 0;
 
-# 1528
+# 1533
 }
 
-# 1556
+# 1561
 bool_start_demand_mat = 0;
 
-# 1562
+# 1567
 }
 
 
@@ -5697,3 +5702,33 @@ else
 
 }
 
+
+
+int sign(int x) {
+return (x > 0) - (x < 0);
+}
+
+int rate_limit(int pwm) {
+int delta_pwm = last_pwm - pwm;
+if(delta_pwm < 0) {
+int sign_delta_pwm = sign(delta_pwm);
+int abs_delta_pwm = delta_pwm;
+if(delta_pwm < 0) {abs_delta_pwm = delta_pwm * -1;}
+int pwm_inc = 10;
+int sign_pwm_inc = pwm_inc * sign_delta_pwm;
+sign_pwm_inc = last_pwm - sign_pwm_inc;
+
+if (pwm_inc >= abs_delta_pwm) {
+last_pwm = pwm;
+}
+else {
+last_pwm = sign_pwm_inc;
+}
+}
+else {
+last_pwm = pwm;
+}
+
+
+return last_pwm;
+}

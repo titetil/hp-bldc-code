@@ -408,139 +408,139 @@ Void BVH2_Appl_Layer(Void)
    static Bool Sb1_BVH2_Appl_Layer_FirstRun = 1;
    static Bool X_Sb4_Intergrator_TriggerIn = 1;
 
-   /* Begin execution of chart BVH2_Appl_Layer/Pic_etat_monitor */
+   // Begin execution of chart BVH2_Appl_Layer/Pic_etat_monitor
    switch (SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns) {
       case Cb45_Reset_id: {
-         /* Begin execution of state BVH2_Appl_Layer/Pic_etat_monitor.Reset */
+         // Begin execution of state BVH2_Appl_Layer/Pic_etat_monitor.Reset
          if (Cb44_StateCnt > 50) {
-            /* State transition from BVH2_Appl_Layer/Pic_etat_monitor.Reset to BVH2_Appl_Layer/Pic_e
-               tat_monitor.greenState */
+            // State transition from BVH2_Appl_Layer/Pic_etat_monitor.Reset to BVH2_Appl_Layer/Pic_e
+            //tat_monitor.greenState
             SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) Cb46_greenState_id;
             Cb44_oShutoff = 0;
             Cb44_oAlarm = 0;
-            Cb44_StateCnt = 0 /* 0. */;
+            Cb44_StateCnt = 0;
          }
          else {
-            Cb44_StateCnt = Cb44_StateCnt + 1 /* 1. */;
+            Cb44_StateCnt = Cb44_StateCnt + 1;
          }
 
-         /* End execution of state BVH2_Appl_Layer/Pic_etat_monitor.Reset */
+         // End execution of state BVH2_Appl_Layer/Pic_etat_monitor.Reset
          break;
       }
       case Cb46_greenState_id: {
-         /* Begin execution of state BVH2_Appl_Layer/Pic_etat_monitor.greenState */
+         // Begin execution of state BVH2_Appl_Layer/Pic_etat_monitor.greenState
          Cb44_Pic_etat_monitor_node_fcn1();
          if (SIBFS_Pic_etat_monitor_b.Cb44_glflag <= 2) {
-            Cb44_StateCnt = Cb44_StateCnt + 1 /* 1. */;
+            Cb44_StateCnt = Cb44_StateCnt + 1;
          }
 
-         /* End execution of state BVH2_Appl_Layer/Pic_etat_monitor.greenState */
+         // End execution of state BVH2_Appl_Layer/Pic_etat_monitor.greenState
          break;
       }
       case Cb47_Alarm_Off_id: {
-         /* Begin execution of state BVH2_Appl_Layer/Pic_etat_monitor.Alarm_Off */
+         // Begin execution of state BVH2_Appl_Layer/Pic_etat_monitor.Alarm_Off
          Cb44_Pic_etat_monitor_node_fcn1();
 
-         /* End execution of state BVH2_Appl_Layer/Pic_etat_monitor.Alarm_Off */
+         // End execution of state BVH2_Appl_Layer/Pic_etat_monitor.Alarm_Off
          break;
       }
       case Cb48_Wait_id: {
-         /* Begin execution of state BVH2_Appl_Layer/Pic_etat_monitor.Wait */
+         // Begin execution of state BVH2_Appl_Layer/Pic_etat_monitor.Wait
          if (Cb44_StateCnt > 15) {
-            /* State transition to BVH2_Appl_Layer/Pic_etat_monitor.greenState */
+            // State transition to BVH2_Appl_Layer/Pic_etat_monitor.greenState
             SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) Cb46_greenState_id;
             Cb44_oShutoff = 0;
             Cb44_oAlarm = 0;
-            Cb44_StateCnt = 0 /* 0. */;
+            Cb44_StateCnt = 0;
          }
          else {
-            /* BVH2_Appl_Layer/Pic_etat_monitor: Omitted comparison with constant.
-               # combined # update of inport for BVH2_Appl_Layer/Pic_etat_monitor */
+            // BVH2_Appl_Layer/Pic_etat_monitor: Omitted comparison with constant.
+            //   # combined # update of inport for BVH2_Appl_Layer/Pic_etat_monitor
             if (bool_mat_pic_etat) {
-               /* State transition to BVH2_Appl_Layer/Pic_etat_monitor.redState */
+               // State transition to BVH2_Appl_Layer/Pic_etat_monitor.redState
                SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) Cb50_redState_id;
-               Cb44_StateCnt = 0 /* 0. */;
+               Cb44_StateCnt = 0;
                Cb44_oShutoff = 1;
                Cb44_oAlarm = 1;
             }
             else {
-               Cb44_StateCnt = Cb44_StateCnt + 1 /* 1. */;
+               Cb44_StateCnt = Cb44_StateCnt + 1;
             }
          }
 
-         /* End execution of state BVH2_Appl_Layer/Pic_etat_monitor.Wait */
+         // End execution of state BVH2_Appl_Layer/Pic_etat_monitor.Wait
          break;
       }
       case Cb49_Wrong_ETAT_id: {
-         /* Begin execution of state BVH2_Appl_Layer/Pic_etat_monitor.Wrong_ETAT */
+         // Begin execution of state BVH2_Appl_Layer/Pic_etat_monitor.Wrong_ETAT
 
-         /* BVH2_Appl_Layer/Pic_etat_monitor: Omitted comparison with constant.
-            # combined # update of inport for BVH2_Appl_Layer/Pic_etat_monitor */
+         // BVH2_Appl_Layer/Pic_etat_monitor: Omitted comparison with constant.
+         //   # combined # update of inport for BVH2_Appl_Layer/Pic_etat_monitor
          if (!(bool_mat_pic_etat)) {
-            /* State transition to BVH2_Appl_Layer/Pic_etat_monitor.Alarm_Off */
+            // State transition to BVH2_Appl_Layer/Pic_etat_monitor.Alarm_Off
             SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) Cb47_Alarm_Off_id;
             Cb44_oShutoff = 0;
             Cb44_oAlarm = 0;
          }
          else {
             if (Cb44_StateCnt) {
-               /* State transition to BVH2_Appl_Layer/Pic_etat_monitor.redState */
+               // State transition to BVH2_Appl_Layer/Pic_etat_monitor.redState
                SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) Cb50_redState_id;
-               Cb44_StateCnt = 0 /* 0. */;
+               Cb44_StateCnt = 0;
                Cb44_oShutoff = 1;
                Cb44_oAlarm = 1;
             }
             else {
-               Cb44_StateCnt = Cb44_StateCnt + 1 /* 1. */;
+               Cb44_StateCnt = Cb44_StateCnt + 1;
             }
          }
 
-         /* End execution of state BVH2_Appl_Layer/Pic_etat_monitor.Wrong_ETAT */
+         // End execution of state BVH2_Appl_Layer/Pic_etat_monitor.Wrong_ETAT
          break;
       }
       case Cb50_redState_id: {
-         /* Begin execution of state BVH2_Appl_Layer/Pic_etat_monitor.redState */
+         // Begin execution of state BVH2_Appl_Layer/Pic_etat_monitor.redState
 
-         /* BVH2_Appl_Layer/Pic_etat_monitor: Omitted comparison with constant.
-            # combined # update of inport for BVH2_Appl_Layer/Pic_etat_monitor */
+         // BVH2_Appl_Layer/Pic_etat_monitor: Omitted comparison with constant.
+         //   # combined # update of inport for BVH2_Appl_Layer/Pic_etat_monitor
          if (!(bool_mat_pic_etat)) {
-            /* State transition from BVH2_Appl_Layer/Pic_etat_monitor.redState to BVH2_Appl_Layer/Pi
-               c_etat_monitor.Wait */
+            // State transition from BVH2_Appl_Layer/Pic_etat_monitor.redState to BVH2_Appl_Layer/Pi
+            //   c_etat_monitor.Wait
             SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) Cb48_Wait_id;
-            Cb44_StateCnt = 0 /* 0. */;
+            Cb44_StateCnt = 0;
          }
 
-         /* End execution of state BVH2_Appl_Layer/Pic_etat_monitor.redState */
+         // End execution of state BVH2_Appl_Layer/Pic_etat_monitor.redState
          break;
       }
       default: {
-         /* BVH2_Appl_Layer/Pic_etat_monitor: Omitted comparison with constant. */
+         // BVH2_Appl_Layer/Pic_etat_monitor: Omitted comparison with constant.
          if (!(SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor)) {
             SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor = 1;
 
-            /* BVH2_Appl_Layer/Pic_etat_monitor: Omitted comparison with constant.
-               # combined # update of inport for BVH2_Appl_Layer/Pic_etat_monitor */
+            // BVH2_Appl_Layer/Pic_etat_monitor: Omitted comparison with constant.
+            //   # combined # update of inport for BVH2_Appl_Layer/Pic_etat_monitor
             if (ui8_ResetMatlab != 0) {
-               /* State transition to BVH2_Appl_Layer/Pic_etat_monitor.Reset */
+               // State transition to BVH2_Appl_Layer/Pic_etat_monitor.Reset
                SIBFS_Pic_etat_monitor_b.Cb44_Pic_etat_monitor_ns = (unsigned int) Cb45_Reset_id;
-               Cb44_StateCnt = 0 /* 0. */;
+               Cb44_StateCnt = 0;
             }
          }
       }
    }
 
-   /* End execution of chart BVH2_Appl_Layer/Pic_etat_monitor */
+   // End execution of chart BVH2_Appl_Layer/Pic_etat_monitor
 
-   /* Outport: BVH2_Appl_Layer/PICalarm */
+   // Outport: BVH2_Appl_Layer/PICalarm
    bool_PIC_Alarm = Cb44_oAlarm;
 
-   /* update of inport for BVH2_Appl_Layer/PWM_Detection */
+   // update of inport for BVH2_Appl_Layer/PWM_Detection
    //Cb34_idPWM = ui8_PWM_dc_mat;
    Cb34_idPWM = 50;  // faking this out in order to bypass alarms
 
-   /* Begin execution of chart BVH2_Appl_Layer/PWM_Detection */
+   // Begin execution of chart BVH2_Appl_Layer/PWM_Detection
 
-   /* BVH2_Appl_Layer/PWM_Detection: Omitted comparison with constant. */
+   // BVH2_Appl_Layer/PWM_Detection: Omitted comparison with constant.
    if (SIBFS_PWM_Detection_b.Cb35_PWMinput_handling) {
       /* Begin execution of state BVH2_Appl_Layer/PWM_Detection.PWMinput_handling */
       switch (SIBFS_PWM_Detection_b.Cb35_PWMinput_handling_ns) {

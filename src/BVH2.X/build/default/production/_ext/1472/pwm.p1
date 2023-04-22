@@ -3452,201 +3452,201 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 0 `i `ui
 ]
 [; ;pwm.c: 58: unsigned int prev_Debounce_Tmr = 0;
-[; ;pwm.c: 63: void PWM_Capture_init( unsigned char ui8_CCP_Nb );
-[; ;pwm.c: 64: void PWM_CTRL( void );
-[; ;pwm.c: 65: void PWM_Write_Out( unsigned char ui8_DutyCycle_Out );
-[; ;pwm.c: 66: void interrupt_PWMCapture( void );
-[; ;pwm.c: 67: unsigned char PWMReadDC( void );
-"85
+[; ;pwm.c: 64: void PWM_Capture_init( unsigned char ui8_CCP_Nb );
+[; ;pwm.c: 65: void PWM_CTRL( void );
+[; ;pwm.c: 66: void PWM_Write_Out( unsigned char ui8_DutyCycle_Out );
+[; ;pwm.c: 67: void interrupt_PWMCapture( void );
+[; ;pwm.c: 68: unsigned char PWMReadDC( void );
+"87
 [v _PWM_Capture_init `(v ~T0 @X0 1 ef1`uc ]
-"87
+"89
 {
-[; ;pwm.c: 85: void PWM_Capture_init( unsigned char ui8_CCP_Nb )
-[; ;pwm.c: 87: {
+[; ;pwm.c: 87: void PWM_Capture_init( unsigned char ui8_CCP_Nb )
+[; ;pwm.c: 89: {
 [e :U _PWM_Capture_init ]
-"85
-[v _ui8_CCP_Nb `uc ~T0 @X0 1 r1 ]
 "87
+[v _ui8_CCP_Nb `uc ~T0 @X0 1 r1 ]
+"89
 [f ]
-[; ;pwm.c: 90: ui8_PWMinDC_sav = 0;
-"90
+[; ;pwm.c: 92: ui8_PWMinDC_sav = 0;
+"92
 [e = _ui8_PWMinDC_sav -> -> 0 `i `uc ]
-[; ;pwm.c: 91: ui16_PWMin_failCnt = 0;
-"91
+[; ;pwm.c: 93: ui16_PWMin_failCnt = 0;
+"93
 [e = _ui16_PWMin_failCnt -> -> 0 `i `ui ]
-[; ;pwm.c: 100: switch( ui8_CCP_Nb )
-"100
-[e $U 357  ]
-[; ;pwm.c: 102: {
+[; ;pwm.c: 102: switch( ui8_CCP_Nb )
 "102
-{
-[; ;pwm.c: 104: case 1:
+[e $U 357  ]
+[; ;pwm.c: 104: {
 "104
-[e :U 358 ]
-[; ;pwm.c: 106: {
+{
+[; ;pwm.c: 106: case 1:
 "106
-{
-[; ;pwm.c: 108: CCP1CON = 0x00;
+[e :U 358 ]
+[; ;pwm.c: 108: {
 "108
-[e = _CCP1CON -> -> 0 `i `uc ]
-[; ;pwm.c: 109: CCPR1L = 0x00;
-"109
-[e = _CCPR1L -> -> 0 `i `uc ]
-[; ;pwm.c: 110: CCPR1H = 0x00;
+{
+[; ;pwm.c: 110: CCP1CON = 0x00;
 "110
-[e = _CCPR1H -> -> 0 `i `uc ]
-[; ;pwm.c: 111: CCP1IE = 1;
+[e = _CCP1CON -> -> 0 `i `uc ]
+[; ;pwm.c: 111: CCPR1L = 0x00;
 "111
-[e = _CCP1IE -> -> 1 `i `b ]
-[; ;pwm.c: 112: CCP1IF = 0;
+[e = _CCPR1L -> -> 0 `i `uc ]
+[; ;pwm.c: 112: CCPR1H = 0x00;
 "112
-[e = _CCP1IF -> -> 0 `i `b ]
-[; ;pwm.c: 113: CCP1CON = 0x05;
+[e = _CCPR1H -> -> 0 `i `uc ]
+[; ;pwm.c: 113: CCP1IE = 1;
 "113
-[e = _CCP1CON -> -> 5 `i `uc ]
-[; ;pwm.c: 114: break;
+[e = _CCP1IE -> -> 1 `i `b ]
+[; ;pwm.c: 114: CCP1IF = 0;
 "114
-[e $U 356  ]
+[e = _CCP1IF -> -> 0 `i `b ]
+[; ;pwm.c: 115: CCP1CON = 0x05;
+"115
+[e = _CCP1CON -> -> 5 `i `uc ]
+[; ;pwm.c: 116: break;
 "116
+[e $U 356  ]
+"118
 }
-[; ;pwm.c: 116: }
-[; ;pwm.c: 119: case 2:
-"119
-[e :U 359 ]
-[; ;pwm.c: 121: {
+[; ;pwm.c: 118: }
+[; ;pwm.c: 121: case 2:
 "121
-{
-[; ;pwm.c: 123: CCP2CON = 0x00;
+[e :U 359 ]
+[; ;pwm.c: 123: {
 "123
-[e = _CCP2CON -> -> 0 `i `uc ]
-[; ;pwm.c: 124: CCPR2L = 0x00;
-"124
-[e = _CCPR2L -> -> 0 `i `uc ]
-[; ;pwm.c: 125: CCPR2H = 0x00;
+{
+[; ;pwm.c: 125: CCP2CON = 0x00;
 "125
-[e = _CCPR2H -> -> 0 `i `uc ]
-[; ;pwm.c: 126: CCP2IE = 1;
+[e = _CCP2CON -> -> 0 `i `uc ]
+[; ;pwm.c: 126: CCPR2L = 0x00;
 "126
-[e = _CCP2IE -> -> 1 `i `b ]
-[; ;pwm.c: 127: CCP2IF = 0;
+[e = _CCPR2L -> -> 0 `i `uc ]
+[; ;pwm.c: 127: CCPR2H = 0x00;
 "127
-[e = _CCP2IF -> -> 0 `i `b ]
-[; ;pwm.c: 128: CCP2CON = 0x05;
+[e = _CCPR2H -> -> 0 `i `uc ]
+[; ;pwm.c: 128: CCP2IE = 1;
 "128
-[e = _CCP2CON -> -> 5 `i `uc ]
-[; ;pwm.c: 129: break;
+[e = _CCP2IE -> -> 1 `i `b ]
+[; ;pwm.c: 129: CCP2IF = 0;
 "129
-[e $U 356  ]
+[e = _CCP2IF -> -> 0 `i `b ]
+[; ;pwm.c: 130: CCP2CON = 0x05;
+"130
+[e = _CCP2CON -> -> 5 `i `uc ]
+[; ;pwm.c: 131: break;
 "131
+[e $U 356  ]
+"133
 }
-[; ;pwm.c: 131: }
-[; ;pwm.c: 134: case 3:
-"134
-[e :U 360 ]
-[; ;pwm.c: 136: {
+[; ;pwm.c: 133: }
+[; ;pwm.c: 136: case 3:
 "136
-{
-[; ;pwm.c: 138: CCP3CON = 0x00;
+[e :U 360 ]
+[; ;pwm.c: 138: {
 "138
-[e = _CCP3CON -> -> 0 `i `uc ]
-[; ;pwm.c: 139: CCPR3L = 0x00;
-"139
-[e = _CCPR3L -> -> 0 `i `uc ]
-[; ;pwm.c: 140: CCPR3H = 0x00;
+{
+[; ;pwm.c: 140: CCP3CON = 0x00;
 "140
-[e = _CCPR3H -> -> 0 `i `uc ]
-[; ;pwm.c: 141: CCP3IE = 1;
+[e = _CCP3CON -> -> 0 `i `uc ]
+[; ;pwm.c: 141: CCPR3L = 0x00;
 "141
-[e = _CCP3IE -> -> 1 `i `b ]
-[; ;pwm.c: 142: CCP3IF = 0;
+[e = _CCPR3L -> -> 0 `i `uc ]
+[; ;pwm.c: 142: CCPR3H = 0x00;
 "142
-[e = _CCP3IF -> -> 0 `i `b ]
-[; ;pwm.c: 143: CCP3CON = 0x05;
+[e = _CCPR3H -> -> 0 `i `uc ]
+[; ;pwm.c: 143: CCP3IE = 1;
 "143
-[e = _CCP3CON -> -> 5 `i `uc ]
-[; ;pwm.c: 144: break;
+[e = _CCP3IE -> -> 1 `i `b ]
+[; ;pwm.c: 144: CCP3IF = 0;
 "144
-[e $U 356  ]
+[e = _CCP3IF -> -> 0 `i `b ]
+[; ;pwm.c: 145: CCP3CON = 0x05;
+"145
+[e = _CCP3CON -> -> 5 `i `uc ]
+[; ;pwm.c: 146: break;
 "146
+[e $U 356  ]
+"148
 }
-[; ;pwm.c: 146: }
-[; ;pwm.c: 149: case 4:
-"149
-[e :U 361 ]
-[; ;pwm.c: 151: {
+[; ;pwm.c: 148: }
+[; ;pwm.c: 151: case 4:
 "151
-{
-[; ;pwm.c: 153: CCP4CON = 0x00;
+[e :U 361 ]
+[; ;pwm.c: 153: {
 "153
-[e = _CCP4CON -> -> 0 `i `uc ]
-[; ;pwm.c: 154: CCPR4L = 0x00;
-"154
-[e = _CCPR4L -> -> 0 `i `uc ]
-[; ;pwm.c: 155: CCPR4H = 0x00;
+{
+[; ;pwm.c: 155: CCP4CON = 0x00;
 "155
-[e = _CCPR4H -> -> 0 `i `uc ]
-[; ;pwm.c: 156: CCP4IE = 1;
+[e = _CCP4CON -> -> 0 `i `uc ]
+[; ;pwm.c: 156: CCPR4L = 0x00;
 "156
-[e = _CCP4IE -> -> 1 `i `b ]
-[; ;pwm.c: 157: CCP4IF = 0;
+[e = _CCPR4L -> -> 0 `i `uc ]
+[; ;pwm.c: 157: CCPR4H = 0x00;
 "157
-[e = _CCP4IF -> -> 0 `i `b ]
-[; ;pwm.c: 158: CCP4CON = 0x05;
+[e = _CCPR4H -> -> 0 `i `uc ]
+[; ;pwm.c: 158: CCP4IE = 1;
 "158
-[e = _CCP4CON -> -> 5 `i `uc ]
-[; ;pwm.c: 159: break;
+[e = _CCP4IE -> -> 1 `i `b ]
+[; ;pwm.c: 159: CCP4IF = 0;
 "159
-[e $U 356  ]
+[e = _CCP4IF -> -> 0 `i `b ]
+[; ;pwm.c: 160: CCP4CON = 0x05;
+"160
+[e = _CCP4CON -> -> 5 `i `uc ]
+[; ;pwm.c: 161: break;
 "161
+[e $U 356  ]
+"163
 }
-[; ;pwm.c: 161: }
-[; ;pwm.c: 164: case 5:
-"164
-[e :U 362 ]
-[; ;pwm.c: 166: {
+[; ;pwm.c: 163: }
+[; ;pwm.c: 166: case 5:
 "166
-{
-[; ;pwm.c: 168: CCP5CON = 0x00;
+[e :U 362 ]
+[; ;pwm.c: 168: {
 "168
-[e = _CCP5CON -> -> 0 `i `uc ]
-[; ;pwm.c: 169: CCPR5L = 0x00;
-"169
-[e = _CCPR5L -> -> 0 `i `uc ]
-[; ;pwm.c: 170: CCPR5H = 0x00;
-"170
-[e = _CCPR5H -> -> 0 `i `uc ]
-[; ;pwm.c: 171: CCP5IE = 1;
-"171
-[e = _CCP5IE -> -> 1 `i `b ]
-[; ;pwm.c: 172: CCP5IF = 0;
-"172
-[e = _CCP5IF -> -> 0 `i `b ]
-[; ;pwm.c: 173: CCP5CON = 0x05;
-"173
-[e = _CCP5CON -> -> 5 `i `uc ]
-[; ;pwm.c: 174: break;
-"174
-[e $U 356  ]
-"176
-}
-[; ;pwm.c: 176: }
-[; ;pwm.c: 180: default:
-"180
-[e :U 363 ]
-[; ;pwm.c: 181: {
-"181
 {
-[; ;pwm.c: 183: break;
-"183
+[; ;pwm.c: 170: CCP5CON = 0x00;
+"170
+[e = _CCP5CON -> -> 0 `i `uc ]
+[; ;pwm.c: 171: CCPR5L = 0x00;
+"171
+[e = _CCPR5L -> -> 0 `i `uc ]
+[; ;pwm.c: 172: CCPR5H = 0x00;
+"172
+[e = _CCPR5H -> -> 0 `i `uc ]
+[; ;pwm.c: 173: CCP5IE = 1;
+"173
+[e = _CCP5IE -> -> 1 `i `b ]
+[; ;pwm.c: 174: CCP5IF = 0;
+"174
+[e = _CCP5IF -> -> 0 `i `b ]
+[; ;pwm.c: 175: CCP5CON = 0x05;
+"175
+[e = _CCP5CON -> -> 5 `i `uc ]
+[; ;pwm.c: 176: break;
+"176
 [e $U 356  ]
-"185
+"178
 }
+[; ;pwm.c: 178: }
+[; ;pwm.c: 182: default:
+"182
+[e :U 363 ]
+[; ;pwm.c: 183: {
+"183
+{
+[; ;pwm.c: 185: break;
+"185
+[e $U 356  ]
 "187
 }
-[; ;pwm.c: 185: }
+"189
+}
 [; ;pwm.c: 187: }
+[; ;pwm.c: 189: }
 [e $U 356  ]
-"100
+"102
 [e :U 357 ]
 [e [\ _ui8_CCP_Nb , $ -> -> 1 `i `uc 358
  , $ -> -> 2 `i `uc 359
@@ -3654,348 +3654,351 @@ Version 3.2 HI-TECH Software Intermediate Code
  , $ -> -> 4 `i `uc 361
  , $ -> -> 5 `i `uc 362
  363 ]
-"187
+"189
 [e :U 356 ]
-[; ;pwm.c: 190: }
-"190
+[; ;pwm.c: 192: }
+"192
 [e :UE 355 ]
 }
-"205
-[v _PWM_CTRL `(v ~T0 @X0 1 ef ]
 "207
+[v _PWM_CTRL `(v ~T0 @X0 1 ef ]
+"209
 {
-[; ;pwm.c: 205: void PWM_CTRL( void )
-[; ;pwm.c: 207: {
+[; ;pwm.c: 207: void PWM_CTRL( void )
+[; ;pwm.c: 209: {
 [e :U _PWM_CTRL ]
 [f ]
-[; ;pwm.c: 295: ui8_PWM_FreqCnt++;
-"295
-[e ++ _ui8_PWM_FreqCnt -> -> 1 `i `uc ]
-[; ;pwm.c: 297: if( ui8_PWM_FreqCnt >= 100 )
+[; ;pwm.c: 297: ui8_PWM_FreqCnt++;
 "297
-[e $ ! >= -> _ui8_PWM_FreqCnt `i -> 100 `i 365  ]
-[; ;pwm.c: 299: {
+[e ++ _ui8_PWM_FreqCnt -> -> 1 `i `uc ]
+[; ;pwm.c: 299: if( ui8_PWM_FreqCnt >= 100 )
 "299
-{
-[; ;pwm.c: 301: ui8_PWM_FreqCnt = 0;
+[e $ ! >= -> _ui8_PWM_FreqCnt `i -> 100 `i 365  ]
+[; ;pwm.c: 301: {
 "301
+{
+[; ;pwm.c: 303: ui8_PWM_FreqCnt = 0;
+"303
 [e = _ui8_PWM_FreqCnt -> -> 0 `i `uc ]
-[; ;pwm.c: 302: LATC0 = 0;
-"302
+[; ;pwm.c: 304: LATC0 = 0;
+"304
 [e = _LATC0 -> -> 0 `i `b ]
-"305
+"307
 }
-[; ;pwm.c: 305: }
+[; ;pwm.c: 307: }
 [e $U 366  ]
-"308
+"310
 [e :U 365 ]
-[; ;pwm.c: 308: else
-[; ;pwm.c: 309: {
-"309
-{
-[; ;pwm.c: 311: if( ui8_PWM_FreqCnt >= ui8_PWMoutvalue )
+[; ;pwm.c: 310: else
+[; ;pwm.c: 311: {
 "311
-[e $ ! >= -> _ui8_PWM_FreqCnt `i -> _ui8_PWMoutvalue `i 367  ]
-[; ;pwm.c: 313: {
-"313
 {
-[; ;pwm.c: 315: LATC0 = 1;
+[; ;pwm.c: 313: if( ui8_PWM_FreqCnt >= ui8_PWMoutvalue )
+"313
+[e $ ! >= -> _ui8_PWM_FreqCnt `i -> _ui8_PWMoutvalue `i 367  ]
+[; ;pwm.c: 315: {
 "315
+{
+[; ;pwm.c: 317: LATC0 = 1;
+"317
 [e = _LATC0 -> -> 1 `i `b ]
-"318
+"320
 }
 [e :U 367 ]
-"321
+"323
 }
 [e :U 366 ]
-[; ;pwm.c: 318: }
-[; ;pwm.c: 321: }
-[; ;pwm.c: 333: }
-"333
+[; ;pwm.c: 320: }
+[; ;pwm.c: 323: }
+[; ;pwm.c: 335: }
+"335
 [e :UE 364 ]
 }
-"347
+"349
 [v _PWM_Write_Out `(v ~T0 @X0 1 ef1`uc ]
-"349
-{
-[; ;pwm.c: 347: void PWM_Write_Out( unsigned char ui8_DutyCycle_Out )
-[; ;pwm.c: 349: {
-[e :U _PWM_Write_Out ]
-"347
-[v _ui8_DutyCycle_Out `uc ~T0 @X0 1 r1 ]
-"349
-[f ]
-[; ;pwm.c: 351: ui8_PWMoutvalue = ui8_DutyCycle_Out;
 "351
-[e = _ui8_PWMoutvalue _ui8_DutyCycle_Out ]
-[; ;pwm.c: 353: }
+{
+[; ;pwm.c: 349: void PWM_Write_Out( unsigned char ui8_DutyCycle_Out )
+[; ;pwm.c: 351: {
+[e :U _PWM_Write_Out ]
+"349
+[v _ui8_DutyCycle_Out `uc ~T0 @X0 1 r1 ]
+"351
+[f ]
+[; ;pwm.c: 353: ui8_PWMoutvalue = ui8_DutyCycle_Out;
 "353
+[e = _ui8_PWMoutvalue _ui8_DutyCycle_Out ]
+[; ;pwm.c: 355: }
+"355
 [e :UE 368 ]
 }
-"368
-[v _PWMReadDC `(uc ~T0 @X0 1 ef ]
 "370
+[v _PWMReadDC `(uc ~T0 @X0 1 ef ]
+"372
 {
-[; ;pwm.c: 368: unsigned char PWMReadDC( void )
-[; ;pwm.c: 370: {
+[; ;pwm.c: 370: unsigned char PWMReadDC( void )
+[; ;pwm.c: 372: {
 [e :U _PWMReadDC ]
 [f ]
-[; ;pwm.c: 373: ui8_PWMinDC_sav = (unsigned char) ( 200*(unsigned short long )(ui16_Duty_Cycle_In) / ui16_PWM_Freq_In ) ;
-"373
-[e = _ui8_PWMinDC_sav -> / * -> -> -> 200 `i `m `um -> _ui16_Duty_Cycle_In `um -> _ui16_PWM_Freq_In `um `uc ]
-[; ;pwm.c: 375: if( ui8_PWMinDC_sav == 0 )
+[; ;pwm.c: 375: ui8_PWMinDC_sav = (unsigned char) ( 200*(unsigned short long )(ui16_Duty_Cycle_In) / ui16_PWM_Freq_In ) ;
 "375
-[e $ ! == -> _ui8_PWMinDC_sav `i -> 0 `i 370  ]
-[; ;pwm.c: 377: {
+[e = _ui8_PWMinDC_sav -> / * -> -> -> 200 `i `m `um -> _ui16_Duty_Cycle_In `um -> _ui16_PWM_Freq_In `um `uc ]
+[; ;pwm.c: 377: if( ui8_PWMinDC_sav == 0 )
 "377
+[e $ ! == -> _ui8_PWMinDC_sav `i -> 0 `i 370  ]
+[; ;pwm.c: 379: {
+"379
 {
-[; ;pwm.c: 381: ui16_PWMin_failCnt++;
-"381
-[e ++ _ui16_PWMin_failCnt -> -> 1 `i `ui ]
-[; ;pwm.c: 383: if( ui16_PWMin_failCnt >= 5 )
+[; ;pwm.c: 383: ui16_PWMin_failCnt++;
 "383
+[e ++ _ui16_PWMin_failCnt -> -> 1 `i `ui ]
+[; ;pwm.c: 385: if( ui16_PWMin_failCnt >= 5 )
+"385
 [e $ ! >= _ui16_PWMin_failCnt -> -> 5 `i `ui 371  ]
-[; ;pwm.c: 384: {
-"384
+[; ;pwm.c: 386: {
+"386
 {
-[; ;pwm.c: 390: Debounce_Tmr++;
-"390
-[e ++ _Debounce_Tmr -> -> 1 `i `ui ]
-[; ;pwm.c: 392: if(RA4 != prev_RA4) {
+[; ;pwm.c: 392: Debounce_Tmr++;
 "392
+[e ++ _Debounce_Tmr -> -> 1 `i `ui ]
+[; ;pwm.c: 394: if(RA4 != prev_RA4) {
+"394
 [e $ ! != -> -> _RA4 `i `ui _prev_RA4 372  ]
 {
-[; ;pwm.c: 393: prev_Debounce_Tmr = Debounce_Tmr;
-"393
+[; ;pwm.c: 395: prev_Debounce_Tmr = Debounce_Tmr;
+"395
 [e = _prev_Debounce_Tmr _Debounce_Tmr ]
-"394
+"396
 }
 [e :U 372 ]
-[; ;pwm.c: 394: }
-[; ;pwm.c: 395: prev_RA4 = RA4;
-"395
-[e = _prev_RA4 -> -> _RA4 `i `ui ]
-[; ;pwm.c: 397: if((Debounce_Tmr - prev_Debounce_Tmr) > 10) {
+[; ;pwm.c: 396: }
+[; ;pwm.c: 397: prev_RA4 = RA4;
 "397
-[e $ ! > - _Debounce_Tmr _prev_Debounce_Tmr -> -> 10 `i `ui 373  ]
-{
-[; ;pwm.c: 398: if(RA4 == 1)
-"398
-[e $ ! == -> _RA4 `i -> 1 `i 374  ]
-[; ;pwm.c: 399: {
+[e = _prev_RA4 -> -> _RA4 `i `ui ]
+[; ;pwm.c: 399: if((Debounce_Tmr - prev_Debounce_Tmr) > 20) {
 "399
+[e $ ! > - _Debounce_Tmr _prev_Debounce_Tmr -> -> 20 `i `ui 373  ]
 {
-[; ;pwm.c: 400: ui16_PWM_Freq_In = 40000;
+[; ;pwm.c: 400: if(RA4 == 1)
 "400
-[e = _ui16_PWM_Freq_In -> -> 40000 `l `ui ]
-[; ;pwm.c: 401: ui8_Duty_Cycle_In_Ratio = 180;
+[e $ ! == -> _RA4 `i -> 1 `i 374  ]
+[; ;pwm.c: 401: {
 "401
-[e = _ui8_Duty_Cycle_In_Ratio -> -> 180 `i `uc ]
-"402
-}
-[; ;pwm.c: 402: }
-[e $U 375  ]
-"403
-[e :U 374 ]
-[; ;pwm.c: 403: else
-[; ;pwm.c: 404: {
-"404
 {
-[; ;pwm.c: 405: ui16_PWM_Freq_In = 40000;
-"405
+[; ;pwm.c: 402: ui16_PWM_Freq_In = 40000;
+"402
 [e = _ui16_PWM_Freq_In -> -> 40000 `l `ui ]
-[; ;pwm.c: 406: ui8_Duty_Cycle_In_Ratio = 0;
-"406
-[e = _ui8_Duty_Cycle_In_Ratio -> -> 0 `i `uc ]
-"407
+[; ;pwm.c: 403: ui8_Duty_Cycle_In_Ratio = 180;
+"403
+[e = _ui8_Duty_Cycle_In_Ratio -> -> 180 `i `uc ]
+"404
 }
-[e :U 375 ]
-[; ;pwm.c: 407: }
-[; ;pwm.c: 408: Debounce_Tmr = 0;
+[; ;pwm.c: 404: }
+[e $U 375  ]
+"405
+[e :U 374 ]
+[; ;pwm.c: 405: else
+[; ;pwm.c: 406: {
+"406
+{
+[; ;pwm.c: 407: ui16_PWM_Freq_In = 40000;
+"407
+[e = _ui16_PWM_Freq_In -> -> 40000 `l `ui ]
+[; ;pwm.c: 408: ui8_Duty_Cycle_In_Ratio = 0;
 "408
-[e = _Debounce_Tmr -> -> 0 `i `ui ]
+[e = _ui8_Duty_Cycle_In_Ratio -> -> 0 `i `uc ]
 "409
 }
-[e :U 373 ]
+[e :U 375 ]
+[; ;pwm.c: 409: }
+[; ;pwm.c: 410: Debounce_Tmr = 0;
+"410
+[e = _Debounce_Tmr -> -> 0 `i `ui ]
+[; ;pwm.c: 411: prev_Debounce_Tmr = 0;
 "411
+[e = _prev_Debounce_Tmr -> -> 0 `i `ui ]
+"412
+}
+[e :U 373 ]
+"414
 }
 [e :U 371 ]
-"415
-}
-[; ;pwm.c: 409: }
-[; ;pwm.c: 411: }
-[; ;pwm.c: 415: }
-[e $U 376  ]
 "418
+}
+[; ;pwm.c: 412: }
+[; ;pwm.c: 414: }
+[; ;pwm.c: 418: }
+[e $U 376  ]
+"421
 [e :U 370 ]
-[; ;pwm.c: 418: else
-[; ;pwm.c: 419: {
-"419
+[; ;pwm.c: 421: else
+[; ;pwm.c: 422: {
+"422
 {
-[; ;pwm.c: 423: ui16_PWMin_failCnt = 0;
-"423
-[e = _ui16_PWMin_failCnt -> -> 0 `i `ui ]
-[; ;pwm.c: 426: ui8_Duty_Cycle_In_Ratio = ui8_PWMinDC_sav;
+[; ;pwm.c: 426: ui16_PWMin_failCnt = 0;
 "426
+[e = _ui16_PWMin_failCnt -> -> 0 `i `ui ]
+[; ;pwm.c: 429: ui8_Duty_Cycle_In_Ratio = ui8_PWMinDC_sav;
+"429
 [e = _ui8_Duty_Cycle_In_Ratio _ui8_PWMinDC_sav ]
-[; ;pwm.c: 428: ui16_Duty_Cycle_In = 0;
-"428
+[; ;pwm.c: 431: ui16_Duty_Cycle_In = 0;
+"431
 [e = _ui16_Duty_Cycle_In -> -> 0 `i `ui ]
-"430
+"433
 }
 [e :U 376 ]
-[; ;pwm.c: 430: }
-[; ;pwm.c: 433: return ( 200 - ui8_Duty_Cycle_In_Ratio );
-"433
+[; ;pwm.c: 433: }
+[; ;pwm.c: 436: return ( 200 - ui8_Duty_Cycle_In_Ratio );
+"436
 [e ) -> - -> 200 `i -> _ui8_Duty_Cycle_In_Ratio `i `uc ]
 [e $UE 369  ]
-[; ;pwm.c: 437: }
-"437
+[; ;pwm.c: 440: }
+"440
 [e :UE 369 ]
 }
-"457
+"462
 [v _interrupt_PWMCapture `(v ~T0 @X0 1 ef ]
-"459
+"464
 {
-[; ;pwm.c: 457: void interrupt_PWMCapture( void )
-[; ;pwm.c: 459: {
+[; ;pwm.c: 462: void interrupt_PWMCapture( void )
+[; ;pwm.c: 464: {
 [e :U _interrupt_PWMCapture ]
 [f ]
-[; ;pwm.c: 469: switch( ui8_Pulse_State )
-"469
+[; ;pwm.c: 474: switch( ui8_Pulse_State )
+"474
 [e $U 379  ]
-[; ;pwm.c: 471: {
-"471
+[; ;pwm.c: 476: {
+"476
 {
-[; ;pwm.c: 473: case 0:
-"473
+[; ;pwm.c: 478: case 0:
+"478
 [e :U 380 ]
-[; ;pwm.c: 475: {
-"475
-{
-[; ;pwm.c: 479: ui8_Pulse_State = 1;
-"479
-[e = _ui8_Pulse_State -> -> 1 `i `uc ]
-[; ;pwm.c: 480: ui16_Capt_Val0.b.lo = CCPR5L;
+[; ;pwm.c: 480: {
 "480
-[e = . . _ui16_Capt_Val0 1 0 _CCPR5L ]
-[; ;pwm.c: 481: ui16_Capt_Val0.b.hi = CCPR5H;
-"481
-[e = . . _ui16_Capt_Val0 1 1 _CCPR5H ]
-[; ;pwm.c: 482: CCP5CON = 0x04;
-"482
-[e = _CCP5CON -> -> 4 `i `uc ]
-[; ;pwm.c: 483: break;
-"483
-[e $U 378  ]
-"486
-}
-[; ;pwm.c: 486: }
-[; ;pwm.c: 489: case 1:
-"489
-[e :U 381 ]
-[; ;pwm.c: 491: {
-"491
 {
-[; ;pwm.c: 495: ui8_Pulse_State = 2;
-"495
-[e = _ui8_Pulse_State -> -> 2 `i `uc ]
-[; ;pwm.c: 496: ui16_Capt_Val1.b.lo = CCPR5L;
-"496
-[e = . . _ui16_Capt_Val1 1 0 _CCPR5L ]
-[; ;pwm.c: 497: ui16_Capt_Val1.b.hi = CCPR5H;
-"497
-[e = . . _ui16_Capt_Val1 1 1 _CCPR5H ]
-[; ;pwm.c: 498: CCP5CON = 0x05;
-"498
-[e = _CCP5CON -> -> 5 `i `uc ]
-[; ;pwm.c: 499: break;
-"499
-[e $U 378  ]
-"502
-}
-[; ;pwm.c: 502: }
-[; ;pwm.c: 505: case 2:
-"505
-[e :U 382 ]
-[; ;pwm.c: 507: {
-"507
-{
-[; ;pwm.c: 511: ui8_Pulse_State = 1;
-"511
+[; ;pwm.c: 484: ui8_Pulse_State = 1;
+"484
 [e = _ui8_Pulse_State -> -> 1 `i `uc ]
-[; ;pwm.c: 512: ui16_Capt_Val2.b.lo = CCPR5L;
-"512
-[e = . . _ui16_Capt_Val2 1 0 _CCPR5L ]
-[; ;pwm.c: 513: ui16_Capt_Val2.b.hi = CCPR5H;
-"513
-[e = . . _ui16_Capt_Val2 1 1 _CCPR5H ]
-[; ;pwm.c: 514: ui16_PWM_Freq_In = ui16_Capt_Val2.w - ui16_Capt_Val0.w;
-"514
-[e = _ui16_PWM_Freq_In - . _ui16_Capt_Val2 0 . _ui16_Capt_Val0 0 ]
-[; ;pwm.c: 515: ui16_Duty_Cycle_In = ui16_Capt_Val1.w - ui16_Capt_Val0.w;
-"515
-[e = _ui16_Duty_Cycle_In - . _ui16_Capt_Val1 0 . _ui16_Capt_Val0 0 ]
-[; ;pwm.c: 516: ui16_Capt_Val0.w = ui16_Capt_Val2.w;
-"516
-[e = . _ui16_Capt_Val0 0 . _ui16_Capt_Val2 0 ]
-[; ;pwm.c: 517: CCP5CON = 0x04;
-"517
+[; ;pwm.c: 485: ui16_Capt_Val0.b.lo = CCPR5L;
+"485
+[e = . . _ui16_Capt_Val0 1 0 _CCPR5L ]
+[; ;pwm.c: 486: ui16_Capt_Val0.b.hi = CCPR5H;
+"486
+[e = . . _ui16_Capt_Val0 1 1 _CCPR5H ]
+[; ;pwm.c: 487: CCP5CON = 0x04;
+"487
 [e = _CCP5CON -> -> 4 `i `uc ]
-[; ;pwm.c: 520: if( ui16_Duty_Cycle_In )
-"520
-[e $ ! != _ui16_Duty_Cycle_In -> -> 0 `i `ui 383  ]
-[; ;pwm.c: 522: {
-"522
-{
-"526
+[; ;pwm.c: 488: break;
+"488
+[e $U 378  ]
+"491
 }
-[; ;pwm.c: 526: }
-[e $U 384  ]
-"529
-[e :U 383 ]
-[; ;pwm.c: 529: else
-[; ;pwm.c: 530: {
-"530
+[; ;pwm.c: 491: }
+[; ;pwm.c: 494: case 1:
+"494
+[e :U 381 ]
+[; ;pwm.c: 496: {
+"496
 {
+[; ;pwm.c: 500: ui8_Pulse_State = 2;
+"500
+[e = _ui8_Pulse_State -> -> 2 `i `uc ]
+[; ;pwm.c: 501: ui16_Capt_Val1.b.lo = CCPR5L;
+"501
+[e = . . _ui16_Capt_Val1 1 0 _CCPR5L ]
+[; ;pwm.c: 502: ui16_Capt_Val1.b.hi = CCPR5H;
+"502
+[e = . . _ui16_Capt_Val1 1 1 _CCPR5H ]
+[; ;pwm.c: 503: CCP5CON = 0x05;
+"503
+[e = _CCP5CON -> -> 5 `i `uc ]
+[; ;pwm.c: 504: break;
+"504
+[e $U 378  ]
+"507
+}
+[; ;pwm.c: 507: }
+[; ;pwm.c: 510: case 2:
+"510
+[e :U 382 ]
+[; ;pwm.c: 512: {
+"512
+{
+[; ;pwm.c: 516: ui8_Pulse_State = 1;
+"516
+[e = _ui8_Pulse_State -> -> 1 `i `uc ]
+[; ;pwm.c: 517: ui16_Capt_Val2.b.lo = CCPR5L;
+"517
+[e = . . _ui16_Capt_Val2 1 0 _CCPR5L ]
+[; ;pwm.c: 518: ui16_Capt_Val2.b.hi = CCPR5H;
+"518
+[e = . . _ui16_Capt_Val2 1 1 _CCPR5H ]
+[; ;pwm.c: 519: ui16_PWM_Freq_In = ui16_Capt_Val2.w - ui16_Capt_Val0.w;
+"519
+[e = _ui16_PWM_Freq_In - . _ui16_Capt_Val2 0 . _ui16_Capt_Val0 0 ]
+[; ;pwm.c: 520: ui16_Duty_Cycle_In = ui16_Capt_Val1.w - ui16_Capt_Val0.w;
+"520
+[e = _ui16_Duty_Cycle_In - . _ui16_Capt_Val1 0 . _ui16_Capt_Val0 0 ]
+[; ;pwm.c: 521: ui16_Capt_Val0.w = ui16_Capt_Val2.w;
+"521
+[e = . _ui16_Capt_Val0 0 . _ui16_Capt_Val2 0 ]
+[; ;pwm.c: 522: CCP5CON = 0x04;
+"522
+[e = _CCP5CON -> -> 4 `i `uc ]
+[; ;pwm.c: 525: if( ui16_Duty_Cycle_In )
+"525
+[e $ ! != _ui16_Duty_Cycle_In -> -> 0 `i `ui 383  ]
+[; ;pwm.c: 527: {
+"527
+{
+"531
+}
+[; ;pwm.c: 531: }
+[e $U 384  ]
 "534
+[e :U 383 ]
+[; ;pwm.c: 534: else
+[; ;pwm.c: 535: {
+"535
+{
+"539
 }
 [e :U 384 ]
-[; ;pwm.c: 534: }
-[; ;pwm.c: 537: break;
-"537
+[; ;pwm.c: 539: }
+[; ;pwm.c: 542: break;
+"542
 [e $U 378  ]
-"540
-}
-[; ;pwm.c: 540: }
-[; ;pwm.c: 544: default:
-"544
-[e :U 385 ]
-[; ;pwm.c: 545: {
 "545
-{
-[; ;pwm.c: 549: ui8_Pulse_State = 0;
+}
+[; ;pwm.c: 545: }
+[; ;pwm.c: 549: default:
 "549
-[e = _ui8_Pulse_State -> -> 0 `i `uc ]
-[; ;pwm.c: 550: break;
+[e :U 385 ]
+[; ;pwm.c: 550: {
 "550
-[e $U 378  ]
-"553
-}
+{
+[; ;pwm.c: 554: ui8_Pulse_State = 0;
+"554
+[e = _ui8_Pulse_State -> -> 0 `i `uc ]
+[; ;pwm.c: 555: break;
 "555
-}
-[; ;pwm.c: 553: }
-[; ;pwm.c: 555: }
 [e $U 378  ]
-"469
+"558
+}
+"560
+}
+[; ;pwm.c: 558: }
+[; ;pwm.c: 560: }
+[e $U 378  ]
+"474
 [e :U 379 ]
 [e [\ _ui8_Pulse_State , $ -> -> 0 `i `uc 380
  , $ -> -> 1 `i `uc 381
  , $ -> -> 2 `i `uc 382
  385 ]
-"555
+"560
 [e :U 378 ]
-[; ;pwm.c: 558: }
-"558
+[; ;pwm.c: 563: }
+"563
 [e :UE 377 ]
 }

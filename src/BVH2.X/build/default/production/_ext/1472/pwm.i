@@ -4915,16 +4915,14 @@ unsigned int prev_RA4 = 0;
 unsigned int Debounce_Tmr = 0;
 unsigned int prev_Debounce_Tmr = 0;
 
-
-
-
+# 64
 void PWM_Capture_init( unsigned char ui8_CCP_Nb );
 void PWM_CTRL( void );
 void PWM_Write_Out( unsigned char ui8_DutyCycle_Out );
 void interrupt_PWMCapture( void );
 unsigned char PWMReadDC( void );
 
-# 85
+# 87
 void PWM_Capture_init( unsigned char ui8_CCP_Nb )
 
 {
@@ -4933,7 +4931,7 @@ void PWM_Capture_init( unsigned char ui8_CCP_Nb )
 ui8_PWMinDC_sav = 0;
 ui16_PWMin_failCnt = 0;
 
-# 100
+# 102
 switch( ui8_CCP_Nb )
 
 {
@@ -5026,12 +5024,12 @@ break;
 
 }
 
-# 205
+# 207
 void PWM_CTRL( void )
 
 {
 
-# 295
+# 297
 ui8_PWM_FreqCnt++;
 
 if( ui8_PWM_FreqCnt >= 100 )
@@ -5060,10 +5058,10 @@ LATC0 = 1;
 
 }
 
-# 333
+# 335
 }
 
-# 347
+# 349
 void PWM_Write_Out( unsigned char ui8_DutyCycle_Out )
 
 {
@@ -5072,7 +5070,7 @@ ui8_PWMoutvalue = ui8_DutyCycle_Out;
 
 }
 
-# 368
+# 370
 unsigned char PWMReadDC( void )
 
 {
@@ -5091,7 +5089,7 @@ ui16_PWMin_failCnt++;
 if( ui16_PWMin_failCnt >= 5 )
 {
 
-# 390
+# 392
 Debounce_Tmr++;
 
 if(RA4 != prev_RA4) {
@@ -5099,7 +5097,7 @@ prev_Debounce_Tmr = Debounce_Tmr;
 }
 prev_RA4 = RA4;
 
-if((Debounce_Tmr - prev_Debounce_Tmr) > 10) {
+if((Debounce_Tmr - prev_Debounce_Tmr) > 20) {
 if(RA4 == 1)
 {
 ui16_PWM_Freq_In = 40000;
@@ -5111,6 +5109,7 @@ ui16_PWM_Freq_In = 40000;
 ui8_Duty_Cycle_In_Ratio = 0;
 }
 Debounce_Tmr = 0;
+prev_Debounce_Tmr = 0;
 }
 
 }
@@ -5141,12 +5140,12 @@ return ( 200 - ui8_Duty_Cycle_In_Ratio );
 
 }
 
-# 457
+# 462
 void interrupt_PWMCapture( void )
 
 {
 
-# 469
+# 474
 switch( ui8_Pulse_State )
 
 {

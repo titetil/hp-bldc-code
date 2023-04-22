@@ -151,11 +151,15 @@ extern  unsigned  char ui8_b_DResB4_c;
 extern  unsigned  char ui8_b_DResB5_c;
 extern  unsigned  short ui16_duty_cycle_mat;
 
+int  last_pwm;
+unsigned  char pwm_cmd;
+
 
 /*~T*/
 /*-------------------  Prototypes  ----------------------------- */
         void init_ports( void  );
         void system_init( void  );
+        int rate_limit(int pwm);
 
 extern  void Task1ms( void  );
 /*~A*/
@@ -1051,7 +1055,8 @@ void main( void )
             /*~+:Input connection of matlab layer*/
             /*~T*/
             /** Connect the matlab layer with the program */
-            ui8_PWM_dc_mat    = PWMReadDC( );          /* connect input duty cycle to Matlab ui8_duty_cycle 0 .. 200 */
+            pwm_cmd    = PWMReadDC( );          /* connect input duty cycle to Matlab ui8_duty_cycle 0 .. 200 */
+            ui8_PWM_dc_mat = rate_limit(pwm_cmd);
             //ui8_PWM_dc_mat    = 160; // constant 80% duty cycle command
             //ui8_PWM_dc_mat    = 200; // constant 100% duty cycle command
             ui16_PWM_Freq_mat = ui16_PWM_Freq_In;
@@ -1576,3 +1581,32 @@ void main( void )
 }
 /*~E*/
 /*~E*/
+
+int sign(int x) {
+	return (x > 0) - (x < 0);
+}
+
+int rate_limit(int pwm) {
+    int delta_pwm = last_pwm - pwm;
+    if(delta_pwm < 0) {  //only ramp from min to max speed
+        int sign_delta_pwm = sign(delta_pwm);
+        int abs_delta_pwm = delta_pwm;
+        if(delta_pwm < 0) {abs_delta_pwm = delta_pwm * -1;}
+        int pwm_inc = 10;
+        int sign_pwm_inc = pwm_inc * sign_delta_pwm;  //incremented pwm based on elapsed time
+        sign_pwm_inc = last_pwm - sign_pwm_inc;
+
+        if (pwm_inc >= abs_delta_pwm) {
+            last_pwm = pwm;
+        }
+        else {
+            last_pwm = sign_pwm_inc;
+        }
+    }
+    else {
+        last_pwm = pwm;
+    }
+	
+	
+	return last_pwm;  //last pwm is also the new pwm
+}
