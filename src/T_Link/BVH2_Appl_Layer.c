@@ -289,6 +289,8 @@ static Bool Cb44_oShutoff = 0;
 static Bool Cb56_oUbat_Alarm_High = 0;
 static Bool Cb56_odFixedValueSel = 0;
 static Bool Cb56_odPumpOff = 0;
+static Bool power_lockout = 0;
+static UInt16 amps_per_volt_cnt = 0;
 
 /*--------------------------------------------------------------------*\
   PARAMETERIZED MACROS
@@ -692,7 +694,7 @@ Void BVH2_Appl_Layer(Void)
    }
 
    /* End execution of chart BVH2_Appl_Layer/UbatHandling */
-   Sb1_Logical_Operator2 = Cb34_odPumpOff && (!(Cb56_odFixedValueSel));
+   Sb1_Logical_Operator2 = 0;//2Cb34_odPumpOff && (!(Cb56_odFixedValueSel));
 
    /* Begin execution of chart BVH2_Appl_Layer/Temperature_Alarm */
 
@@ -854,7 +856,7 @@ Void BVH2_Appl_Layer(Void)
                SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
                 Cb8_redState_id;
                Cb1_StateCnt = 0 /* 0. */;
-               Cb1_oShutoff = 1;
+               //Cb1_oShutoff = 1;
                Cb1_oCurrentAlarm = 1;
             }
             else {
@@ -884,7 +886,7 @@ Void BVH2_Appl_Layer(Void)
                SIBFS_Current_Analysis_High_b.Cb1_Current_Analysis_High_ns = (unsigned int)
                 Cb8_redState_id;
                Cb1_StateCnt = 0 /* 0. */;
-               Cb1_oShutoff = 1;
+               //Cb1_oShutoff = 1;
                Cb1_oCurrentAlarm = 1;
             }
             else {
@@ -1636,8 +1638,32 @@ Void BVH2_Appl_Layer(Void)
    /* Outport: BVH2_Appl_Layer/DutyCyclePowerStage
       # combined # Gain: BVH2_Appl_Layer/Gain */
    //ui8_duty_cycle_mat = (UInt8) (Int16) (Sb2_Switch2 >> 1);
-   if (Sb1_Logical_Operator3){  // used for overvoltage alarm
+   //if (Sb1_Logical_Operator3){  // used for overvoltage alarm
+   /*UInt16 current_limit = 0;
+   if (ui8_BattVolt_mat < 64){  //8V
+       current_limit = 130;
+   } else if (64 <= ui8_BattVolt_mat < 80){  //8-10V
+       current_limit = 200;
+   } else if (80 <= ui8_BattVolt_mat < 88){  //10-11V
+       current_limit = 200;
+   } else if (88 <= ui8_BattVolt_mat < 96){  //11-12V
+       current_limit = 200;
+   } else if (96 <= ui8_BattVolt_mat < 104){  //12-13V
+       current_limit = 200;
+   } else if (104 <= ui8_BattVolt_mat < 112){  //13-14V
+       current_limit = 200;
+   } else {  //14
+       current_limit = 220;
+   }
+   if (ui16_mat_Current > current_limit){
+       amps_per_volt_cnt = amps_per_volt_cnt + 1;
+   }
+   else {
+       amps_per_volt_cnt = 0;
+   }*/
+   if (Sb1_Logical_Operator3 || power_lockout){
        ui16_duty_cycle_mat = 0;  // turn off pump
+       power_lockout = 1;
    }
    else {
        ui16_duty_cycle_mat = ui16_Speed_demand_mat;  // bypass control loop

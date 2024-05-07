@@ -4453,8 +4453,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 407 ]
 "1595
 [v _pwm_inc `i ~T0 @X0 1 a ]
-[; ;main.c: 1595: int pwm_inc = 10;
-[e = _pwm_inc -> 10 `i ]
+[; ;main.c: 1595: int pwm_inc = 5;
+[e = _pwm_inc -> 5 `i ]
 "1596
 [v _sign_pwm_inc `i ~T0 @X0 1 a ]
 [; ;main.c: 1596: int sign_pwm_inc = pwm_inc * sign_delta_pwm;

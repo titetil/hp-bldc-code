@@ -1592,7 +1592,7 @@ int rate_limit(int pwm) {
         int sign_delta_pwm = sign(delta_pwm);
         int abs_delta_pwm = delta_pwm;
         if(delta_pwm < 0) {abs_delta_pwm = delta_pwm * -1;}
-        int pwm_inc = 10;
+        int pwm_inc = 5;
         int sign_pwm_inc = pwm_inc * sign_delta_pwm;  //incremented pwm based on elapsed time
         sign_pwm_inc = last_pwm - sign_pwm_inc;
 
